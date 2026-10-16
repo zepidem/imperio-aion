@@ -8,7 +8,7 @@ No authorization for public repository, fork or installer redistribution has yet
 
 Consequently, the repository contains GPL-licensed project code alongside assets with unresolved rights. It must not be represented as an entirely cleared open-source distribution or as meeting SignPath's eligibility requirements.
 
-The game-data catalogs, unrelated binaries and excluded source metadata remain listed in `metadata/excluded-resources.json`. Images alone do not restore the catalog-based mapping of skill and pet identifiers. No complete installer has been produced from this preparation.
+The pet, NPC and skill catalogs and protocol name profile were restored for the Windows candidate, with original attribution notices and hashes in `metadata/source-map.json`. Upstream tables identify GPL-3.0 in their notices; underlying game-data rights remain unresolved. The local overlay and navigation manifest are project code. Remaining excluded files are listed in `metadata/excluded-resources.json`; vendor binaries are fetched and verified at build time. A complete candidate does not clear resource rights or establish SignPath eligibility.
 
 Reference for skill artwork: https://assets.playnccdn.com/static-aion2-gamedata/resources/.
 Reference for pet portraits: https://aion2.gaming.tools/pt-br/pets.

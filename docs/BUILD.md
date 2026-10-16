@@ -1,41 +1,45 @@
-# Fontes e build
+# Windows build
 
-## Aplicativo
-
-- Entrada desktop: `src/imperio_aion/desktop_entry.py`.
-- Interface e aplicação: `src/imperio_aion/app.py`.
-- Leitura e estado: módulos Python no mesmo diretório.
-- Referência importada: aplicativo 0.8.71, build revisão 4, 67 arquivos registrados mais entrada conferidos antes da cópia.
-
-Os módulos usam imports locais absolutos. Ao executar uma ferramenta de análise, inclua `src/imperio_aion` em `sys.path`; o runner de testes já faz isso. Não execute a entrada desktop como teste: ela pode observar o jogo e solicitar captura.
-
-## Atualizador e instalador
-
-- Entrada: `src/updater/updater_app.py`.
-- Verificadores e fluxo: `update_core.py`, `verify_core.py`, `renewal_core.py`, `update_service.py`.
-- Helper nativo: `src/updater/Installer.cs` e `imperio-install.exe.config`.
-- A string `__RSA_PUBLIC_XML__` do C# deve ser substituída por uma âncora RSA pública no build; nunca por material privado.
-- `tools/build_native.py` compila uma cópia do helper em `build/native`. Ele não o executa, instala ou eleva, não modifica a fonte e não atualiza automaticamente a confiança do atualizador.
+Use Windows x64, CPython **3.14.7**, and a non-administrator account for QA.
 
 ```powershell
-python tools/build_native.py
+python -m venv .venv
+.venv\Scripts\python -m pip install --only-binary=:all: --require-hashes -r requirements-windows.lock
+.venv\Scripts\python tools/audit_repository.py
+.venv\Scripts\python tools/run_tests.py
+.venv\Scripts\python tools/build_windows.py --output dist/windows-candidate
+.venv\Scripts\python tools/verify_candidate.py dist/windows-candidate
 ```
 
-## Por que o instalador completo ainda não está preparado
+Choose a new output directory for every build. Its matching build/<output-name> staging directory must also be new. Previous builds are never overwritten. GitHub Actions builds and verifies the full archive inventory (--inventory-only), storing successful candidates for 14 days. Hidden GUI and isolated install/remove QA must run separately as a non-administrator because Windows hosted runners may be elevated. CI does not publish a Release or modify the website.
 
-1. As imagens e os ícones existentes foram recuperados a pedido do responsável, com autorização pendente. Catálogos e alguns recursos auxiliares ainda estão excluídos, incluindo o HTML da sobreposição. É necessário resolver direitos, completar os recursos de runtime e testar os estados sem catálogo.
-2. O perfil importado referenciava nomes de uma tabela comunitária. Nesta árvore a configuração de nomes está vazia, para não redistribuir essa tabela sem revisão. Isso afeta a identificação de habilidades e precisa de validação funcional.
-3. Os scripts anteriores de empacotamento dependiam de diretórios e ambientes locais. A configuração portátil de PyInstaller deve ser fechada depois do inventário de recursos e wheels; não foi copiado um script que apontasse silenciosamente às pastas privadas antigas.
-4. É necessário definir wheels e hashes, os avisos das bibliotecas nativas embarcadas e a fonte correspondente. `requirements-observed.txt` é apenas um inventário.
-5. Recompilar o helper muda seu hash. A confiança do atualizador, a assinatura dos metadados e a publicação de uma versão precisam ser feitas em conjunto; os arquivos atuais de confiança são referências públicas, sem chaves privadas.
-6. Compilar e verificar em Windows limpo; então relacionar commit, fontes e artefatos do release.
+## Build inputs
 
-`tools/check_release.py` retorna as pendências. Os testes offline validam partes do código separado, não certificam uma distribuição completa ou uma aprovação da SignPath.
+The monitor source reference is 0.8.71; the updater source reference is 0.4.2. Newly built project PE files share ProductName **Império Aion** and ProductVersion **0.8.71**. This is a candidate, not a replacement for an existing release.
 
-## CI de verificação preparado
+Runtime data includes inventoried images, pet/NPC/skill catalogs, protocol names and the local OBS overlay. See RESOURCE_RIGHTS.md: restoring these files does not clear their rights. WinDivert 2.2.2 comes from upstream, with fixed archive and extracted-binary hashes. Only its x64 DLL/driver, complete source ZIP and notices are bundled. Pass --vendor-cache for an existing hash-verified cache.
 
-`.github/workflows/verify.yml` usa um runner Windows hospedado, Python 3.14.7 x64 e as dependências diretas de `requirements.txt`. As actions checkout 7.0.1 e setup-python 7.0.0 estão fixadas pelos commits publicados nos repositórios oficiais. O workflow roda auditoria, testes offline e compilação do helper, sem iniciar o aplicativo, a captura ou o instalador. A instalação inicial das dependências exige acesso ao índice de pacotes; somente a suíte de testes roda com conexões bloqueadas pelo runner de testes.
+requirements-windows.lock pins eleven runtime/build wheels by SHA-256 for this interpreter/platform. metadata/windows-wheels.json records filenames. Always install with hash checking; the builder's version check is an additional safeguard.
 
-O workflow não contém `pull_request_target`, credenciais persistidas, acesso a segredos de assinatura, deploy ou upload de releases. As execuções hospedadas estão em https://github.com/zepidem/imperio-aion/actions; consulte VERIFICATION.md para o estado conferido. A instalação por versão ainda não é um lock de todos os wheels por hash: esse lock pertence à etapa de build completo.
+The monitor uses PyInstaller one-directory mode and the setup uses one-file mode. The C# helper is compiled from source. Its new hash is pinned only in staging; original updater trust files are not silently overwritten. Package notices include installed dependency licenses, Python, Tcl/Tk and WinDivert. The binary inventory is an exact hash inventory, not a complete legal clearance or bit-for-bit reproducibility claim.
 
-Referências das actions: https://github.com/actions/checkout/releases/tag/v7.0.1 e https://github.com/actions/setup-python/releases/tag/v7.0.0.
+## Outputs
+
+- imperioaion-setup.exe: installer/updater using the existing configured HTTPS feed. It does **not** automatically install the candidate ZIP beside it.
+- application/ and imperio-aion-0.8.71-candidate.zip: complete runtime, updater, driver, notices and catalogs.
+- package-inventory.json, binary-inventory.json, build-environment.json and build-proof.json: hashes, environment and source provenance. A release build must have git_dirty=false.
+- After QA: app-check.json, installer-ui-check.json and validation.json.
+
+## Verification scope
+
+The real frozen app renders its panel/HUD in hidden windows with fresh and saved synthetic state. It checks required images, 207 pets, 284 skills, NPCs, legal pages and DLL ABI/filter compilation. Capture and game probes are disabled. The setup renders without downloading.
+
+A separate verifier is compiled with a fresh in-memory QA key. It validates the exact candidate, rejects a wrong signature, installs into a marked temporary directory, detects a modified installed executable and removes that isolated installation while preserving synthetic user data. QA private keys are never exported and this verifier is not delivered. No driver is started, registry entry created or Program Files installation performed. Elevated installation/ACLs and actual game capture still require separate validation.
+
+## Signing and publication
+
+The imported updater_trust.py identifies its anchors as a test/pilot channel. New binaries need matching signed metadata; existing channel metadata cannot authorize changed hashes. Production release authorization requires the maintainer's controlled keys. Do not bypass validation or distribute QA keys.
+
+Authenticode changes file bytes. The future pipeline must sign the helper first, pin its final hash in the staged updater, build/sign the updater and monitor, then construct and authenticate the final ZIP. Only project-owned executables may be submitted to SignPath; preserve upstream signatures. Do not embed a signed helper with a pre-signing hash.
+
+tools/check_release.py intentionally reports pending until resource permissions, privacy controls, release authorization, public release evidence and SignPath setup are resolved. Compilation does not grant signing approval.

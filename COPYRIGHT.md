@@ -8,6 +8,6 @@ O programa é distribuído na esperança de ser útil, mas SEM QUALQUER GARANTIA
 
 As dependências mantêm os direitos de seus titulares e suas próprias licenças. Os textos em `licenses/third-party` são reproduções dos avisos encontrados, não obras relicenciadas por Zepidem. AION, NCSOFT e demais marcas pertencem a seus titulares. Esta licença não concede direitos sobre elas nem declara afiliação.
 
-As imagens incluídas em `metadata/included-resources.json` têm direitos pendentes e não recebem a GPL do código. Consulte `docs/RESOURCE_RIGHTS.md`. Os catálogos e demais recursos excluídos também não recebem licença por serem citados no inventário.
+As imagens incluídas em `metadata/included-resources.json` têm direitos pendentes e não recebem a GPL do código. Consulte `docs/RESOURCE_RIGHTS.md`. Os catálogos restaurados preservam os avisos de origem; a GPL do projeto não concede direitos sobre dados do jogo.
 
 A importação adicionou identificadores SPDX ao código e explicitou a precedência da GPL nos avisos de uso. O perfil de nomes de habilidades foi substituído por configuração vazia: a tabela derivada de fonte externa permanece pendente. Essas alterações estão registradas no mapa de fontes. Não foi alterada a instalação existente.

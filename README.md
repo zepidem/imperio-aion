@@ -4,7 +4,7 @@ Código-fonte do monitor Windows Império Aion e de seu instalador/atualizador, 
 
 Repositório: https://github.com/zepidem/imperio-aion. Página do aplicativo: https://imperiobdo.com/aion2.
 
-**Estado: preparação de fontes, com direitos de imagens pendentes.** Esta árvore ainda não produz uma distribuição completa equivalente ao aplicativo instalado. Os recursos visuais existentes foram incluídos a pedido do responsável, enquanto se aguarda a NCSOFT; não recebem a GPL do código. Catálogos e outros recursos continuam excluídos. Não há aprovação nem assinatura SignPath. Consulte [os direitos dos recursos](docs/RESOURCE_RIGHTS.md).
+**Estado: build de candidato Windows completo; direitos e publicação pendentes.** O build inclui aplicativo, instalador/atualizador, catálogos, overlay e dependências. Os recursos de terceiros foram incluídos a pedido do responsável, enquanto se aguarda a NCSOFT; não recebem a GPL do código. O candidato ainda precisa de autorização de release. Não há aprovação nem assinatura SignPath. Consulte [os direitos dos recursos](docs/RESOURCE_RIGHTS.md) e [as instruções de build](docs/BUILD.md).
 
 ## Licença
 
@@ -34,7 +34,7 @@ python -m venv .venv
 .venv\Scripts\python tools/run_tests.py
 ```
 
-`requirements-observed.txt` registra versões encontradas, sem prometer um lock de wheels ou compatibilidade com toda plataforma. Os testes não abrem a HUD, não iniciam captura, não instalam o driver, não modificam o registro e não usam o canal online. Os testes antigos baseados em capturas de jogadores não foram copiados.
+`requirements-windows.lock` fixa por hash os wheels do build Windows com Python 3.14.7 x64. `requirements-observed.txt` preserva o inventário anterior. Os 69 testes offline não abrem a HUD, não iniciam captura, não instalam o driver, não modificam o registro e não usam o canal online. A verificação adicional do candidato renderiza janelas ocultas e testa instalação/remoção em pasta isolada. Os testes antigos baseados em capturas de jogadores não foram copiados.
 
 ## Build e publicação
 
@@ -42,7 +42,7 @@ python -m venv .venv
 python tools/check_release.py
 ```
 
-O comando informa as pendências atuais e retorna código 2 enquanto a distribuição completa não está preparada. Não substitua o instalador do site por esta árvore. [BUILD.md](docs/BUILD.md) descreve os pontos de entrada e os passos restantes.
+O comando informa as pendências atuais e retorna código 2 enquanto o release não está autorizado. Não substitua o instalador do site apenas por ter compilado o candidato. [BUILD.md](docs/BUILD.md) descreve build, testes e a ordem das assinaturas.
 
 O site `https://imperiobdo.com/aion2` pode permanecer no repositório privado existente. O novo projeto será responsável pelos fontes e builds do Aion; a integração futura entregará os artefatos ao canal do site. Não foram copiados backend, dados, credenciais ou histórico Git do BDO. Consulte [SEPARATION.md](docs/SEPARATION.md).
 
@@ -56,6 +56,8 @@ Consulte a [Code signing policy](docs/CODE_SIGNING_POLICY.md), a [política de p
 
 [CONTRIBUTING.md](CONTRIBUTING.md) explica como propor alterações; [SECURITY.md](SECURITY.md) informa o canal para relatos privados. O responsável inicial de revisão é `zepidem`.
 
-O workflow `.github/workflows/verify.yml` verifica os fontes no Windows, executa os testes offline e compila o helper sem executá-lo. Acompanhe as execuções em [GitHub Actions](https://github.com/zepidem/imperio-aion/actions). Ele não gera nem publica uma distribuição completa, não recebe credenciais de assinatura e usa apenas permissão de leitura do repositório.
+O workflow `.github/workflows/verify.yml` verifica os fontes no Windows, executa os testes offline, compila o candidato completo e confere todos os arquivos do pacote; abertura e instalação isolada são verificadas separadamente, sem elevação. Acompanhe as execuções em [GitHub Actions](https://github.com/zepidem/imperio-aion/actions). Os artefatos aprovados nos testes ficam disponíveis por 14 dias. Ele não publica um release, não recebe credenciais de assinatura e usa apenas permissão de leitura do repositório.
+
+Comunidade informada pelo responsável: [Discord do Império Aion](https://discord.gg/2cQSFwVst).
 
 Página do programa: https://signpath.org/terms.html

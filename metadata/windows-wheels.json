@@ -1,0 +1,68 @@
+[
+  {
+    "name": "altgraph",
+    "version": "0.17.5",
+    "filename": "altgraph-0.17.5-py2.py3-none-any.whl",
+    "sha256": "f3a22400bce1b0c701683820ac4f3b159cd301acab067c51c653e06961600597"
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "filename": "cffi-2.1.1-cp314-cp314-win_amd64.whl",
+    "sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48"
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.1",
+    "filename": "cryptography-50.0.1-cp311-abi3-win_amd64.whl",
+    "sha256": "aed8db4f6d71c51efb89530e12d9464e7bf2923d46c3205dc794a2a93f8c0648"
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "filename": "packaging-26.3-py3-none-any.whl",
+    "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+  },
+  {
+    "name": "pefile",
+    "version": "2024.8.26",
+    "filename": "pefile-2024.8.26-py3-none-any.whl",
+    "sha256": "76f8b485dcd3b1bb8166f1128d395fa3d87af26360c2358fb75b80019b957c6f"
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "filename": "pillow-12.3.0-cp314-cp314-win_amd64.whl",
+    "sha256": "fdafc9cce40277e0f7a0feabce0ee50dd2fa1800f3b38015e51296b5e814048d"
+  },
+  {
+    "name": "pycparser",
+    "version": "3.11",
+    "filename": "pycparser-3.11-py3-none-any.whl",
+    "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80"
+  },
+  {
+    "name": "pyinstaller",
+    "version": "6.22.3",
+    "filename": "pyinstaller-6.22.3-py3-none-win_amd64.whl",
+    "sha256": "500bd58c7bf7e584a8435adccbd763a0b918d5c12b08d74ff50fd79b2915458b"
+  },
+  {
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.8",
+    "filename": "pyinstaller_hooks_contrib-2026.8-py3-none-any.whl",
+    "sha256": "6d21d65323ea4467753afc21f52d7d0e69416ae8101dd88269bf273ad48db084"
+  },
+  {
+    "name": "pywin32-ctypes",
+    "version": "0.2.3",
+    "filename": "pywin32_ctypes-0.2.3-py3-none-any.whl",
+    "sha256": "8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8"
+  },
+  {
+    "name": "setuptools",
+    "version": "84.0.0",
+    "filename": "setuptools-84.0.0-py3-none-any.whl",
+    "sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670"
+  }
+]

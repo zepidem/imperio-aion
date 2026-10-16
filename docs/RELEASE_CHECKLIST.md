@@ -6,7 +6,7 @@ Status: 2026-10-16. Sources and inventoried visual resources are published at ht
 
 - [x] Separate the application/updater from the private BDO repository without copying its history.
 - [x] Include GPL-3.0-only for own code, dependency notices and source provenance.
-- [x] Exclude captures, private keys, unconfirmed catalogs and existing binary distributions.
+- [x] Exclude captures, private keys and existing binary distributions; restored catalogs retain unresolved rights notices.
 - [x] Inventory the images included at the maintainer's request; their permission remains unresolved (see RESOURCE_RIGHTS.md).
 - [x] Prepare a Windows GitHub Actions workflow for source audit, offline tests and native compilation.
 - [x] Prepare contribution, security, privacy and code signing documents.
@@ -21,7 +21,7 @@ Status: 2026-10-16. Sources and inventoried visual resources are published at ht
 
 - [ ] Resolve each resource's rights. The owner reports sending an NCSOFT request; no reply or permission has been recorded. Permission for fan use may differ from permission for source/fork/installer redistribution and from SignPath eligibility.
 - [ ] Confirm tables/catalog sources or provide original licensed replacements.
-- [ ] Complete portable Python packaging and the asset list, runtime wheels/hashes, native dependency notices and corresponding sources.
+- [x] Prepare portable complete packaging, eleven locked wheels, runtime data, vendor source and binary hash inventories. Native/transitive license review remains open.
 - [ ] Complete the Windows build in a clean environment; verify GUI, missing-resource behavior, update, installation and removal.
 - [ ] Verify the privacy notice and controls for update traffic, diagnostics, capture and system changes against the actual installer.
 - [ ] Reconcile application/updater version metadata and build trust. Calculate signed artifact hashes only after signing.
@@ -33,7 +33,7 @@ Status: 2026-10-16. Sources and inventoried visual resources are published at ht
 - [x] Confirm application contact name and email with the maintainer (2026-10-16); recorded in the separate application draft.
 - [x] Confirm repository URL: https://github.com/zepidem/imperio-aion.
 - [ ] Confirm initial team roles.
-- [ ] Supply verifiable reputation evidence: public release history, download statistics, community discussions or independent usage. The homepage is a starting point, not a substitute for usage evidence.
+- [x] Record the public community invite supplied by the maintainer: https://discord.gg/2cQSFwVst. Membership counts, independent usage and download statistics were not verified.
 - [ ] Publish the privacy policy and link a section titled "Code signing policy" from the homepage and download/release pages.
 - [ ] Confirm all statements in the English application against the final release, then submit.
 - [ ] Receive SignPath acceptance and configure verifiable builds and manual signature approvals.

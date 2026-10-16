@@ -1,10 +1,29 @@
 {
-  "version": "oss-source-preparation",
+  "version": "0.1-experimental",
   "region": "Global SA",
-  "skill_names": {},
-  "known_damage_dot_ids": [],
+  "skill_names": {
+    "2011101": "Poção de Vida",
+    "13050000": "Corte do Clarão",
+    "13050340": "Corte do Clarão",
+    "13710000": "Sexto Sentido Aguçado",
+    "13770000": "Postura de Emboscada",
+    "13800000": "Prontidão",
+    "30000241": "Pedra Divina: Ganância de Rathman"
+  },
+  "known_damage_dot_ids": [
+    1200010,
+    13730007
+  ],
   "lookup_is_observed_subset": true,
   "screen_damage_validation": false,
-  "sources": [],
-  "notice": "External reference tables omitted pending license review. This profile does not reproduce the released application's skill identification."
+  "sources": [
+    {
+      "kind": "skill_name_reference",
+      "url": "https://github.com/cyberbadger6969/aion2-dps-meter/blob/95f46d0957ae9ad50193b6f8c7344be4edc15274/data/skills/pt.json"
+    },
+    {
+      "kind": "dot_reference",
+      "url": "https://github.com/cyberbadger6969/aion2-dps-meter/blob/95f46d0957ae9ad50193b6f8c7344be4edc15274/data/dot_skill_ids.json"
+    }
+  ]
 }

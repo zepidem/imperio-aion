@@ -1,0 +1,3118 @@
+{
+  "schema_version": 1,
+  "language": "pt-BR",
+  "source_url": "https://cdn-hosted.gaming.tools/aion2/data/pt-br/pets.d.json?version=1791739440423",
+  "source_page": "https://aion2.gaming.tools/pt-br/pets",
+  "source_version": "1791739440423",
+  "imported_utc": "2026-10-11T22:24:36.971932+00:00",
+  "source_json_sha256": "b8c32fad68bee80273a349148f152a14d3b73f8becdb1e27fcfd587fac086226",
+  "rights": "Game data and portraits © NCSOFT; community catalog by gaming.tools. No official affiliation.",
+  "entries": {
+    "1001": {
+      "name": "Dragão Negro",
+      "icon_key": "pet_1001",
+      "icon_path": "assets/pets/1001.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_blackdragon_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1001",
+      "category": "Especial",
+      "catalog_name": "Dragão Negro",
+      "sha256": "0fff1b775cfa1c1ae302bf29b337af7f7b49003dd6aac344995eb6a74c855e94",
+      "bytes": 18212,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1002": {
+      "name": "Trabalhador Escravo Krall",
+      "icon_key": "pet_1002",
+      "icon_path": "assets/pets/1002.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_krallreg_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1002",
+      "category": "Intelectual",
+      "catalog_name": "Trabalhador Escravo Krall",
+      "sha256": "6f325fff69134153d2b0a9be5b9ddca7f209c0724a87425a9d294ae99db8dbd6",
+      "bytes": 17904,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1003": {
+      "name": "Ânima da Floresta",
+      "icon_key": "pet_1003",
+      "icon_path": "assets/pets/1003.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_forestwisp_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1003",
+      "category": "Natural",
+      "catalog_name": "Ânima da Floresta",
+      "sha256": "e82dfebc0194b9236401a95520e2784a39999deec29b64792aed2a91312c0406",
+      "bytes": 24066,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1004": {
+      "name": "Fuça",
+      "icon_key": "pet_1004",
+      "icon_path": "assets/pets/1004.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fossa_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1004",
+      "category": "Feral",
+      "catalog_name": "Fuça",
+      "sha256": "72549b938857b78d65c80cb7cc363b3689dc69ad6ab8a498295a61ca5713ded2",
+      "bytes": 16354,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1005": {
+      "name": "Klaw",
+      "icon_key": "pet_1005",
+      "icon_path": "assets/pets/1005.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_neuth_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1005",
+      "category": "Intelectual",
+      "catalog_name": "Klaw",
+      "sha256": "d288051dad2f2ed345b3fca70822bf5c2f3cc74724c7727330aef84a5ac4b2d5",
+      "bytes": 26386,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1006": {
+      "name": "Sparkie",
+      "icon_key": "pet_1006",
+      "icon_path": "assets/pets/1006.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_sparkyod_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1006",
+      "category": "Feral",
+      "catalog_name": "Sparkie",
+      "sha256": "1a3d01ef30d072ea163ae74aa8f763567e36c1935e650e7bc5400090d8a68d33",
+      "bytes": 23646,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1007": {
+      "name": "Kensirid",
+      "icon_key": "pet_1007",
+      "icon_path": "assets/pets/1007.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_crab_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1007",
+      "category": "Feral",
+      "catalog_name": "Kensirid",
+      "sha256": "8abaac4506e4ce68994af0a49dd2be21945979888970ec0f7beff05099ce3260",
+      "bytes": 24672,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1008": {
+      "name": "Filhote de Aranha de Od",
+      "icon_key": "pet_1008",
+      "icon_path": "assets/pets/1008.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_odspider_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1008",
+      "category": "Feral",
+      "catalog_name": "Filhote de Aranha de Od",
+      "sha256": "e672fc18eaccc46784b6600c9e274a2605bda186ea2ea47103524146ad751d3d",
+      "bytes": 19578,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1009": {
+      "name": "Kernon",
+      "icon_key": "pet_1009",
+      "icon_path": "assets/pets/1009.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_keneir_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1009",
+      "category": "Feral",
+      "catalog_name": "Kernon",
+      "sha256": "7e04e4f4b2b20a7d3a4bb3d6ba2a498c5973d351c34d55892b2a1f198e1766a5",
+      "bytes": 25170,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1010": {
+      "name": "Briguento Manduri",
+      "icon_key": "pet_1010",
+      "icon_path": "assets/pets/1010.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_manduriwar_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1010",
+      "category": "Intelectual",
+      "catalog_name": "Briguento Manduri",
+      "sha256": "71827b6045fa674fc33c27de46d7c0afb626ef5e6cbc8eb99a0f399922dd6fe9",
+      "bytes": 25232,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1011": {
+      "name": "Skyray",
+      "icon_key": "pet_1011",
+      "icon_path": "assets/pets/1011.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_skyray_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1011",
+      "category": "Feral",
+      "catalog_name": "Skyray",
+      "sha256": "e1cac699490e2f661cdf33a53774d9bfe7e2be5abf59abe9a6a87efa3396c4ab",
+      "bytes": 13526,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1012": {
+      "name": "Fungie",
+      "icon_key": "pet_1012",
+      "icon_path": "assets/pets/1012.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fungy_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1012",
+      "category": "Natural",
+      "catalog_name": "Fungie",
+      "sha256": "2330e23b4d16d51f34c1ea68e98d52e8ba5af21d134998844755e9c74045e98e",
+      "bytes": 14216,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1013": {
+      "name": "Enxame",
+      "icon_key": "pet_1013",
+      "icon_path": "assets/pets/1013.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_abyssswarm_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1013",
+      "category": "Variante",
+      "catalog_name": "Enxame",
+      "sha256": "f363e3e6c614c5098169b9391854e58438818e17ac091e921cc81fc3e7bfbab3",
+      "bytes": 14812,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1014": {
+      "name": "Cão de Guarda Drakan",
+      "icon_key": "pet_1014",
+      "icon_path": "assets/pets/1014.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_beritrac_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1014",
+      "category": "Feral",
+      "catalog_name": "Cão de Guarda Drakan",
+      "sha256": "9250bdf0e4782903dc7bc0f9e48dcac29832efed4a3a667ab2770660b230d9d5",
+      "bytes": 17216,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1015": {
+      "name": "Kailin",
+      "icon_key": "pet_1015",
+      "icon_path": "assets/pets/1015.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kailin_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1015",
+      "category": "Feral",
+      "catalog_name": "Kailin",
+      "sha256": "b85b6d41be0c9f66d0fab853fa43c5c727723d62aa6f087915585dc14da50e46",
+      "bytes": 18806,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1016": {
+      "name": "Slink",
+      "icon_key": "pet_1016",
+      "icon_path": "assets/pets/1016.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_lepisma_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1016",
+      "category": "Feral",
+      "catalog_name": "Slink",
+      "sha256": "e30c47287a16e3ea525c401e41f0046082c16b6ca0083dade5bdbe8c45e2fe24",
+      "bytes": 23958,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1017": {
+      "name": "Soldado Xamã Krall",
+      "icon_key": "pet_1017",
+      "icon_path": "assets/pets/1017.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_krallprst_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1017",
+      "category": "Intelectual",
+      "catalog_name": "Soldado Xamã Krall",
+      "sha256": "149346badaea6d47dd08c8ccf30ac25f8e1591d74640edb2f2093187721ac3b7",
+      "bytes": 17816,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1018": {
+      "name": "Berserker Varg",
+      "icon_key": "pet_1018",
+      "icon_path": "assets/pets/1018.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_varg_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1018",
+      "category": "Intelectual",
+      "catalog_name": "Berserker Varg",
+      "sha256": "be2b31413dad5633c021e7dd8f940953a1d100f7818b9a2d3fc5880ec386636b",
+      "bytes": 22642,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1021": {
+      "name": "Aranha de Od Mutante",
+      "icon_key": "pet_1021",
+      "icon_path": "assets/pets/1021.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_odspider_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1021",
+      "category": "Feral",
+      "catalog_name": "Aranha de Od Mutante",
+      "sha256": "26b1ab03d24216933f33e87a2a5bc049a37dbe012d72af8854d3231ec71bed4d",
+      "bytes": 25742,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1022": {
+      "name": "Crasaur",
+      "icon_key": "pet_1022",
+      "icon_path": "assets/pets/1022.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_phaini_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1022",
+      "category": "Feral",
+      "catalog_name": "Crasaur",
+      "sha256": "61604595b181efd46c4ae2eea998252016b006a63efb5f35ea606aba64442a31",
+      "bytes": 13526,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1025": {
+      "name": "Aranha de Od Mutante Aberrante",
+      "icon_key": "pet_1025",
+      "icon_path": "assets/pets/1025.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_odspider_04_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1025",
+      "category": "Feral",
+      "catalog_name": "Aranha de Od Mutante Aberrante",
+      "sha256": "866f7c09ea55ceb8aef4110afef8971f06b9dbce80a0ce7fe991d85e2af71b7b",
+      "bytes": 26706,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1026": {
+      "name": "Guerreiro Krall",
+      "icon_key": "pet_1026",
+      "icon_path": "assets/pets/1026.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_krallwar_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1026",
+      "category": "Intelectual",
+      "catalog_name": "Guerreiro Krall",
+      "sha256": "83ad09013d6e31c4e854b5da66a78ef61db9617840ffed1c30d0bde93065b52b",
+      "bytes": 19650,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1027": {
+      "name": "Agrint Seco",
+      "icon_key": "pet_1027",
+      "icon_path": "assets/pets/1027.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_agrint_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1027",
+      "category": "Natural",
+      "catalog_name": "Agrint Seco",
+      "sha256": "b0f0720971f25292edb5de6a4557f1ac53a61ee23f6b5cbc84727836d7d89d42",
+      "bytes": 23378,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1028": {
+      "name": "Aberração de Krao",
+      "icon_key": "pet_1028",
+      "icon_path": "assets/pets/1028.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kraoelite_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1028",
+      "category": "Variante",
+      "catalog_name": "Aberração de Krao",
+      "sha256": "f4cdc0cf1f635ed8a4b47a6594eb4eb542c52fcf35dc3b89236fed75ce6f472c",
+      "bytes": 29338,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1029": {
+      "name": "Batedor Klaw",
+      "icon_key": "pet_1029",
+      "icon_path": "assets/pets/1029.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_neuth_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1029",
+      "category": "Intelectual",
+      "catalog_name": "Batedor Klaw",
+      "sha256": "5b1e84ceec21daa917e24c52aea04e8dd0d353e684a8cc9cebc6ae57f1a50dcf",
+      "bytes": 26934,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1030": {
+      "name": "Guerreiro Guardião Nagarante",
+      "icon_key": "pet_1030",
+      "icon_path": "assets/pets/1030.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_nagaelite_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1030",
+      "category": "Intelectual",
+      "catalog_name": "Guerreiro Guardião Nagarante",
+      "sha256": "18976eba39022a8cd13a579126257878441431c8fe0e03fd089f015ca01fe6b1",
+      "bytes": 31034,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1031": {
+      "name": "Trabalhador Konutin",
+      "icon_key": "pet_1031",
+      "icon_path": "assets/pets/1031.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_conuti_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1031",
+      "category": "Natural",
+      "catalog_name": "Trabalhador Konutin",
+      "sha256": "0cc52e635635aa986f53822b84fd6d868f39cf8e9a94fab1de4adb537a566d65",
+      "bytes": 26170,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1032": {
+      "name": "Keneire de Elite",
+      "icon_key": "pet_1032",
+      "icon_path": "assets/pets/1032.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_keneir_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1032",
+      "category": "Feral",
+      "catalog_name": "Keneire de Elite",
+      "sha256": "4167abfc013d70224c008c20d351b6cd8976c1d1f879ee001265e638db4f301a",
+      "bytes": 22442,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1033": {
+      "name": "Briguento Manduri de Elite",
+      "icon_key": "pet_1033",
+      "icon_path": "assets/pets/1033.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_manduriwar_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1033",
+      "category": "Intelectual",
+      "catalog_name": "Briguento Manduri de Elite",
+      "sha256": "4d369881f6bccafcd8e3d971267de89be36592caa8a46e5df7998e3dcfd78962",
+      "bytes": 26884,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1034": {
+      "name": "Sparkie Gigante",
+      "icon_key": "pet_1034",
+      "icon_path": "assets/pets/1034.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_sparkyod_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1034",
+      "category": "Feral",
+      "catalog_name": "Sparkie Gigante",
+      "sha256": "b239d27948a7ef168989b869454182d6b2aa69b3405d671f87daa8a941cc2b75",
+      "bytes": 28616,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1035": {
+      "name": "Skama",
+      "icon_key": "pet_1035",
+      "icon_path": "assets/pets/1035.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fish_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1035",
+      "category": "Feral",
+      "catalog_name": "Skama",
+      "sha256": "28b0c64ba47bd6583a65753639bb4c7ad3e7de7d8b8a21478475d9e469fb526a",
+      "bytes": 19994,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1036": {
+      "name": "Lupyllini",
+      "icon_key": "pet_1036",
+      "icon_path": "assets/pets/1036.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_lufilini_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1036",
+      "category": "Feral",
+      "catalog_name": "Lupyllini",
+      "sha256": "03305856e385eb1ee48952c03f82a39f377b6be8c3765a05d2d42065c429a1e1",
+      "bytes": 25432,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1037": {
+      "name": "Crestlich Macho",
+      "icon_key": "pet_1037",
+      "icon_path": "assets/pets/1037.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_crestlich_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1037",
+      "category": "Feral",
+      "catalog_name": "Crestlich Macho",
+      "sha256": "1114445c8aa90dc59755162b645ece7d59e340043c462c57807f1484fe9290c3",
+      "bytes": 28266,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1038": {
+      "name": "Airon",
+      "icon_key": "pet_1038",
+      "icon_path": "assets/pets/1038.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_airon_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1038",
+      "category": "Feral",
+      "catalog_name": "Airon",
+      "sha256": "7c3b903c135e305fc82124a8b8c098fcb1fd3367bf4cf6c6e00f2fab59ed8d46",
+      "bytes": 20628,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1039": {
+      "name": "Crestlich",
+      "icon_key": "pet_1039",
+      "icon_path": "assets/pets/1039.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_crestlich_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1039",
+      "category": "Feral",
+      "catalog_name": "Crestlich",
+      "sha256": "b1bbf68e7d5cf40a75f879562c3b1b69886e1dc6ac127cb9265bafc29aac004a",
+      "bytes": 14748,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1040": {
+      "name": "Xamã Aullaeu",
+      "icon_key": "pet_1040",
+      "icon_path": "assets/pets/1040.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_owlmag_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1040",
+      "category": "Intelectual",
+      "catalog_name": "Xamã Aullaeu",
+      "sha256": "06c1d503ee61af5f17d86a68f9a0b9d5259cd6195210e905e11e5bb32bcd9e33",
+      "bytes": 23450,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1041": {
+      "name": "Morcego da Caverna",
+      "icon_key": "pet_1041",
+      "icon_path": "assets/pets/1041.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_cavebat_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1041",
+      "category": "Feral",
+      "catalog_name": "Morcego da Caverna",
+      "sha256": "e8c501856b983659b51dfbe015bc36a4c781e2562ec031a07574fbc8bc2cffd2",
+      "bytes": 23472,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1042": {
+      "name": "Ursus",
+      "icon_key": "pet_1042",
+      "icon_path": "assets/pets/1042.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_ursuss_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1042",
+      "category": "Feral",
+      "catalog_name": "Ursus",
+      "sha256": "e373f873de743a8339bdd109b73a07919542ee8fe309ac85124a02f5e9e774f2",
+      "bytes": 24038,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1043": {
+      "name": "Ursus de Elite",
+      "icon_key": "pet_1043",
+      "icon_path": "assets/pets/1043.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_ursusselite_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1043",
+      "category": "Feral",
+      "catalog_name": "Ursus de Elite",
+      "sha256": "f043695634f93f16a247e0f4f6c0edba272c2edb7b110c5c04684595729f8ca2",
+      "bytes": 23710,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1044": {
+      "name": "Clone de Aultross",
+      "icon_key": "pet_1044",
+      "icon_path": "assets/pets/1044.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_owltros_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1044",
+      "category": "Intelectual",
+      "catalog_name": "Clone de Aultross",
+      "sha256": "473d4594b7de7040d58c95deeb9f519ef39fcbbd7161933d3850e9bf3bf5858d",
+      "bytes": 24172,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1045": {
+      "name": "Sylphen",
+      "icon_key": "pet_1045",
+      "icon_path": "assets/pets/1045.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_muta_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1045",
+      "category": "Feral",
+      "catalog_name": "Sylphen",
+      "sha256": "90fb1dff6a73e521667f9b61c107362fbb5522035bb7928160b11fd0a63eccaf",
+      "bytes": 30452,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1046": {
+      "name": "Armadon",
+      "icon_key": "pet_1046",
+      "icon_path": "assets/pets/1046.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_mole_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1046",
+      "category": "Feral",
+      "catalog_name": "Armadon",
+      "sha256": "d85248fcbac5bfda15609e129d73b91a1fea98f9f8c0b164a1b0c8af607bd0a3",
+      "bytes": 20148,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1047": {
+      "name": "Armadon Mutante",
+      "icon_key": "pet_1047",
+      "icon_path": "assets/pets/1047.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_mole_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1047",
+      "category": "Feral",
+      "catalog_name": "Armadon Mutante",
+      "sha256": "cbe97ded09c4fd20bf34ed1d125722366dd4557ecbc04c46869b5f10c30ef252",
+      "bytes": 19234,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1048": {
+      "name": "Espírito da Floresta",
+      "icon_key": "pet_1048",
+      "icon_path": "assets/pets/1048.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_forestele_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1048",
+      "category": "Natural",
+      "catalog_name": "Espírito da Floresta",
+      "sha256": "558a54053100cb066179d246c0266538c432eb285fad7a565040634b184ba589",
+      "bytes": 29408,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1049": {
+      "name": "Espírito da Floresta Aberrante",
+      "icon_key": "pet_1049",
+      "icon_path": "assets/pets/1049.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_forestele_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1049",
+      "category": "Natural",
+      "catalog_name": "Espírito da Floresta Aberrante",
+      "sha256": "fc733816d541695dabb716ac60de442ebcdd99a8736e92bd517478ec927ab785",
+      "bytes": 24422,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1050": {
+      "name": "Gravi",
+      "icon_key": "pet_1050",
+      "icon_path": "assets/pets/1050.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_gravi_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1050",
+      "category": "Natural",
+      "catalog_name": "Gravi",
+      "sha256": "56a498b7ff3123cf278c6e05d967d62dedc2dd14a4a42af770cd7046a6167ead",
+      "bytes": 16548,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1051": {
+      "name": "Gravi Mágico",
+      "icon_key": "pet_1051",
+      "icon_path": "assets/pets/1051.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_gravi_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1051",
+      "category": "Natural",
+      "catalog_name": "Gravi Mágico",
+      "sha256": "559b1975f84749d3644340aa818f0cc05bf0a3ff05e15d3fe6e66e01ee60b9c6",
+      "bytes": 18426,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1052": {
+      "name": "Gravi de Folha Grande",
+      "icon_key": "pet_1052",
+      "icon_path": "assets/pets/1052.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_gravi_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1052",
+      "category": "Natural",
+      "catalog_name": "Gravi de Folha Grande",
+      "sha256": "ab140ab0e08b17912d6fab3fd0f0dff036ef25b867de921a0ed45038843839a5",
+      "bytes": 21202,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1053": {
+      "name": "Kensirid Mutante",
+      "icon_key": "pet_1053",
+      "icon_path": "assets/pets/1053.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_crab_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1053",
+      "category": "Feral",
+      "catalog_name": "Kensirid Mutante",
+      "sha256": "193c793abb8138dbba6833ecadbb882155d06fa82c4d727ccf93deeca0b17d25",
+      "bytes": 21736,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1054": {
+      "name": "Guerreiro Mumu",
+      "icon_key": "pet_1054",
+      "icon_path": "assets/pets/1054.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_skurvwar_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1054",
+      "category": "Intelectual",
+      "catalog_name": "Guerreiro Mumu",
+      "sha256": "2324e413be3f9a78b6ca8d18b64517dd4a0ea963ee9afae7fe2009f9c61c16d6",
+      "bytes": 21538,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1055": {
+      "name": "Rato de Túmulo",
+      "icon_key": "pet_1055",
+      "icon_path": "assets/pets/1055.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_graverat_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1055",
+      "category": "Feral",
+      "catalog_name": "Rato de Túmulo",
+      "sha256": "9470c52ed4fb9320e411338055daf0ca7911ae507b8d0cafb566c9aa8aaa7886",
+      "bytes": 21874,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1056": {
+      "name": "Dispositivo Explorador dos Drakan",
+      "icon_key": "pet_1056",
+      "icon_path": "assets/pets/1056.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_beritrac_06.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1056",
+      "category": "Variante",
+      "catalog_name": "Dispositivo Explorador dos Drakan",
+      "sha256": "5c036d897928b1c3682d8d1ef94e946e91f874a82702118da2aff6ff090c4023",
+      "bytes": 19580,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1057": {
+      "name": "Coradon",
+      "icon_key": "pet_1057",
+      "icon_path": "assets/pets/1057.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_coradon_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1057",
+      "category": "Feral",
+      "catalog_name": "Coradon",
+      "sha256": "b3a3c95a567e033576ed505bb58b768280252b8af51b6f812125517bc16eba17",
+      "bytes": 25138,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1058": {
+      "name": "Murute da Fumaça Negra",
+      "icon_key": "pet_1058",
+      "icon_path": "assets/pets/1058.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_ashguard_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1058",
+      "category": "Natural",
+      "catalog_name": "Murute da Fumaça Negra",
+      "sha256": "36e2fed1badfc1171a052b1a6d413e2fccbca22da9d1180afd39767af894c1ec",
+      "bytes": 19676,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1059": {
+      "name": "Abelha-rei",
+      "icon_key": "pet_1059",
+      "icon_path": "assets/pets/1059.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bee_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1059",
+      "category": "Feral",
+      "catalog_name": "Abelha-rei",
+      "sha256": "461ac401633fcdb1170e71a5dad4bb5ed085d9aa4a4031bc4a7918e89eb3eb40",
+      "bytes": 28504,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1060": {
+      "name": "Tartarustrela",
+      "icon_key": "pet_1060",
+      "icon_path": "assets/pets/1060.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_starturtle_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1060",
+      "category": "Feral",
+      "catalog_name": "Tartarustrela",
+      "sha256": "f65e591e1f42f30dc4fb50f61878ac07e6546372a65f0060f6ebf2090aa3cb3a",
+      "bytes": 21314,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1061": {
+      "name": "Slime",
+      "icon_key": "pet_1061",
+      "icon_path": "assets/pets/1061.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_slime_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1061",
+      "category": "Variante",
+      "catalog_name": "Slime",
+      "sha256": "85157fe24df8d8e4809eda4a8c89c016a9d1fc0cd5011eaf7b76d908f49a41f2",
+      "bytes": 12968,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1062": {
+      "name": "Slime Contaminado",
+      "icon_key": "pet_1062",
+      "icon_path": "assets/pets/1062.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_slime_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1062",
+      "category": "Variante",
+      "catalog_name": "Slime Contaminado",
+      "sha256": "83706781897fbfbaf2a9386abf1997e10d70097de4ed34182746b0881f2cdd96",
+      "bytes": 14776,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1063": {
+      "name": "Oculazen da Vigilância",
+      "icon_key": "pet_1063",
+      "icon_path": "assets/pets/1063.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_oculazen_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1063",
+      "category": "Variante",
+      "catalog_name": "Oculazen da Vigilância",
+      "sha256": "d92af28f99293ae51623c0281cc1371efc06cc37e04f8732ae3f33868b8a51d2",
+      "bytes": 21934,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1064": {
+      "name": "Oculazen",
+      "icon_key": "pet_1064",
+      "icon_path": "assets/pets/1064.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_oculazen_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1064",
+      "category": "Variante",
+      "catalog_name": "Oculazen",
+      "sha256": "ecf3135d93e0ef08aec7932b000ba7e6f4642dfcc65156a675f1fd538dab5ecd",
+      "bytes": 18676,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1065": {
+      "name": "Birota",
+      "icon_key": "pet_1065",
+      "icon_path": "assets/pets/1065.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_virotawar_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1065",
+      "category": "Intelectual",
+      "catalog_name": "Birota",
+      "sha256": "bbc03ec7fc4fe66a83e1df7b338bedd84b156df03c9bc564c17990fa9e4d8a23",
+      "bytes": 18416,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1066": {
+      "name": "Papis",
+      "icon_key": "pet_1066",
+      "icon_path": "assets/pets/1066.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_papis_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1066",
+      "category": "Feral",
+      "catalog_name": "Papis",
+      "sha256": "581948bc3004cde9a99dfb0d2fbff2cef6a0069a198488fb984b59c4aa275a56",
+      "bytes": 28568,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1067": {
+      "name": "Escorpião de Minério",
+      "icon_key": "pet_1067",
+      "icon_path": "assets/pets/1067.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_scorpion_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1067",
+      "category": "Feral",
+      "catalog_name": "Escorpião",
+      "name_basis": "user-confirmed installed game name; source catalog calls it Escorpião",
+      "sha256": "987fb1e4115e58212ab1746b111e007fe75c4d8e1ef43e3d74b6659f93a55a26",
+      "bytes": 26458,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1068": {
+      "name": "Cobaia de Krao",
+      "icon_key": "pet_1068",
+      "icon_path": "assets/pets/1068.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kraowar_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1068",
+      "category": "Variante",
+      "catalog_name": "Cobaia de Krao",
+      "sha256": "5d20e37a9a60b407e994000bcc6f75a0f1a61537c5868ec6c44f074fff1ade46",
+      "bytes": 24270,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1069": {
+      "name": "Espírito da Pedra",
+      "icon_key": "pet_1069",
+      "icon_path": "assets/pets/1069.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_eartheleod_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1069",
+      "category": "Natural",
+      "catalog_name": "Espírito da Pedra",
+      "sha256": "4a9a89c13a18b789bb2ce4411b3693a300d2148608e6205211372d6d9d216274",
+      "bytes": 24270,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1071": {
+      "name": "Insetoide Cadavérico",
+      "icon_key": "pet_1071",
+      "icon_path": "assets/pets/1071.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_altbug_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1071",
+      "category": "Feral",
+      "catalog_name": "Insetoide Cadavérico",
+      "sha256": "53bd04f11e6813f37c5832d947a9b39f60bd065d5c12ecad0c21f1dd8508ebad",
+      "bytes": 22064,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1072": {
+      "name": "Tog",
+      "icon_key": "pet_1072",
+      "icon_path": "assets/pets/1072.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_tog_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1072",
+      "category": "Feral",
+      "catalog_name": "Tog",
+      "sha256": "7ba5dd979d4783e487561c26f511ee7b1243f7d826843813f598bc3eb4001a73",
+      "bytes": 24768,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1073": {
+      "name": "Nepenthes",
+      "icon_key": "pet_1073",
+      "icon_path": "assets/pets/1073.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_rafflesia_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1073",
+      "category": "Natural",
+      "catalog_name": "Nepenthes",
+      "sha256": "f0947e4e8659929ead4cc2e1d0078b00effc92dc5640dc9ba3fa374453cb10e6",
+      "bytes": 27008,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1074": {
+      "name": "Trabalhador Kuru",
+      "icon_key": "pet_1074",
+      "icon_path": "assets/pets/1074.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kuru_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1074",
+      "category": "Intelectual",
+      "catalog_name": "Trabalhador Kuru",
+      "sha256": "af989c111802ba693bfc1ec7322a02ddd7b401bd497ed47115658fce960562e0",
+      "bytes": 23076,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1075": {
+      "name": "Peão Kuru",
+      "icon_key": "pet_1075",
+      "icon_path": "assets/pets/1075.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kuru_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1075",
+      "category": "Intelectual",
+      "catalog_name": "Peão Kuru",
+      "sha256": "68bc967e9c5f8d5397004044d0ed55b4b10f20b35e8de622fc6712c72296c780",
+      "bytes": 20102,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1077": {
+      "name": "Harcon",
+      "icon_key": "pet_1077",
+      "icon_path": "assets/pets/1077.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kraoelite_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1077",
+      "category": "Variante",
+      "catalog_name": "Harcon",
+      "sha256": "3db8965b037e6b9fdf2a08cc92ebeb6cbfe6bdb45464ef142f1ed0d563f982a8",
+      "bytes": 23692,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1078": {
+      "name": "Combatente Urugugu",
+      "icon_key": "pet_1078",
+      "icon_path": "assets/pets/1078.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_owlsoldier_09.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1078",
+      "category": "Intelectual",
+      "catalog_name": "Combatente Urugugu",
+      "sha256": "518f4c36220e23054bc82699384be3fe6ccfebc217d28495c346774fd36f72b3",
+      "bytes": 25954,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1079": {
+      "name": "Espírito do Vento Supremo",
+      "icon_key": "pet_1079",
+      "icon_path": "assets/pets/1079.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_windele_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1079",
+      "category": "Natural",
+      "catalog_name": "Espírito do Vento Supremo",
+      "sha256": "7b6cf76588291e13967ba65570e9aa95035023ab88f72588f8e282d94743dced",
+      "bytes": 24460,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1080": {
+      "name": "K’nash, Arma de Vigilância",
+      "icon_key": "pet_1080",
+      "icon_path": "assets/pets/1080.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_beritrad_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1080",
+      "category": "Intelectual",
+      "catalog_name": "K’nash, Arma de Vigilância",
+      "sha256": "a55473ee8b2a446643a60b747d3fd24be38d4c38f87742c1ce8ef5f7bcb0d721",
+      "bytes": 24546,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1081": {
+      "name": "Dionae",
+      "icon_key": "pet_1081",
+      "icon_path": "assets/pets/1081.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dionaea_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1081",
+      "category": "Natural",
+      "catalog_name": "Dionae",
+      "sha256": "392d5b1d93b355c3d5ed90bbdb398f22f1f03b66dc5afbe21c340bf9dd4c46be",
+      "bytes": 23608,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1082": {
+      "name": "Espírito do Fogo Supremo",
+      "icon_key": "pet_1082",
+      "icon_path": "assets/pets/1082.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fireele_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1082",
+      "category": "Natural",
+      "catalog_name": "Espírito do Fogo Supremo",
+      "sha256": "eddffabaa974efc8262bae00c360904a6ce037103d028f5b77d44c5f65d47061",
+      "bytes": 28012,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1083": {
+      "name": "Aranha",
+      "icon_key": "pet_1083",
+      "icon_path": "assets/pets/1083.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_spider_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1083",
+      "category": "Feral",
+      "catalog_name": "Aranha",
+      "sha256": "7a2e3568451cfed92c5d8cb31cecc4b4f1dbccdef8e8c6d4530a45ce54b666ee",
+      "bytes": 20748,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1084": {
+      "name": "Kalgolem",
+      "icon_key": "pet_1084",
+      "icon_path": "assets/pets/1084.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kalgolem_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1084",
+      "category": "Variante",
+      "catalog_name": "Kalgolem",
+      "sha256": "a4d220c33f53d05c979e3c569b2ecd1a74249eadc6cd2c429b50c1ff91260869",
+      "bytes": 23264,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1086": {
+      "name": "Fungen",
+      "icon_key": "pet_1086",
+      "icon_path": "assets/pets/1086.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fungus_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1086",
+      "category": "Natural",
+      "catalog_name": "Fungen",
+      "sha256": "8bc85a1d07627f3554ec935dadbe8d4dbbf1b76569e39885b8238546b016839c",
+      "bytes": 28306,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1087": {
+      "name": "Pino",
+      "icon_key": "pet_1087",
+      "icon_path": "assets/pets/1087.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_pino_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1087",
+      "category": "Variante",
+      "catalog_name": "Pino",
+      "sha256": "fb20fb4d806c5475e5062fbe4b77e4e7c5cb5ce6773335a00d8a72f7a7c2139c",
+      "bytes": 20682,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1088": {
+      "name": "Trabalhador Pino",
+      "icon_key": "pet_1088",
+      "icon_path": "assets/pets/1088.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_pino_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1088",
+      "category": "Variante",
+      "catalog_name": "Trabalhador Pino",
+      "sha256": "de7cee5770aa57681681a953cb23fe267055463a93e9b29cdadabd5df2414898",
+      "bytes": 22400,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1089": {
+      "name": "Skama Mutante",
+      "icon_key": "pet_1089",
+      "icon_path": "assets/pets/1089.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fish_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1089",
+      "category": "Feral",
+      "catalog_name": "Skama Mutante",
+      "sha256": "3b5a544449f116ec6d21f13214a3dfce6e17534e7eb8c66462174acbd4ec7ed5",
+      "bytes": 21328,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1090": {
+      "name": "Espírito da Água Supremo",
+      "icon_key": "pet_1090",
+      "icon_path": "assets/pets/1090.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_waterele_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1090",
+      "category": "Natural",
+      "catalog_name": "Espírito da Água Supremo",
+      "sha256": "39c4b898bc4cb8d734d0c17ac400fcfd2614f3881bd604ef8ac6934dd94605c5",
+      "bytes": 37328,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1091": {
+      "name": "Ignus da Chama Vermelha",
+      "icon_key": "pet_1091",
+      "icon_path": "assets/pets/1091.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fireguard_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1091",
+      "category": "Natural",
+      "catalog_name": "Ignus da Chama Vermelha",
+      "sha256": "77f438d10c5b4adf93abd33f3da7d9a376c2a4718e826789f689e0952309077c",
+      "bytes": 32814,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1092": {
+      "name": "Espírito do Vento Inferior",
+      "icon_key": "pet_1092",
+      "icon_path": "assets/pets/1092.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_windele_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1092",
+      "category": "Natural",
+      "catalog_name": "Espírito do Vento Inferior",
+      "sha256": "c64e46a3098aba8183205dadc5e7e320f0173bbbf2f4cf20005cd3385cd0f605",
+      "bytes": 12826,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1093": {
+      "name": "Lakshmi Onírica",
+      "icon_key": "pet_1093",
+      "icon_path": "assets/pets/1093.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_nagaelite_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1093",
+      "category": "Intelectual",
+      "catalog_name": "Lakshmi Onírica",
+      "sha256": "4761ddf013ca5b9ed473d7845fc98751dd24bc6c8beba86f92fc4f82ff0d4559",
+      "bytes": 28296,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1094": {
+      "name": "Espírito do Vento Intermediário",
+      "icon_key": "pet_1094",
+      "icon_path": "assets/pets/1094.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_windele_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1094",
+      "category": "Natural",
+      "catalog_name": "Espírito do Vento Intermediário",
+      "sha256": "13be4cecb7f7a8b16947a23d1ac10bb98e9e60421c7a89b809008228b42c1576",
+      "bytes": 14538,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1095": {
+      "name": "Espírito do Vento Superior",
+      "icon_key": "pet_1095",
+      "icon_path": "assets/pets/1095.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_windele_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1095",
+      "category": "Natural",
+      "catalog_name": "Espírito do Vento Superior",
+      "sha256": "767770a75a2e9add10c4660b7810768449cd86174379a1f30defb27d2a2eafec",
+      "bytes": 18400,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1096": {
+      "name": "Espírito do Fogo Superior",
+      "icon_key": "pet_1096",
+      "icon_path": "assets/pets/1096.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fireele_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1096",
+      "category": "Natural",
+      "catalog_name": "Espírito do Fogo Superior",
+      "sha256": "740b5651921aaed754811db19aad099808322e72e4c2761a1d6cd57b1d15c23f",
+      "bytes": 27926,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1097": {
+      "name": "Karnif",
+      "icon_key": "pet_1097",
+      "icon_path": "assets/pets/1097.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kalnif_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1097",
+      "category": "Feral",
+      "catalog_name": "Karnif",
+      "sha256": "c5524d19c8392ce51c6ec4965c098676ed513070ca8095c0097b084f712842f3",
+      "bytes": 23546,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1098": {
+      "name": "Karnif Modificado",
+      "icon_key": "pet_1098",
+      "icon_path": "assets/pets/1098.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kalnif_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1098",
+      "category": "Feral",
+      "catalog_name": "Karnif Modificado",
+      "sha256": "1094a032ddd202df4bfbb7787b0845ce93ba75425a974f916dda4fe7c81c0bd7",
+      "bytes": 24460,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1099": {
+      "name": "Karnif de Elite",
+      "icon_key": "pet_1099",
+      "icon_path": "assets/pets/1099.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kalnifelite_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1099",
+      "category": "Feral",
+      "catalog_name": "Karnif de Elite",
+      "sha256": "2982a55584f40c4cc3c69726e35e67f9367fca9e12e1762a9446ae6e07bb15b7",
+      "bytes": 27156,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1100": {
+      "name": "Espírito da Terra Supremo",
+      "icon_key": "pet_1100",
+      "icon_path": "assets/pets/1100.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_earthele_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1100",
+      "category": "Natural",
+      "catalog_name": "Espírito da Terra Supremo",
+      "sha256": "28fccbad694a92bcf7e9e599ce90dcc0e94cade6832f4b85ffa645c00c4f43a8",
+      "bytes": 30550,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1101": {
+      "name": "Guardião da Floresta",
+      "icon_key": "pet_1101",
+      "icon_path": "assets/pets/1101.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_forestarc_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1101",
+      "category": "Natural",
+      "catalog_name": "Guardião da Floresta",
+      "sha256": "bafe493880c6057998d0d342a07fac5607f99bc8bf3cf2fe722b06909f466bb7",
+      "bytes": 27458,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1102": {
+      "name": "Guardião da Floresta Ressecada",
+      "icon_key": "pet_1102",
+      "icon_path": "assets/pets/1102.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_forestarc_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1102",
+      "category": "Natural",
+      "catalog_name": "Guardião da Floresta Ressecada",
+      "sha256": "0f99f04380768df239c6f2ca6d7312d5804cf232f4abef68dac9d0514d7fc8bb",
+      "bytes": 25554,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1103": {
+      "name": "Gestor do Véu Pretor",
+      "icon_key": "pet_1103",
+      "icon_path": "assets/pets/1103.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_pretorboss_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1103",
+      "category": "Intelectual",
+      "catalog_name": "Gestor do Véu Pretor",
+      "sha256": "a628be9c2b412036aec210f44537155b8fdf8ee4bbeaf669a423cf65493d1e0b",
+      "bytes": 26856,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1104": {
+      "name": "Fundeiro Manduri",
+      "icon_key": "pet_1104",
+      "icon_path": "assets/pets/1104.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_mandurirng_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1104",
+      "category": "Intelectual",
+      "catalog_name": "Fundeiro Manduri",
+      "sha256": "8da8849f722798b0366dc6f0d6bae75ffdb8b94449a6b397a6c9421a9409336b",
+      "bytes": 23212,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1105": {
+      "name": "Herbalista Birota",
+      "icon_key": "pet_1105",
+      "icon_path": "assets/pets/1105.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_virotarag_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1105",
+      "category": "Intelectual",
+      "catalog_name": "Herbalista Birota",
+      "sha256": "9354bc7a95d571a2442e18ddf806c591e3714e6dfacb7fb0e902508e94e3dd8c",
+      "bytes": 30968,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1106": {
+      "name": "Tayga",
+      "icon_key": "pet_1106",
+      "icon_path": "assets/pets/1106.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_tayga_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1106",
+      "category": "Feral",
+      "catalog_name": "Tayga",
+      "sha256": "4c27cdc0350e633cdbbec2804739a31cb08a509feb8fabd2ed1b9815c5cd99cd",
+      "bytes": 22690,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1107": {
+      "name": "Guardião do Selo Krao",
+      "icon_key": "pet_1107",
+      "icon_path": "assets/pets/1107.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kraoelite_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1107",
+      "category": "Variante",
+      "catalog_name": "Guardião do Selo Krao",
+      "sha256": "aa209b741bac8910b389adc5770e9aca4cb64701190c80770c57d682b0a664fc",
+      "bytes": 23950,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1108": {
+      "name": "Combatente Krall Aprimorado",
+      "icon_key": "pet_1108",
+      "icon_path": "assets/pets/1108.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_krallwar_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1108",
+      "category": "Intelectual",
+      "catalog_name": "Combatente Krall Aprimorado",
+      "sha256": "fe8654452476d4047ae3bf1d099311b331a9b57cd68a78d25b3ac0844737b3c0",
+      "bytes": 16780,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1109": {
+      "name": "Sentinela Krall Aprimorado",
+      "icon_key": "pet_1109",
+      "icon_path": "assets/pets/1109.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_krallwar_01_v02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1109",
+      "category": "Intelectual",
+      "catalog_name": "Sentinela Krall Aprimorado",
+      "sha256": "72926b8fd410ca88fe7dd11d3a5540f5e1dbe6d25286570af67436dfa007f78c",
+      "bytes": 21080,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1110": {
+      "name": "Kalgolem Azul",
+      "icon_key": "pet_1110",
+      "icon_path": "assets/pets/1110.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kalgolem_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1110",
+      "category": "Variante",
+      "catalog_name": "Kalgolem Azul",
+      "sha256": "72f6d09d6dc3f049581ef5730a9508e53b6a9ea7e715d4d5130bd1143f90d98d",
+      "bytes": 25640,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1111": {
+      "name": "Lugi Ligeiro",
+      "icon_key": "pet_1111",
+      "icon_path": "assets/pets/1111.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_shugobeast_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1111",
+      "category": "Especial",
+      "catalog_name": "Lugi Ligeiro",
+      "sha256": "4667460121c9e176cf12d19ed09d5780c6a996b311c5dde42aa04c5d10381d9d",
+      "bytes": 21934,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1112": {
+      "name": "Lugi do Comerciante Itinerante",
+      "icon_key": "pet_1112",
+      "icon_path": "assets/pets/1112.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_shugobeast_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1112",
+      "category": "Especial",
+      "catalog_name": "Lugi do Comerciante Itinerante",
+      "sha256": "2afd73d0df8d2bee957ceba199688e2c25c2c90ae375fcf377bb576754ddf9a9",
+      "bytes": 23268,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1114": {
+      "name": "Aranha Cinzenta",
+      "icon_key": "pet_1114",
+      "icon_path": "assets/pets/1114.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_odspider_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1114",
+      "category": "Feral",
+      "catalog_name": "Aranha Cinzenta",
+      "sha256": "fcfe231a127fa47f9d3989e56e8338eadf359192fd5abaebe8cd3fc6a93e23f3",
+      "bytes": 22596,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1115": {
+      "name": "Supervisor Kuru",
+      "icon_key": "pet_1115",
+      "icon_path": "assets/pets/1115.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kuru_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1115",
+      "category": "Intelectual",
+      "catalog_name": "Supervisor Kuru",
+      "sha256": "090b95feb623e3d3a90bd6a7906df78f3efbdeaee8cf947b65f6e34f434079b6",
+      "bytes": 19816,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1116": {
+      "name": "Aranha do Galho Seco",
+      "icon_key": "pet_1116",
+      "icon_path": "assets/pets/1116.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_odspider_03_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1116",
+      "category": "Feral",
+      "catalog_name": "Aranha do Galho Seco",
+      "sha256": "9433d19ed6a98848d487c9d874916938431da763a3f861c59cb512ebc638367b",
+      "bytes": 23106,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1117": {
+      "name": "Aranha Instável",
+      "icon_key": "pet_1117",
+      "icon_path": "assets/pets/1117.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_spider_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1117",
+      "category": "Feral",
+      "catalog_name": "Aranha Instável",
+      "sha256": "1b85a90cc22f0ea99695f8c84d8e8479933aa1b75bdb8209e13f851875db11ac",
+      "bytes": 20698,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1118": {
+      "name": "Abelha Mutante",
+      "icon_key": "pet_1118",
+      "icon_path": "assets/pets/1118.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bee_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1118",
+      "category": "Feral",
+      "catalog_name": "Abelha Mutante",
+      "sha256": "e463a36853c15f75e90709753db71ea44aec6344bb0b447bdcd19af91ba09a85",
+      "bytes": 22986,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1119": {
+      "name": "Coradon Mutante",
+      "icon_key": "pet_1119",
+      "icon_path": "assets/pets/1119.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_coradon_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1119",
+      "category": "Feral",
+      "catalog_name": "Coradon Mutante",
+      "sha256": "f8ab72b92a4369a9e5a28dd730e3fe44ca63c40fe21c1c206ec6629b7a0cb40a",
+      "bytes": 15106,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1120": {
+      "name": "Kailin Jovem",
+      "icon_key": "pet_1120",
+      "icon_path": "assets/pets/1120.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kailin_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1120",
+      "category": "Feral",
+      "catalog_name": "Kailin Jovem",
+      "sha256": "edd13a4fba68e4aee4a2cf9671ed96cfdadf72950c6ab39fac548739c4138a79",
+      "bytes": 18032,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1121": {
+      "name": "Slink Jovem",
+      "icon_key": "pet_1121",
+      "icon_path": "assets/pets/1121.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_lepisma_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1121",
+      "category": "Feral",
+      "catalog_name": "Slink Jovem",
+      "sha256": "55b2c3b9e5361b68bc8e60f9c33a98ca2cb30d46fbef6003659bc13c8b28eb9e",
+      "bytes": 19528,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1122": {
+      "name": "Tog Jovem",
+      "icon_key": "pet_1122",
+      "icon_path": "assets/pets/1122.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_tog_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1122",
+      "category": "Feral",
+      "catalog_name": "Tog Jovem",
+      "sha256": "78327a0d9e5dca6d6be37e45d93429a5711f46a5603d1b5239d0124222cab5bf",
+      "bytes": 19188,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1123": {
+      "name": "Ursus Jovem",
+      "icon_key": "pet_1123",
+      "icon_path": "assets/pets/1123.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_ursuss_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1123",
+      "category": "Feral",
+      "catalog_name": "Ursus Jovem",
+      "sha256": "4b62fa200ef9105e764cedbec35bbd5e01894379f603d25d9da2d0e1ec3180e3",
+      "bytes": 21076,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1124": {
+      "name": "Zaif",
+      "icon_key": "pet_1124",
+      "icon_path": "assets/pets/1124.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_zaif_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1124",
+      "category": "Feral",
+      "catalog_name": "Zaif",
+      "sha256": "f58e34186cdb596a49865bfa23c28a62235a20710ddf9d997b0862949df37209",
+      "bytes": 24580,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1125": {
+      "name": "Zaif Mutante",
+      "icon_key": "pet_1125",
+      "icon_path": "assets/pets/1125.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_zaif_01_cv02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1125",
+      "category": "Feral",
+      "catalog_name": "Zaif Mutante",
+      "sha256": "fc6d6d5c6690e25edbfc56e14798ce4761b7ce05b78bfd29e205f6e3520dd0a5",
+      "bytes": 21024,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1126": {
+      "name": "Tog Mutante",
+      "icon_key": "pet_1126",
+      "icon_path": "assets/pets/1126.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_tog_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1126",
+      "category": "Feral",
+      "catalog_name": "Tog Mutante",
+      "sha256": "d0940f22ffe00b1c52adb38400ee9a57f3508ea0191f50f96414673b0f55ad1d",
+      "bytes": 20928,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1127": {
+      "name": "Espírito da Pedra de Od",
+      "icon_key": "pet_1127",
+      "icon_path": "assets/pets/1127.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_eartheleod_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1127",
+      "category": "Natural",
+      "catalog_name": "Espírito da Pedra de Od",
+      "sha256": "7ad64f36685debe861ad386c5626eeef82348c9e12cf8dfada5f3a22121292b9",
+      "bytes": 22490,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1128": {
+      "name": "Slime de Drana",
+      "icon_key": "pet_1128",
+      "icon_path": "assets/pets/1128.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_slime_02_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1128",
+      "category": "Variante",
+      "catalog_name": "Slime de Drana",
+      "sha256": "3a92b36ff7a89d7d6a47c74e58bb45a11fb780e3c8e857922739c25bc16be9a1",
+      "bytes": 12322,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1129": {
+      "name": "Enxame de Drana",
+      "icon_key": "pet_1129",
+      "icon_path": "assets/pets/1129.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_abyssswarm_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1129",
+      "category": "Variante",
+      "catalog_name": "Enxame de Drana",
+      "sha256": "0ff2cb169cb099833f9fbe13391db9152154d6290dc0f857aa5f8a7cc9ed9d92",
+      "bytes": 14926,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1130": {
+      "name": "Insetoide Cadavérico Aberrante",
+      "icon_key": "pet_1130",
+      "icon_path": "assets/pets/1130.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_altbug_01_cv02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1130",
+      "category": "Feral",
+      "catalog_name": "Insetoide Cadavérico Aberrante",
+      "sha256": "fce76c4fbfd8771b7922599e0750a200f8cd66c0f91b40f3775df8231d2f24f4",
+      "bytes": 22664,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1131": {
+      "name": "Espora de Drana",
+      "icon_key": "pet_1131",
+      "icon_path": "assets/pets/1131.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_forestele_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1131",
+      "category": "Natural",
+      "catalog_name": "Espora de Drana",
+      "sha256": "6f94d1efa54876be95077287748f350178bd57474eb58916b3ef9f17f6538f37",
+      "bytes": 28530,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1132": {
+      "name": "Lupyllini Cinzento",
+      "icon_key": "pet_1132",
+      "icon_path": "assets/pets/1132.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_lufilini_02_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1132",
+      "category": "Feral",
+      "catalog_name": "Lupyllini Cinzento",
+      "sha256": "629e9136f76a6362d2116eec11317450a1cc9e8b4f101895732fb5bfc3a09a14",
+      "bytes": 21848,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1133": {
+      "name": "Dionae da Floresta",
+      "icon_key": "pet_1133",
+      "icon_path": "assets/pets/1133.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dionaea_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1133",
+      "category": "Natural",
+      "catalog_name": "Dionae da Floresta",
+      "sha256": "a40a845d5408050b5086786186f8857769ea3604524b4075c4762997b8f0bdb9",
+      "bytes": 22308,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1134": {
+      "name": "Coradon da Eternidade",
+      "icon_key": "pet_1134",
+      "icon_path": "assets/pets/1134.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_coradon_01_v04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1134",
+      "category": "Feral",
+      "catalog_name": "Coradon da Eternidade",
+      "sha256": "54fa4d7e98841cb6087fafe2439fb39c2f9dcb81ea719d10ec23c9f830608b30",
+      "bytes": 22796,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1135": {
+      "name": "Dionae Cinzento",
+      "icon_key": "pet_1135",
+      "icon_path": "assets/pets/1135.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dionaea_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1135",
+      "category": "Natural",
+      "catalog_name": "Dionae Cinzento",
+      "sha256": "19add0a376488cdcb4f16bd80e8adfa0c53b69e76b2d11670f50a919da75ecb7",
+      "bytes": 23626,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1136": {
+      "name": "Raflésia",
+      "icon_key": "pet_1136",
+      "icon_path": "assets/pets/1136.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_rafflesia_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1136",
+      "category": "Natural",
+      "catalog_name": "Raflésia",
+      "sha256": "1bb4125491a974695be2903f893f71abff069663d09a591853c747334b251797",
+      "bytes": 26268,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1137": {
+      "name": "Trabalhador Mumu",
+      "icon_key": "pet_1137",
+      "icon_path": "assets/pets/1137.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_skurvwar_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1137",
+      "category": "Intelectual",
+      "catalog_name": "Trabalhador Mumu",
+      "sha256": "457670881a5aae8f70bc57ac16be15608590e0053332e49f33f4d62f68b4a777",
+      "bytes": 26366,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1138": {
+      "name": "Supervisor Mumu",
+      "icon_key": "pet_1138",
+      "icon_path": "assets/pets/1138.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_skurvwar_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1138",
+      "category": "Intelectual",
+      "catalog_name": "Supervisor Mumu",
+      "sha256": "7841f39323c467f746b48d6f997458a93362425f80a89b44c76fa1d2994eede6",
+      "bytes": 21888,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1139": {
+      "name": "Monstro do Pântano",
+      "icon_key": "pet_1139",
+      "icon_path": "assets/pets/1139.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bigman_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1139",
+      "category": "Variante",
+      "catalog_name": "Monstro do Pântano",
+      "sha256": "2c1bc383dc500544e3559914c125c014b13bca98311f658da00b6deed3089a64",
+      "bytes": 22886,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1140": {
+      "name": "Monstro da Floresta",
+      "icon_key": "pet_1140",
+      "icon_path": "assets/pets/1140.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bigman_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1140",
+      "category": "Variante",
+      "catalog_name": "Monstro da Floresta",
+      "sha256": "f0152613cf943701dd6aababb3b1b992f14067d2ed02ba483852604e0793b5bc",
+      "bytes": 23644,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1141": {
+      "name": "Targon do Pântano",
+      "icon_key": "pet_1141",
+      "icon_path": "assets/pets/1141.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bigman_01_v02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1141",
+      "category": "Variante",
+      "catalog_name": "Targon do Pântano",
+      "sha256": "57d446162300d46fcfd64a1f9ef62c6f1ef91bd8cd666f2c1c9f559a6c647153",
+      "bytes": 23788,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1142": {
+      "name": "Aberração Deformada",
+      "icon_key": "pet_1142",
+      "icon_path": "assets/pets/1142.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bigman_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1142",
+      "category": "Variante",
+      "catalog_name": "Aberração Deformada",
+      "sha256": "15a0915ae7756980dd260e7d726ac79b16977609bda974aee977cb2001c46df7",
+      "bytes": 22226,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1143": {
+      "name": "Ursus Aberrante",
+      "icon_key": "pet_1143",
+      "icon_path": "assets/pets/1143.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_ursuss_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1143",
+      "category": "Feral",
+      "catalog_name": "Ursus Aberrante",
+      "sha256": "c51a78d3fb9925bbc83fb51e3c2d284bcafa1cfbc16f1736176be0cd7135891f",
+      "bytes": 24494,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1144": {
+      "name": "Guardião da Floresta Aberrante",
+      "icon_key": "pet_1144",
+      "icon_path": "assets/pets/1144.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_forestarc_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1144",
+      "category": "Natural",
+      "catalog_name": "Guardião da Floresta Aberrante",
+      "sha256": "33a40ee20b806373607be06fae4063f07d92f750a00928e1ccc8f51288ce8aa1",
+      "bytes": 29490,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1145": {
+      "name": "Mutação de Valka",
+      "icon_key": "pet_1145",
+      "icon_path": "assets/pets/1145.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bug_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1145",
+      "category": "Feral",
+      "catalog_name": "Mutação de Valka",
+      "sha256": "891be039f2544088ddcac60d34425fcb927e5304c017bfce377f08da0d36cb46",
+      "bytes": 23246,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1146": {
+      "name": "Porteiro Pinopi",
+      "icon_key": "pet_1146",
+      "icon_path": "assets/pets/1146.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_pinoboss_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1146",
+      "category": "Variante",
+      "catalog_name": "Porteiro Pinopi",
+      "sha256": "1a324d7b13d5c0646f4eab67c6a2200a69ce37ef1c3e9cdc3a0f39e092ac276e",
+      "bytes": 23672,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1147": {
+      "name": "Dratona",
+      "icon_key": "pet_1147",
+      "icon_path": "assets/pets/1147.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dratona_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1147",
+      "category": "Intelectual",
+      "catalog_name": "Dratona",
+      "sha256": "1eea1bfc0123389a007c6b7bdcb4809916e3d061162bd38c478098dcbff6ab94",
+      "bytes": 16224,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1148": {
+      "name": "Kalgolem de Drakana",
+      "icon_key": "pet_1148",
+      "icon_path": "assets/pets/1148.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kalgolem_01_v02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1148",
+      "category": "Variante",
+      "catalog_name": "Kalgolem de Drakana",
+      "sha256": "48a7afcf2269dde3548632f9be553b5fdd91df34d7bb3da66c30d5043be636e4",
+      "bytes": 26616,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1153": {
+      "name": "Aberração Brutamonte de Drana",
+      "icon_key": "pet_1153",
+      "icon_path": "assets/pets/1153.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1153",
+      "category": "Variante",
+      "catalog_name": "Aberração Brutamonte de Drana",
+      "sha256": "24d0923881aa0608c9dd9f1745a9cd7a245c8613871451601e418ae9241fbfdc",
+      "bytes": 18204,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1154": {
+      "name": "Aberração Desbotada de Brutamonte",
+      "icon_key": "pet_1154",
+      "icon_path": "assets/pets/1154.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_02_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1154",
+      "category": "Variante",
+      "catalog_name": "Aberração Desbotada de Brutamonte",
+      "sha256": "c50d2f0b8f3b02209dc1a5dae0f5267050389b2e560e7e4ccb486061934bc68d",
+      "bytes": 22144,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1155": {
+      "name": "Espírito da Água Superior",
+      "icon_key": "pet_1155",
+      "icon_path": "assets/pets/1155.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_waterele_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1155",
+      "category": "Natural",
+      "catalog_name": "Espírito da Água Superior",
+      "sha256": "e9da5870d6abf28ced2c5537518e9bb0fd49eaca19d7425901f49217fbe8bf4e",
+      "bytes": 37022,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1156": {
+      "name": "Klaw de Elite",
+      "icon_key": "pet_1156",
+      "icon_path": "assets/pets/1156.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_neuth_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1156",
+      "category": "Intelectual",
+      "catalog_name": "Klaw de Elite",
+      "sha256": "70c4459f93019a77650e2e67771981fbc7a40dc79f2d50e3be05effdfbca01ab",
+      "bytes": 22290,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1157": {
+      "name": "Limpador de Cadáver",
+      "icon_key": "pet_1157",
+      "icon_path": "assets/pets/1157.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_imp_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1157",
+      "category": "Variante",
+      "catalog_name": "Limpador de Cadáver",
+      "sha256": "9f1e1f0ba7820d91e5f69adafd0dc4a61a2b1ac8b8f954d71638b5cf7c77e563",
+      "bytes": 21086,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1158": {
+      "name": "Inseto Venenoso Sram",
+      "icon_key": "pet_1158",
+      "icon_path": "assets/pets/1158.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_bug_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1158",
+      "category": "Feral",
+      "catalog_name": "Inseto Venenoso Sram",
+      "sha256": "9eb1e2d753e7d61f1c5617d16f3711ab5113c5dafe7a55fbff168b31c4d19910",
+      "bytes": 29168,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1159": {
+      "name": "Enxame Parasita",
+      "icon_key": "pet_1159",
+      "icon_path": "assets/pets/1159.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_abyssswarm_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1159",
+      "category": "Variante",
+      "catalog_name": "Enxame Parasita",
+      "sha256": "e4134d5f60962450fabce39c709b9689c635cdb3ceb6b64d07d3ebf6c51e3926",
+      "bytes": 24462,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1160": {
+      "name": "Criatura Contaminada de Drana",
+      "icon_key": "pet_1160",
+      "icon_path": "assets/pets/1160.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_04.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1160",
+      "category": "Variante",
+      "catalog_name": "Criatura Contaminada de Drana",
+      "sha256": "15ebdb7df130443b4c49ba80294c5462a9c2e7c5d4b462a2d3f4be80ef54553a",
+      "bytes": 21456,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1161": {
+      "name": "Corpo Flutuante Desbotado",
+      "icon_key": "pet_1161",
+      "icon_path": "assets/pets/1161.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_04_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1161",
+      "category": "Variante",
+      "catalog_name": "Corpo Flutuante Desbotado",
+      "sha256": "c86085541fc424562391913d974c605e311aee5f36632045dc9565c5e91cff3f",
+      "bytes": 21324,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1162": {
+      "name": "Kerubar",
+      "icon_key": "pet_1162",
+      "icon_path": "assets/pets/1162.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_cherubim_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1162",
+      "category": "Intelectual",
+      "catalog_name": "Kerubar",
+      "sha256": "da9d003f1a0e41b2cf94a52c626c5dc85af5413ff4c9b721cd5e33dc6c92f6dd",
+      "bytes": 15952,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1163": {
+      "name": "Basilisco",
+      "icon_key": "pet_1163",
+      "icon_path": "assets/pets/1163.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_basilisk_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1163",
+      "category": "Feral",
+      "catalog_name": "Basilisco",
+      "sha256": "06a41c404ee93b2027d5579c9a1d6b06e1099bc6758a4b8484844e8c244d2719",
+      "bytes": 17984,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1164": {
+      "name": "Espírito da Terra Inferior",
+      "icon_key": "pet_1164",
+      "icon_path": "assets/pets/1164.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_earthele_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1164",
+      "category": "Natural",
+      "catalog_name": "Espírito da Terra Inferior",
+      "sha256": "4064ef211535137ead2438981f0f9db9895d436a0a87a938d1cdc5ce43b6ad11",
+      "bytes": 28352,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1165": {
+      "name": "Espírito da Terra Intermediário",
+      "icon_key": "pet_1165",
+      "icon_path": "assets/pets/1165.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_earthele_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1165",
+      "category": "Natural",
+      "catalog_name": "Espírito da Terra Intermediário",
+      "sha256": "77f53c574dcd0d2d1085be52bb044e383900b802a84c4fb7c87f12641b214904",
+      "bytes": 27578,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1166": {
+      "name": "Espírito da Terra Superior",
+      "icon_key": "pet_1166",
+      "icon_path": "assets/pets/1166.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_earthele_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1166",
+      "category": "Natural",
+      "catalog_name": "Espírito da Terra Superior",
+      "sha256": "59bcddf8f66ccb19f4e926dfd57bc43bba7a6db56cb8f67034307abfa443aea6",
+      "bytes": 30464,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1167": {
+      "name": "Estátua Guardiã da Pedra de Flama",
+      "icon_key": "pet_1167",
+      "icon_path": "assets/pets/1167.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_gargoyle_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1167",
+      "category": "Variante",
+      "catalog_name": "Estátua Guardiã da Pedra de Flama",
+      "sha256": "8b4efc7c4f247c442c38ae9446dbfd43014d7d1008c5e9f85e34181377447211",
+      "bytes": 16712,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1168": {
+      "name": "Espírito da Água Inferior",
+      "icon_key": "pet_1168",
+      "icon_path": "assets/pets/1168.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_waterele_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1168",
+      "category": "Natural",
+      "catalog_name": "Espírito da Água Inferior",
+      "sha256": "061c69ef185c6a8e9d085eefebc5d6794f02ba0803dab33effca165c0c03f3b7",
+      "bytes": 19014,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1169": {
+      "name": "Espírito da Água Intermediário",
+      "icon_key": "pet_1169",
+      "icon_path": "assets/pets/1169.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_waterele_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1169",
+      "category": "Natural",
+      "catalog_name": "Espírito da Água Intermediário",
+      "sha256": "a41a6a81bddb4c8668eeafddd52be7e624a77aeefcad2053ecd2decf9cba28db",
+      "bytes": 17286,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1170": {
+      "name": "Kerubian",
+      "icon_key": "pet_1170",
+      "icon_path": "assets/pets/1170.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_cherubim_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1170",
+      "category": "Intelectual",
+      "catalog_name": "Kerubian",
+      "sha256": "9f828ce5a398998f729a436241349bfc21bc4647ee0d485f0f682149d7586a02",
+      "bytes": 23648,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1171": {
+      "name": "Kerubiel",
+      "icon_key": "pet_1171",
+      "icon_path": "assets/pets/1171.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_cherubim_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1171",
+      "category": "Intelectual",
+      "catalog_name": "Kerubiel",
+      "sha256": "b8af5ff09485fb1cbd231e1f9beee3667924f553af0e0e69e03e2313cd75b53d",
+      "bytes": 22268,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1172": {
+      "name": "Trabalhador Duduka",
+      "icon_key": "pet_1172",
+      "icon_path": "assets/pets/1172.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_duduka_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1172",
+      "category": "Variante",
+      "catalog_name": "Trabalhador Duduka",
+      "sha256": "0aaa50190295deb2f84d9f96dfc633f7eba8554dfaf996dff364b4f50b3cca20",
+      "bytes": 17820,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1173": {
+      "name": "Soldado Fundeiro Duduka",
+      "icon_key": "pet_1173",
+      "icon_path": "assets/pets/1173.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_duduka_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1173",
+      "category": "Variante",
+      "catalog_name": "Soldado Fundeiro Duduka",
+      "sha256": "5bbf757c4d706e6ff2242ad22a2fdae7255d289583700636f5694f5193dbcd7b",
+      "bytes": 20400,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1174": {
+      "name": "Predador de Drana",
+      "icon_key": "pet_1174",
+      "icon_path": "assets/pets/1174.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1174",
+      "category": "Variante",
+      "catalog_name": "Predador de Drana",
+      "sha256": "f2353e5ef3f135fd4095440095aa55cc9ee4189b796f321dd471aed3c0f59aa9",
+      "bytes": 21878,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1175": {
+      "name": "Predador Desbotado",
+      "icon_key": "pet_1175",
+      "icon_path": "assets/pets/1175.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_03_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1175",
+      "category": "Variante",
+      "catalog_name": "Predador Desbotado",
+      "sha256": "613e904c5091694e49e4d9cc7be387ad331b5bca93fb5f2a5774b9c5828cec70",
+      "bytes": 23640,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1176": {
+      "name": "Mudthorn",
+      "icon_key": "pet_1176",
+      "icon_path": "assets/pets/1176.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fafblood_02_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1176",
+      "category": "Variante",
+      "catalog_name": "Mudthorn",
+      "sha256": "21a70683c64c0038c6bd4096cc08b873cc2b3064d951dd90c673292b16e431bd",
+      "bytes": 20216,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1177": {
+      "name": "Espírito Ancestral",
+      "icon_key": "pet_1177",
+      "icon_path": "assets/pets/1177.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_gartua_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1177",
+      "category": "Natural",
+      "catalog_name": "Espírito Ancestral",
+      "sha256": "940c2fa660fec596e8e73e6da5580bae25b7d253aab4b1c4b91427fc28a61f0b",
+      "bytes": 37854,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1178": {
+      "name": "Guerreiro de Escolta do Rei dos Espíritos",
+      "icon_key": "pet_1178",
+      "icon_path": "assets/pets/1178.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_eleguard_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1178",
+      "category": "Natural",
+      "catalog_name": "Guerreiro de Escolta do Rei dos Espíritos",
+      "sha256": "be19e3b2c4efc1d519df0c28b2dcc76a4cdfa1abcf7cd5c6eaf5c4f9e697b11e",
+      "bytes": 21550,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1179": {
+      "name": "Aberração de Drana",
+      "icon_key": "pet_1179",
+      "icon_path": "assets/pets/1179.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1179",
+      "category": "Variante",
+      "catalog_name": "Aberração de Drana",
+      "sha256": "8b36c710a4c4235cff410aafd0c93a8b27b999109d441ed7edb8c9bb12a45fc0",
+      "bytes": 17454,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1180": {
+      "name": "Aberração Desbotada",
+      "icon_key": "pet_1180",
+      "icon_path": "assets/pets/1180.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1180",
+      "category": "Variante",
+      "catalog_name": "Aberração Desbotada",
+      "sha256": "1718323030a1858b9fb49e8065b16bc92a882c14a2c426f2b4246fb2ff587009",
+      "bytes": 18652,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1181": {
+      "name": "Brax",
+      "icon_key": "pet_1181",
+      "icon_path": "assets/pets/1181.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_brax_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1181",
+      "category": "Feral",
+      "catalog_name": "Brax",
+      "sha256": "d28076b8caedfc266e595fd4a128017ea602ee67ffb493a17206e0f013c5008c",
+      "bytes": 21996,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1182": {
+      "name": "Tipulídeo Moribundo Desalmado de Elite",
+      "icon_key": "pet_1182",
+      "icon_path": "assets/pets/1182.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_corpespider_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1182",
+      "category": "Variante",
+      "catalog_name": "Tipulídeo Moribundo Desalmado de Elite",
+      "sha256": "b0b7d265996a04fab3d6aa14ae72cba1354eadf21861a861baa22c59322d4351",
+      "bytes": 26158,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1183": {
+      "name": "Tipulídeo Moribundo Desalmado",
+      "icon_key": "pet_1183",
+      "icon_path": "assets/pets/1183.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_corpespider_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1183",
+      "category": "Variante",
+      "catalog_name": "Tipulídeo Moribundo Desalmado",
+      "sha256": "6ab3048329e023b47c23e744069ebb6cc00dcbc3369bd776625c6ca56da7cb5c",
+      "bytes": 26538,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1184": {
+      "name": "Vigilante Drakan",
+      "icon_key": "pet_1184",
+      "icon_path": "assets/pets/1184.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_drakan_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1184",
+      "category": "Intelectual",
+      "catalog_name": "Vigilante Drakan",
+      "sha256": "fb4588b12e659db3642ddb16ec0ab199e340a2e65e88d773ada996ffe1dddd85",
+      "bytes": 20588,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1185": {
+      "name": "Peão Dratona",
+      "icon_key": "pet_1185",
+      "icon_path": "assets/pets/1185.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dratona_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1185",
+      "category": "Intelectual",
+      "catalog_name": "Peão Dratona",
+      "sha256": "099c44a9a3feaeea2f9e55001bc67ad5fa7cbe774045bacad4ac9378664ba99b",
+      "bytes": 17666,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1186": {
+      "name": "Sangue Venenoso",
+      "icon_key": "pet_1186",
+      "icon_path": "assets/pets/1186.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fafblood_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1186",
+      "category": "Variante",
+      "catalog_name": "Sangue Venenoso",
+      "sha256": "033b3f2c7458b5902a67b15c6bb2c5ba927ef810e66beb144b5267ce7ed5976a",
+      "bytes": 17612,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1187": {
+      "name": "Espírito do Fogo Intermediário",
+      "icon_key": "pet_1187",
+      "icon_path": "assets/pets/1187.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fireele_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1187",
+      "category": "Natural",
+      "catalog_name": "Espírito do Fogo Intermediário",
+      "sha256": "a0e02d27dbc7d7c04f59103a97e95fe0d6b74c6c1fee933b6bfa55c99043ee71",
+      "bytes": 34110,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1188": {
+      "name": "Vivele",
+      "icon_key": "pet_1188",
+      "icon_path": "assets/pets/1188.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_gravebat_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1188",
+      "category": "Feral",
+      "catalog_name": "Vivele",
+      "sha256": "33dfabbb15783458bcfae2b49ed3575b36b4eadf4261b20497e56351aeee390f",
+      "bytes": 23230,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1189": {
+      "name": "Zaif Domesticado",
+      "icon_key": "pet_1189",
+      "icon_path": "assets/pets/1189.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_zaif_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1189",
+      "category": "Feral",
+      "catalog_name": "Zaif Domesticado",
+      "sha256": "4fbce5a250af185c96ab199f5a520d46426a5632541fcab7fff45b923a55adc5",
+      "bytes": 24960,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1190": {
+      "name": "Fungen de Esporos Venenosos de Elite",
+      "icon_key": "pet_1190",
+      "icon_path": "assets/pets/1190.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_toxfungus_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1190",
+      "category": "Natural",
+      "catalog_name": "Fungen de Esporos Venenosos de Elite",
+      "sha256": "1692584def16ca85531a407f83fd789995b0b66516d76714dcec6548632dab0a",
+      "bytes": 28738,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1191": {
+      "name": "Feruk em Frenesi",
+      "icon_key": "pet_1191",
+      "icon_path": "assets/pets/1191.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_ferk_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1191",
+      "category": "Intelectual",
+      "catalog_name": "Feruk em Frenesi",
+      "sha256": "be42ca22c5514d4a534f312ded8bf4ead1a8370a6467514e938f399e1bb21fa2",
+      "bytes": 22494,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1192": {
+      "name": "Rotan da Lâmina Prateada",
+      "icon_key": "pet_1192",
+      "icon_path": "assets/pets/1192.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_rotan_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1192",
+      "category": "Variante",
+      "catalog_name": "Rotan da Lâmina Prateada",
+      "sha256": "80a29e9e7e0af4b2a130c5120fc42f2ac67dfe5a3442fb6c546656911f310dfe",
+      "bytes": 32368,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1193": {
+      "name": "Shulack Carroceiro Envenenado",
+      "icon_key": "pet_1193",
+      "icon_path": "assets/pets/1193.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_addshulack_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1193",
+      "category": "Intelectual",
+      "catalog_name": "Shulack Carroceiro Envenenado",
+      "sha256": "36640b9e0db2dab9debe410f2f08a0d4f14716b72343b0eefd126c6f36680170",
+      "bytes": 14780,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1194": {
+      "name": "Guardite",
+      "icon_key": "pet_1194",
+      "icon_path": "assets/pets/1194.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_guardit_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1194",
+      "category": "Variante",
+      "catalog_name": "Guardite",
+      "sha256": "bd5afdf8dcfa7ddbbde016674cbf9a6ce8647754b2ddab5beb4c270837849273",
+      "bytes": 27062,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1195": {
+      "name": "Herbalista Dracuni",
+      "icon_key": "pet_1195",
+      "icon_path": "assets/pets/1195.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dracuni_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1195",
+      "category": "Intelectual",
+      "catalog_name": "Herbalista Dracuni",
+      "sha256": "4f6aece8e1159bd422f797f034e70cc2efb0d4cf3cdb0e457d08b821832610ab",
+      "bytes": 25430,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1196": {
+      "name": "Dratona de Elite",
+      "icon_key": "pet_1196",
+      "icon_path": "assets/pets/1196.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dratona_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1196",
+      "category": "Intelectual",
+      "catalog_name": "Dratona de Elite",
+      "sha256": "fdfd5fe17962ef60e430bb53d535b74283763b32efbcd6a28d0162b4042789f0",
+      "bytes": 22760,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1197": {
+      "name": "Guardite de Vigilância",
+      "icon_key": "pet_1197",
+      "icon_path": "assets/pets/1197.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_guardit_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1197",
+      "category": "Variante",
+      "catalog_name": "Guardite de Vigilância",
+      "sha256": "1a3b2e9a8dfc56cfdc98f80227c93875f6217e52499de25093d6325446991bee",
+      "bytes": 20920,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1198": {
+      "name": "Basilisco Cinzento",
+      "icon_key": "pet_1198",
+      "icon_path": "assets/pets/1198.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_basilisk_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1198",
+      "category": "Feral",
+      "catalog_name": "Basilisco Cinzento",
+      "sha256": "d5505811ff76f38990edd029dc38d00ade7c54fd71f46df3a79c3c42e779281f",
+      "bytes": 19370,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1199": {
+      "name": "Balgest da Flama",
+      "icon_key": "pet_1199",
+      "icon_path": "assets/pets/1199.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_balgest_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1199",
+      "category": "Feral",
+      "catalog_name": "Balgest da Flama",
+      "sha256": "9878166789f0338b286a154bc0fb2ac9a787aa1259df6eb8b836feb6ca7420e0",
+      "bytes": 27850,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1200": {
+      "name": "Sacerdote de Elite Naga",
+      "icon_key": "pet_1200",
+      "icon_path": "assets/pets/1200.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_nagaelite_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1200",
+      "category": "Intelectual",
+      "catalog_name": "Sacerdote de Elite Naga",
+      "sha256": "e6684fdcad1637c9955c7103efcf26a01f0f26c905eda2c5b65f44ab63958fa4",
+      "bytes": 23926,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1201": {
+      "name": "Lupyllini Modificado",
+      "icon_key": "pet_1201",
+      "icon_path": "assets/pets/1201.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_lufilini_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1201",
+      "category": "Intelectual",
+      "catalog_name": "Lupyllini Modificado",
+      "sha256": "026d7537007041e10b01c9b45dcdac576c055f8b7855cfa1fe285ea41da8df7d",
+      "bytes": 20044,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1202": {
+      "name": "Lupyllini Putrefato",
+      "icon_key": "pet_1202",
+      "icon_path": "assets/pets/1202.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_lufilini_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1202",
+      "category": "Intelectual",
+      "catalog_name": "Lupyllini Putrefato",
+      "sha256": "a052b813b9eca5512725f2bb97eaeea355b7683b30ec0520b41d4087d429b90f",
+      "bytes": 21746,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1203": {
+      "name": "Karnif Domesticado",
+      "icon_key": "pet_1203",
+      "icon_path": "assets/pets/1203.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_kalnif_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1203",
+      "category": "Feral",
+      "catalog_name": "Karnif Domesticado",
+      "sha256": "b2250f49e8e1b3146c291c98e5f8f7a686540478bb99de9b9e8d3777d95f22f9",
+      "bytes": 15264,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1204": {
+      "name": "Pagati",
+      "icon_key": "pet_1204",
+      "icon_path": "assets/pets/1204.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_pagati_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1204",
+      "category": "Especial",
+      "catalog_name": "Pagati",
+      "sha256": "801ce5871c3cdb86a7a5a074006fb9c4591f98874603e9c07851584621e09006",
+      "bytes": 19508,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1206": {
+      "name": "Guardite de Elite",
+      "icon_key": "pet_1206",
+      "icon_path": "assets/pets/1206.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_guardit_03.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1206",
+      "category": "Variante",
+      "catalog_name": "Guardite de Elite",
+      "sha256": "db16deeb11236eaf2caa5766bc80383fec2a8fdd817320a970d4f0cdef8df33a",
+      "bytes": 33490,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1207": {
+      "name": "Agrint",
+      "icon_key": "pet_1207",
+      "icon_path": "assets/pets/1207.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_agrint_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1207",
+      "category": "Natural",
+      "catalog_name": "Agrint",
+      "sha256": "4efa58a8c72d26e416e46e6a02ec59aee2012b0ae509ac0d34b41ebbedede389",
+      "bytes": 30046,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1208": {
+      "name": "Agrint Cinzento",
+      "icon_key": "pet_1208",
+      "icon_path": "assets/pets/1208.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_agrint_01_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1208",
+      "category": "Natural",
+      "catalog_name": "Agrint Cinzento",
+      "sha256": "f39b3cd30ded9900216b309ed3ccd89d9da60fae2bfa8dabfe9af26217c34c6f",
+      "bytes": 31290,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1209": {
+      "name": "Agrint Descarnado",
+      "icon_key": "pet_1209",
+      "icon_path": "assets/pets/1209.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_agrint_01_v01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1209",
+      "category": "Natural",
+      "catalog_name": "Agrint Descarnado",
+      "sha256": "4ff2702f4f3ab96f58fb4fa8655e164e548a5f3cf3e934563fefdab35a14a8a6",
+      "bytes": 27640,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1210": {
+      "name": "Agrint Folha Seca",
+      "icon_key": "pet_1210",
+      "icon_path": "assets/pets/1210.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_agrint_01_v02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1210",
+      "category": "Natural",
+      "catalog_name": "Agrint Folha Seca",
+      "sha256": "0cea2c324e6b448a6721e02c57b601b32d102a9615d0555694f867152ad04114",
+      "bytes": 29694,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1213": {
+      "name": "Espírito do Fogo Inferior",
+      "icon_key": "pet_1213",
+      "icon_path": "assets/pets/1213.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_fireele_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1213",
+      "category": "Natural",
+      "catalog_name": "Espírito do Fogo Inferior",
+      "sha256": "e8e8d93f67715bb564c6bb1e156017a22a893afc27b20141ee491d091e876d93",
+      "bytes": 30662,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1214": {
+      "name": "Espírito das Trevas",
+      "icon_key": "pet_1214",
+      "icon_path": "assets/pets/1214.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_darkele_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1214",
+      "category": "Natural",
+      "catalog_name": "Espírito das Trevas",
+      "sha256": "29fdf59ad68a92d9c68fed6901fa32a93c7d06f14bc30ab0b06631143497217a",
+      "bytes": 31950,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1215": {
+      "name": "Predador Saraswati",
+      "icon_key": "pet_1215",
+      "icon_path": "assets/pets/1215.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_nagaelite_02.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1215",
+      "category": "Intelectual",
+      "catalog_name": "Predador Saraswati",
+      "sha256": "23d6b44ce1c224974727d58b7bfa61b342931b278b6974fd94d8ad424ab6d645",
+      "bytes": 30396,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1216": {
+      "name": "Espírito da Escuridão",
+      "icon_key": "pet_1216",
+      "icon_path": "assets/pets/1216.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_specter_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1216",
+      "category": "Variante",
+      "catalog_name": "Espírito da Escuridão",
+      "sha256": "f905a8657ba388cb7f98f07283ef34056ac8c273e0466ccae41961d1341f173c",
+      "bytes": 19820,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1217": {
+      "name": "Drana Coagulado",
+      "icon_key": "pet_1217",
+      "icon_path": "assets/pets/1217.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_06.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1217",
+      "category": "Variante",
+      "catalog_name": "Drana Coagulado",
+      "sha256": "cbfafd4e0b0387d4ea8265ef3d3ab23571e4689b3f6e614907e2147c5b4a9828",
+      "bytes": 28898,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1218": {
+      "name": "Drana Desbotado",
+      "icon_key": "pet_1218",
+      "icon_path": "assets/pets/1218.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_dranavar_06_cv01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1218",
+      "category": "Variante",
+      "catalog_name": "Drana Desbotado",
+      "sha256": "5c6b56198fdb75bc1dd059d0643e2a51d45e531b56291e740c30eae7c0882363",
+      "bytes": 25910,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1219": {
+      "name": "Zelophi",
+      "icon_key": "pet_1219",
+      "icon_path": "assets/pets/1219.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_jellofi_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1219",
+      "category": "Natural",
+      "catalog_name": "Zelophi",
+      "sha256": "95306296e34a5278f4256581dd39b906e2b16928c60fb61bd2ba11e426c71534",
+      "bytes": 26974,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1240": {
+      "name": "Coelho Branco",
+      "icon_key": "pet_1240",
+      "icon_path": "assets/pets/1240.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_rabbit_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1240",
+      "category": "Especial",
+      "catalog_name": "Coelho Branco",
+      "sha256": "7b27eb0ae377175a4a6a5b1113776bd44e6178399fd2675e570c21e87e7d11e6",
+      "bytes": 12420,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1278": {
+      "name": "Hamster Fofucho",
+      "icon_key": "pet_1278",
+      "icon_path": "assets/pets/1278.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_hamster_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1278",
+      "category": "Especial",
+      "catalog_name": "Hamster Fofucho",
+      "sha256": "fb5642ae34830fcf18b7f14dfddb673a375586277939e2a0acfef87215907c9f",
+      "bytes": 10936,
+      "size": [
+        256,
+        256
+      ]
+    },
+    "1299": {
+      "name": "Two",
+      "icon_key": "pet_1299",
+      "icon_path": "assets/pets/1299.webp",
+      "source_icon_url": "https://cdn-hosted.gaming.tools/aion2/images/ui/resource/texture/portrait/portrait_vehicle/ut_vehicle_portrait_showcase_01.webp?version=1791739440423",
+      "source_page": "https://aion2.gaming.tools/pt-br/pets/1299",
+      "category": "Especial",
+      "catalog_name": "Two",
+      "sha256": "ddc4034ecf109ea6b239cb7f029574539aceac3134d7e427cb4ec93f3c0524ce",
+      "bytes": 22244,
+      "size": [
+        256,
+        256
+      ]
+    }
+  }
+}

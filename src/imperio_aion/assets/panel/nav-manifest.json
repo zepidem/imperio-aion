@@ -1,0 +1,135 @@
+{
+  "skills": {
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      0,
+      22,
+      1226,
+      1254
+    ],
+    "bytes": 1409314,
+    "visible_bbox": [
+      86,
+      167,
+      1169,
+      1068
+    ]
+  },
+  "summary": {
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      0,
+      19,
+      1218,
+      1237
+    ],
+    "bytes": 819650,
+    "visible_bbox": [
+      185,
+      299,
+      1087,
+      1017
+    ]
+  },
+  "diagnostic": {
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      0,
+      9,
+      1240,
+      1254
+    ],
+    "bytes": 1167542,
+    "visible_bbox": [
+      181,
+      133,
+      1152,
+      1086
+    ]
+  },
+  "capture": {
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "bbox": [
+      0,
+      0,
+      1202,
+      1150
+    ],
+    "bytes": 294048,
+    "visible_bbox": [
+      250,
+      421,
+      1005,
+      846
+    ]
+  },
+  "privacy": {
+    "visible_bbox": [
+      0,
+      35,
+      1200,
+      1228
+    ]
+  },
+  "terms": {
+    "visible_bbox": [
+      57,
+      19,
+      1234,
+      1254
+    ]
+  },
+  "eye-open": {
+    "visible_bbox": [
+      19,
+      70,
+      1760,
+      887
+    ]
+  },
+  "eye-closed": {
+    "visible_bbox": [
+      33,
+      38,
+      1222,
+      1208
+    ]
+  },
+  "return": {
+    "visible_bbox": [
+      0,
+      0,
+      1224,
+      1196
+    ]
+  },
+  "streaming": {
+    "visible_bbox": [
+      0,
+      35,
+      1242,
+      1254
+    ],
+    "source": "Original fornecido pelo usuário",
+    "size": [
+      1254,
+      1254
+    ]
+  }
+}

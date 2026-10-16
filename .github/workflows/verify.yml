@@ -1,4 +1,4 @@
-name: Verify sources
+name: Verify and build Windows candidate
 
 on:
   push:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   source-checks:
     runs-on: windows-2025
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Check out sources
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -29,12 +29,29 @@ jobs:
           architecture: x64
       - name: Audit sources before dependency installation
         run: python tools/audit_repository.py
-      - name: Install test dependencies
-        run: 'python -m pip install --only-binary=:all: -r requirements.txt'
+      - name: Install locked Windows dependencies
+        run: 'python -m pip install --only-binary=:all: --require-hashes -r requirements-windows.lock'
       - name: Run offline tests
         run: python tools/run_tests.py
       - name: Compile native helper without running it
         run: python tools/build_native.py
+      - name: Build complete unsigned candidate
+        run: python tools/build_windows.py --output dist/windows-candidate
+      - name: Verify full archive inventory without privileged runtime execution
+        run: python tools/verify_candidate.py dist/windows-candidate --inventory-only
+      - name: Save candidate and verification evidence
+        if: success() && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: imperio-aion-windows-candidate
+          path: |
+            dist/windows-candidate/*.exe
+            dist/windows-candidate/*.zip
+            dist/windows-candidate/*.json
+            dist/windows-candidate/*.txt
+          compression-level: 0
+          retention-days: 14
+          if-no-files-found: error
 
-# Source checks only: no credentials, signing, release upload, driver loading,
-# capture, installation, or deployment. This is not a complete release build.
+# No production keys, signing requests, release publishing, driver startup,
+# capture, Program Files installation or deployment. QA keys exist in memory only.

@@ -624,7 +624,7 @@
       "path": "src/imperio_aion/dados/legal-pt.json",
       "reference": "app-0.8.71/legal",
       "source_sha256": "1d463be5d5cb45829d069a25bd82c82d795020b57394f5342bee132c9e731310",
-      "prepared_sha256": "3af55580064abe59dff48b436df36e2c2c2c47c6f90168e8c929fbd473fe4370",
+      "prepared_sha256": "eb4d64ffab1f255cf0acba029f566247ea9b35a67f9567fd3433c81cb20ecce2",
       "license": "GPL-3.0-only",
       "change": "GPL precedence added; restricted redistribution wording removed; source-only state identified"
     },
@@ -632,17 +632,79 @@
       "path": "src/updater/legal.json",
       "reference": "updater-0.4.2/legal",
       "source_sha256": "9256a3783cdd525e4d99bbe5034c83257c4256c3bc39b2b555b689fa2c6e8633",
-      "prepared_sha256": "9155c71e72113c8d0f2b36520be84c5e2d7429f793cd0e6f63bff2b4d77ce2f4",
+      "prepared_sha256": "5746d75ee1143f30ed97f331c60374fc5139d26d3b5764ddc6608524fb229b80",
       "license": "GPL-3.0-only",
       "change": "GPL precedence added; restricted redistribution wording removed; source-only state identified"
+    },
+    {
+      "path": "src/imperio_aion/assets/streaming/overlay.html",
+      "reference": "app-0.8.71/assets/streaming/overlay.html",
+      "source_sha256": "c08cd6c56cf5b589f1df7490764dc97a4e66c0f7e303d2161c99e3d9c64dd4d2",
+      "prepared_sha256": "ce7308fd134359badeccfb2deb9cae97287c6f49698a903d7d278cd7d57d8913",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/dados/COPYING-npcs.txt",
+      "reference": "app-0.8.71/dados/COPYING-npcs.txt",
+      "source_sha256": "643d62995e5ea9d6ab5c05bc84597e0ad607bb113cb3eb97c34dbc9b565f4304",
+      "prepared_sha256": "643d62995e5ea9d6ab5c05bc84597e0ad607bb113cb3eb97c34dbc9b565f4304",
+      "license": "upstream notices; game-data rights pending"
+    },
+    {
+      "path": "src/imperio_aion/dados/MASCOTES-NOTICE.md",
+      "reference": "app-0.8.71/dados/MASCOTES-NOTICE.md",
+      "source_sha256": "c37b22d0fbbb7b99d5b176d3ef491e1aaf8c1549d6bba65856ee6c3658a0c4c4",
+      "prepared_sha256": "c37b22d0fbbb7b99d5b176d3ef491e1aaf8c1549d6bba65856ee6c3658a0c4c4",
+      "license": "upstream notices; game-data rights pending"
+    },
+    {
+      "path": "src/imperio_aion/dados/NOTICE.md",
+      "reference": "app-0.8.71/dados/NOTICE.md",
+      "source_sha256": "cea968f0d97419091da258a07f5d60f70119c2738260177834ac648bacbbb0a0",
+      "prepared_sha256": "cea968f0d97419091da258a07f5d60f70119c2738260177834ac648bacbbb0a0",
+      "license": "upstream notices; game-data rights pending"
+    },
+    {
+      "path": "src/imperio_aion/dados/SKILLS-NOTICE.md",
+      "reference": "app-0.8.71/dados/SKILLS-NOTICE.md",
+      "source_sha256": "18566fdafdb04b7789c7d8b89d53b40e0dc5247368e015929223857b043e85e1",
+      "prepared_sha256": "042a1285f2016399958aed49686fe79895978bb0def2c6815b094f2546995401",
+      "license": "upstream notices; game-data rights pending"
+    },
+    {
+      "path": "src/imperio_aion/dados/mascotes-pt.json",
+      "reference": "app-0.8.71/dados/mascotes-pt.json",
+      "source_sha256": "f13aea677c0b6285b5f23fff7db71c7483cdc0e3c7ae0ce11d3b1052f4bfa5cf",
+      "prepared_sha256": "9333cc4d632aca4579611ff633064b0c378bdfd78b76e356c4aeffdcd14395c5",
+      "license": "upstream notices; game-data rights pending"
+    },
+    {
+      "path": "src/imperio_aion/dados/npcs-pt.json",
+      "reference": "app-0.8.71/dados/npcs-pt.json",
+      "source_sha256": "ad328a2db07f4673ddbcbb859757c98bd2b87763f39171cd57d0179e7d536fec",
+      "prepared_sha256": "ad328a2db07f4673ddbcbb859757c98bd2b87763f39171cd57d0179e7d536fec",
+      "license": "upstream notices; game-data rights pending"
+    },
+    {
+      "path": "src/imperio_aion/dados/skills-pt.json",
+      "reference": "app-0.8.71/dados/skills-pt.json",
+      "source_sha256": "d1399025abb50edba6504ef952e479e2c33a409ce37da1b5f48640667d5d0c35",
+      "prepared_sha256": "11fd790bac0a3d446d3609081d6447d86eca004deec316447592b7f2b8543d9d",
+      "license": "upstream notices; game-data rights pending"
     },
     {
       "path": "src/imperio_aion/perfil-sa-experimental.json",
       "reference": "app-0.8.71/perfil-sa-experimental.json",
       "source_sha256": "492c2a4b98ce8aceaccd83fc8d7448fc2af0cc0e15922cfc9181067427e58fa3",
-      "prepared_sha256": "99cd1a62a6057cb10374180ab4d4c440a1a4528fb2cfc8f31f1ab0d2c3878efe",
-      "license": "GPL-3.0-only",
-      "change": "Third-party lookup names and IDs removed; empty source-preparation profile."
+      "prepared_sha256": "492c2a4b98ce8aceaccd83fc8d7448fc2af0cc0e15922cfc9181067427e58fa3",
+      "license": "upstream notices; game-data rights pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/nav-manifest.json",
+      "reference": "app-0.8.71/assets/panel/nav-manifest.json",
+      "source_sha256": "2d88438559e6fda5d5887fb8a0793f8599604f22a212c81073cb4dc97405e88d",
+      "prepared_sha256": "9e932abf4166c311b238182a228623ce914664b56325a12e2fba5adf7564a8c7",
+      "license": "GPL-3.0-only"
     }
   ],
   "line_endings": "LF in prepared files; original hashes refer to original bytes"

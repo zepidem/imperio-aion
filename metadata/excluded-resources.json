@@ -68,60 +68,6 @@
       "reason": "third-party asset/data rights not established for this publication"
     },
     {
-      "path": "app/assets/panel/nav-manifest.json",
-      "sha256": "2d88438559e6fda5d5887fb8a0793f8599604f22a212c81073cb4dc97405e88d",
-      "bytes": 1740,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/assets/streaming/overlay.html",
-      "sha256": "c08cd6c56cf5b589f1df7490764dc97a4e66c0f7e303d2161c99e3d9c64dd4d2",
-      "bytes": 13417,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/dados/COPYING-npcs.txt",
-      "sha256": "643d62995e5ea9d6ab5c05bc84597e0ad607bb113cb3eb97c34dbc9b565f4304",
-      "bytes": 36105,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/dados/MASCOTES-NOTICE.md",
-      "sha256": "c37b22d0fbbb7b99d5b176d3ef491e1aaf8c1549d6bba65856ee6c3658a0c4c4",
-      "bytes": 1792,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/dados/mascotes-pt.json",
-      "sha256": "f13aea677c0b6285b5f23fff7db71c7483cdc0e3c7ae0ce11d3b1052f4bfa5cf",
-      "bytes": 128372,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/dados/NOTICE.md",
-      "sha256": "cea968f0d97419091da258a07f5d60f70119c2738260177834ac648bacbbb0a0",
-      "bytes": 1168,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/dados/npcs-pt.json",
-      "sha256": "ad328a2db07f4673ddbcbb859757c98bd2b87763f39171cd57d0179e7d536fec",
-      "bytes": 803063,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/dados/SKILLS-NOTICE.md",
-      "sha256": "18566fdafdb04b7789c7d8b89d53b40e0dc5247368e015929223857b043e85e1",
-      "bytes": 927,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
-      "path": "app/dados/skills-pt.json",
-      "sha256": "d1399025abb50edba6504ef952e479e2c33a409ce37da1b5f48640667d5d0c35",
-      "bytes": 411890,
-      "reason": "third-party asset/data rights not established for this publication"
-    },
-    {
       "path": "app/vendor/windivert/LICENSE.txt",
       "sha256": "14a0cb5214d536e4fdae6aa3f5696f981eeda106cd026e9794bba489ee79d628",
       "bytes": 61349,

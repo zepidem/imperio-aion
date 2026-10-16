@@ -1,9 +1,9 @@
 {
-  "state": "SOURCE_PREPARATION",
+  "state": "UNSIGNED_WINDOWS_CANDIDATE",
   "code_license": "GPL-3.0-only",
   "remaining": [
+    "production release keys, signed package metadata and protected installation validation",
     "resource rights or original replacements",
-    "portable complete Windows build and binary dependency inventory",
     "final privacy and installer controls review",
     "SignPath MFA setup and signing roles confirmation",
     "public release and reputation evidence",
@@ -16,5 +16,7 @@
   "signpath_approved": false,
   "bdo_included": false,
   "repository_url": "https://github.com/zepidem/imperio-aion",
-  "resource_permission": "pending; images included at maintainer request"
+  "resource_permission": "pending; images and catalogs restored for complete candidate",
+  "build_pipeline": "tools/build_windows.py; locked Windows wheels; source, package and binary hash inventories",
+  "community_url": "https://discord.gg/2cQSFwVst"
 }

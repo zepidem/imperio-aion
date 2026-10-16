@@ -2,7 +2,7 @@
 
 ## Current status
 
-Império Aion is preparing an application to SignPath Foundation. It has not been accepted and no binary from this repository is represented as signed by SignPath. The current workflow verifies sources, runs offline tests and compiles the native helper only. It does not build a complete distribution, request a signature or publish a release.
+Império Aion is preparing an application to SignPath Foundation. It has not been accepted and no binary from this repository is represented as signed by SignPath. The workflow builds an unsigned Windows candidate and verifies it with isolated tests. It does not request a signature, authorize a production package or publish a release.
 
 The following is the proposed process to implement before the first signed release, not a statement that the remote controls are already configured.
 
@@ -19,9 +19,9 @@ Confirm these role assignments when configuring the SignPath account. All member
 ## Proposed release process
 
 1. Review the exact source commit, dependency licenses, resource permissions and completed release checklist.
-2. Build on a clean Windows CI runner from that commit, using pinned build inputs. Record dependency hashes, source revision, build logs and artifact hashes. The present dependency inventory is not yet a complete reproducible build lock.
+2. Build on a clean Windows CI runner from that commit, using requirements-windows.lock and hash-checked upstream inputs. Record dependency hashes, source revision, build logs and artifact hashes. Bit-for-bit reproducibility is not claimed for PyInstaller/C# outputs.
 3. Submit only this project's eligible executable artifacts. Do not apply the project's signature to WinDivert, Python or other upstream binaries. Preserve upstream signatures and notices when packaging them.
-4. Restrict product name and product version metadata in the signing configuration. Resolve the existing application/updater version scheme before configuring these restrictions.
+4. Restrict product name and product version metadata in the signing configuration. Newly built project files use Império Aion and the same candidate product version; updater component source version remains separately documented.
 5. Require a manual signing approval. Keep signing credentials unavailable to pull-request workflows. Do not upload private update-signing keys to the repository.
 6. Generate the final package hashes and update metadata after Authenticode signing; a signature changes the executable bytes. Verify the package and publish matching source and release notes.
 7. Publish the active policy on the homepage and download/release pages once the service is approved and configured.
