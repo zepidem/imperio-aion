@@ -10,13 +10,14 @@
     "SignPath application and acceptance"
   ],
   "published": true,
-  "verified_source_commit": "8a4c906bb760368b2b66627d1b236c9573bf6453",
-  "verification_run_url": "https://github.com/zepidem/imperio-aion/actions/runs/38966883240",
-  "hosted_verification": "success; 69 tests, source audit and native-helper compilation",
+  "verified_source_commit": "f9e80c4e4141d1fff258ae47340d02c868f7d751",
+  "verification_run_url": "https://github.com/zepidem/imperio-aion/actions/runs/38970311552",
+  "hosted_verification": "success; complete unsigned Windows build, 69 tests and 690-file package verification",
   "signpath_approved": false,
   "bdo_included": false,
   "repository_url": "https://github.com/zepidem/imperio-aion",
   "resource_permission": "pending; images and catalogs restored for complete candidate",
   "build_pipeline": "tools/build_windows.py; locked Windows wheels; source, package and binary hash inventories",
-  "community_url": "https://discord.gg/2cQSFwVst"
+  "community_url": "https://discord.gg/2cQSFwVst",
+  "local_validation": "hidden UI and isolated install/remove tests passed; see candidate-validation.json"
 }

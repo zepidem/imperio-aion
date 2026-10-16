@@ -16,3 +16,9 @@ Data: 16/10/2026.
 Esse era o escopo da primeira publicação. O build completo foi acrescentado posteriormente: catálogos, perfil, manifesto de navegação e overlay foram restaurados. tools/build_windows.py gera o candidato e tools/verify_candidate.py verifica o arquivo ou executa QA sem elevação. Consulte os relatórios produzidos por cada execução; a compilação não comprova equivalência com uma versão instalada, captura real, instalação elevada ou autorização de direitos.
 
 A varredura de padrões não demonstra ausência absoluta de segredos ou vulnerabilidades. A revisão completa dos binários transitivos, dos recursos e da candidatura SignPath permanece descrita em LICENSE_REVIEW.md e BUILD.md.
+
+## Candidato completo — 16/10/2026
+
+O commit `f9e80c4e4141d1fff258ae47340d02c868f7d751` passou no [build Windows hospedado](https://github.com/zepidem/imperio-aion/actions/runs/38970311552): auditoria, 69 testes, compilação, pacote completo e conferência dos 690 arquivos. O build local do mesmo commit, com árvore limpa, passou na abertura oculta do app/instalador e em instalação/remoção isolada. Foram verificadas a rejeição de assinatura inválida, a detecção de arquivo adulterado e a preservação dos dados sintéticos. Nenhuma captura ou instalação em Program Files foi realizada.
+
+`metadata/candidate-validation.json` registra hashes locais, referência do build e limites da validação. Os artefatos locais e hospedados podem ter hashes diferentes; não se afirma reprodutibilidade byte a byte. O helper, o monitor e o setup têm ProductName `Império Aion` e ProductVersion `0.8.71`. O driver manteve assinatura Authenticode válida do fornecedor na conferência local. O candidato próprio continua sem Authenticode, sem autorização de release e com direitos de recursos pendentes.

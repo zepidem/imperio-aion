@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-16",
+  "source_commit": "f9e80c4e4141d1fff258ae47340d02c868f7d751",
+  "workflow_url": "https://github.com/zepidem/imperio-aion/actions/runs/38970311552",
+  "hosted_build": "success",
+  "hosted_checks": [
+    "source audit",
+    "69 offline tests",
+    "native compilation",
+    "complete Windows candidate",
+    "690-file archive verification",
+    "artifact upload"
+  ],
+  "local_checks": [
+    "frozen app UI: fresh and saved synthetic state",
+    "frozen installer UI",
+    "Ed25519 ZIP verification",
+    "native RSA verification",
+    "invalid signature rejection",
+    "isolated install",
+    "modified installed binary rejection",
+    "isolated uninstall",
+    "synthetic user data preserved"
+  ],
+  "local_artifacts": {
+    "setup_sha256": "454785ce0755b1d062ec925650d87543f9e7cfccab5cf440e95289b1ef6d1ab0",
+    "archive_sha256": "41386b3310aefc5966112b64d4cad97572e54142b0420209cf4bd9c9910a9f1a",
+    "files": 690
+  },
+  "product_metadata": {
+    "ProductName": "Império Aion",
+    "ProductVersion": "0.8.71"
+  },
+  "upstream_driver_authenticode": "Valid on local verification",
+  "production_install_tested": false,
+  "driver_started": false,
+  "game_capture_tested": false,
+  "signpath_approved": false,
+  "resource_permission": "pending",
+  "production_manifest_signed": false,
+  "notes": "Hosted CI performs inventory checks without launching runtime as administrator. Full runtime QA was performed locally without elevation. Local and hosted hashes may differ; bit-for-bit reproducibility is not claimed."
+}
