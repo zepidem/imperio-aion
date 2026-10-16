@@ -1,6 +1,6 @@
 # Publication and SignPath readiness
 
-Status: 2026-10-16. The source repository is prepared locally; there is no configured remote, complete OSS release or active SignPath integration.
+Status: 2026-10-16. Sources and inventoried visual resources are published at https://github.com/zepidem/imperio-aion. There is no complete OSS release or active SignPath integration; visual-resource permissions remain pending.
 
 ## Repository publication
 
@@ -11,8 +11,8 @@ Status: 2026-10-16. The source repository is prepared locally; there is no confi
 - [x] Prepare a Windows GitHub Actions workflow for source audit, offline tests and native compilation.
 - [x] Prepare contribution, security, privacy and code signing documents.
 - [x] Confirm repository name/owner: the maintainer created the public repository `zepidem/imperio-aion`.
-- [ ] Create the separate remote repository and upload only this source history; do not change BDO visibility.
-- [ ] Run the prepared workflow on GitHub. Local checks do not prove the hosted workflow has passed.
+- [x] Publish the prepared Aion tree to the separate remote repository. The first full source tree matches the verified local tree exactly. BDO visibility has not been changed.
+- [ ] Complete the hosted verification workflow. The first attempt failed during YAML validation before any job started; the command quoting has been corrected for the next run.
 - [ ] Configure branch rules and review requirements. Require the `source-checks` job; prevent forced updates to release history where supported.
 - [x] Enable MFA on the maintainer's GitHub account. The owner supplied the GitHub success screen on 2026-10-16 confirming authenticator-app 2FA is enabled.
 - [ ] Enable MFA on SignPath when the account is configured; verify GitHub and SignPath MFA for any additional signing team members.

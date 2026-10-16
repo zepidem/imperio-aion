@@ -36,6 +36,6 @@ python tools/build_native.py
 
 `.github/workflows/verify.yml` usa um runner Windows hospedado, Python 3.14.7 x64 e as dependências diretas de `requirements.txt`. As actions checkout 7.0.1 e setup-python 7.0.0 estão fixadas pelos commits publicados nos repositórios oficiais. O workflow roda auditoria, testes offline e compilação do helper, sem iniciar o aplicativo, a captura ou o instalador. A instalação inicial das dependências exige acesso ao índice de pacotes; somente a suíte de testes roda com conexões bloqueadas pelo runner de testes.
 
-O workflow não contém `pull_request_target`, credenciais persistidas, acesso a segredos de assinatura, deploy ou upload de releases. A primeira execução hospedada permanece pendente até publicar o repositório. A instalação por versão ainda não é um lock de todos os wheels por hash: esse lock pertence à etapa de build completo.
+O workflow não contém `pull_request_target`, credenciais persistidas, acesso a segredos de assinatura, deploy ou upload de releases. As execuções hospedadas estão em https://github.com/zepidem/imperio-aion/actions; consulte VERIFICATION.md para o estado conferido. A instalação por versão ainda não é um lock de todos os wheels por hash: esse lock pertence à etapa de build completo.
 
 Referências das actions: https://github.com/actions/checkout/releases/tag/v7.0.1 e https://github.com/actions/setup-python/releases/tag/v7.0.0.

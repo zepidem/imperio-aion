@@ -56,6 +56,6 @@ Consulte a [Code signing policy](docs/CODE_SIGNING_POLICY.md), a [política de p
 
 [CONTRIBUTING.md](CONTRIBUTING.md) explica como propor alterações; [SECURITY.md](SECURITY.md) informa o canal para relatos privados. O responsável inicial de revisão é `zepidem`.
 
-O workflow `.github/workflows/verify.yml` está preparado para Windows no GitHub Actions: verifica os fontes, executa os testes offline e compila o helper sem executá-lo. Ele ainda não foi executado no GitHub e não gera nem publica uma distribuição completa. Não recebe credenciais de assinatura e usa apenas permissão de leitura do repositório.
+O workflow `.github/workflows/verify.yml` verifica os fontes no Windows, executa os testes offline e compila o helper sem executá-lo. Acompanhe as execuções em [GitHub Actions](https://github.com/zepidem/imperio-aion/actions). Ele não gera nem publica uma distribuição completa, não recebe credenciais de assinatura e usa apenas permissão de leitura do repositório.
 
 Página do programa: https://signpath.org/terms.html
