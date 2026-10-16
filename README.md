@@ -1,0 +1,61 @@
+# Império Aion
+
+Código-fonte do monitor Windows Império Aion e de seu instalador/atualizador, separado do site e backend do Império BDO.
+
+Repositório: https://github.com/zepidem/imperio-aion. Página do aplicativo: https://imperiobdo.com/aion2.
+
+**Estado: preparação de fontes, com direitos de imagens pendentes.** Esta árvore ainda não produz uma distribuição completa equivalente ao aplicativo instalado. Os recursos visuais existentes foram incluídos a pedido do responsável, enquanto se aguarda a NCSOFT; não recebem a GPL do código. Catálogos e outros recursos continuam excluídos. Não há aprovação nem assinatura SignPath. Consulte [os direitos dos recursos](docs/RESOURCE_RIGHTS.md).
+
+## Licença
+
+O código próprio é disponibilizado sob **GNU GPL versão 3, exclusivamente — `GPL-3.0-only`**, conforme a escolha do responsável em 16/10/2026. Consulte [LICENSE](LICENSE) e [COPYRIGHT.md](COPYRIGHT.md). Dependências e seus avisos conservam suas licenças. Esta licença não abrange marcas, imagens ou dados de terceiros.
+
+## Conteúdo
+
+| Pasta | Conteúdo |
+| --- | --- |
+| `src/imperio_aion` | Fontes do aplicativo 0.8.71, referência de build revisão 4 |
+| `src/updater` | Atualizador 0.4.2 e instalador nativo `Installer.cs` |
+| `tests` | Testes offline com dados sintéticos e verificações da separação |
+| `licenses/third-party` | Textos de licença encontrados nas dependências examinadas |
+| `metadata` | Origem e hashes dos fontes, dependências, imagens incluídas e recursos ainda excluídos |
+| `docs` | Revisão de licenças, recursos e plano de publicação |
+
+A numeração identifica as referências importadas, não um novo lançamento. A versão 0.8.72 encontrada em desenvolvimento não foi usada para não confundir uma árvore em alteração com o build conferido.
+
+## Verificação
+
+Python 3.14 foi usado na conferência local. Instale as dependências em um ambiente virtual próprio antes dos testes, se necessário:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt
+.venv\Scripts\python tools/audit_repository.py
+.venv\Scripts\python tools/run_tests.py
+```
+
+`requirements-observed.txt` registra versões encontradas, sem prometer um lock de wheels ou compatibilidade com toda plataforma. Os testes não abrem a HUD, não iniciam captura, não instalam o driver, não modificam o registro e não usam o canal online. Os testes antigos baseados em capturas de jogadores não foram copiados.
+
+## Build e publicação
+
+```powershell
+python tools/check_release.py
+```
+
+O comando informa as pendências atuais e retorna código 2 enquanto a distribuição completa não está preparada. Não substitua o instalador do site por esta árvore. [BUILD.md](docs/BUILD.md) descreve os pontos de entrada e os passos restantes.
+
+O site `https://imperiobdo.com/aion2` pode permanecer no repositório privado existente. O novo projeto será responsável pelos fontes e builds do Aion; a integração futura entregará os artefatos ao canal do site. Não foram copiados backend, dados, credenciais ou histórico Git do BDO. Consulte [SEPARATION.md](docs/SEPARATION.md).
+
+## Code signing policy
+
+O projeto ainda não está aprovado pela SignPath Foundation. Não atribuímos à SignPath assinaturas que ela não realizou. Os builds atuais usam verificações próprias de integridade, distintas de Authenticode. Antes da candidatura, precisamos fechar a composição licenciada e a correspondência verificável entre fonte e binário, além dos requisitos do programa.
+
+Consulte a [Code signing policy](docs/CODE_SIGNING_POLICY.md), a [política de privacidade dos fontes](docs/PRIVACY.md) e a [lista de preparação para publicação](docs/RELEASE_CHECKLIST.md). As políticas descrevem o estado atual e os controles ainda a implementar; não demonstram aprovação do programa.
+
+## Contribuição e verificação automática
+
+[CONTRIBUTING.md](CONTRIBUTING.md) explica como propor alterações; [SECURITY.md](SECURITY.md) informa o canal para relatos privados. O responsável inicial de revisão é `zepidem`.
+
+O workflow `.github/workflows/verify.yml` está preparado para Windows no GitHub Actions: verifica os fontes, executa os testes offline e compila o helper sem executá-lo. Ele ainda não foi executado no GitHub e não gera nem publica uma distribuição completa. Não recebe credenciais de assinatura e usa apenas permissão de leitura do repositório.
+
+Página do programa: https://signpath.org/terms.html
