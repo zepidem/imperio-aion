@@ -12,7 +12,7 @@ Status: 2026-10-16. Sources and inventoried visual resources are published at ht
 - [x] Prepare contribution, security, privacy and code signing documents.
 - [x] Confirm repository name/owner: the maintainer created the public repository `zepidem/imperio-aion`.
 - [x] Publish the prepared Aion tree to the separate remote repository. The first full source tree matches the verified local tree exactly. BDO visibility has not been changed.
-- [ ] Complete the hosted verification workflow. The first attempt failed during YAML validation before any job started; the command quoting has been corrected for the next run.
+- [x] Complete the hosted verification workflow: [run 38966883240](https://github.com/zepidem/imperio-aion/actions/runs/38966883240) passed for commit `8a4c906bb760368b2b66627d1b236c9573bf6453`, including all 69 offline tests and native-helper compilation. The initial YAML quoting error was fixed before this run.
 - [ ] Configure branch rules and review requirements. Require the `source-checks` job; prevent forced updates to release history where supported.
 - [x] Enable MFA on the maintainer's GitHub account. The owner supplied the GitHub success screen on 2026-10-16 confirming authenticator-app 2FA is enabled.
 - [ ] Enable MFA on SignPath when the account is configured; verify GitHub and SignPath MFA for any additional signing team members.
