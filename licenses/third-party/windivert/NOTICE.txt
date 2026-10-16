@@ -1,0 +1,7 @@
+WinDivert 2.2.2, Copyright (C) 2019, all rights reserved.
+Copyright holders and complete notices: see the included corresponding source.
+Redistributed unmodified under LGPL version 3; full license texts and source included.
+https://github.com/basil00/WinDivert/releases/tag/v2.2.2
+The application dynamically loads this library. You may replace it with a compatible version
+and reverse engineer the application as needed to debug modifications to this library.
+The library is not covered by any prohibition on reverse engineering in application terms.

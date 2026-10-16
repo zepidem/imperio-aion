@@ -1,0 +1,112 @@
+{
+  "responsible": "Zepidem",
+  "contact": "support@imperiobdo.com",
+  "version": "1.6",
+  "date": "16 de outubro de 2026",
+  "privacy": {
+    "title": "Privacidade",
+    "intro": "O Império AION é um monitor de execução local. Esta página explica os dados usados pelo aplicativo e os cuidados ao compartilhar um diagnóstico. Responsável pelo projeto: Zepidem. Contato: support@imperiobdo.com.",
+    "sections": [
+      [
+        "Dados usados para mostrar o jogo",
+        "Ao abrir o aplicativo com o jogo em execução, a observação das conexões é iniciada automaticamente para reconhecer a seleção e a entrada do personagem, com a autorização do Windows quando necessária. Durante a captura, o monitor interpreta mensagens das conexões TCP elegíveis do AION 2. Isso pode incluir nome, identificadores e servidor do personagem; classe; integrantes do grupo; alvos e monstros; dano, vida observada, habilidades, efeitos e horários de combate; Energia Od; ganhos de Kinah e pontos de Abismo; Deveres, Ordens e entradas de atividades; coleção e progresso de mascotes. A leitura depende dos campos recebidos e reconhecidos: um dado pendente não é substituído por uma confirmação inventada. Se a captura começar durante o jogo, o DPS considera apenas os danos recebidos que possam ser vinculados ao personagem ou a integrantes confirmados do grupo. Mensagens de outros atores próximos podem chegar pela conexão do jogo e constar em amostras de diagnóstico, mas não integram o DPS do personagem ou do grupo. Sem vínculo confirmado, o dano permanece pendente."
+      ],
+      [
+        "Informações técnicas e preferências",
+        "O aplicativo consulta processos e conexões do Windows para vincular a captura ao jogo, incluindo PID, nome do processo, interface, endereços IP e portas. Consulta também a posição e o foco da janela para posicionar a HUD. Salva preferências como personagem, interface, posição, tamanho, opacidade e combinações de atalhos. Os atalhos globais servem para executar as ações configuradas; o aplicativo não registra um histórico do texto digitado. Na instalação, você pode optar por iniciar o aplicativo com o Windows e criar atalho no menu Iniciar. A escolha de inicialização é registrada para a sua conta do Windows, sem solicitar elevação apenas por iniciar o computador. Quando o jogo é detectado, o aplicativo inicia automaticamente a observação das conexões elegíveis e pode solicitar autorização do Windows para a captura integrada. A seleção reconhecida é confirmada na HUD; a preparação aguarda as leituras completas. Configurar depois permite usar o DPS sem aguardar os saldos iniciais."
+      ],
+      [
+        "Processamento e arquivos locais",
+        "O monitor processa esses dados no seu computador e não contém envio automático de sessões, diagnósticos ou telemetria a servidores do projeto. As preferências, o cache por personagem, as exportações JSON/CSV e os logs ficam em %LOCALAPPDATA%\\ImperioAION. Sessões com combates podem ser salvas também no encerramento. A memória de diagnóstico pode conter amostras de mensagens das conexões do jogo, identificadores, endereços, portas e caminhos locais; essas amostras podem incluir campos ainda não interpretados. Arquivos locais não recebem criptografia adicional própria do aplicativo."
+      ],
+      [
+        "Site, download e atualizações",
+        "O instalador imperioaion.exe consulta por HTTPS o canal beta em imperiobdo.com/aion2/releases/v2 e baixa somente os metadados e o pacote de instalação. Essas requisições revelam ao servidor e à infraestrutura de hospedagem e entrega (Render e Cloudflare) informações técnicas como IP, data, caminho solicitado e identificador do atualizador ou navegador, necessárias à entrega e à segurança. Não incluem sessões de combate, mascotes, configurações ou diagnósticos locais. O instalador mantém no computador o estado das verificações e dos downloads. O site não exige login Discord para baixar o aplicativo e a demonstração usa dados ilustrativos. Não há rastreador analítico próprio nesta página. Os registros de infraestrutura seguem a configuração e a retenção desses prestadores; pedidos sobre dados tratados pelo projeto podem ser enviados a support@imperiobdo.com. O atalho oficial também verifica a disponibilidade de atualizações na abertura. A instalação de uma atualização é oferecida ao usuário, sem instalação silenciosa."
+      ],
+      [
+        "Sobreposição no OBS e Streamlabs",
+        "Ao ativar a sobreposição, o monitor disponibiliza uma URL local para o software de transmissão no mesmo computador. As sobreposições HUD e Painel têm ativação e URLs independentes. A imagem contém os dados escolhidos: histórico de combate e habilidades no Painel; combate, atividades ou mascotes na HUD; os nomes dos jogadores e os recursos do personagem podem ser ocultados. O link não deve disponibilizar diagnósticos brutos, endereços e portas das conexões do jogo, atalhos ou configurações do monitor. As atualizações entre o monitor e a fonte de navegador são locais. Ao transmitir a cena, o OBS ou Streamlabs e a plataforma escolhida recebem e podem gravar o conteúdo visível, conforme as configurações e políticas desses serviços. O Império AION não publica a transmissão nem envia esses dados automaticamente ao responsável pelo projeto."
+      ],
+      [
+        "Controle das sobreposições locais",
+        "As fontes HUD e Painel são opcionais, têm ativação independente e ficam desativadas na abertura do aplicativo. Cada URL local contém um identificador de acesso salvo nas preferências deste computador; trate-o como privado. Gerar nova URL invalida a anterior, e desativar a fonte interrompe o acesso. O serviço aceita conexões apenas em 127.0.0.1, sem publicar uma porta na rede local. Outros programas ou usuários com acesso suficiente ao seu computador podem acessar arquivos locais ou a URL. A Sobreposição HUD acompanha a aba ativa da HUD. O Painel acompanha o combate, o personagem e os gráficos selecionados."
+      ],
+      [
+        "Compartilhamento e suporte",
+        "Nada é enviado ao suporte apenas por clicar em Salvar sessão ou Salvar diagnóstico: esses comandos criam arquivos locais. Se você decidir encaminhá-los a support@imperiobdo.com, o responsável terá acesso ao conteúdo que você compartilhou para analisar a falha e responder à solicitação. Revise o material e envie somente o necessário; ele pode conter dados de outros personagens do grupo. Não envie senhas, códigos de autenticação ou informações de pagamento. Os dados do monitor não são destinados a publicidade, venda ou criação de perfis comerciais."
+      ],
+      [
+        "Finalidade, duração e controle",
+        "Os dados locais são usados para os recursos solicitados: apresentar o combate, recuperar o último progresso e investigar falhas. Um envio voluntário ao suporte é tratado para atender a essa solicitação, no contexto da relação de serviço; outras finalidades exigem fundamento próprio e informação específica. Cache, preferências e exportações não têm um prazo geral de exclusão automática. Alguns diagnósticos automáticos têm limites de quantidade, sem que isso elimine os demais arquivos. Para apagar os dados locais, feche o aplicativo e remova os arquivos desejados de %LOCALAPPDATA%\\ImperioAION; apagar toda a pasta também remove preferências e histórico salvo. Cópias ou arquivos já compartilhados não são apagados por essa ação. Material recebido pelo suporte deve ser mantido apenas enquanto necessário ao atendimento ou ao cumprimento de obrigações aplicáveis."
+      ],
+      [
+        "Segurança e limites",
+        "A captura usa filtros associados às conexões elegíveis do jogo e não foi projetada para gravar toda a navegação do computador. O monitor não injeta código no jogo, não lê a memória do processo, não altera arquivos do jogo e não desativa o antivírus. A captura integrada usa o driver WinDivert em modo de leitura passiva e exige permissão de administrador do Windows. O driver pode ser bloqueado por políticas do computador ou por ferramentas de terceiros. Use uma versão obtida do responsável, mantenha o Windows e o driver atualizados e proteja sua conta e os arquivos locais. Essas medidas reduzem riscos; não representam garantia de segurança absoluta, precisão dos resultados ou aprovação pelo sistema antitrapaça do jogo."
+      ],
+      [
+        "Seus direitos e contato",
+        "Quando houver tratamento de dados pelo responsável, você pode pedir confirmação, acesso, correção, informações sobre compartilhamento e, conforme o caso e a base aplicável, exclusão, bloqueio, oposição ou revogação de consentimento, nos termos da LGPD. Escreva a support@imperiobdo.com identificando a solicitação; não precisamos da senha da sua conta do jogo. O responsável pode solicitar apenas a confirmação de identidade necessária ao atendimento. Os direitos previstos em lei permanecem preservados. Links externos são abertos no seu navegador ou cliente de e-mail e seguem as políticas desses serviços. Mudanças relevantes neste aviso devem ser informadas na versão que as introduzir."
+      ],
+      [
+        "Consulta de atualização na abertura",
+        "O atalho do aplicativo abre primeiro o atualizador sem elevação. Ele consulta o canal de atualização antes de abrir a HUD. Se houver uma nova versão, você escolhe instalar ou abrir a versão já autenticada. Quando a consulta falha, a versão instalada continua disponível após sua conferência. O monitor não envia os dados de combate para essa consulta. A renovação dos metadados do canal ocorre na infraestrutura de distribuição; não precisa dos arquivos do personagem."
+      ],
+      [
+        "Preferências de instalação",
+        "Se você optar por iniciar com o Windows, o instalador registra essa preferência somente na sua conta e abre a HUD sem elevação. A captura pede autorização ao ser iniciada. A criação de um atalho no menu Iniciar também é opcional. Essas escolhas ficam salvas localmente no atualizador e são mantidas nas atualizações."
+      ]
+    ]
+  },
+  "terms": {
+    "title": "Termos de Serviço",
+    "intro": "Estes termos descrevem as condições de uso desta versão do Império AION, mantido por Zepidem. Suporte: support@imperiobdo.com. Leia também a página Privacidade, que explica o tratamento dos dados.",
+    "sections": [
+      [
+        "Licença do código-fonte",
+        "O código próprio desta edição é software livre sob GNU GPL versão 3, exclusivamente (GPL-3.0-only). Você pode executar, estudar, modificar e redistribuir o código conforme essa licença. Os avisos operacionais e recomendações de uso não acrescentam restrições aos direitos da GPL. A licença integral acompanha os fontes em LICENSE. Dependências conservam suas licenças; esta concessão não abrange imagens, marcas ou dados de terceiros."
+      ],
+      [
+        "O que o aplicativo oferece",
+        "O Império AION é uma ferramenta de monitoramento local para apresentar informações recebidas do AION 2. É uma versão em aperfeiçoamento. Os resultados podem ser incompletos, atrasados ou incompatíveis com mudanças no jogo, no protocolo, no Windows, no driver de captura ou, quando utilizado, no acelerador de conexão. Os dados exibidos pelo próprio jogo prevalecem para conferir saldos, limites e progresso. O aplicativo não realiza compras, não movimenta recursos da conta e não garante desempenho ou vantagem no jogo."
+      ],
+      [
+        "Instalação e início da leitura",
+        "Use o aplicativo somente em computador e conexões que você tenha autorização para monitorar. A captura utiliza o driver WinDivert incluído no pacote e requer uma conexão compatível e permissão de administrador do Windows. Não é necessário instalar Npcap, Python ou Wireshark separadamente. O ExitLag e outros aceleradores são opcionais: a captura procura as conexões do próprio jogo, diretas ou locais, sem exigir um acelerador específico. A compatibilidade de cada caminho deve ser confirmada em teste; esta versão não garante leitura de todos os protocolos ou conexões criptografadas. A janela de DPS pode ser usada dentro de uma dungeon sem aguardar o relog dos saldos. A atribuição de dano depende de mensagens recebidas do jogo que identifiquem o personagem ou os integrantes do grupo; sem esse vínculo, nenhum dano de terceiros é apresentado como seu. A captura não recupera danos anteriores à ativação. Para receber e vincular os saldos iniciais e os dados completos do personagem, relogue quando possível com a captura ativa. Um dado salvo em cache não equivale a confirmação do login atual. Não é necessário fornecer a senha do jogo ao monitor ou ao suporte."
+      ],
+      [
+        "Independência e regras do jogo",
+        "O projeto é independente e não é afiliado, patrocinado ou aprovado pela NCSOFT, pelos responsáveis pelo AION 2, pelo ExitLag ou pelo WinDivert. Marcas, nomes e materiais de terceiros continuam pertencendo aos respectivos titulares e sujeitos às suas licenças. O WinDivert é fornecido sob LGPL versão 3, com avisos, licença e código-fonte correspondente incluídos. Estes termos não restringem os direitos de modificar ou substituir essa biblioteca, nem a engenharia reversa necessária para depurar essas modificações. Verifique as regras vigentes do jogo antes de usar ferramentas externas. O projeto não pode garantir ausência de bloqueios, sanções, alertas de segurança ou incompatibilidades causadas por sistemas de terceiros."
+      ],
+      [
+        "Uso em transmissões",
+        "A sobreposição é opcional e deve ser ativada pelo usuário. Use a URL local como fonte de navegador no OBS ou Streamlabs no mesmo computador e mantenha o monitor aberto. Antes de iniciar uma transmissão, revise os nomes, estatísticas e recursos que ficarão visíveis para a audiência. Gerar uma nova URL ou desativar a sobreposição pode interromper a fonte configurada anteriormente. A URL não dá acesso a controles do aplicativo. O usuário administra suas cenas e sua transmissão; a disponibilidade e o tratamento dos dados pelo software e pela plataforma de streaming seguem as condições desses terceiros."
+      ],
+      [
+        "Dados e atendimento",
+        "O aplicativo trabalha localmente conforme a página Privacidade. Salvar um arquivo não o envia ao responsável. Se você pedir suporte, descreva a versão e o erro e compartilhe apenas o diagnóstico necessário, após revisá-lo. Não envie senha, código de autenticação ou acesso remoto irrestrito. O contato de suporte é support@imperiobdo.com. O suporte não inclui promessa de disponibilidade contínua, prazo fixo de resposta ou recuperação de arquivos apagados."
+      ],
+      [
+        "Atualizações, encerramento e responsabilidade",
+        "Você pode encerrar o monitor a qualquer momento pelo X da HUD e deixar de usar o programa. Apagar o executável não apaga automaticamente os dados de %LOCALAPPDATA%\\ImperioAION. Atualizações podem corrigir ou alterar recursos e devem ser obtidas do responsável. Não desative proteções do sistema para ignorar uma detecção: interrompa o uso e encaminhe a informação ao suporte para investigação. O projeto deve adotar cuidados razoáveis na distribuição e na proteção dos dados que receber. Não se promete funcionamento sem falhas ou segurança absoluta; nenhuma disposição exclui responsabilidade que a lei não permita afastar, nem limita direitos obrigatórios do usuário."
+      ],
+      [
+        "Versão destes termos",
+        "Estes textos correspondem à versão e à data indicadas nesta página. Uma mudança relevante de funcionamento, coleta ou condições deve ser informada com clareza antes de se aplicar ao novo uso. A mera abertura desta página não autoriza coleta adicional nem envio de dados ao suporte. Dúvidas e solicitações devem ser encaminhadas a Zepidem pelo e-mail support@imperiobdo.com. Aplicam-se as leis brasileiras, preservados os direitos e os meios de defesa previstos na legislação."
+      ],
+      [
+        "Distribuição e atualizações",
+        "O instalador beta disponibilizado em imperiobdo.com/aion2 consulta um canal HTTPS fixo, verifica a assinatura e a integridade dos pacotes e impede versões abaixo do mínimo aceito. A instalação requer autorização do Windows; feche o monitor quando solicitado e utilize a mesma conta do Windows para preservar as preferências e os arquivos salvos. O monitor não faz atualização silenciosa em segundo plano. Pacotes novos podem ser recusados após o prazo de validade dos metadados; nesse caso, tente novamente quando o canal for renovado ou contate o suporte. Uma instalação já autenticada pode continuar a ser aberta offline, conforme sua integridade. O executável beta não possui certificado Authenticode de editor. Essas verificações reduzem riscos, mas não garantem ausência de falhas ou compatibilidade universal. O atalho oficial verifica novas versões ao abrir e solicita sua decisão para atualizar. O instalador oferece inicialização com o Windows e atalho no menu Iniciar. A desinstalação pelo Windows remove o programa e preserva preferências, cache e exportações locais."
+      ],
+      [
+        "Canal renovável e versão de teste",
+        "Esta versão de teste separa a autorização dos arquivos da validade do canal. A renovação automática não autoriza executáveis novos: ela só referencia uma versão previamente aprovada, com limite de validade e proteção contra regressão. A autorização raiz também tem limite absoluto e deve ser substituída por uma nova versão aprovada antes de vencer. Em testes, um canal local só é usado quando explicitamente selecionado. A assinatura Authenticode de editor ainda depende de certificado ou aprovação do provedor; a preparação da candidatura não representa aceitação pela SignPath."
+      ],
+      [
+        "Desinstalação pelo Windows",
+        "A versão de teste inclui desinstalação em Aplicativos instalados e Programas e Recursos. A remoção preserva configurações e exportações. Os arquivos do próprio desinstalador são removidos ao reiniciar o Windows. Consulte UNINSTALL.txt para o alcance da remoção."
+      ]
+    ]
+  },
+  "code_license": "GPL-3.0-only",
+  "source_preparation": "2026-10-16; imagens incluídas a pedido do responsável, com autorização de terceiros pendente; catálogos excluídos; não é um instalador publicado"
+}

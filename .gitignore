@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+work/
+*.log
+*.pem
+*.key
+*.pfx
+*.p12
+*.dpapi
+.env
+.env.*
+*.pcap
+*.pcapng
+*.etl

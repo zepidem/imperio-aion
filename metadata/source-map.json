@@ -1,0 +1,649 @@
+{
+  "references": {
+    "app": "0.8.71 revision 4",
+    "updater": "0.4.2"
+  },
+  "files": [
+    {
+      "path": "src/imperio_aion/activity_entries.py",
+      "reference": "app-0.8.71/activity_entries.py",
+      "source_sha256": "bd9e074b8cd135233a712995969a3ccb2265ba72df436841960842655ad9ef77",
+      "prepared_sha256": "ef1b01c480bbcc5a911a6985efe3e6902074ef6751263cf3bd627b60ed2c3629",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/activity_view.py",
+      "reference": "app-0.8.71/activity_view.py",
+      "source_sha256": "f967089ac67e60db2601c597d9e1ba6353f6b647aaa4d9ed351589596a2dc0cd",
+      "prepared_sha256": "48d9d031d35cbc1904041ca857a2d22e55a4f169a5f3d2a61944d3b57209d91c",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/altgard_orders.py",
+      "reference": "app-0.8.71/altgard_orders.py",
+      "source_sha256": "542f576d3bb83ce5e46036a0fb8b2e24fd0c382b8895d7e9ee961a0804a4446d",
+      "prepared_sha256": "b77f6111313f8807d4e62da4ba61a8dd836b5d76bad032538b3d471782e5e8aa",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/analisar_aion2.py",
+      "reference": "app-0.8.71/analisar_aion2.py",
+      "source_sha256": "369681ce3ff7686e644c581dffaeee18f2205b350d536ccc8d1099e8427a44db",
+      "prepared_sha256": "bc3ae7a69f82291e3be76b9533f87076bd985ada3b897029f15e95bd44c705e6",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/app.py",
+      "reference": "app-0.8.71/app.py",
+      "source_sha256": "a08eb96bdfc44e8a3704c5fbebb55c807ea18e2187887a56cdc99b6ef602ac55",
+      "prepared_sha256": "2fec93a535d626902a2b86d5b6fa701a67fb0f79a1298ad41c8c7c651d0b778f",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/app_paths.py",
+      "reference": "app-0.8.71/app_paths.py",
+      "source_sha256": "6db92b461e82efe548cc09b4b365af2be721c2ab495e2b2bc672ed7df316e9d7",
+      "prepared_sha256": "013a5f28aa7ebcd73e304cb72ac21a43e5bb678532622a8333523b9a07c3d3ec",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/boss_picker.py",
+      "reference": "app-0.8.71/boss_picker.py",
+      "source_sha256": "03013df1121a807838e2589b97bef0fd52f4dc429fc87287291c4ea967d662fb",
+      "prepared_sha256": "11c2040d49c5460b08ed11174eaa042c4ec74dd1220ee6592dcab8e8769c0223",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/capture_elevation.py",
+      "reference": "app-0.8.71/capture_elevation.py",
+      "source_sha256": "6712f68b238f601d47c09184d750148c748ee157dd3c0da9f480ed623b7f0609",
+      "prepared_sha256": "fe92c62c460d759d0955df09d12c0da242dd556196eadfc84f9170f906bbe132",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/capture_readiness.py",
+      "reference": "app-0.8.71/capture_readiness.py",
+      "source_sha256": "e5b5e8f9034998b9c553ef693085dc7bdab36ea510e5ba3c9a98aa7f5d498a0d",
+      "prepared_sha256": "1c09884552ef1e62833a56fd830bf6737913f2a964c81bf52572b469ca876fa4",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/character_cache.py",
+      "reference": "app-0.8.71/character_cache.py",
+      "source_sha256": "a36dbe30b740b9db0de7411fe164aff11b0942eaca27d5233e5588055ce06001",
+      "prepared_sha256": "c26a60e853598ce1e868cea005464b0edcd023f1fdaad03bb5e888dff943bd23",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/character_information.py",
+      "reference": "app-0.8.71/character_information.py",
+      "source_sha256": "bcd01d1c9b158cd2a62d9b100f9e1181a3aba951b6775135daced5184b538adf",
+      "prepared_sha256": "c0e6830c951fbdb4b6a51bf5a096bbce463a491cb95c5e40fb8a27240f309884",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/character_selection.py",
+      "reference": "app-0.8.71/character_selection.py",
+      "source_sha256": "f8fe329e550d1f4cb1dc13806e4899418bfac59776e8372f47682183d908a718",
+      "prepared_sha256": "c006a02f6ed3a45ce58d804873a532ce3d1430d9767baf981b84156e3defd458",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/class_appearance.py",
+      "reference": "app-0.8.71/class_appearance.py",
+      "source_sha256": "68d689908bf8b7f22bfefb943da41f952e2031eea78b20d2ea026f79bcc601a3",
+      "prepared_sha256": "fa49b0ac81281522b2c2beaed716fe5fd498b29ae87087dd3fa56d4401bf15b8",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/class_icons.py",
+      "reference": "app-0.8.71/class_icons.py",
+      "source_sha256": "6cdb1aac197fd854988a2118eb682290ca511b33f66db9a6f73cc0bfc173f030",
+      "prepared_sha256": "dc831e47615d4481b512703c53e394d77ba8b86279b2bd879e89348f3448de98",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/collector.py",
+      "reference": "app-0.8.71/collector.py",
+      "source_sha256": "f83ae28ca9f2f5557c730ecb583ae25711494377825ea02d8adbbc95d269a819",
+      "prepared_sha256": "2641ca89f9967c57f74405ffe3483033a4a9f87f176143ff5454b3261297d15f",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/combat_charts.py",
+      "reference": "app-0.8.71/combat_charts.py",
+      "source_sha256": "147b3727c49c077c78b68a6ac87f0ba1be74584ec34cbdf4f876ca2a4b94a77c",
+      "prepared_sha256": "ec9492d71953e3288a55dc151ac234d10a4bdfaa30e641442fb4757071570f14",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/combat_panel.py",
+      "reference": "app-0.8.71/combat_panel.py",
+      "source_sha256": "db725a01bc6de5073d7c091a08fa1a6ca7b1de3b86463addff56666920e8bed3",
+      "prepared_sha256": "8757808519a63ede1d092fb9abda94066561b0350822d7705dd0d17dc930541b",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/daily_duty.py",
+      "reference": "app-0.8.71/daily_duty.py",
+      "source_sha256": "2b72c6b77ceaf512baebb11fe68b15614641a3ee6ecb822e5980c785cee0e8f5",
+      "prepared_sha256": "0cd997f7d960b2055d6c87d80048f837d0cbe64695587e649eee57caf6853734",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/diagnostic_recovery.py",
+      "reference": "app-0.8.71/diagnostic_recovery.py",
+      "source_sha256": "fa806cf360f825f4ce0a91dff0f9099c2b7f02166c716017b18bd4e1e6e92e91",
+      "prepared_sha256": "a3760518228b3838845c4ed7a037e68056989635df76b0b9aa6db771957419f4",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/game_startup.py",
+      "reference": "app-0.8.71/game_startup.py",
+      "source_sha256": "fb27df70091d228a5f9b47469aa39104b258088156607cdf9cea03f301a2032e",
+      "prepared_sha256": "ac3736c04c30dd4f44d8d8cbd0ab883d861577f838083df8424729c1f8f1b37b",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/game_window.py",
+      "reference": "app-0.8.71/game_window.py",
+      "source_sha256": "8d0f169c5b74dc3f85b2504c40c6bd3487900942b62f972c367f0e56b3189563",
+      "prepared_sha256": "e2acbeb38abc41f8c37cc919d7c07795b941d8a56ccf14ea36e9ad6ac9dc3878",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/group_core.py",
+      "reference": "app-0.8.71/group_core.py",
+      "source_sha256": "43c94ee7adb127308059d25c9d48e3c73b390f8122f9393544079348e5ee1946",
+      "prepared_sha256": "b350fdac5e4fb515cde3c7ccf822ac7be6776783c66764365ada5f8bbe06d830",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/hud_assets.py",
+      "reference": "app-0.8.71/hud_assets.py",
+      "source_sha256": "5b7e50192c368416fd782fbe2950d1adf6c4e5301b8ce30d50f99191c2b790d7",
+      "prepared_sha256": "969fceda161510a51a521b8b3dbd136591600fb8a72f34f864e3045002e8c655",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/hud_border.py",
+      "reference": "app-0.8.71/hud_border.py",
+      "source_sha256": "2b05c795cb1db2e545cb6a09b36502a28fe087c00dedaee0bda88542379b0ac7",
+      "prepared_sha256": "4fa6afa1cd61a1852b76604802cc33e94ddbcb3ada7496abf0e11504247c1c57",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/hud_controls.py",
+      "reference": "app-0.8.71/hud_controls.py",
+      "source_sha256": "08d65d48eda08c839fe7409f15ca9d646bc91a7c3507e599a9f34fb5d249edcb",
+      "prepared_sha256": "ef1ac77e80d831f492a7efacbcaa2c49523992dd15dc141bce55814d2c3feecd",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/hud_effects.py",
+      "reference": "app-0.8.71/hud_effects.py",
+      "source_sha256": "8ac5fa3acf8a8b26c4537932c83fa02a3503af5ce979dc1b5223abc76d9fb9d8",
+      "prepared_sha256": "b1d4d711945a5451f671f53d1b3f228710faabd02b75c1271b07919441b405b8",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/hud_view.py",
+      "reference": "app-0.8.71/hud_view.py",
+      "source_sha256": "121ebeaca04ac7058c5a7a8f22730cf71f150169835096f65f4c7c8b874aee2d",
+      "prepared_sha256": "41fa38969948fb7225473f101f0f56b14e0640ea4c1aac88961458452d88d9c3",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/inspect_wire.py",
+      "reference": "app-0.8.71/inspect_wire.py",
+      "source_sha256": "4fcdd663367da0fc1dd4ac1649d07a892b81877217f83abe7c260a65658fad01",
+      "prepared_sha256": "95aa456be66d1366ba9dbb703d9d0087bfc20f677177eefc11510ae1b43d9ae4",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/installation_guard.py",
+      "reference": "app-0.8.71/installation_guard.py",
+      "source_sha256": "13ad9df719337502eb66ea18ea7f8955f34947cf707918d6add6ab249c6e3904",
+      "prepared_sha256": "2636a8755f8a7614df276efa558bd5723addccc2f66b437ef9cc1c060699b7dd",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/live_core.py",
+      "reference": "app-0.8.71/live_core.py",
+      "source_sha256": "ee111bd50f50f1b7c3480aab567db8c345272dd2a1e743eaae627d16036e8edb",
+      "prepared_sha256": "6c0b2858db3ccc5380f68b9c7d66346ec61ae232c18b05b5318ef4fac67e9ed2",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/login_orders.py",
+      "reference": "app-0.8.71/login_orders.py",
+      "source_sha256": "66830166332bfa6b863955e83e9e06b89d7a9adf8aa5f6d6cb2ea97df391eb19",
+      "prepared_sha256": "6da7e6f974a9736a35e040fd337cb79749ddb7cf32f25d210aec5f1ec907b627",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/logo_hint.py",
+      "reference": "app-0.8.71/logo_hint.py",
+      "source_sha256": "ff19b0d9a5c2e38bb93eed2e3bdb1b0a9a1dd6401762b6460600ebc2c9fcb1af",
+      "prepared_sha256": "3b01671264792a365a0da533f5ef09c4a58772150837cc7e7b8f617e3eeb0073",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/manual_activity.py",
+      "reference": "app-0.8.71/manual_activity.py",
+      "source_sha256": "f5eda89736b3869ff8a9e5a274fa2dc62afd016b6f7a1765cb9c39b33e0a0835",
+      "prepared_sha256": "dea363c2892c64cd5d86804a49d9e61e8a99c417e0132e503e8923d0036cb04c",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_cli_probe.py",
+      "reference": "app-0.8.71/native_cli_probe.py",
+      "source_sha256": "6d7f419122d11b8ae6a0afa73c06f95bfa9ac7ad8bd54968d8c2ddefa95426ed",
+      "prepared_sha256": "83b070b28920e5023face0870c5973689c786018d0cd4d525e856842126d7524",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_connections.py",
+      "reference": "app-0.8.71/native_connections.py",
+      "source_sha256": "1671c35ca385621c2430b7940cb31cd7e2a9f135e970c097fcd6686e0f7ece90",
+      "prepared_sha256": "65c1425f793f090b9623479cd6892e4c5f45335583bd4041721c52b152ac93e8",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_etw.py",
+      "reference": "app-0.8.71/native_etw.py",
+      "source_sha256": "dae00f3dab69dc35ca0926fca405818cc22a7052261d1957415c9fd83e6321a2",
+      "prepared_sha256": "145def24f490c8864d5a761a64980825eea9e1d122c1666137d535ad8b17ff55",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_identity.py",
+      "reference": "app-0.8.71/native_identity.py",
+      "source_sha256": "299095a5546af3ccea80bbacc282f5e46e2cca2008ecf52e2f81fac62fde46d7",
+      "prepared_sha256": "97b4840c1e6234f528b03282ff1303a66285b945709106daa6da6c08109cd04a",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_npcap.py",
+      "reference": "app-0.8.71/native_npcap.py",
+      "source_sha256": "28b5979bef12e6cc9589508baceb8ab2daf3b09ed91ef6c546b5c6d4e75b4f69",
+      "prepared_sha256": "e79d844121fa4483ea2b15b0b2504f2ab19801105df50b3a7e6d70c3fe907c12",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_packets.py",
+      "reference": "app-0.8.71/native_packets.py",
+      "source_sha256": "497022f960a81f0b1983d73bca331a593b1a8fb741e46976f94b100a08ad3496",
+      "prepared_sha256": "ffb65f7cf70ce0aca0534edc25cda0e3588fc5deb8ec734fd6689b33d5fd5a29",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_pktmon.py",
+      "reference": "app-0.8.71/native_pktmon.py",
+      "source_sha256": "45a0e71c5d5da56e1db7cdcd3f11dc9f24fd8058e10a49a66341802079410f4e",
+      "prepared_sha256": "0b49e9aee531de873941452bf6a6b2e0a1c508492387292e1ea0e953ddba0479",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_pktmon_cli.py",
+      "reference": "app-0.8.71/native_pktmon_cli.py",
+      "source_sha256": "e40c080622f5f4aacb614e6a94327800e5bc704a3d80b6909cc1e92fce870f05",
+      "prepared_sha256": "605bc5ad05072f94ca4dda4a3fea3c1652ab28021d3b5d3b5105b2f4a9299976",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_probe.py",
+      "reference": "app-0.8.71/native_probe.py",
+      "source_sha256": "6618a90e39496fb09a22cbe0d86a4866fcc81a713430812ff8c5f2386a8c2ce1",
+      "prepared_sha256": "628bf22f22c06f3cadab9758c0ff34931a2e0bd5739440c3fd18630602861fe2",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_shortcuts.py",
+      "reference": "app-0.8.71/native_shortcuts.py",
+      "source_sha256": "e7cb9074e797d664bcfcb941f90d731ba5f7019fba62685b1faa41f9e3756a22",
+      "prepared_sha256": "c3acf52cd194c3cc00cfa2c4a53914339217f697abd7256e1aa23195f957f600",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/native_windivert.py",
+      "reference": "app-0.8.71/native_windivert.py",
+      "source_sha256": "ebb7998f524626c4407f54dd000994e668d9a19f3dce79c4ad2feb864aa01f78",
+      "prepared_sha256": "8f54c0aaa660d955c5613311632be660e6bfac17c5f47013b1292f56a138396f",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/od_energy.py",
+      "reference": "app-0.8.71/od_energy.py",
+      "source_sha256": "e19e361095eff8ac6c9a0a8d2aa334828b7eb957b1cf5c6e2cff20d9d6ef4148",
+      "prepared_sha256": "da152dda11cd1128ddb0fc77ef04ae84b63057979cb5f77e6fed48e1d94593c2",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/order_accumulator.py",
+      "reference": "app-0.8.71/order_accumulator.py",
+      "source_sha256": "cdc3b5b29ccbc380c8844b7ac90b0c79791b2e6329bfd787bda71661c81a3c81",
+      "prepared_sha256": "9e383617b3c7c6aeabcee8d299bd8ae2bb8d31bd9ce1b82622355c5b5503747e",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/panel_components.py",
+      "reference": "app-0.8.71/panel_components.py",
+      "source_sha256": "c85e01b90ea5f587de76d9f5c242773d4a238211d2a9808cc50380253d4b2575",
+      "prepared_sha256": "f044c43698690add4f1a14dfb3b398ba0ca364013bc82c87208207363225a153",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/panel_revision.py",
+      "reference": "app-0.8.71/panel_revision.py",
+      "source_sha256": "d4da77ed3be3bd08c1e3a538b231969d805ea084b42a02752435fab42a1b4187",
+      "prepared_sha256": "16339880dcdbef979bc88888430e77fb833c5861e1adeef5b0fdbabf6a01a1b9",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/panel_widgets.py",
+      "reference": "app-0.8.71/panel_widgets.py",
+      "source_sha256": "f002559c308bce9c3031907c03db6c2f61257b931d60e9d3aebdfb688598a8d3",
+      "prepared_sha256": "1553ff5742fd73be6197adb1ab84428616eb205314dfeba8d869fc053a33d8a3",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/pet_catalog.py",
+      "reference": "app-0.8.71/pet_catalog.py",
+      "source_sha256": "fa610782af027e108d0a976cd6b2585db54e40ecac7e503b00dcde00400fa4ae",
+      "prepared_sha256": "c059ea662897134c0556ba0a2356d3a5fb9f72569c7721fef40cf7c5288b2de3",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/pet_collection.py",
+      "reference": "app-0.8.71/pet_collection.py",
+      "source_sha256": "ea797b375db8468ef915c138a7ba0ca50e71eef58512498236f6a3ed18fa4f82",
+      "prepared_sha256": "ae001a075aa21b5015b58f816001f48301b7f70c468fe1b5ce28f2d7ca219137",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/presentation.py",
+      "reference": "app-0.8.71/presentation.py",
+      "source_sha256": "ee522950600c3996cf52259b0c4ecd82691006e6ff0874f74d0c3ded0cf04a6b",
+      "prepared_sha256": "c62b8ba8b376c28e1d57b55d74f64677e44359b4ab26d97f5a1a785358e65a5d",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/probe_amounts.py",
+      "reference": "app-0.8.71/probe_amounts.py",
+      "source_sha256": "290728bae1daf4bb884a47c8049c388b8f372a4557709c1928b726d8d4647697",
+      "prepared_sha256": "39ee4dcb4eb62871e4c9e25920cb78ae45300f856027147dc25f283dba24d162",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/resource_gains.py",
+      "reference": "app-0.8.71/resource_gains.py",
+      "source_sha256": "9b7d17f54d0a64f11a6433086b5dc7f94950b2b3507d3ca550f5eb4421a76bd5",
+      "prepared_sha256": "5c36a26834cf7c762fa5af8e9c0d9c494731860610bd0e7bf7aa87948508cc3e",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/resource_refresh.py",
+      "reference": "app-0.8.71/resource_refresh.py",
+      "source_sha256": "90d5194f9c7c24c3be866d79b064e177df133b897ce82e3d1282308ce4f878c7",
+      "prepared_sha256": "ee02743ad9cc5be65da03dbc978a16888f849263fc3a0a87282caf93b54a642c",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/resource_view.py",
+      "reference": "app-0.8.71/resource_view.py",
+      "source_sha256": "f8cfdb87d9f875a42d6a71d6e216b502347ecbbca569db0e8958c24f433e7f2b",
+      "prepared_sha256": "7fb30de2a23541cae3450d9f3c1b0dd41c88a9aef69567d14071bb2c93191fb3",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/shortcuts.py",
+      "reference": "app-0.8.71/shortcuts.py",
+      "source_sha256": "a172830705019dfc40e0c3033806756128948804277520d87d3a3eadbe1ea845",
+      "prepared_sha256": "1924f95a49d418b0e4f3d5e40c02194d3130c1702d87f07a9322f7b66a2d267e",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/skill_catalog.py",
+      "reference": "app-0.8.71/skill_catalog.py",
+      "source_sha256": "ba1f836b5503d4e1d75abce8e37d7b98f5a3f5955a8f841721c17e7d6d379864",
+      "prepared_sha256": "5fabe88d6b1a845ff1d3e7e562fe7c74ac150588de1bdee684754bd6cd155a58",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/startup_identity.py",
+      "reference": "app-0.8.71/startup_identity.py",
+      "source_sha256": "0cb594b7f823949086079d121c76625be1f58a4aa5f35a326ab0368c686e5081",
+      "prepared_sha256": "ea03114f1bcf348a84134c56938d89696caa4afe37308f2e77e98d70a5a08e2e",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/startup_link.py",
+      "reference": "app-0.8.71/startup_link.py",
+      "source_sha256": "d56e41fb8956efb294af4a74aa9284dec2c321c9350206998c63bcc5c722cadf",
+      "prepared_sha256": "09cae3dc4cd032abe383d0321fca692762535577541edfb86af9cd6dcc41144f",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/streaming_server.py",
+      "reference": "app-0.8.71/streaming_server.py",
+      "source_sha256": "0ade222de8d0f6723dcc3d71276aaddaa7086cbf84c9cc8609bdaa2f887032bd",
+      "prepared_sha256": "711da7d6e1a6c28e1118906708325551474b1e7a259a734a0d3b861a095c1618",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/streaming_state.py",
+      "reference": "app-0.8.71/streaming_state.py",
+      "source_sha256": "653c92f4f7613aff4acbe90b178e0fca5d010e57bbb91d20f23617314c08a47a",
+      "prepared_sha256": "490b60eae56af7e190ffbe28e2b239304c3bbb30e89a636a39ee5f6e3faa7222",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/streaming_view.py",
+      "reference": "app-0.8.71/streaming_view.py",
+      "source_sha256": "67bdb1e835e8f2d3b20612a587bdd228b58c06d7310587bf4f127a29ccea5d3f",
+      "prepared_sha256": "daadb4f4fe11c50eea12181257c732ffcfc8b0d2bb9e376780cc0ec418422af9",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/weekly_orders.py",
+      "reference": "app-0.8.71/weekly_orders.py",
+      "source_sha256": "a1cfd003d2c117122f9a56a987437a23faa3e606640d4ecb2a87dc0f0f3f561b",
+      "prepared_sha256": "f52e48703d625ef9e8ca8dea81ad00b85bd036a31f20ce66400e741db0f397b7",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/windivert_probe.py",
+      "reference": "app-0.8.71/windivert_probe.py",
+      "source_sha256": "55ed29296e96f106337b2ff1ce7531c21f47377886ef4fe5ea9d4f0962cb6e22",
+      "prepared_sha256": "c83206b3d404d0b14f1c3d1e11b3c562c6f9977e7e03942a72af8dc85537bbeb",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/windows_tools.py",
+      "reference": "app-0.8.71/windows_tools.py",
+      "source_sha256": "1b2f103318f67ad0331bd741b3e00dfda8e8baa48d9c1abc289f5589de300abe",
+      "prepared_sha256": "6f87c1f8e263f2766f11d0e6da0341e904be4c745c3c47dbdb99f08e3ee5c0d0",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/Observar-Conexoes.ps1",
+      "reference": "app-0.8.71/Observar-Conexoes.ps1",
+      "source_sha256": "4630236633ab51f741b98a438fd79c075a03199cabae9ad03b13fd06f1bad546",
+      "prepared_sha256": "7295db2ca4abff1414aa0299eae8c83a93ad63e7cd1035d97d95dd9f8dae359d",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/desktop_entry.py",
+      "reference": "build-0.8.71/desktop_entry.py",
+      "source_sha256": "ae40881d57e2aff4f6c5b9ff78b74c318f8e165f91b32fedd2f70698b4f1d1f2",
+      "prepared_sha256": "656796d54ccc857bad66876ba9df38eb243be5ea594ea343dfad224d367a2976",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/UNINSTALL.txt",
+      "reference": "app-0.8.71/UNINSTALL.txt",
+      "source_sha256": "b22d6210b18169c33653d151069026964999646cd74ab9212e008ed6aa83f0c9",
+      "prepared_sha256": "1789d329296501169bfdb14cafa32774fe791946951e083eee176b5dac0bed8d",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/desktop_shortcut.py",
+      "reference": "updater-0.4.2/desktop_shortcut.py",
+      "source_sha256": "6a8d4e7e251cd5eb5eb181b44d850cba6ade99d09c558c3ae7430dad7fae74c4",
+      "prepared_sha256": "70b68d8336692c96d183ec2f45bd7bb7b02abec86a0c89464dbadca7d3476fdb",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/helper_trust.py",
+      "reference": "updater-0.4.2/helper_trust.py",
+      "source_sha256": "b9bdd1a35b3315790bfc627b9b4b70ded34b2c69b045a3229285296af285c3db",
+      "prepared_sha256": "e66c66e5ea1c1212074503d8749ddda5fe43bef6489d7840665fe86cdac97905",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/install_preferences.py",
+      "reference": "updater-0.4.2/install_preferences.py",
+      "source_sha256": "2d38e7e3b0062a2a44c921d888b2ddaaecdd2b1b1e3b0b48355d9cf9a6c29abb",
+      "prepared_sha256": "a5a486563178e8acea71fa7700c266dcadab455856bc7620edb779482969426f",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/renewal_core.py",
+      "reference": "updater-0.4.2/renewal_core.py",
+      "source_sha256": "fb67be0d8214b4a804a212f16ea66a592c6a6d9fce47c8c1b09719f4da14e873",
+      "prepared_sha256": "bc0fa01c92446e194e11a051ff8b4b8b105a0e95b5a092c951ce3363c2b0f09d",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/startup_flow.py",
+      "reference": "updater-0.4.2/startup_flow.py",
+      "source_sha256": "e85e4ecc1f939b3c8d64c91395c78ca81e8984d729f02c8c9f676c79e3baba4d",
+      "prepared_sha256": "4245f7ded0819b7552ca6616b8a5ce9466bdb6a95849246b806e3c7e142c7bd0",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/update_core.py",
+      "reference": "updater-0.4.2/update_core.py",
+      "source_sha256": "8b3c51a9e0ba2e50df8a497b553740a7d489bb73fd7d1a4bb7a102fc19b0f594",
+      "prepared_sha256": "c04daba30bb9689465a0d4d288740013bca9f989b1fbae9de699215c4b8adc06",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/update_service.py",
+      "reference": "updater-0.4.2/update_service.py",
+      "source_sha256": "d40e4ccf7f081a51e34f0d54fb0c03e0f9e6e0ac16051cd16f736ac61dff25fb",
+      "prepared_sha256": "18418b805b993fd5923c1e6b07bc1116e574bb64d61ffe693dad256ea3cd4447",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/updater_app.py",
+      "reference": "updater-0.4.2/updater_app.py",
+      "source_sha256": "b0b2bd117e325380507836c7d6f9334d11ab2f93cf66d5c33d46e11e6f745f45",
+      "prepared_sha256": "c715da0b62df01d5b1886c9820353eaee6fdea6bbed6c520faa247fe8ce9f2ba",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/updater_trust.py",
+      "reference": "updater-0.4.2/updater_trust.py",
+      "source_sha256": "47d392df69b77343b298ad3dcd6189f6cd3b15eeb94ba4e5f4ea57e780739a50",
+      "prepared_sha256": "1c344edcfeff0de19d3abba236e32aaf30d5b7df6b3583d8a8f4466a4ac6652d",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/updater_view.py",
+      "reference": "updater-0.4.2/updater_view.py",
+      "source_sha256": "2bd477dc8c9440bba6d6ac5d4e4fa46fef2f9d7e319760cb13340d9d0dc42ba4",
+      "prepared_sha256": "6bb3075bdfec0ae7d74c713d080ad4446c316fb49a6c996a2e041a84d958eca8",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/verify_core.py",
+      "reference": "updater-0.4.2/verify_core.py",
+      "source_sha256": "ae316049d56ef31182e1e39da069de657acdb671fbd53cdf70fc830bbbf16cbe",
+      "prepared_sha256": "9e6e2241e38c54f5ec5b80db6b461d92b62be1e1e4cd080760fafded9131f01b",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/windows_bridge.py",
+      "reference": "updater-0.4.2/windows_bridge.py",
+      "source_sha256": "7c0d1ccec9c749f996136a62710c967db2cdbfa1e30e63b954877c461d9a1a3d",
+      "prepared_sha256": "fb5262845f159e0c09da0e203c7378bcab0d2fc2a3c33b9e3c7955fcebc1d8da",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/Installer.cs",
+      "reference": "updater-0.4.2/Installer.cs",
+      "source_sha256": "bbec657e70d12544b9b75520a8739cc2e40917571ef419e953f9eb9b6aa4dac8",
+      "prepared_sha256": "4da5c550761fcc39838120c86a15f430f494b2543e5688384904a8779ea92a61",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/imperio-install.exe.config",
+      "reference": "updater-0.4.2/imperio-install.exe.config",
+      "source_sha256": "bfaaadc22b1f4e8c9f38ade752dbda35b234f7bc47bb5a70d42b5386b66fcbe3",
+      "prepared_sha256": "bfaaadc22b1f4e8c9f38ade752dbda35b234f7bc47bb5a70d42b5386b66fcbe3",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/UNINSTALL.txt",
+      "reference": "updater-0.4.2/UNINSTALL.txt",
+      "source_sha256": "b22d6210b18169c33653d151069026964999646cd74ab9212e008ed6aa83f0c9",
+      "prepared_sha256": "1789d329296501169bfdb14cafa32774fe791946951e083eee176b5dac0bed8d",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "tests/updater/test_update_core.py",
+      "reference": "updater-0.4.2/test_update_core.py",
+      "source_sha256": "5713df9b6842d5cd80e0cc0e3e06cf1d9797624a4d54b8c5085f8f76cf53e3ed",
+      "prepared_sha256": "d023072b36ee910e3316beb9d2a84880779eeabc276fe6832b24d77bb926e247",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "tests/updater/test_update_service.py",
+      "reference": "updater-0.4.2/test_update_service.py",
+      "source_sha256": "1948ac30f8a35aa56614a3661638f0c88abe24f6eb7d006e42a068444df8bea5",
+      "prepared_sha256": "dcc0ee2f66d853ecde175691b331465c1a1bdad1f27d4f56ebc8efc1b8b5c103",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "tests/updater/test_install_preferences.py",
+      "reference": "updater-0.4.2/test_install_preferences.py",
+      "source_sha256": "54bb4f11de4d88998d02c97f46e538e12a106d8b4048bf6cbb2b1aa321ef1ee6",
+      "prepared_sha256": "8a1981220b97732fb4b0dda9f2c0b120d6ef124fe65c066137e6ab065df96f96",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "tests/updater/test_startup_flow.py",
+      "reference": "updater-0.4.2/test_startup_flow.py",
+      "source_sha256": "c39ec908cde8e46d860c485eee509bea9042e28431bfc317bbd10a80769f1e73",
+      "prepared_sha256": "ec8b9885baebb4967e16593ec566be5e0e0bf5facaddd8fa4fd083d8506c95a9",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/imperio_aion/dados/legal-pt.json",
+      "reference": "app-0.8.71/legal",
+      "source_sha256": "1d463be5d5cb45829d069a25bd82c82d795020b57394f5342bee132c9e731310",
+      "prepared_sha256": "3af55580064abe59dff48b436df36e2c2c2c47c6f90168e8c929fbd473fe4370",
+      "license": "GPL-3.0-only",
+      "change": "GPL precedence added; restricted redistribution wording removed; source-only state identified"
+    },
+    {
+      "path": "src/updater/legal.json",
+      "reference": "updater-0.4.2/legal",
+      "source_sha256": "9256a3783cdd525e4d99bbe5034c83257c4256c3bc39b2b555b689fa2c6e8633",
+      "prepared_sha256": "9155c71e72113c8d0f2b36520be84c5e2d7429f793cd0e6f63bff2b4d77ce2f4",
+      "license": "GPL-3.0-only",
+      "change": "GPL precedence added; restricted redistribution wording removed; source-only state identified"
+    },
+    {
+      "path": "src/imperio_aion/perfil-sa-experimental.json",
+      "reference": "app-0.8.71/perfil-sa-experimental.json",
+      "source_sha256": "492c2a4b98ce8aceaccd83fc8d7448fc2af0cc0e15922cfc9181067427e58fa3",
+      "prepared_sha256": "99cd1a62a6057cb10374180ab4d4c440a1a4528fb2cfc8f31f1ab0d2c3878efe",
+      "license": "GPL-3.0-only",
+      "change": "Third-party lookup names and IDs removed; empty source-preparation profile."
+    }
+  ],
+  "line_endings": "LF in prepared files; original hashes refer to original bytes"
+}

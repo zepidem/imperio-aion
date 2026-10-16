@@ -1,0 +1,10 @@
+{
+  "version": "oss-source-preparation",
+  "region": "Global SA",
+  "skill_names": {},
+  "known_damage_dot_ids": [],
+  "lookup_is_observed_subset": true,
+  "screen_damage_validation": false,
+  "sources": [],
+  "notice": "External reference tables omitted pending license review. This profile does not reproduce the released application's skill identification."
+}

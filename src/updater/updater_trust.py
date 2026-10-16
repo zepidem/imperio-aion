@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Zepidem
+# SPDX-License-Identifier: GPL-3.0-only
+"""Public TEST channel anchors. No private keys. Production not enrolled."""
+PUBLIC_KEY=bytes.fromhex('fc71e5a29d4f3cce12ab79f53cb287c74deac31bfaf8806374b4179194bfa5be')
+MINIMUM_COUNTER=857
+RSA_PUBLIC_XML='<RSAKeyValue><Modulus>oj5Njy9iANkl8Q8keup8/bp0VguDtW1+AaIM1mrYD/VcGpXkEUwgpEgSvbILgSu9caSieZl3GaaqadjRXR656yCJZLNXKMZdvcXLatCkcLQYf1Ox3f/wpBapCRxjVsHTCwmvdkxyk2uza7qAMHB5G6TeOKHVKk6teZq1zOPXiQVMhlvuLPlUCbC5DEztSTpM/yH4wJeUVF2KJircUiRz1tqSb1SRZ6XReUzFBlwNxm2S50xecFbjjTAsJZ1PIfvbcC4AtcveElpob5wdt/j6EGzw4DlkimU8VE4YsCHtmYgM6ily+4yT2eTgHiXi15RWvEO/dDRyGi0ySDi64ooAQuCvzMv2bF3CXiSzxFE0mky5yy61gy3UaxPl6gCF/KyXGK4AioHTVY8tW67WZdc5Q7qLNqI8nuWg3Jgb8kqIs2C0R3KS2sUeeXjzZrvlYKahe6Fn8K0hOI8foH2QgifayAunthpX3fYo7VgPREzPtWD8QDoMm+Pj51TNINzDVm3D</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>'

@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-16",
+  "files": [
+    {
+      "path": "app/assets/kit/captura-originais.json",
+      "sha256": "5876450a3d529b28c93ae8a5b949dc32c812ba7cdce2485fb90b894542c584c1",
+      "bytes": 472,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/classes-raster/LEIA-ME.txt",
+      "sha256": "8a5fc1bf90f73bd748997d05bdefe429bf457ceadac4ccb0b292954ec244a789",
+      "bytes": 1228,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/classes-raster/originais.json",
+      "sha256": "8f3fec270f5b7101cb1462807e601337a6745073e66c844851cb7795a661b527",
+      "bytes": 4279,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/dever-pena-origem.json",
+      "sha256": "1dafb8862dd6661009ecaa463fb375ba40f16943915a6fbd7a6e3451c72b8ade",
+      "bytes": 314,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/LEIA-KIT.txt",
+      "sha256": "e1454546786e5aebe7f9828557a4d6ca8cc7d942007369d1750499a3dada21f4",
+      "bytes": 1377,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/mascote-coleta-origem.json",
+      "sha256": "9bab1b5cb3a123279ff9d8193e686eb67ff1e117c23bdb6ffd635b3e431985f9",
+      "bytes": 278,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/mascote-pensativa-origem.json",
+      "sha256": "2e1d5fe04e392fa03fea935da4c67497d425657d7afd2f8dd4fecdd75d060743",
+      "bytes": 281,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/originais.json",
+      "sha256": "5556c9f4cfc516e5caab28e1816db8777b98103ffe0fc7d8179c04b401f44616",
+      "bytes": 1894,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/paleta.json",
+      "sha256": "e15a7cd930bda2aac005a4494bfe2bd663cbb14a805b67cb37649f08e58b2e29",
+      "bytes": 1268,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/recursos-originais.json",
+      "sha256": "1a4aa7ef208cbcda38fcb54d5c05b89e931efd4e47f641edce4b475d511aa641",
+      "bytes": 469,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/kit/targets-raster/originais.json",
+      "sha256": "f4c6bd5233fd5439a6facc3d95a81fc65845521562c8e70f4e64386cbeb0b088",
+      "bytes": 409,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/panel/nav-manifest.json",
+      "sha256": "2d88438559e6fda5d5887fb8a0793f8599604f22a212c81073cb4dc97405e88d",
+      "bytes": 1740,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/assets/streaming/overlay.html",
+      "sha256": "c08cd6c56cf5b589f1df7490764dc97a4e66c0f7e303d2161c99e3d9c64dd4d2",
+      "bytes": 13417,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/dados/COPYING-npcs.txt",
+      "sha256": "643d62995e5ea9d6ab5c05bc84597e0ad607bb113cb3eb97c34dbc9b565f4304",
+      "bytes": 36105,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/dados/MASCOTES-NOTICE.md",
+      "sha256": "c37b22d0fbbb7b99d5b176d3ef491e1aaf8c1549d6bba65856ee6c3658a0c4c4",
+      "bytes": 1792,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/dados/mascotes-pt.json",
+      "sha256": "f13aea677c0b6285b5f23fff7db71c7483cdc0e3c7ae0ce11d3b1052f4bfa5cf",
+      "bytes": 128372,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/dados/NOTICE.md",
+      "sha256": "cea968f0d97419091da258a07f5d60f70119c2738260177834ac648bacbbb0a0",
+      "bytes": 1168,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/dados/npcs-pt.json",
+      "sha256": "ad328a2db07f4673ddbcbb859757c98bd2b87763f39171cd57d0179e7d536fec",
+      "bytes": 803063,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/dados/SKILLS-NOTICE.md",
+      "sha256": "18566fdafdb04b7789c7d8b89d53b40e0dc5247368e015929223857b043e85e1",
+      "bytes": 927,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/dados/skills-pt.json",
+      "sha256": "d1399025abb50edba6504ef952e479e2c33a409ce37da1b5f48640667d5d0c35",
+      "bytes": 411890,
+      "reason": "third-party asset/data rights not established for this publication"
+    },
+    {
+      "path": "app/vendor/windivert/LICENSE.txt",
+      "sha256": "14a0cb5214d536e4fdae6aa3f5696f981eeda106cd026e9794bba489ee79d628",
+      "bytes": 61349,
+      "reason": "license-cleared upstream binary omitted from source-only export"
+    },
+    {
+      "path": "app/vendor/windivert/NOTICE.txt",
+      "sha256": "a4f448a7a9964bd724b48cd84a44ccaa14a2994c3c0ff636cbc9341536fe489e",
+      "bytes": 559,
+      "reason": "license-cleared upstream binary omitted from source-only export"
+    },
+    {
+      "path": "app/vendor/windivert/WinDivert-2.2.2-source.zip",
+      "sha256": "366f83f7243e3bb4972a25af2329c6cbd761bba215a00f9f38d9d45603d9d51d",
+      "bytes": 200815,
+      "reason": "license-cleared upstream binary omitted from source-only export"
+    },
+    {
+      "path": "app/vendor/windivert/WinDivert.dll",
+      "sha256": "c1e060ee19444a259b2162f8af0f3fe8c4428a1c6f694dce20de194ac8d7d9a2",
+      "bytes": 47616,
+      "reason": "license-cleared upstream binary omitted from source-only export"
+    },
+    {
+      "path": "app/vendor/windivert/WinDivert64.sys",
+      "sha256": "8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2",
+      "bytes": 94144,
+      "reason": "license-cleared upstream binary omitted from source-only export"
+    },
+    {
+      "path": "updater/imperio-install.exe",
+      "sha256": "e0f949f5717c95bca8ab9d3d4b5f6896a68d6730365e6f35b6ab0cc8832a25b2",
+      "bytes": 45056,
+      "reason": "generated artifact; rebuild from source"
+    },
+    {
+      "path": "updater/Installer.generated.cs",
+      "sha256": "fc5cb9cf44b17f91ffefb15adedcff33709e3bd55b84b8819d69fe102442ce6f",
+      "bytes": 48337,
+      "reason": "generated artifact; rebuild from source"
+    }
+  ]
+}

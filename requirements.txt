@@ -1,0 +1,3 @@
+# Direct runtime requirements, versions observed and reviewed locally.
+Pillow==12.3.0
+cryptography==50.0.1

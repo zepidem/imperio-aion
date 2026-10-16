@@ -1,0 +1,4278 @@
+{
+  "date": "2026-10-16",
+  "status": "included at maintainer request; rights permission unresolved",
+  "files": [
+    {
+      "path": "src/imperio_aion/assets/kit/acao-ajuda.png",
+      "reference": "app/assets/kit/acao-ajuda.png",
+      "sha256": "d298ff974650eff74444d4766122edd1a89688edb309138950da909188966f83",
+      "bytes": 311015,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/acao-fechar.png",
+      "reference": "app/assets/kit/acao-fechar.png",
+      "sha256": "aa2975a83b111630f584cbe0fb0e2e331df8aa0f3c87a3c13d9e47b8b6cf4948",
+      "bytes": 351579,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/acao-lupa.png",
+      "reference": "app/assets/kit/acao-lupa.png",
+      "sha256": "482125a2d9ddf233d7f38e5f3e3077f70aec66dd7950d907110d3e58f0819f80",
+      "bytes": 327435,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/acao-reload.png",
+      "reference": "app/assets/kit/acao-reload.png",
+      "sha256": "52411a4f5f85480b943027c1af8a0f80c97a20940d9f0c97ad382e8aa1c2d6b4",
+      "bytes": 593366,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/activities/dungeon.png",
+      "reference": "app/assets/kit/activities/dungeon.png",
+      "sha256": "a392d4e00b092f00e2761ae6a0b19ee6f5360fc857c6813a9acedf35e22e0e21",
+      "bytes": 1657426,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/activities/nightmare.png",
+      "reference": "app/assets/kit/activities/nightmare.png",
+      "sha256": "fd9fa4a6213604c2202b83be5b23752be95a72fdf125ac233d6b24f0dc198a20",
+      "bytes": 1007068,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/activities/rite.png",
+      "reference": "app/assets/kit/activities/rite.png",
+      "sha256": "17532ff8a1d097a144838bd7ac0515a22cd9cd74c95ec781aeffaff15beff04b",
+      "bytes": 2075424,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/activities/scroll.png",
+      "reference": "app/assets/kit/activities/scroll.png",
+      "sha256": "06f6f6a2e97b9a0ef2f05c83d8dee05af1e2ac8f0e30809e31c7bbba11c0a2c3",
+      "bytes": 1197729,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/activities/shugo.png",
+      "reference": "app/assets/kit/activities/shugo.png",
+      "sha256": "a77dde0d7fe26e2ee74f0fd5b66e07e6c6586c6c5eb593beb69519f1ab7180d2",
+      "bytes": 2034088,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/armadura.png",
+      "reference": "app/assets/kit/armadura.png",
+      "sha256": "2698ad3b49a91e47538876b96a420d6ac99bbbaf886e58cf3d4bec3264f3c4f5",
+      "bytes": 1561755,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/banner-imperio.png",
+      "reference": "app/assets/kit/banner-imperio.png",
+      "sha256": "9fcc415270928690f78eb157deffeb764a0deb2c74ac2d9ba1397caa0eb6ccb1",
+      "bytes": 1915306,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/captura-off.png",
+      "reference": "app/assets/kit/captura-off.png",
+      "sha256": "665b9084e9516f428be908f6a1e0317ccd2cff97cb9403f32a082edf15ab4527",
+      "bytes": 702630,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/captura-on.png",
+      "reference": "app/assets/kit/captura-on.png",
+      "sha256": "f610668bee2c96cd80046f0aec42a516b0e4409569fc0c1a28034e7b1a5363fd",
+      "bytes": 785492,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/capture-steps/capture_step_1.png",
+      "reference": "app/assets/kit/capture-steps/capture_step_1.png",
+      "sha256": "44b82f228c92f95750bb67c0c482645d3acb5733158ca1f038b8458ad4a1c219",
+      "bytes": 1348825,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/capture-steps/capture_step_2.png",
+      "reference": "app/assets/kit/capture-steps/capture_step_2.png",
+      "sha256": "f033e8a57fcb9451128015241160657688097d938ef2564aec84166465b5eb1d",
+      "bytes": 1393171,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/capture-steps/capture_step_3.png",
+      "reference": "app/assets/kit/capture-steps/capture_step_3.png",
+      "sha256": "57120c7fbe3211547a9a7ada30aeb3dd942222cdb77fd0d2ccf2cb060f63a80e",
+      "bytes": 1410097,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/capture-steps/capture_step_check.png",
+      "reference": "app/assets/kit/capture-steps/capture_step_check.png",
+      "sha256": "2ed72380ba79ee4a39d698fe738029b3ddaf7fec46dc67a72eb281ff4e89b02c",
+      "bytes": 1395836,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/capture-steps/capture_step_later.png",
+      "reference": "app/assets/kit/capture-steps/capture_step_later.png",
+      "sha256": "09a53de3fb2ac58f0f373585d075e83fbb1b19bb7892b516001af881b035e042",
+      "bytes": 1356544,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/assassin.svg",
+      "reference": "app/assets/kit/classes/assassin.svg",
+      "sha256": "71c0486ff09f876d60b6bd268d16937a2ebdc7d03ec46ccd658af7cd4f5eb797",
+      "bytes": 310,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/chanter.svg",
+      "reference": "app/assets/kit/classes/chanter.svg",
+      "sha256": "f798991d2eb189d83a8bb0ecdb4f100891cf49fc99191d0f15018aca2c1b86d0",
+      "bytes": 316,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/cleric.svg",
+      "reference": "app/assets/kit/classes/cleric.svg",
+      "sha256": "af4182cd033816fa7969047367714c22244577b0ab03bfd76337bd2a2e828623",
+      "bytes": 420,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/gladiator.svg",
+      "reference": "app/assets/kit/classes/gladiator.svg",
+      "sha256": "dc4dc2dbfa4edbbf1677b8ca09607d5d3318d06d18dea44517cd3c6d366100e2",
+      "bytes": 300,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/ranger.svg",
+      "reference": "app/assets/kit/classes/ranger.svg",
+      "sha256": "81c55c6d5351c9653eeaf8740fda05fb48e149f6cbe003295967dbf39db4225b",
+      "bytes": 307,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/sorcerer.svg",
+      "reference": "app/assets/kit/classes/sorcerer.svg",
+      "sha256": "747746220498f775593e87b7353b7e894d8f7de46fdab2ee05bf6e31108c9c15",
+      "bytes": 312,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/spiritmaster.svg",
+      "reference": "app/assets/kit/classes/spiritmaster.svg",
+      "sha256": "6b0b4250fd0dfae92c620a4f9e23ebc872c51baf52422c331828d25d45b3561b",
+      "bytes": 312,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/templar.svg",
+      "reference": "app/assets/kit/classes/templar.svg",
+      "sha256": "7fd8c243679f4adedbc182c9cce52e93f15a706564aeb92f289dbe3b492377eb",
+      "bytes": 273,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes/unknown.svg",
+      "reference": "app/assets/kit/classes/unknown.svg",
+      "sha256": "939a7ea60596b63e4bf1f1a409a24f36a01a439ff1151a07b82c8a1f493bcbe3",
+      "bytes": 250,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/assassin.png",
+      "reference": "app/assets/kit/classes-raster/assassin.png",
+      "sha256": "d54676f6f4a5a294616f3a5d5857dd4d989509c3130aa4c1c5b3448f95444798",
+      "bytes": 1300451,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/chanter.png",
+      "reference": "app/assets/kit/classes-raster/chanter.png",
+      "sha256": "c48d2aff9c3f79f2a51a34e7d76adc1c0209f3500cf6dedd0d29647c0f184796",
+      "bytes": 1523265,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/cleric.png",
+      "reference": "app/assets/kit/classes-raster/cleric.png",
+      "sha256": "d5608186537f49d72f42bfbfcba09e0500f1f73b52079c5968952ef8d7af8528",
+      "bytes": 1314488,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/gladiator.png",
+      "reference": "app/assets/kit/classes-raster/gladiator.png",
+      "sha256": "efa4e5f538054f2b67ed5ff6fe1052a381356f88f4a11076604b4e8636f889ef",
+      "bytes": 1131524,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/ranger.png",
+      "reference": "app/assets/kit/classes-raster/ranger.png",
+      "sha256": "dc6036028f4ad005701442214b81d9e4ea648140c2d30b3a590b093e332a7bfc",
+      "bytes": 1010829,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/sorcerer.png",
+      "reference": "app/assets/kit/classes-raster/sorcerer.png",
+      "sha256": "a32bdb71b51ee6527ac1be2dcc42adaf6e5ababe8c69d1b95665d05a964b3298",
+      "bytes": 1382449,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/spiritmaster.png",
+      "reference": "app/assets/kit/classes-raster/spiritmaster.png",
+      "sha256": "bf6913695e6dac32ef1eab7941669bb03bfb39c7709e572a4f2d94f51398dd9b",
+      "bytes": 1398347,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/classes-raster/templar.png",
+      "reference": "app/assets/kit/classes-raster/templar.png",
+      "sha256": "c4032419d6b6435144746ad6dfefc09435d82ebede15d1f547d3689cb4074a82",
+      "bytes": 1517229,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/cristais.png",
+      "reference": "app/assets/kit/cristais.png",
+      "sha256": "2148ec1754e75711e2cc65e392b98afa110b9cd07c8b89a8def2296664263616",
+      "bytes": 1187109,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/dever-ordens.png",
+      "reference": "app/assets/kit/dever-ordens.png",
+      "sha256": "36a4ea0c6915f611ee0b849dc787ae15e6c11051fe22469a86ed5897620dfcd3",
+      "bytes": 1115140,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/energia-od.png",
+      "reference": "app/assets/kit/energia-od.png",
+      "sha256": "203598ca6ed590e9f64f34b9f802c0ce3848c21909c1df4f327fa055197385ec",
+      "bytes": 877081,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/kinah.png",
+      "reference": "app/assets/kit/kinah.png",
+      "sha256": "dacbd2a0be488a736e0e0dae345bca3f0c9863d5aa16065fa4e8272f04521df7",
+      "bytes": 1558626,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/livro.png",
+      "reference": "app/assets/kit/livro.png",
+      "sha256": "b45f4f616e7cfaa4058507caf71f026585c9fa2239f916de9d1c3140b8017bb3",
+      "bytes": 1387369,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/logo-aion2.png",
+      "reference": "app/assets/kit/logo-aion2.png",
+      "sha256": "776079ca024ec068ebbea19825b708a4ba3034376664d73cb3a779c42112786e",
+      "bytes": 2186769,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/mapa.png",
+      "reference": "app/assets/kit/mapa.png",
+      "sha256": "1353467c5ff9ca1fe9aff5a52c6934b922a7641c7f09a1800c5c4f0a3e311bed",
+      "bytes": 1497086,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/mascote-avatar-v2.png",
+      "reference": "app/assets/kit/mascote-avatar-v2.png",
+      "sha256": "ff951a0bf3103d3883586656998fd30d67f1b670f6f9af33b2f93d6b3c8f84f2",
+      "bytes": 2089837,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/mascote-avatar.png",
+      "reference": "app/assets/kit/mascote-avatar.png",
+      "sha256": "71dd250cbcf34eeb3f66a9cebd6957605d0d3ef15ca68adac42dfe484c58a4da",
+      "bytes": 2089227,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/mascote-cavalo.png",
+      "reference": "app/assets/kit/mascote-cavalo.png",
+      "sha256": "9df28f4d068cc7c96c569ff2f9126e6ccf56e0bc8029571bbbb2660f77a2e8db",
+      "bytes": 941370,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/mascote-coleta.png",
+      "reference": "app/assets/kit/mascote-coleta.png",
+      "sha256": "8612e0828160b8a929b84cd479c25174d50308c4ee3f383e8ae1a7092baa0cd4",
+      "bytes": 2069116,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/mascote-pensativa.png",
+      "reference": "app/assets/kit/mascote-pensativa.png",
+      "sha256": "e537fb38da81eddf5a6e8e35a216535c177117abbbf552826bf6b76e1f394102",
+      "bytes": 2083798,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/mascote-personagem.png",
+      "reference": "app/assets/kit/mascote-personagem.png",
+      "sha256": "f068c714d98c150ad2e4d199bcaa77da4130fc5fa1e504614e881927c36e2ff0",
+      "bytes": 1928736,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/pontos-abismo.png",
+      "reference": "app/assets/kit/pontos-abismo.png",
+      "sha256": "e177d341a364c998706643ad60d93bf37e2a593455fd5f71ae3d98f6e1ca5c3e",
+      "bytes": 1301035,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/referencia-classes.png",
+      "reference": "app/assets/kit/referencia-classes.png",
+      "sha256": "b4082d7d8f59e5c3c75f72eb61c99d0f5ca553e3f770bb0205d7910d19d2482c",
+      "bytes": 155482,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/referencia-hud.png",
+      "reference": "app/assets/kit/referencia-hud.png",
+      "sha256": "e533fe3d1a8e2b4730d934a51e29a3af7b3343a6cac2e74c1d851cf5158279a7",
+      "bytes": 28994,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/targets-raster/bosses.png",
+      "reference": "app/assets/kit/targets-raster/bosses.png",
+      "sha256": "30b3d2a5ad08c1f8e154a3df73507738d2a890eb2c8b19a3355c97292973e0b5",
+      "bytes": 1199941,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/kit/targets-raster/mobs.png",
+      "reference": "app/assets/kit/targets-raster/mobs.png",
+      "sha256": "f947f7dfb019ff923d1bd6328e8609520c3dcd52656fd518131a2e77e71b5766",
+      "bytes": 1361388,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/capture.png",
+      "reference": "app/assets/panel/capture.png",
+      "sha256": "321a90b46dc4f25bee04a32c007c5cda89c7ce30aff39737ec26b09a2aa485fa",
+      "bytes": 294048,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/diagnostic.png",
+      "reference": "app/assets/panel/diagnostic.png",
+      "sha256": "c035eddf169ff909cf4505eac92093ff113cfa916b7bb487d71def5f6887a770",
+      "bytes": 1167542,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/eye-closed.png",
+      "reference": "app/assets/panel/eye-closed.png",
+      "sha256": "2a96e6fac03a9975ace714b2a8617fa5930f9a59cac6f65263c240ba43d659ab",
+      "bytes": 494332,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/eye-open.png",
+      "reference": "app/assets/panel/eye-open.png",
+      "sha256": "26df09d0dd49d000266c119a80b1d378a6ac2fe8b49680484d94fe9d12b849e3",
+      "bytes": 860413,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/imperioaion.ico",
+      "reference": "app/assets/panel/imperioaion.ico",
+      "sha256": "4e713a1722ba40a379aa5bdbad00e80dd786c6dd8790352ed99765ee4589913c",
+      "bytes": 168573,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/logo.png",
+      "reference": "app/assets/panel/logo.png",
+      "sha256": "111aa718b233ec0d25fbb00c080ef05f9bf4847ed9cfd619c4fcb11222cd3c4a",
+      "bytes": 2475937,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/privacy.png",
+      "reference": "app/assets/panel/privacy.png",
+      "sha256": "da30788985c6e301d25fb720c124f3aad24c7a4dcef5e983760b4029d87d9f9d",
+      "bytes": 1337654,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/return.png",
+      "reference": "app/assets/panel/return.png",
+      "sha256": "379866ead00454728ae608fecc58d4f4f342862c8425790b9d7f2e719660083f",
+      "bytes": 633782,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/skills.png",
+      "reference": "app/assets/panel/skills.png",
+      "sha256": "47e669ae85f21b33bc42cd39d6d74d71a7110779ec5184282237cc1ce50714df",
+      "bytes": 1409314,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/streaming.png",
+      "reference": "app/assets/panel/streaming.png",
+      "sha256": "d8e33e5721ac6ea64747b8b7ecd1cc472dd8b56127bd92d951ebb30ae29b7bad",
+      "bytes": 1299946,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/summary.png",
+      "reference": "app/assets/panel/summary.png",
+      "sha256": "46191f3a76e177d9387fbce8f32d78a8b2460cef3bd6c5db71189cbc06083ba2",
+      "bytes": 819650,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/panel/terms.png",
+      "reference": "app/assets/panel/terms.png",
+      "sha256": "af7184d99ae374d2bc02ec87fde8c0e5690080df5e9b42c8d1a6d0812e41b6ee",
+      "bytes": 1355119,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1001.webp",
+      "reference": "app/assets/pets/1001.webp",
+      "sha256": "0fff1b775cfa1c1ae302bf29b337af7f7b49003dd6aac344995eb6a74c855e94",
+      "bytes": 18212,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1002.webp",
+      "reference": "app/assets/pets/1002.webp",
+      "sha256": "6f325fff69134153d2b0a9be5b9ddca7f209c0724a87425a9d294ae99db8dbd6",
+      "bytes": 17904,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1003.webp",
+      "reference": "app/assets/pets/1003.webp",
+      "sha256": "e82dfebc0194b9236401a95520e2784a39999deec29b64792aed2a91312c0406",
+      "bytes": 24066,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1004.webp",
+      "reference": "app/assets/pets/1004.webp",
+      "sha256": "72549b938857b78d65c80cb7cc363b3689dc69ad6ab8a498295a61ca5713ded2",
+      "bytes": 16354,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1005.webp",
+      "reference": "app/assets/pets/1005.webp",
+      "sha256": "d288051dad2f2ed345b3fca70822bf5c2f3cc74724c7727330aef84a5ac4b2d5",
+      "bytes": 26386,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1006.webp",
+      "reference": "app/assets/pets/1006.webp",
+      "sha256": "1a3d01ef30d072ea163ae74aa8f763567e36c1935e650e7bc5400090d8a68d33",
+      "bytes": 23646,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1007.webp",
+      "reference": "app/assets/pets/1007.webp",
+      "sha256": "8abaac4506e4ce68994af0a49dd2be21945979888970ec0f7beff05099ce3260",
+      "bytes": 24672,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1008.webp",
+      "reference": "app/assets/pets/1008.webp",
+      "sha256": "e672fc18eaccc46784b6600c9e274a2605bda186ea2ea47103524146ad751d3d",
+      "bytes": 19578,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1009.webp",
+      "reference": "app/assets/pets/1009.webp",
+      "sha256": "7e04e4f4b2b20a7d3a4bb3d6ba2a498c5973d351c34d55892b2a1f198e1766a5",
+      "bytes": 25170,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1010.webp",
+      "reference": "app/assets/pets/1010.webp",
+      "sha256": "71827b6045fa674fc33c27de46d7c0afb626ef5e6cbc8eb99a0f399922dd6fe9",
+      "bytes": 25232,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1011.webp",
+      "reference": "app/assets/pets/1011.webp",
+      "sha256": "e1cac699490e2f661cdf33a53774d9bfe7e2be5abf59abe9a6a87efa3396c4ab",
+      "bytes": 13526,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1012.webp",
+      "reference": "app/assets/pets/1012.webp",
+      "sha256": "2330e23b4d16d51f34c1ea68e98d52e8ba5af21d134998844755e9c74045e98e",
+      "bytes": 14216,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1013.webp",
+      "reference": "app/assets/pets/1013.webp",
+      "sha256": "f363e3e6c614c5098169b9391854e58438818e17ac091e921cc81fc3e7bfbab3",
+      "bytes": 14812,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1014.webp",
+      "reference": "app/assets/pets/1014.webp",
+      "sha256": "9250bdf0e4782903dc7bc0f9e48dcac29832efed4a3a667ab2770660b230d9d5",
+      "bytes": 17216,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1015.webp",
+      "reference": "app/assets/pets/1015.webp",
+      "sha256": "b85b6d41be0c9f66d0fab853fa43c5c727723d62aa6f087915585dc14da50e46",
+      "bytes": 18806,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1016.webp",
+      "reference": "app/assets/pets/1016.webp",
+      "sha256": "e30c47287a16e3ea525c401e41f0046082c16b6ca0083dade5bdbe8c45e2fe24",
+      "bytes": 23958,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1017.webp",
+      "reference": "app/assets/pets/1017.webp",
+      "sha256": "149346badaea6d47dd08c8ccf30ac25f8e1591d74640edb2f2093187721ac3b7",
+      "bytes": 17816,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1018.webp",
+      "reference": "app/assets/pets/1018.webp",
+      "sha256": "be2b31413dad5633c021e7dd8f940953a1d100f7818b9a2d3fc5880ec386636b",
+      "bytes": 22642,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1021.webp",
+      "reference": "app/assets/pets/1021.webp",
+      "sha256": "26b1ab03d24216933f33e87a2a5bc049a37dbe012d72af8854d3231ec71bed4d",
+      "bytes": 25742,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1022.webp",
+      "reference": "app/assets/pets/1022.webp",
+      "sha256": "61604595b181efd46c4ae2eea998252016b006a63efb5f35ea606aba64442a31",
+      "bytes": 13526,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1025.webp",
+      "reference": "app/assets/pets/1025.webp",
+      "sha256": "866f7c09ea55ceb8aef4110afef8971f06b9dbce80a0ce7fe991d85e2af71b7b",
+      "bytes": 26706,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1026.webp",
+      "reference": "app/assets/pets/1026.webp",
+      "sha256": "83ad09013d6e31c4e854b5da66a78ef61db9617840ffed1c30d0bde93065b52b",
+      "bytes": 19650,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1027.webp",
+      "reference": "app/assets/pets/1027.webp",
+      "sha256": "b0f0720971f25292edb5de6a4557f1ac53a61ee23f6b5cbc84727836d7d89d42",
+      "bytes": 23378,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1028.webp",
+      "reference": "app/assets/pets/1028.webp",
+      "sha256": "f4cdc0cf1f635ed8a4b47a6594eb4eb542c52fcf35dc3b89236fed75ce6f472c",
+      "bytes": 29338,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1029.webp",
+      "reference": "app/assets/pets/1029.webp",
+      "sha256": "5b1e84ceec21daa917e24c52aea04e8dd0d353e684a8cc9cebc6ae57f1a50dcf",
+      "bytes": 26934,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1030.webp",
+      "reference": "app/assets/pets/1030.webp",
+      "sha256": "18976eba39022a8cd13a579126257878441431c8fe0e03fd089f015ca01fe6b1",
+      "bytes": 31034,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1031.webp",
+      "reference": "app/assets/pets/1031.webp",
+      "sha256": "0cc52e635635aa986f53822b84fd6d868f39cf8e9a94fab1de4adb537a566d65",
+      "bytes": 26170,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1032.webp",
+      "reference": "app/assets/pets/1032.webp",
+      "sha256": "4167abfc013d70224c008c20d351b6cd8976c1d1f879ee001265e638db4f301a",
+      "bytes": 22442,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1033.webp",
+      "reference": "app/assets/pets/1033.webp",
+      "sha256": "4d369881f6bccafcd8e3d971267de89be36592caa8a46e5df7998e3dcfd78962",
+      "bytes": 26884,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1034.webp",
+      "reference": "app/assets/pets/1034.webp",
+      "sha256": "b239d27948a7ef168989b869454182d6b2aa69b3405d671f87daa8a941cc2b75",
+      "bytes": 28616,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1035.webp",
+      "reference": "app/assets/pets/1035.webp",
+      "sha256": "28b0c64ba47bd6583a65753639bb4c7ad3e7de7d8b8a21478475d9e469fb526a",
+      "bytes": 19994,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1036.webp",
+      "reference": "app/assets/pets/1036.webp",
+      "sha256": "03305856e385eb1ee48952c03f82a39f377b6be8c3765a05d2d42065c429a1e1",
+      "bytes": 25432,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1037.webp",
+      "reference": "app/assets/pets/1037.webp",
+      "sha256": "1114445c8aa90dc59755162b645ece7d59e340043c462c57807f1484fe9290c3",
+      "bytes": 28266,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1038.webp",
+      "reference": "app/assets/pets/1038.webp",
+      "sha256": "7c3b903c135e305fc82124a8b8c098fcb1fd3367bf4cf6c6e00f2fab59ed8d46",
+      "bytes": 20628,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1039.webp",
+      "reference": "app/assets/pets/1039.webp",
+      "sha256": "b1bbf68e7d5cf40a75f879562c3b1b69886e1dc6ac127cb9265bafc29aac004a",
+      "bytes": 14748,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1040.webp",
+      "reference": "app/assets/pets/1040.webp",
+      "sha256": "06c1d503ee61af5f17d86a68f9a0b9d5259cd6195210e905e11e5bb32bcd9e33",
+      "bytes": 23450,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1041.webp",
+      "reference": "app/assets/pets/1041.webp",
+      "sha256": "e8c501856b983659b51dfbe015bc36a4c781e2562ec031a07574fbc8bc2cffd2",
+      "bytes": 23472,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1042.webp",
+      "reference": "app/assets/pets/1042.webp",
+      "sha256": "e373f873de743a8339bdd109b73a07919542ee8fe309ac85124a02f5e9e774f2",
+      "bytes": 24038,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1043.webp",
+      "reference": "app/assets/pets/1043.webp",
+      "sha256": "f043695634f93f16a247e0f4f6c0edba272c2edb7b110c5c04684595729f8ca2",
+      "bytes": 23710,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1044.webp",
+      "reference": "app/assets/pets/1044.webp",
+      "sha256": "473d4594b7de7040d58c95deeb9f519ef39fcbbd7161933d3850e9bf3bf5858d",
+      "bytes": 24172,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1045.webp",
+      "reference": "app/assets/pets/1045.webp",
+      "sha256": "90fb1dff6a73e521667f9b61c107362fbb5522035bb7928160b11fd0a63eccaf",
+      "bytes": 30452,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1046.webp",
+      "reference": "app/assets/pets/1046.webp",
+      "sha256": "d85248fcbac5bfda15609e129d73b91a1fea98f9f8c0b164a1b0c8af607bd0a3",
+      "bytes": 20148,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1047.webp",
+      "reference": "app/assets/pets/1047.webp",
+      "sha256": "cbe97ded09c4fd20bf34ed1d125722366dd4557ecbc04c46869b5f10c30ef252",
+      "bytes": 19234,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1048.webp",
+      "reference": "app/assets/pets/1048.webp",
+      "sha256": "558a54053100cb066179d246c0266538c432eb285fad7a565040634b184ba589",
+      "bytes": 29408,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1049.webp",
+      "reference": "app/assets/pets/1049.webp",
+      "sha256": "fc733816d541695dabb716ac60de442ebcdd99a8736e92bd517478ec927ab785",
+      "bytes": 24422,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1050.webp",
+      "reference": "app/assets/pets/1050.webp",
+      "sha256": "56a498b7ff3123cf278c6e05d967d62dedc2dd14a4a42af770cd7046a6167ead",
+      "bytes": 16548,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1051.webp",
+      "reference": "app/assets/pets/1051.webp",
+      "sha256": "559b1975f84749d3644340aa818f0cc05bf0a3ff05e15d3fe6e66e01ee60b9c6",
+      "bytes": 18426,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1052.webp",
+      "reference": "app/assets/pets/1052.webp",
+      "sha256": "ab140ab0e08b17912d6fab3fd0f0dff036ef25b867de921a0ed45038843839a5",
+      "bytes": 21202,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1053.webp",
+      "reference": "app/assets/pets/1053.webp",
+      "sha256": "193c793abb8138dbba6833ecadbb882155d06fa82c4d727ccf93deeca0b17d25",
+      "bytes": 21736,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1054.webp",
+      "reference": "app/assets/pets/1054.webp",
+      "sha256": "2324e413be3f9a78b6ca8d18b64517dd4a0ea963ee9afae7fe2009f9c61c16d6",
+      "bytes": 21538,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1055.webp",
+      "reference": "app/assets/pets/1055.webp",
+      "sha256": "9470c52ed4fb9320e411338055daf0ca7911ae507b8d0cafb566c9aa8aaa7886",
+      "bytes": 21874,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1056.webp",
+      "reference": "app/assets/pets/1056.webp",
+      "sha256": "5c036d897928b1c3682d8d1ef94e946e91f874a82702118da2aff6ff090c4023",
+      "bytes": 19580,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1057.webp",
+      "reference": "app/assets/pets/1057.webp",
+      "sha256": "b3a3c95a567e033576ed505bb58b768280252b8af51b6f812125517bc16eba17",
+      "bytes": 25138,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1058.webp",
+      "reference": "app/assets/pets/1058.webp",
+      "sha256": "36e2fed1badfc1171a052b1a6d413e2fccbca22da9d1180afd39767af894c1ec",
+      "bytes": 19676,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1059.webp",
+      "reference": "app/assets/pets/1059.webp",
+      "sha256": "461ac401633fcdb1170e71a5dad4bb5ed085d9aa4a4031bc4a7918e89eb3eb40",
+      "bytes": 28504,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1060.webp",
+      "reference": "app/assets/pets/1060.webp",
+      "sha256": "f65e591e1f42f30dc4fb50f61878ac07e6546372a65f0060f6ebf2090aa3cb3a",
+      "bytes": 21314,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1061.webp",
+      "reference": "app/assets/pets/1061.webp",
+      "sha256": "85157fe24df8d8e4809eda4a8c89c016a9d1fc0cd5011eaf7b76d908f49a41f2",
+      "bytes": 12968,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1062.webp",
+      "reference": "app/assets/pets/1062.webp",
+      "sha256": "83706781897fbfbaf2a9386abf1997e10d70097de4ed34182746b0881f2cdd96",
+      "bytes": 14776,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1063.webp",
+      "reference": "app/assets/pets/1063.webp",
+      "sha256": "d92af28f99293ae51623c0281cc1371efc06cc37e04f8732ae3f33868b8a51d2",
+      "bytes": 21934,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1064.webp",
+      "reference": "app/assets/pets/1064.webp",
+      "sha256": "ecf3135d93e0ef08aec7932b000ba7e6f4642dfcc65156a675f1fd538dab5ecd",
+      "bytes": 18676,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1065.webp",
+      "reference": "app/assets/pets/1065.webp",
+      "sha256": "bbc03ec7fc4fe66a83e1df7b338bedd84b156df03c9bc564c17990fa9e4d8a23",
+      "bytes": 18416,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1066.webp",
+      "reference": "app/assets/pets/1066.webp",
+      "sha256": "581948bc3004cde9a99dfb0d2fbff2cef6a0069a198488fb984b59c4aa275a56",
+      "bytes": 28568,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1067.webp",
+      "reference": "app/assets/pets/1067.webp",
+      "sha256": "987fb1e4115e58212ab1746b111e007fe75c4d8e1ef43e3d74b6659f93a55a26",
+      "bytes": 26458,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1068.webp",
+      "reference": "app/assets/pets/1068.webp",
+      "sha256": "5d20e37a9a60b407e994000bcc6f75a0f1a61537c5868ec6c44f074fff1ade46",
+      "bytes": 24270,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1069.webp",
+      "reference": "app/assets/pets/1069.webp",
+      "sha256": "4a9a89c13a18b789bb2ce4411b3693a300d2148608e6205211372d6d9d216274",
+      "bytes": 24270,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1071.webp",
+      "reference": "app/assets/pets/1071.webp",
+      "sha256": "53bd04f11e6813f37c5832d947a9b39f60bd065d5c12ecad0c21f1dd8508ebad",
+      "bytes": 22064,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1072.webp",
+      "reference": "app/assets/pets/1072.webp",
+      "sha256": "7ba5dd979d4783e487561c26f511ee7b1243f7d826843813f598bc3eb4001a73",
+      "bytes": 24768,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1073.webp",
+      "reference": "app/assets/pets/1073.webp",
+      "sha256": "f0947e4e8659929ead4cc2e1d0078b00effc92dc5640dc9ba3fa374453cb10e6",
+      "bytes": 27008,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1074.webp",
+      "reference": "app/assets/pets/1074.webp",
+      "sha256": "af989c111802ba693bfc1ec7322a02ddd7b401bd497ed47115658fce960562e0",
+      "bytes": 23076,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1075.webp",
+      "reference": "app/assets/pets/1075.webp",
+      "sha256": "68bc967e9c5f8d5397004044d0ed55b4b10f20b35e8de622fc6712c72296c780",
+      "bytes": 20102,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1077.webp",
+      "reference": "app/assets/pets/1077.webp",
+      "sha256": "3db8965b037e6b9fdf2a08cc92ebeb6cbfe6bdb45464ef142f1ed0d563f982a8",
+      "bytes": 23692,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1078.webp",
+      "reference": "app/assets/pets/1078.webp",
+      "sha256": "518f4c36220e23054bc82699384be3fe6ccfebc217d28495c346774fd36f72b3",
+      "bytes": 25954,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1079.webp",
+      "reference": "app/assets/pets/1079.webp",
+      "sha256": "7b6cf76588291e13967ba65570e9aa95035023ab88f72588f8e282d94743dced",
+      "bytes": 24460,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1080.webp",
+      "reference": "app/assets/pets/1080.webp",
+      "sha256": "a55473ee8b2a446643a60b747d3fd24be38d4c38f87742c1ce8ef5f7bcb0d721",
+      "bytes": 24546,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1081.webp",
+      "reference": "app/assets/pets/1081.webp",
+      "sha256": "392d5b1d93b355c3d5ed90bbdb398f22f1f03b66dc5afbe21c340bf9dd4c46be",
+      "bytes": 23608,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1082.webp",
+      "reference": "app/assets/pets/1082.webp",
+      "sha256": "eddffabaa974efc8262bae00c360904a6ce037103d028f5b77d44c5f65d47061",
+      "bytes": 28012,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1083.webp",
+      "reference": "app/assets/pets/1083.webp",
+      "sha256": "7a2e3568451cfed92c5d8cb31cecc4b4f1dbccdef8e8c6d4530a45ce54b666ee",
+      "bytes": 20748,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1084.webp",
+      "reference": "app/assets/pets/1084.webp",
+      "sha256": "a4d220c33f53d05c979e3c569b2ecd1a74249eadc6cd2c429b50c1ff91260869",
+      "bytes": 23264,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1086.webp",
+      "reference": "app/assets/pets/1086.webp",
+      "sha256": "8bc85a1d07627f3554ec935dadbe8d4dbbf1b76569e39885b8238546b016839c",
+      "bytes": 28306,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1087.webp",
+      "reference": "app/assets/pets/1087.webp",
+      "sha256": "fb20fb4d806c5475e5062fbe4b77e4e7c5cb5ce6773335a00d8a72f7a7c2139c",
+      "bytes": 20682,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1088.webp",
+      "reference": "app/assets/pets/1088.webp",
+      "sha256": "de7cee5770aa57681681a953cb23fe267055463a93e9b29cdadabd5df2414898",
+      "bytes": 22400,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1089.webp",
+      "reference": "app/assets/pets/1089.webp",
+      "sha256": "3b5a544449f116ec6d21f13214a3dfce6e17534e7eb8c66462174acbd4ec7ed5",
+      "bytes": 21328,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1090.webp",
+      "reference": "app/assets/pets/1090.webp",
+      "sha256": "39c4b898bc4cb8d734d0c17ac400fcfd2614f3881bd604ef8ac6934dd94605c5",
+      "bytes": 37328,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1091.webp",
+      "reference": "app/assets/pets/1091.webp",
+      "sha256": "77f438d10c5b4adf93abd33f3da7d9a376c2a4718e826789f689e0952309077c",
+      "bytes": 32814,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1092.webp",
+      "reference": "app/assets/pets/1092.webp",
+      "sha256": "c64e46a3098aba8183205dadc5e7e320f0173bbbf2f4cf20005cd3385cd0f605",
+      "bytes": 12826,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1093.webp",
+      "reference": "app/assets/pets/1093.webp",
+      "sha256": "4761ddf013ca5b9ed473d7845fc98751dd24bc6c8beba86f92fc4f82ff0d4559",
+      "bytes": 28296,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1094.webp",
+      "reference": "app/assets/pets/1094.webp",
+      "sha256": "13be4cecb7f7a8b16947a23d1ac10bb98e9e60421c7a89b809008228b42c1576",
+      "bytes": 14538,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1095.webp",
+      "reference": "app/assets/pets/1095.webp",
+      "sha256": "767770a75a2e9add10c4660b7810768449cd86174379a1f30defb27d2a2eafec",
+      "bytes": 18400,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1096.webp",
+      "reference": "app/assets/pets/1096.webp",
+      "sha256": "740b5651921aaed754811db19aad099808322e72e4c2761a1d6cd57b1d15c23f",
+      "bytes": 27926,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1097.webp",
+      "reference": "app/assets/pets/1097.webp",
+      "sha256": "c5524d19c8392ce51c6ec4965c098676ed513070ca8095c0097b084f712842f3",
+      "bytes": 23546,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1098.webp",
+      "reference": "app/assets/pets/1098.webp",
+      "sha256": "1094a032ddd202df4bfbb7787b0845ce93ba75425a974f916dda4fe7c81c0bd7",
+      "bytes": 24460,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1099.webp",
+      "reference": "app/assets/pets/1099.webp",
+      "sha256": "2982a55584f40c4cc3c69726e35e67f9367fca9e12e1762a9446ae6e07bb15b7",
+      "bytes": 27156,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1100.webp",
+      "reference": "app/assets/pets/1100.webp",
+      "sha256": "28fccbad694a92bcf7e9e599ce90dcc0e94cade6832f4b85ffa645c00c4f43a8",
+      "bytes": 30550,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1101.webp",
+      "reference": "app/assets/pets/1101.webp",
+      "sha256": "bafe493880c6057998d0d342a07fac5607f99bc8bf3cf2fe722b06909f466bb7",
+      "bytes": 27458,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1102.webp",
+      "reference": "app/assets/pets/1102.webp",
+      "sha256": "0f99f04380768df239c6f2ca6d7312d5804cf232f4abef68dac9d0514d7fc8bb",
+      "bytes": 25554,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1103.webp",
+      "reference": "app/assets/pets/1103.webp",
+      "sha256": "a628be9c2b412036aec210f44537155b8fdf8ee4bbeaf669a423cf65493d1e0b",
+      "bytes": 26856,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1104.webp",
+      "reference": "app/assets/pets/1104.webp",
+      "sha256": "8da8849f722798b0366dc6f0d6bae75ffdb8b94449a6b397a6c9421a9409336b",
+      "bytes": 23212,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1105.webp",
+      "reference": "app/assets/pets/1105.webp",
+      "sha256": "9354bc7a95d571a2442e18ddf806c591e3714e6dfacb7fb0e902508e94e3dd8c",
+      "bytes": 30968,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1106.webp",
+      "reference": "app/assets/pets/1106.webp",
+      "sha256": "4c27cdc0350e633cdbbec2804739a31cb08a509feb8fabd2ed1b9815c5cd99cd",
+      "bytes": 22690,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1107.webp",
+      "reference": "app/assets/pets/1107.webp",
+      "sha256": "aa209b741bac8910b389adc5770e9aca4cb64701190c80770c57d682b0a664fc",
+      "bytes": 23950,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1108.webp",
+      "reference": "app/assets/pets/1108.webp",
+      "sha256": "fe8654452476d4047ae3bf1d099311b331a9b57cd68a78d25b3ac0844737b3c0",
+      "bytes": 16780,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1109.webp",
+      "reference": "app/assets/pets/1109.webp",
+      "sha256": "72926b8fd410ca88fe7dd11d3a5540f5e1dbe6d25286570af67436dfa007f78c",
+      "bytes": 21080,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1110.webp",
+      "reference": "app/assets/pets/1110.webp",
+      "sha256": "72f6d09d6dc3f049581ef5730a9508e53b6a9ea7e715d4d5130bd1143f90d98d",
+      "bytes": 25640,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1111.webp",
+      "reference": "app/assets/pets/1111.webp",
+      "sha256": "4667460121c9e176cf12d19ed09d5780c6a996b311c5dde42aa04c5d10381d9d",
+      "bytes": 21934,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1112.webp",
+      "reference": "app/assets/pets/1112.webp",
+      "sha256": "2afd73d0df8d2bee957ceba199688e2c25c2c90ae375fcf377bb576754ddf9a9",
+      "bytes": 23268,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1114.webp",
+      "reference": "app/assets/pets/1114.webp",
+      "sha256": "fcfe231a127fa47f9d3989e56e8338eadf359192fd5abaebe8cd3fc6a93e23f3",
+      "bytes": 22596,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1115.webp",
+      "reference": "app/assets/pets/1115.webp",
+      "sha256": "090b95feb623e3d3a90bd6a7906df78f3efbdeaee8cf947b65f6e34f434079b6",
+      "bytes": 19816,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1116.webp",
+      "reference": "app/assets/pets/1116.webp",
+      "sha256": "9433d19ed6a98848d487c9d874916938431da763a3f861c59cb512ebc638367b",
+      "bytes": 23106,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1117.webp",
+      "reference": "app/assets/pets/1117.webp",
+      "sha256": "1b85a90cc22f0ea99695f8c84d8e8479933aa1b75bdb8209e13f851875db11ac",
+      "bytes": 20698,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1118.webp",
+      "reference": "app/assets/pets/1118.webp",
+      "sha256": "e463a36853c15f75e90709753db71ea44aec6344bb0b447bdcd19af91ba09a85",
+      "bytes": 22986,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1119.webp",
+      "reference": "app/assets/pets/1119.webp",
+      "sha256": "f8ab72b92a4369a9e5a28dd730e3fe44ca63c40fe21c1c206ec6629b7a0cb40a",
+      "bytes": 15106,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1120.webp",
+      "reference": "app/assets/pets/1120.webp",
+      "sha256": "edd13a4fba68e4aee4a2cf9671ed96cfdadf72950c6ab39fac548739c4138a79",
+      "bytes": 18032,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1121.webp",
+      "reference": "app/assets/pets/1121.webp",
+      "sha256": "55b2c3b9e5361b68bc8e60f9c33a98ca2cb30d46fbef6003659bc13c8b28eb9e",
+      "bytes": 19528,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1122.webp",
+      "reference": "app/assets/pets/1122.webp",
+      "sha256": "78327a0d9e5dca6d6be37e45d93429a5711f46a5603d1b5239d0124222cab5bf",
+      "bytes": 19188,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1123.webp",
+      "reference": "app/assets/pets/1123.webp",
+      "sha256": "4b62fa200ef9105e764cedbec35bbd5e01894379f603d25d9da2d0e1ec3180e3",
+      "bytes": 21076,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1124.webp",
+      "reference": "app/assets/pets/1124.webp",
+      "sha256": "f58e34186cdb596a49865bfa23c28a62235a20710ddf9d997b0862949df37209",
+      "bytes": 24580,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1125.webp",
+      "reference": "app/assets/pets/1125.webp",
+      "sha256": "fc6d6d5c6690e25edbfc56e14798ce4761b7ce05b78bfd29e205f6e3520dd0a5",
+      "bytes": 21024,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1126.webp",
+      "reference": "app/assets/pets/1126.webp",
+      "sha256": "d0940f22ffe00b1c52adb38400ee9a57f3508ea0191f50f96414673b0f55ad1d",
+      "bytes": 20928,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1127.webp",
+      "reference": "app/assets/pets/1127.webp",
+      "sha256": "7ad64f36685debe861ad386c5626eeef82348c9e12cf8dfada5f3a22121292b9",
+      "bytes": 22490,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1128.webp",
+      "reference": "app/assets/pets/1128.webp",
+      "sha256": "3a92b36ff7a89d7d6a47c74e58bb45a11fb780e3c8e857922739c25bc16be9a1",
+      "bytes": 12322,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1129.webp",
+      "reference": "app/assets/pets/1129.webp",
+      "sha256": "0ff2cb169cb099833f9fbe13391db9152154d6290dc0f857aa5f8a7cc9ed9d92",
+      "bytes": 14926,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1130.webp",
+      "reference": "app/assets/pets/1130.webp",
+      "sha256": "fce76c4fbfd8771b7922599e0750a200f8cd66c0f91b40f3775df8231d2f24f4",
+      "bytes": 22664,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1131.webp",
+      "reference": "app/assets/pets/1131.webp",
+      "sha256": "6f94d1efa54876be95077287748f350178bd57474eb58916b3ef9f17f6538f37",
+      "bytes": 28530,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1132.webp",
+      "reference": "app/assets/pets/1132.webp",
+      "sha256": "629e9136f76a6362d2116eec11317450a1cc9e8b4f101895732fb5bfc3a09a14",
+      "bytes": 21848,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1133.webp",
+      "reference": "app/assets/pets/1133.webp",
+      "sha256": "a40a845d5408050b5086786186f8857769ea3604524b4075c4762997b8f0bdb9",
+      "bytes": 22308,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1134.webp",
+      "reference": "app/assets/pets/1134.webp",
+      "sha256": "54fa4d7e98841cb6087fafe2439fb39c2f9dcb81ea719d10ec23c9f830608b30",
+      "bytes": 22796,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1135.webp",
+      "reference": "app/assets/pets/1135.webp",
+      "sha256": "19add0a376488cdcb4f16bd80e8adfa0c53b69e76b2d11670f50a919da75ecb7",
+      "bytes": 23626,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1136.webp",
+      "reference": "app/assets/pets/1136.webp",
+      "sha256": "1bb4125491a974695be2903f893f71abff069663d09a591853c747334b251797",
+      "bytes": 26268,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1137.webp",
+      "reference": "app/assets/pets/1137.webp",
+      "sha256": "457670881a5aae8f70bc57ac16be15608590e0053332e49f33f4d62f68b4a777",
+      "bytes": 26366,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1138.webp",
+      "reference": "app/assets/pets/1138.webp",
+      "sha256": "7841f39323c467f746b48d6f997458a93362425f80a89b44c76fa1d2994eede6",
+      "bytes": 21888,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1139.webp",
+      "reference": "app/assets/pets/1139.webp",
+      "sha256": "2c1bc383dc500544e3559914c125c014b13bca98311f658da00b6deed3089a64",
+      "bytes": 22886,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1140.webp",
+      "reference": "app/assets/pets/1140.webp",
+      "sha256": "f0152613cf943701dd6aababb3b1b992f14067d2ed02ba483852604e0793b5bc",
+      "bytes": 23644,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1141.webp",
+      "reference": "app/assets/pets/1141.webp",
+      "sha256": "57d446162300d46fcfd64a1f9ef62c6f1ef91bd8cd666f2c1c9f559a6c647153",
+      "bytes": 23788,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1142.webp",
+      "reference": "app/assets/pets/1142.webp",
+      "sha256": "15a0915ae7756980dd260e7d726ac79b16977609bda974aee977cb2001c46df7",
+      "bytes": 22226,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1143.webp",
+      "reference": "app/assets/pets/1143.webp",
+      "sha256": "c51a78d3fb9925bbc83fb51e3c2d284bcafa1cfbc16f1736176be0cd7135891f",
+      "bytes": 24494,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1144.webp",
+      "reference": "app/assets/pets/1144.webp",
+      "sha256": "33a40ee20b806373607be06fae4063f07d92f750a00928e1ccc8f51288ce8aa1",
+      "bytes": 29490,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1145.webp",
+      "reference": "app/assets/pets/1145.webp",
+      "sha256": "891be039f2544088ddcac60d34425fcb927e5304c017bfce377f08da0d36cb46",
+      "bytes": 23246,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1146.webp",
+      "reference": "app/assets/pets/1146.webp",
+      "sha256": "1a324d7b13d5c0646f4eab67c6a2200a69ce37ef1c3e9cdc3a0f39e092ac276e",
+      "bytes": 23672,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1147.webp",
+      "reference": "app/assets/pets/1147.webp",
+      "sha256": "1eea1bfc0123389a007c6b7bdcb4809916e3d061162bd38c478098dcbff6ab94",
+      "bytes": 16224,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1148.webp",
+      "reference": "app/assets/pets/1148.webp",
+      "sha256": "48a7afcf2269dde3548632f9be553b5fdd91df34d7bb3da66c30d5043be636e4",
+      "bytes": 26616,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1153.webp",
+      "reference": "app/assets/pets/1153.webp",
+      "sha256": "24d0923881aa0608c9dd9f1745a9cd7a245c8613871451601e418ae9241fbfdc",
+      "bytes": 18204,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1154.webp",
+      "reference": "app/assets/pets/1154.webp",
+      "sha256": "c50d2f0b8f3b02209dc1a5dae0f5267050389b2e560e7e4ccb486061934bc68d",
+      "bytes": 22144,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1155.webp",
+      "reference": "app/assets/pets/1155.webp",
+      "sha256": "e9da5870d6abf28ced2c5537518e9bb0fd49eaca19d7425901f49217fbe8bf4e",
+      "bytes": 37022,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1156.webp",
+      "reference": "app/assets/pets/1156.webp",
+      "sha256": "70c4459f93019a77650e2e67771981fbc7a40dc79f2d50e3be05effdfbca01ab",
+      "bytes": 22290,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1157.webp",
+      "reference": "app/assets/pets/1157.webp",
+      "sha256": "9f1e1f0ba7820d91e5f69adafd0dc4a61a2b1ac8b8f954d71638b5cf7c77e563",
+      "bytes": 21086,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1158.webp",
+      "reference": "app/assets/pets/1158.webp",
+      "sha256": "9eb1e2d753e7d61f1c5617d16f3711ab5113c5dafe7a55fbff168b31c4d19910",
+      "bytes": 29168,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1159.webp",
+      "reference": "app/assets/pets/1159.webp",
+      "sha256": "e4134d5f60962450fabce39c709b9689c635cdb3ceb6b64d07d3ebf6c51e3926",
+      "bytes": 24462,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1160.webp",
+      "reference": "app/assets/pets/1160.webp",
+      "sha256": "15ebdb7df130443b4c49ba80294c5462a9c2e7c5d4b462a2d3f4be80ef54553a",
+      "bytes": 21456,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1161.webp",
+      "reference": "app/assets/pets/1161.webp",
+      "sha256": "c86085541fc424562391913d974c605e311aee5f36632045dc9565c5e91cff3f",
+      "bytes": 21324,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1162.webp",
+      "reference": "app/assets/pets/1162.webp",
+      "sha256": "da9d003f1a0e41b2cf94a52c626c5dc85af5413ff4c9b721cd5e33dc6c92f6dd",
+      "bytes": 15952,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1163.webp",
+      "reference": "app/assets/pets/1163.webp",
+      "sha256": "06a41c404ee93b2027d5579c9a1d6b06e1099bc6758a4b8484844e8c244d2719",
+      "bytes": 17984,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1164.webp",
+      "reference": "app/assets/pets/1164.webp",
+      "sha256": "4064ef211535137ead2438981f0f9db9895d436a0a87a938d1cdc5ce43b6ad11",
+      "bytes": 28352,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1165.webp",
+      "reference": "app/assets/pets/1165.webp",
+      "sha256": "77f53c574dcd0d2d1085be52bb044e383900b802a84c4fb7c87f12641b214904",
+      "bytes": 27578,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1166.webp",
+      "reference": "app/assets/pets/1166.webp",
+      "sha256": "59bcddf8f66ccb19f4e926dfd57bc43bba7a6db56cb8f67034307abfa443aea6",
+      "bytes": 30464,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1167.webp",
+      "reference": "app/assets/pets/1167.webp",
+      "sha256": "8b4efc7c4f247c442c38ae9446dbfd43014d7d1008c5e9f85e34181377447211",
+      "bytes": 16712,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1168.webp",
+      "reference": "app/assets/pets/1168.webp",
+      "sha256": "061c69ef185c6a8e9d085eefebc5d6794f02ba0803dab33effca165c0c03f3b7",
+      "bytes": 19014,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1169.webp",
+      "reference": "app/assets/pets/1169.webp",
+      "sha256": "a41a6a81bddb4c8668eeafddd52be7e624a77aeefcad2053ecd2decf9cba28db",
+      "bytes": 17286,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1170.webp",
+      "reference": "app/assets/pets/1170.webp",
+      "sha256": "9f828ce5a398998f729a436241349bfc21bc4647ee0d485f0f682149d7586a02",
+      "bytes": 23648,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1171.webp",
+      "reference": "app/assets/pets/1171.webp",
+      "sha256": "b8af5ff09485fb1cbd231e1f9beee3667924f553af0e0e69e03e2313cd75b53d",
+      "bytes": 22268,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1172.webp",
+      "reference": "app/assets/pets/1172.webp",
+      "sha256": "0aaa50190295deb2f84d9f96dfc633f7eba8554dfaf996dff364b4f50b3cca20",
+      "bytes": 17820,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1173.webp",
+      "reference": "app/assets/pets/1173.webp",
+      "sha256": "5bbf757c4d706e6ff2242ad22a2fdae7255d289583700636f5694f5193dbcd7b",
+      "bytes": 20400,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1174.webp",
+      "reference": "app/assets/pets/1174.webp",
+      "sha256": "f2353e5ef3f135fd4095440095aa55cc9ee4189b796f321dd471aed3c0f59aa9",
+      "bytes": 21878,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1175.webp",
+      "reference": "app/assets/pets/1175.webp",
+      "sha256": "613e904c5091694e49e4d9cc7be387ad331b5bca93fb5f2a5774b9c5828cec70",
+      "bytes": 23640,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1176.webp",
+      "reference": "app/assets/pets/1176.webp",
+      "sha256": "21a70683c64c0038c6bd4096cc08b873cc2b3064d951dd90c673292b16e431bd",
+      "bytes": 20216,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1177.webp",
+      "reference": "app/assets/pets/1177.webp",
+      "sha256": "940c2fa660fec596e8e73e6da5580bae25b7d253aab4b1c4b91427fc28a61f0b",
+      "bytes": 37854,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1178.webp",
+      "reference": "app/assets/pets/1178.webp",
+      "sha256": "be19e3b2c4efc1d519df0c28b2dcc76a4cdfa1abcf7cd5c6eaf5c4f9e697b11e",
+      "bytes": 21550,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1179.webp",
+      "reference": "app/assets/pets/1179.webp",
+      "sha256": "8b36c710a4c4235cff410aafd0c93a8b27b999109d441ed7edb8c9bb12a45fc0",
+      "bytes": 17454,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1180.webp",
+      "reference": "app/assets/pets/1180.webp",
+      "sha256": "1718323030a1858b9fb49e8065b16bc92a882c14a2c426f2b4246fb2ff587009",
+      "bytes": 18652,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1181.webp",
+      "reference": "app/assets/pets/1181.webp",
+      "sha256": "d28076b8caedfc266e595fd4a128017ea602ee67ffb493a17206e0f013c5008c",
+      "bytes": 21996,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1182.webp",
+      "reference": "app/assets/pets/1182.webp",
+      "sha256": "b0b7d265996a04fab3d6aa14ae72cba1354eadf21861a861baa22c59322d4351",
+      "bytes": 26158,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1183.webp",
+      "reference": "app/assets/pets/1183.webp",
+      "sha256": "6ab3048329e023b47c23e744069ebb6cc00dcbc3369bd776625c6ca56da7cb5c",
+      "bytes": 26538,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1184.webp",
+      "reference": "app/assets/pets/1184.webp",
+      "sha256": "fb4588b12e659db3642ddb16ec0ab199e340a2e65e88d773ada996ffe1dddd85",
+      "bytes": 20588,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1185.webp",
+      "reference": "app/assets/pets/1185.webp",
+      "sha256": "099c44a9a3feaeea2f9e55001bc67ad5fa7cbe774045bacad4ac9378664ba99b",
+      "bytes": 17666,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1186.webp",
+      "reference": "app/assets/pets/1186.webp",
+      "sha256": "033b3f2c7458b5902a67b15c6bb2c5ba927ef810e66beb144b5267ce7ed5976a",
+      "bytes": 17612,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1187.webp",
+      "reference": "app/assets/pets/1187.webp",
+      "sha256": "a0e02d27dbc7d7c04f59103a97e95fe0d6b74c6c1fee933b6bfa55c99043ee71",
+      "bytes": 34110,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1188.webp",
+      "reference": "app/assets/pets/1188.webp",
+      "sha256": "33dfabbb15783458bcfae2b49ed3575b36b4eadf4261b20497e56351aeee390f",
+      "bytes": 23230,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1189.webp",
+      "reference": "app/assets/pets/1189.webp",
+      "sha256": "4fbce5a250af185c96ab199f5a520d46426a5632541fcab7fff45b923a55adc5",
+      "bytes": 24960,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1190.webp",
+      "reference": "app/assets/pets/1190.webp",
+      "sha256": "1692584def16ca85531a407f83fd789995b0b66516d76714dcec6548632dab0a",
+      "bytes": 28738,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1191.webp",
+      "reference": "app/assets/pets/1191.webp",
+      "sha256": "be42ca22c5514d4a534f312ded8bf4ead1a8370a6467514e938f399e1bb21fa2",
+      "bytes": 22494,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1192.webp",
+      "reference": "app/assets/pets/1192.webp",
+      "sha256": "80a29e9e7e0af4b2a130c5120fc42f2ac67dfe5a3442fb6c546656911f310dfe",
+      "bytes": 32368,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1193.webp",
+      "reference": "app/assets/pets/1193.webp",
+      "sha256": "36640b9e0db2dab9debe410f2f08a0d4f14716b72343b0eefd126c6f36680170",
+      "bytes": 14780,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1194.webp",
+      "reference": "app/assets/pets/1194.webp",
+      "sha256": "bd5afdf8dcfa7ddbbde016674cbf9a6ce8647754b2ddab5beb4c270837849273",
+      "bytes": 27062,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1195.webp",
+      "reference": "app/assets/pets/1195.webp",
+      "sha256": "4f6aece8e1159bd422f797f034e70cc2efb0d4cf3cdb0e457d08b821832610ab",
+      "bytes": 25430,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1196.webp",
+      "reference": "app/assets/pets/1196.webp",
+      "sha256": "fdfd5fe17962ef60e430bb53d535b74283763b32efbcd6a28d0162b4042789f0",
+      "bytes": 22760,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1197.webp",
+      "reference": "app/assets/pets/1197.webp",
+      "sha256": "1a3b2e9a8dfc56cfdc98f80227c93875f6217e52499de25093d6325446991bee",
+      "bytes": 20920,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1198.webp",
+      "reference": "app/assets/pets/1198.webp",
+      "sha256": "d5505811ff76f38990edd029dc38d00ade7c54fd71f46df3a79c3c42e779281f",
+      "bytes": 19370,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1199.webp",
+      "reference": "app/assets/pets/1199.webp",
+      "sha256": "9878166789f0338b286a154bc0fb2ac9a787aa1259df6eb8b836feb6ca7420e0",
+      "bytes": 27850,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1200.webp",
+      "reference": "app/assets/pets/1200.webp",
+      "sha256": "e6684fdcad1637c9955c7103efcf26a01f0f26c905eda2c5b65f44ab63958fa4",
+      "bytes": 23926,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1201.webp",
+      "reference": "app/assets/pets/1201.webp",
+      "sha256": "026d7537007041e10b01c9b45dcdac576c055f8b7855cfa1fe285ea41da8df7d",
+      "bytes": 20044,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1202.webp",
+      "reference": "app/assets/pets/1202.webp",
+      "sha256": "a052b813b9eca5512725f2bb97eaeea355b7683b30ec0520b41d4087d429b90f",
+      "bytes": 21746,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1203.webp",
+      "reference": "app/assets/pets/1203.webp",
+      "sha256": "b2250f49e8e1b3146c291c98e5f8f7a686540478bb99de9b9e8d3777d95f22f9",
+      "bytes": 15264,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1204.webp",
+      "reference": "app/assets/pets/1204.webp",
+      "sha256": "801ce5871c3cdb86a7a5a074006fb9c4591f98874603e9c07851584621e09006",
+      "bytes": 19508,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1206.webp",
+      "reference": "app/assets/pets/1206.webp",
+      "sha256": "db16deeb11236eaf2caa5766bc80383fec2a8fdd817320a970d4f0cdef8df33a",
+      "bytes": 33490,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1207.webp",
+      "reference": "app/assets/pets/1207.webp",
+      "sha256": "4efa58a8c72d26e416e46e6a02ec59aee2012b0ae509ac0d34b41ebbedede389",
+      "bytes": 30046,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1208.webp",
+      "reference": "app/assets/pets/1208.webp",
+      "sha256": "f39b3cd30ded9900216b309ed3ccd89d9da60fae2bfa8dabfe9af26217c34c6f",
+      "bytes": 31290,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1209.webp",
+      "reference": "app/assets/pets/1209.webp",
+      "sha256": "4ff2702f4f3ab96f58fb4fa8655e164e548a5f3cf3e934563fefdab35a14a8a6",
+      "bytes": 27640,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1210.webp",
+      "reference": "app/assets/pets/1210.webp",
+      "sha256": "0cea2c324e6b448a6721e02c57b601b32d102a9615d0555694f867152ad04114",
+      "bytes": 29694,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1213.webp",
+      "reference": "app/assets/pets/1213.webp",
+      "sha256": "e8e8d93f67715bb564c6bb1e156017a22a893afc27b20141ee491d091e876d93",
+      "bytes": 30662,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1214.webp",
+      "reference": "app/assets/pets/1214.webp",
+      "sha256": "29fdf59ad68a92d9c68fed6901fa32a93c7d06f14bc30ab0b06631143497217a",
+      "bytes": 31950,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1215.webp",
+      "reference": "app/assets/pets/1215.webp",
+      "sha256": "23d6b44ce1c224974727d58b7bfa61b342931b278b6974fd94d8ad424ab6d645",
+      "bytes": 30396,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1216.webp",
+      "reference": "app/assets/pets/1216.webp",
+      "sha256": "f905a8657ba388cb7f98f07283ef34056ac8c273e0466ccae41961d1341f173c",
+      "bytes": 19820,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1217.webp",
+      "reference": "app/assets/pets/1217.webp",
+      "sha256": "cbfafd4e0b0387d4ea8265ef3d3ab23571e4689b3f6e614907e2147c5b4a9828",
+      "bytes": 28898,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1218.webp",
+      "reference": "app/assets/pets/1218.webp",
+      "sha256": "5c6b56198fdb75bc1dd059d0643e2a51d45e531b56291e740c30eae7c0882363",
+      "bytes": 25910,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1219.webp",
+      "reference": "app/assets/pets/1219.webp",
+      "sha256": "95306296e34a5278f4256581dd39b906e2b16928c60fb61bd2ba11e426c71534",
+      "bytes": 26974,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1240.webp",
+      "reference": "app/assets/pets/1240.webp",
+      "sha256": "7b27eb0ae377175a4a6a5b1113776bd44e6178399fd2675e570c21e87e7d11e6",
+      "bytes": 12420,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1278.webp",
+      "reference": "app/assets/pets/1278.webp",
+      "sha256": "fb5642ae34830fcf18b7f14dfddb673a375586277939e2a0acfef87215907c9f",
+      "bytes": 10936,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/pets/1299.webp",
+      "reference": "app/assets/pets/1299.webp",
+      "sha256": "ddc4034ecf109ea6b239cb7f029574539aceac3134d7e427cb4ec93f3c0524ce",
+      "bytes": 22244,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/godstone-rathman.webp",
+      "reference": "app/assets/skills/godstone-rathman.webp",
+      "sha256": "3350bb63584c7d8045ec6fc2c663072db29f9dd25a2037e22f1908a88c60d8cd",
+      "bytes": 4220,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_001.png",
+      "sha256": "73257343c1aa9da63fcb85f56b7d65504dcbdca3e31290839d2e184c3be576c4",
+      "bytes": 138300,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_005.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_005.png",
+      "sha256": "22c2d48bffefed0cc28fad42027ce39f5b4783281789c6f7d6138630c9723065",
+      "bytes": 100245,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_006.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_006.png",
+      "sha256": "caffc83508a72773c7e21f5caf604fd4889da91c5550b5ad5deaf3c823e12544",
+      "bytes": 135411,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_007.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_007.png",
+      "sha256": "f8a1df7261eb1ed441178193d874e937782c2babd401d6970c54f0b5d3528a0e",
+      "bytes": 156753,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_009.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_009.png",
+      "sha256": "b0b7307a237e17e9445583e2f9b6ad295de7d9d1f84bc5c67bc0dbc973274a9f",
+      "bytes": 118412,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_013.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_013.png",
+      "sha256": "2b13cffca5f2e754e2c05f7fb3d54e6333c85577170a873b9481d394247bb01d",
+      "bytes": 117800,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_014.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_014.png",
+      "sha256": "7db70c589d4774646897ee6c14ec7d9cb5f53b39a33fba3f5c932beb07b09f97",
+      "bytes": 124417,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_016.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_016.png",
+      "sha256": "30832e53a5794ec95d4f3542dffb56248672db17db75909a0409e66b7be8cf61",
+      "bytes": 133028,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_019.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_019.png",
+      "sha256": "9ed3d2528ebc6cfb80e1479e87532ef8779dd548b182fcf13d12dde0717c791e",
+      "bytes": 137334,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_020.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_020.png",
+      "sha256": "b39fd378cbe025afb61b32a4722f52ed001a0bea149e151ec725426fc4c65f8c",
+      "bytes": 151992,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_022.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_022.png",
+      "sha256": "2e37665071fea6ce04a5e1107a88070009bef632e3820f8c3e0fee1623e1916b",
+      "bytes": 159627,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_023.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_023.png",
+      "sha256": "f109773cd0430fa6130496cc49d81856d5afabe54201582aedbf759c46398f7f",
+      "bytes": 127073,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_024.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_024.png",
+      "sha256": "e5be2df4e79b7c2653e3ff7a6ab666d4d0eba4cc56d7c3a26d2f3ab7d1e1be7e",
+      "bytes": 123416,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_025.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_025.png",
+      "sha256": "a0c162daaef6b76ee0b254454c7b7fb5de2f7971b75f3375572dd7e31adf90cf",
+      "bytes": 138166,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_026.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_026.png",
+      "sha256": "2a0465212be5849c3e63a86b76ea3a516e8fdc0c8d258e068a9f879eec1455e1",
+      "bytes": 160067,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_028.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_028.png",
+      "sha256": "ba6fabb6ce1ec83e49261aae23f0117ee197d4cb32cc1693d0e8e856b40414d5",
+      "bytes": 113976,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_029.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_029.png",
+      "sha256": "e1af32f80716576b71c91b94d0a1118852790addf9914558abfe9f673bee22d0",
+      "bytes": 115483,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_031.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_031.png",
+      "sha256": "858a3faec07b9417424d71dd323c861ace119c1e8264c492d6df6700624a5230",
+      "bytes": 116369,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_034.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_034.png",
+      "sha256": "8f19dae5f8bd0abfc84212e0811d33960cf62cdd8aa00c0c7dc7ddac4b4f134d",
+      "bytes": 133620,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_035.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_035.png",
+      "sha256": "de6404287cbd6ca9f4eaf7128720f7668f3d02aaf2c3c7e09796da8c48342b26",
+      "bytes": 121050,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_036.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_036.png",
+      "sha256": "328765e7efd8396aa61485a9e6f7ef81fc4b726ae3191d30139fee98dfd19bd4",
+      "bytes": 110702,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_037.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_037.png",
+      "sha256": "c94b2227dbaf00726e8bd11bc19aa6d74570e2c6c641aaafc4e741091adf29a3",
+      "bytes": 138389,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_039.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_039.png",
+      "sha256": "9b3628fc201ab1d974fd4f3e0fdba5c897f65bad1ea51f0f5c95cbfed910aa5b",
+      "bytes": 134659,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_001.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_001.png",
+      "sha256": "31b7b79f8ff27cbea8eb9a556fea3d4f120d9750d4bda178f75df106e8a01708",
+      "bytes": 131619,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_002.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_002.png",
+      "sha256": "4ed3aa7367bd31c2c76236491f8b542da9d00c4cf3d22d37a4d8c1d988060e10",
+      "bytes": 122345,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_003.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_003.png",
+      "sha256": "2bdf6f243c2ef95ca82a3f03a19faa542470a879e060816970e48e81fd9945a3",
+      "bytes": 115602,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_004.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_004.png",
+      "sha256": "e2f3b618f442d7de7b1f546e65f6883a2a11ba00f49794f3aa8ba32a3274f439",
+      "bytes": 113027,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_006.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_006.png",
+      "sha256": "7ea925dd4389396aaa7af539a231f4602f9d88030ace4181f4305633bbe07175",
+      "bytes": 117267,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_007.png",
+      "sha256": "a5547cecfff5f248b1aa5d317ca2c59292bdbe203d755de27192fb0ebb66aa44",
+      "bytes": 127126,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_008.png",
+      "sha256": "7d66669122c88878d2e7a7e30b83d89052f1a75afcd796a31c8e5ca74f71cc19",
+      "bytes": 149835,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_009.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_009.png",
+      "sha256": "03a26993962de2b3a32a6b3bb69b9cca4bb8b79a0323e2e6bba9ba845df32afc",
+      "bytes": 112389,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_010.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_010.png",
+      "sha256": "6cf344f6665e90e9c1a6df5ddf00be277cef153a9bdccbf8d567a68422ae95e9",
+      "bytes": 120699,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_AS_SKILL_Passive_011.png",
+      "reference": "app/assets/skills/ICON_AS_SKILL_Passive_011.png",
+      "sha256": "d336d4b303e30746f95f606eb939db005e03c893109a57a8d2eabcb0c429a177",
+      "bytes": 120872,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_001.png",
+      "sha256": "b245163a89877ee4d2bd106215c9b6a9d48b7b0a1222714d6873820f9f72b849",
+      "bytes": 118223,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_004.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_004.png",
+      "sha256": "b35a10732847e8554f2ca201adcf2298085680d592ff96ab6bb501fdba2ea4f6",
+      "bytes": 105404,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_006.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_006.png",
+      "sha256": "55aaab06a9086845b2e6f28261e6509a58ca0f9f2181c83edf3a60a457d27ba4",
+      "bytes": 119814,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_008.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_008.png",
+      "sha256": "11d16b0f6ddca7c913e3c22308f592d9d55e57e185b59462108e2730c2f7c1c5",
+      "bytes": 123713,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_009.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_009.png",
+      "sha256": "f003e8e4f6a4b8b2af0a682020a3985c2cae3a2a7e9be6a96a062a010fcb4eef",
+      "bytes": 79497,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_010.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_010.png",
+      "sha256": "e5f5db5de319e4d3f2035fa890cad21e2132bab5cccb9ce7fcf1d35f1b2cb0f4",
+      "bytes": 133623,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_013.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_013.png",
+      "sha256": "897a625dab7ddf9442da73e390494cdb41d1082dd446b3e0f3557ea99280108b",
+      "bytes": 94225,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_014.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_014.png",
+      "sha256": "b1c494b6d3ba090927021c6e353c9b0f6162dc40ca294c53864c2cce1b5f656a",
+      "bytes": 129127,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_015.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_015.png",
+      "sha256": "a61c527f03a3469af8d86ae31aae6c12fe2e671dcdc7db5a4c94191d6b44cd14",
+      "bytes": 126900,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_016.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_016.png",
+      "sha256": "7f36bebcb8da1a90960146523edae3da58f5b4e05379df2b1a213c607d3674c5",
+      "bytes": 136752,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_017.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_017.png",
+      "sha256": "b9da5e48cf03f36e680d7481fae4ede2c29740f44e8eafb3c2d71066600451b4",
+      "bytes": 122638,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_019.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_019.png",
+      "sha256": "8a765cf596fcaf4ef43e186ed0ba8750788f2eadf47df45e88a1996d74844f74",
+      "bytes": 136087,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_021.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_021.png",
+      "sha256": "84c1cf5863553d27ee2a0b16ab0a1352762f0ae70ab07f05bda22d259d93a416",
+      "bytes": 131274,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_022.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_022.png",
+      "sha256": "a236fcb7faa15a5e33ca5f957b39e2fafb856d959d8052bc7e44b79abb0fbea4",
+      "bytes": 129003,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_023.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_023.png",
+      "sha256": "07f90ed4f351b4ce70c3ed122922f689e7d2caa354ad3c377fad6c9ac409b470",
+      "bytes": 157782,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_024.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_024.png",
+      "sha256": "e4e0d26012238a64362cf73451fe1c4a4858722fefc1de70c7f6f4960a3958fd",
+      "bytes": 139940,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_025.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_025.png",
+      "sha256": "3c1ad4d625e9d85b9b6fa10fa5aee4e2bad0a581846f62784f0756b389ae554c",
+      "bytes": 109411,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_029.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_029.png",
+      "sha256": "7e571bf7000cb575f555ceaf81ce7a8785c26ccb24e38f9ad790a41e476776e8",
+      "bytes": 120080,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_030.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_030.png",
+      "sha256": "85fefd3712b2afa8bd770e2730b1aa5134708cc1bea218402c403d10ea1835a5",
+      "bytes": 123254,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_033.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_033.png",
+      "sha256": "1207eb4535aa7babd504ced294c4becad2ab301192f5eb09db4e692e56797a9d",
+      "bytes": 126828,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_042.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_042.png",
+      "sha256": "7cdea9bd87d0a3b704cdac4980819f4feaca7fbe1466979d70dad9825b577d7f",
+      "bytes": 92863,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_043.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_043.png",
+      "sha256": "a80698b5ef8d25ec1f6903cc0bc970e12f50b9b638b0b97e66bcaf9a3659e340",
+      "bytes": 122519,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_044.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_044.png",
+      "sha256": "f5d8c4157d0ee6577a200357195bf71fafc4fc42a21b8c3ee2b9c2b9042ae520",
+      "bytes": 104609,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_Passive_001.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_Passive_001.png",
+      "sha256": "affaf313247d488d7a74a7e39b46c63608a2436f6c6814569fe0393d1354557d",
+      "bytes": 140968,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_Passive_002.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_Passive_002.png",
+      "sha256": "c7ec1bbf50dba31e0fba8a2b45fb6c7660c34946a9c139a009d98466e0700e79",
+      "bytes": 133133,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_Passive_007.png",
+      "sha256": "2964cd3859cd7ce8c844f565d37b5de078e24b0f7ae0791ffc9e8e37fc620730",
+      "bytes": 144967,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_Passive_008.png",
+      "sha256": "06f60022442cde72ec82bd5e0665d7fd70244696b9cc0b772cd215606c22ee63",
+      "bytes": 132689,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_Passive_010.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_Passive_010.png",
+      "sha256": "9eaa5c5ab03f409bf78f5f15d9bbebddfc22b734ca0b22fb48efb6f77d6cda5a",
+      "bytes": 129306,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_Passive_011.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_Passive_011.png",
+      "sha256": "3b11c28050361065aebeecfc5c25fdec80df01015c8c05b341182e106630e1e4",
+      "bytes": 117794,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CH_SKILL_Passive_012.png",
+      "reference": "app/assets/skills/ICON_CH_SKILL_Passive_012.png",
+      "sha256": "6a694f5f94239904445169b914a9f28a894dbfdf85c55b57472d09a4ecd1a869",
+      "bytes": 117450,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_001.png",
+      "sha256": "739c6b29dc1539dcdbb17e1af28d18310b7873c33cd8ec03cb8831044db00df0",
+      "bytes": 132235,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_002.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_002.png",
+      "sha256": "9d65aef74b063a2224ba95541b27176c285bcd6aed6e45f087c72ea1c84b5c57",
+      "bytes": 118756,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_003.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_003.png",
+      "sha256": "474f66ca8fb6539a780a015db2f73bf26afd0eed8bbbbe13b5faa8a97ab6631b",
+      "bytes": 139233,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_004.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_004.png",
+      "sha256": "0b3401b511a64389574e6db16f0cd27d20372c43bf55d25ab99eebba7f1b4c78",
+      "bytes": 133958,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_005.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_005.png",
+      "sha256": "ff01a7b86af98834b736914a9ba48498bcb41661f97941fb55d7bb7af6f059c6",
+      "bytes": 99889,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_006.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_006.png",
+      "sha256": "bc0f61d50f25aae2ecf6f37d5077e473c005b3a8f9ec2445dcdc075339d5bea8",
+      "bytes": 132624,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_007.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_007.png",
+      "sha256": "559a30c1c391cfdea9bb300271a0742ab5a39fdeedd1f4094e78a33f1e73d124",
+      "bytes": 138002,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_008.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_008.png",
+      "sha256": "b87ca288001584c5fa2203f7bb118da2f655456ecdaf075c0e5a812ac87e04ee",
+      "bytes": 109362,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_009.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_009.png",
+      "sha256": "c0fe15b27e09e3c5415b4cf49d9e647f2a7dd39c67f8b2b453d94878a89da6cc",
+      "bytes": 116473,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_010.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_010.png",
+      "sha256": "7922defc6609f048a73be51e2eee94597e777920810ae51caa9c6e29311a212f",
+      "bytes": 97452,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_012.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_012.png",
+      "sha256": "7798123d1abcd04ae34e33713b3e47da472d1af1baf7f0dc4ca9ed6344c0c821",
+      "bytes": 121045,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_015.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_015.png",
+      "sha256": "24b321ac2d7985780a495989fdaceba298fb5c86ec424c6251b053b017b9b0f9",
+      "bytes": 130563,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_019.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_019.png",
+      "sha256": "85378a9e5e71e7902d97b52bbc196b0b18f9c73be2bac8ad8f1f4c32632d8927",
+      "bytes": 125671,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_026.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_026.png",
+      "sha256": "1abdb6370790058ecdc05c731d88741d9ebdf05beaf2a2551141b84b2fc20838",
+      "bytes": 114339,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_027.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_027.png",
+      "sha256": "cd993873a7d617fda824fe880258a36c3c83f3ccbed2c103064c761640d5cd74",
+      "bytes": 104198,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_028.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_028.png",
+      "sha256": "28f1b40e859a25fd932e30c891c40d09dacc0cb68358ee1011978c997f484ef1",
+      "bytes": 133627,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_029.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_029.png",
+      "sha256": "3f7a1e37d90db401cdfce4ebeb42eabe9f70d3e28a0af99e0b9522fb39e7dccb",
+      "bytes": 142887,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_035.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_035.png",
+      "sha256": "7dd047b6177fba3eeed4203728678323e8d735b4a54984f2a311c202566c037e",
+      "bytes": 158298,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_037.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_037.png",
+      "sha256": "047ca4f97a1223b9f6fe2b42f2d9428c76b208c12467072a088fd82a30765968",
+      "bytes": 135631,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_039.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_039.png",
+      "sha256": "b4f9809b13f4846171150d0a99064132f84ba10298e401df1272a8a6c800bb5d",
+      "bytes": 119544,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_040.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_040.png",
+      "sha256": "c928a325045de870fd0b21e6e9e3d7de0b4c6382d66998b481716f9e143ede8f",
+      "bytes": 129819,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_041.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_041.png",
+      "sha256": "f1a97e74d195429575b02462b498763a61762f3ef08721e7e8b3aa32eac41b6a",
+      "bytes": 104074,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_042.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_042.png",
+      "sha256": "ba07e627da1e946aaaae083490d6449d3e35dbeaa84f674b962fa2a62006300f",
+      "bytes": 128105,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_044.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_044.png",
+      "sha256": "030b7b7d0a53ad9ff096e0b0f3c13185adf481c6e8f91990265faa0bc9893674",
+      "bytes": 125665,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_046.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_046.png",
+      "sha256": "5363f0920331c8628b845e7135b7e943255279f16983153753685482b2517c0d",
+      "bytes": 138789,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_047.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_047.png",
+      "sha256": "bfd11ab86660ebac347375ec9970f6103b27bc95f220028809f8af0ebcfb7233",
+      "bytes": 152107,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_001.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_001.png",
+      "sha256": "8e7cea106471517bdb08fb25351bab0f20795e6ddd82acd3d369e5edb9ac9561",
+      "bytes": 113643,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_002.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_002.png",
+      "sha256": "ead20ae1d30248d1508fd41eb3ff77f8f41fc3258111e4b88b344885522aec9f",
+      "bytes": 130813,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_003.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_003.png",
+      "sha256": "a29181548fd8d1b46bf892d7a95182252a99bdf16fa370b587e743712c0092e0",
+      "bytes": 97359,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_005.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_005.png",
+      "sha256": "6bbee84ff7055a914d50ec0e1ebc9f5efb5f3cdbfc5f87db6da7a973d9048b0a",
+      "bytes": 127573,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_006.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_006.png",
+      "sha256": "95efad0eaa0fb0e711c404856598ffe4e44d96e387ae41b4ba839c2ce85aa514",
+      "bytes": 139250,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_007.png",
+      "sha256": "cc9c1b88cffabb5a82f079e84130f9e588a33f16389475f1f9bad274ddad6346",
+      "bytes": 99021,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_008.png",
+      "sha256": "9c3db0b05482d9950867d093c85d5f79025854846ef18242e497c39426fa67a8",
+      "bytes": 121727,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_011.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_011.png",
+      "sha256": "2be253caeef67307f2a3bf2dd285455e62ed6f33fb9caf6869b786a0fe31480e",
+      "bytes": 141272,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CL_SKILL_Passive_012.png",
+      "reference": "app/assets/skills/ICON_CL_SKILL_Passive_012.png",
+      "sha256": "06c84aca491d9a4b95bcf44405d3a858900ca9b05a64c224ffe195b123342de1",
+      "bytes": 131290,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CO_SKILL_002.png",
+      "reference": "app/assets/skills/ICON_CO_SKILL_002.png",
+      "sha256": "3b86239c9a9d641ab678d176371e6ceca20f8ca38b3f98c7e7c20e8cc92d6eca",
+      "bytes": 121954,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_CO_SKILL_003.png",
+      "reference": "app/assets/skills/ICON_CO_SKILL_003.png",
+      "sha256": "39e7ca30e2db41f5662da5495328a81f52ad2b5b6e40c62c5f698861d00bca66",
+      "bytes": 137779,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_001.png",
+      "sha256": "3bd41ae89c7f4a623a659509bca1ffe4e889329eda483708fb2ada7dacb9a644",
+      "bytes": 125364,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_004.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_004.png",
+      "sha256": "2f0b5bf38843330713dd9f1ebcfbe27b9e1e71996d62450493519df27485f5bd",
+      "bytes": 127727,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_006.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_006.png",
+      "sha256": "81c96dae53c342a7fb8fc99ee6d86874b28d67b8cfdd2cd63852c54f8f59d6ae",
+      "bytes": 115937,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_007.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_007.png",
+      "sha256": "62c794a5ef0a4a85b35515ec88f8bcb6ecc90eda2ccabeb1015c971c5357b8fb",
+      "bytes": 126211,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_008.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_008.png",
+      "sha256": "f43796776a30102c5e53799edfd71c28d0ea050f1094998a2be93645519d7022",
+      "bytes": 128563,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_010.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_010.png",
+      "sha256": "8eaa3458102698800851a3a350be3ae1eb61b3c83d16e871195146d832c3bc2f",
+      "bytes": 124597,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_011.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_011.png",
+      "sha256": "a3caecf78ce90a469c20fef4b2646f7419e446600aaab04ef709c901823418fc",
+      "bytes": 120711,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_012.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_012.png",
+      "sha256": "a7ac46c04375a0deba95f212fa98b667e22c324662037e017460e6945c65df8a",
+      "bytes": 118868,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_013.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_013.png",
+      "sha256": "bb8c6c0a9a2c8cd76cee29bc3aebf57f12220cf4b4362c5bacdd0e95c7f62466",
+      "bytes": 137170,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_014.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_014.png",
+      "sha256": "32eb9e4bf1176c43aef29775d763dca57ad04f44e7831c156dc0f0dc9704f071",
+      "bytes": 122451,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_015.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_015.png",
+      "sha256": "729aa46b7c280e1a10abf3630012a0b8d8edab96ca9eb9c134686730fe27afcf",
+      "bytes": 145795,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_017.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_017.png",
+      "sha256": "29b4077e0a9831e725bb75cc915b96bae1135bdce468f98bb266cc57d2f1ac5b",
+      "bytes": 123008,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_019.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_019.png",
+      "sha256": "4dfbeab79c646658f09b9a91a5ce21fb977bfa303ce959a9bfef57e94cf25ca6",
+      "bytes": 143519,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_022.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_022.png",
+      "sha256": "24712c2d46f76831f3165e54765380a3df1c1e4fb0eb223782172b6072fd75f8",
+      "bytes": 115534,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_023.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_023.png",
+      "sha256": "1fc7306bcbb49cb2373ee258b758a057308076e0751f284f73ddb679153d5a1a",
+      "bytes": 163049,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_024.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_024.png",
+      "sha256": "3f63b7f7efea3174a588a3a42be57dfa7baa6f485c24c1f50b810f3d1b12d345",
+      "bytes": 120683,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_025.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_025.png",
+      "sha256": "a50957e542622543c5c6499e9e291a6947eda5b4902b0cd9f92c1f6461ef50c0",
+      "bytes": 128871,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_026.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_026.png",
+      "sha256": "750a8ec3f938c2def141fa1f4488f6363b0a2363a19a22239368d55bf579ecd2",
+      "bytes": 135438,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_030.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_030.png",
+      "sha256": "ad55992cc236db772fbae41623776aa8b74052d4e777584815214fd6224102f0",
+      "bytes": 124046,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_033.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_033.png",
+      "sha256": "2fe367e171681dea009dd6264fa0d470a2ad1af1f956efa305c4a793f2fb33c9",
+      "bytes": 138346,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_034.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_034.png",
+      "sha256": "6cb82ef890fcd7db17dc3df185e5600de203bed6fe577b3f98505ecdf2d51872",
+      "bytes": 109966,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_036.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_036.png",
+      "sha256": "c66fab0dd9a89ac1a0c7d431af90827fc3bdeaacb224386fc8f6f92a99946777",
+      "bytes": 127481,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_037.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_037.png",
+      "sha256": "0a01b4c026db9a18507de53e7658b2e01e7099cf4ca353e216f6213a43e739aa",
+      "bytes": 121597,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_002.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_002.png",
+      "sha256": "a19a7a25936cef956285c84ab86843882521963effb1677746150c90a0f744ba",
+      "bytes": 127782,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_003.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_003.png",
+      "sha256": "2d2012c9df21399e795a7af70206ec8757d6a8376330ed04de68dacc59bea377",
+      "bytes": 127548,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_004.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_004.png",
+      "sha256": "c55d9d37f68a01e3c13b2dbc6866458567dcaf875e7d0bf0d4cdeb5cb2b76530",
+      "bytes": 119666,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_006.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_006.png",
+      "sha256": "0fb92f3b00f67b3e4f16dc0c076ba01e64fc13412dfc2de9412e013800308a25",
+      "bytes": 132056,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_007.png",
+      "sha256": "850cfe4dd6397f958dd3cec0d1186a3b8bbd9648faec814f10e4c61582cb17e5",
+      "bytes": 139471,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_008.png",
+      "sha256": "9df9d2761610b988deccf42dd069cd4c35aef3c3e113f71e5691f8d594be8bc2",
+      "bytes": 123282,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_011.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_011.png",
+      "sha256": "a34e77dc1f3e6e95fc09dd75fc3d5fc897ea42d7481abb0aeae7b85dddc844d1",
+      "bytes": 129321,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_012.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_012.png",
+      "sha256": "bb152facff44ee230e54ce7f8c7e5ab27bd8843b7d0b1b7d4496d49c40059710",
+      "bytes": 125336,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_EL_SKILL_Passive_013.png",
+      "reference": "app/assets/skills/ICON_EL_SKILL_Passive_013.png",
+      "sha256": "39f33f70eca6d0baece42b52dc9d2147385e3a908fc16e14f346349776c0a8d6",
+      "bytes": 104014,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_001.png",
+      "sha256": "bf04f24fb7a4c83ab7a1402668dca9153aec1f9cdfd35d92ec66f788c05c64bf",
+      "bytes": 95177,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_002.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_002.png",
+      "sha256": "d3120dabfb3191aff2450267a8dcf49e4850878cb498b8124fca05b040287978",
+      "bytes": 117390,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_005.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_005.png",
+      "sha256": "de8652933b7f6423795e0426476cdad4beb0b4297bc1f3dab4552df2e754048a",
+      "bytes": 96116,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_007.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_007.png",
+      "sha256": "e6c6e4c64937c736092e36406c62853672ce36be51533d69e8bd3a5ccaf09d31",
+      "bytes": 129640,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_008.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_008.png",
+      "sha256": "729bf1d6b7bd95cc47f61c7a7e70b0a06c823fae8248ec60afd3bbcab1891908",
+      "bytes": 97245,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_010.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_010.png",
+      "sha256": "3286ce16ad8974b5aef2e91f3475781231ecc43b7a81601eb904fdfa8a3ba0e4",
+      "bytes": 123379,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_011.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_011.png",
+      "sha256": "ba8e65d29720d9c9bc91105d6aa2ce5002ef0dcbe1cb0b46079f5fb3731ed00c",
+      "bytes": 120887,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_013.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_013.png",
+      "sha256": "081c8c66dfe7d54ed342c1824e795007ff79c460e6d1d752063f688b02125233",
+      "bytes": 136711,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_015.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_015.png",
+      "sha256": "c1d531072605a374fc269149202c1cc59ab0855f7bb07cbbc7d7d46adb172152",
+      "bytes": 126449,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_017.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_017.png",
+      "sha256": "07500217e01212a57d87e18215393991541d7d95adf239da6747ed48a1c9362b",
+      "bytes": 122543,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_019.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_019.png",
+      "sha256": "d2fdc7e3393684272dbfc6482e57a26411ea728b6d7658d8e802e1048edc2a64",
+      "bytes": 137280,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_020.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_020.png",
+      "sha256": "cfbeb4e5b12eb09864ed4b975cddd7e007a5698a231992d23c2da528408d6d34",
+      "bytes": 132934,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_024.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_024.png",
+      "sha256": "6975c36e99008c5bfa3a25e29dbf0f0b8da88ee492a388f9ab4350bb08ca1b91",
+      "bytes": 142138,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_027.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_027.png",
+      "sha256": "3ea8b674576a80980b82b98a348a33ecdc90c283f1ac3a78beb3ed501a77e2a9",
+      "bytes": 125097,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_028.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_028.png",
+      "sha256": "ec3db8233240cad87f58aefbc2a9f10f02df7944049515fb1c3b510bb05293bd",
+      "bytes": 134232,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_034.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_034.png",
+      "sha256": "531c2878d869e29a72525850551bae8d930dfe109ea3639eda0f3990b05dc483",
+      "bytes": 129608,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_036.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_036.png",
+      "sha256": "22271a462d39de7c7d547f4552cde387947a179b99effa11b5d8e5137e1946ac",
+      "bytes": 140696,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_038.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_038.png",
+      "sha256": "be75b49cb777eed8586d79a1475825563ed8b9289b347c0d6de570a46f54cd60",
+      "bytes": 141576,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_039.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_039.png",
+      "sha256": "f8ac3c92af62bac934c886f940426666c90a32cb306477f7077f955232b67d6c",
+      "bytes": 125054,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_040.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_040.png",
+      "sha256": "ff65669fb634aa5adf5cba3752a1c10aa753650a9d53f1539437f45ca748c2d6",
+      "bytes": 144997,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_041.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_041.png",
+      "sha256": "78c5581bafe56055de8528eee93275b47de430c0b565e2a30818d24a1b1396ac",
+      "bytes": 136500,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_043.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_043.png",
+      "sha256": "10c8bf51d669e5f80f83cf1d717369f2159c28fa72e69ad6e7fad7fa5771dd4c",
+      "bytes": 139829,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_045.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_045.png",
+      "sha256": "b9ed4cf55f657234cf87e0ac8a7fcc123309a44158d969f43664fa04c40a07ae",
+      "bytes": 127826,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_001.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_001.png",
+      "sha256": "abae92701e9e89a7cc7ae58242438df9774d1baf078a565fbfee572131a45e11",
+      "bytes": 139734,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_002.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_002.png",
+      "sha256": "601e8db8034c7d07b31dd069179490d7d4176f1305b50c65a615d7fc9d2be622",
+      "bytes": 137093,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_003.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_003.png",
+      "sha256": "8b870c304f78d92b39c1635278fe38ceb130b7c4009cbf15b830d0010149e65d",
+      "bytes": 130272,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_004.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_004.png",
+      "sha256": "d7d8e538a7f038cac48dc53c25dd14f90373d973e9b5e4c1f479cce28b9c3ea3",
+      "bytes": 123916,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_005.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_005.png",
+      "sha256": "e6a84e9b66aaf03c6affc9e34252d1adcf1182b763fe348a134c237a7d373418",
+      "bytes": 124186,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_006.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_006.png",
+      "sha256": "7845659633507cd61a24b45b3abd8fcec903fa31614a7861989759ab80e91796",
+      "bytes": 119791,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_007.png",
+      "sha256": "1ae95fc8274679ec4f80b6ef0f53777466baacdcf8e0d9beb25eb95f5b4b494f",
+      "bytes": 145510,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_008.png",
+      "sha256": "ae02fe4d038d16e6dbe7a75dfd97625939bd4fb4436a582c75db0979533438cd",
+      "bytes": 138907,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_009.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_009.png",
+      "sha256": "87343316fe2cc4d3985c9686d31b18f73946fda2adeb158f74978359d949e23f",
+      "bytes": 118704,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_GL_SKILL_Passive_010.png",
+      "reference": "app/assets/skills/ICON_GL_SKILL_Passive_010.png",
+      "sha256": "11c69d870bfaa61dcd1fea5e52db18314b777b4733599b27dc0e2b3bc1041f45",
+      "bytes": 154840,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_001.png",
+      "sha256": "72e2a4c2bafd957416839370146c919110d261214bd1345c21046a17d0d5b9af",
+      "bytes": 128205,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_002.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_002.png",
+      "sha256": "781b9cc8db0f232b986296f3c1a79651d7c09b4255f786ea5a06826910fcfe26",
+      "bytes": 124461,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_005.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_005.png",
+      "sha256": "cd832c2e4329d1f40549a2bf14bf45d0aaf23b8678ab265cd35000fe1fa36e05",
+      "bytes": 114412,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_006.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_006.png",
+      "sha256": "787fb3424f73cea0a1b2c5245e36359c87a195cf406a30674625a0b2c5437d98",
+      "bytes": 116269,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_007.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_007.png",
+      "sha256": "0957d4ee64b00494615789822579ef13ddbdf5aa56fb4fcad54744d536c8a1c8",
+      "bytes": 145844,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_008.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_008.png",
+      "sha256": "fca4128ca2b359e92a95c8e8467a5e33b40eb2c0fabcefa3a9da85530644ac61",
+      "bytes": 96392,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_011.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_011.png",
+      "sha256": "54a9e57c58080fce85e4e0ba5d95c1a93fcd94ef0db5eda668aac150ebaf8c5a",
+      "bytes": 124761,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_012.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_012.png",
+      "sha256": "b1085c6cb6b2c06981427503dc743004b1316eb8c9bffab846c9fde42d98c342",
+      "bytes": 120565,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_013.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_013.png",
+      "sha256": "ac08c14900d453c0d0b91640832cfb1f0578c2fb22adf93b4919ad1827cfd469",
+      "bytes": 134725,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_015.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_015.png",
+      "sha256": "ddb1511b2aa9c107255687eebddd7ff043de8c4138b49dccb5ecff77d6dd72f5",
+      "bytes": 145156,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_016.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_016.png",
+      "sha256": "20982e122ac04cc342a498416486eb25227fe6ac35db171f5c6564f5911ada9e",
+      "bytes": 95219,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_017.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_017.png",
+      "sha256": "cf21632b0c68ff76d11e016ba1d981ce52e1f620bd67615485f904cd686624df",
+      "bytes": 115918,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_018.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_018.png",
+      "sha256": "a450aa652e0f05329b6e9db84c0033c5e3b916e9827526c3ace9019a90bf5880",
+      "bytes": 130026,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_019.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_019.png",
+      "sha256": "e8a1e832cd723040bb4589262171718dfbc96820f3100fa3b37f766bfb9335af",
+      "bytes": 144146,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_022.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_022.png",
+      "sha256": "8f21d041aaedf329692894d69a62e684dd58cad8ba25b6b4071ad8c29b794db4",
+      "bytes": 124555,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_023.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_023.png",
+      "sha256": "c502d17bd2716c4bd015651d3717500e845fa1fb9b8b56ffc249dada7f8d0461",
+      "bytes": 117000,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_026.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_026.png",
+      "sha256": "93412dec366018b886f6780851e5aa98c8bf1ba3f2a1388b69f333bb15b5a1a8",
+      "bytes": 120648,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_030.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_030.png",
+      "sha256": "2af0d4eda0e683750b5cb26eb7d9293baecd18b9c4d12386f3766b9759fb5609",
+      "bytes": 129587,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_031.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_031.png",
+      "sha256": "0118c077310a3a34230d6568da1e86df817c8cffe1745c96dc1378bd2aa481c1",
+      "bytes": 127406,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_033.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_033.png",
+      "sha256": "0058caf64d466d9ff8cfabe2aa70c6ee0133092d9a74ebfbc61cce17855814f7",
+      "bytes": 123578,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_034.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_034.png",
+      "sha256": "fb1b6e6604315c96dfe5f7324d10185bb595eaa13f9c633eba53203d99d456ac",
+      "bytes": 90930,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_035.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_035.png",
+      "sha256": "cdd06fbb8585a3c18a12ea2d1736f68bd9436d4884a103ce1754acd3e1941190",
+      "bytes": 134559,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_038.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_038.png",
+      "sha256": "07582bd62cdb6d00a716de63db77a0cd6544d2b0faf6d18e2325b8b47b74ee5f",
+      "bytes": 117096,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_001.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_001.png",
+      "sha256": "697086bfcd1ef0bb13a6a551bf3c8dd1824bef9dbb60f0a85357b2ce365a0541",
+      "bytes": 114027,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_003.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_003.png",
+      "sha256": "8a4bf1325f330ad14021e8f440ef20eac1e7a47c22df86b845b583c085448463",
+      "bytes": 119863,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_004.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_004.png",
+      "sha256": "00d17c48ef1897e1b20210faf172f0d6691443bffc2a030b9f02850b582b6fd1",
+      "bytes": 119969,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_006.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_006.png",
+      "sha256": "4762e69107eb65ef36fa6d7ecf2a29a85fc929d1b3029755060640c83725f805",
+      "bytes": 135214,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_007.png",
+      "sha256": "2c7180da1ee0e1bd353ee0c8c643657f67b894f3318c38e9baddd347be0f547e",
+      "bytes": 127530,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_008.png",
+      "sha256": "29d512e598e4af28ff47ae98787999e8efd98175febd62459fa81e7dbdffaa66",
+      "bytes": 108360,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_011.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_011.png",
+      "sha256": "fe5721dcd0c4ff09682deb8950dba32c6013a017e8b8e563d4bcfdcf227586aa",
+      "bytes": 140857,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_012.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_012.png",
+      "sha256": "21ed62f4364a3d142caf14d2f2dd8317bdb730eb2dc732d2a6b817e96f5dcc28",
+      "bytes": 111099,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_RA_SKILL_Passive_013.png",
+      "reference": "app/assets/skills/ICON_RA_SKILL_Passive_013.png",
+      "sha256": "cb462c0433f6adbfbcb9cfe3e8bccc690aee5695a17654b2fcd9c557ac51c527",
+      "bytes": 140796,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_001.png",
+      "sha256": "0f641d115d3c8d758517eee4739b915980230428d80669ba614736e9ee604255",
+      "bytes": 140752,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_004.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_004.png",
+      "sha256": "eecd1420f76b784ed56b95c7b2cf37afaab46c30f003c7d1b6f5c5b101fa508f",
+      "bytes": 133840,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_005.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_005.png",
+      "sha256": "0c47def9e7c52543fee248560b59aa31372ea36d793c4562c40e1f02f43d21b2",
+      "bytes": 135473,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_006.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_006.png",
+      "sha256": "dc6a580515f2a8c161d7e6dd7b79f70f828a654f657b7430d6b48b43bba9df96",
+      "bytes": 125426,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_009.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_009.png",
+      "sha256": "e572e94c51f2e826ae9bba4df087b21d8dca89bfb2171e669c862d281732aa5a",
+      "bytes": 130657,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_011.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_011.png",
+      "sha256": "f45b034b153b7b5f08852a38f3a20dadddfd73a7d5c8621f5303e2f9ff8458ec",
+      "bytes": 123620,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_012.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_012.png",
+      "sha256": "83880257f0a287134240aaa42559c134caeff6f3a7669f54c732905cd2bb924a",
+      "bytes": 116824,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_013.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_013.png",
+      "sha256": "993c9c86f23dc844d8e72161d8ee632be884c71e797ae1103ca4d681dc1619ec",
+      "bytes": 148050,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_014.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_014.png",
+      "sha256": "a8e8705bc6f0b6d44321331dc5b26f219240fc3b36cc53327fa2707de8b00317",
+      "bytes": 140522,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_015.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_015.png",
+      "sha256": "1f17fcfe13ef08e400262070af2c29b308e748254b438f9dd8e620cdbc42d135",
+      "bytes": 121958,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_016.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_016.png",
+      "sha256": "bd43b13b859188864a4d92bf098fc09adc7e2db38e1a1019b2c9db376a5b3e7c",
+      "bytes": 138056,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_019.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_019.png",
+      "sha256": "68ebf6dec1cd02bf3477520822c65137b1dea6bff6e3e22741d1fdcdaedb2380",
+      "bytes": 124987,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_020.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_020.png",
+      "sha256": "007fd23df2ef4ca84f799843d59c338f0ad99cedca0fd337df0e421dbf7829c6",
+      "bytes": 110410,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_021.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_021.png",
+      "sha256": "e284d78784630ad2367101cac5d75f2beb9c1d89472388041e7c582dbc205e13",
+      "bytes": 131958,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_022.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_022.png",
+      "sha256": "516c760fb00f006081e797190220e318fa7467a6094a74abf248123bd3a6b61a",
+      "bytes": 110950,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_025.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_025.png",
+      "sha256": "4238998633b38b776da643d7259dfbf364748021169794008d67b184d98c4b42",
+      "bytes": 123615,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_027.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_027.png",
+      "sha256": "e8bf4f1ec408e72951b9c2c4662aa786da5dcd03f03de0dddc0fb449eddd0fa0",
+      "bytes": 133322,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_028.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_028.png",
+      "sha256": "481acf0a433821de34e0a1ee2b18c64b6566f1bef755ed41c24d11eb051256e7",
+      "bytes": 118960,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_032.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_032.png",
+      "sha256": "4af5095d5caa41b5f9e3584014bf82173e1de78311c8cac58ea0871cc8ee6490",
+      "bytes": 144466,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_036.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_036.png",
+      "sha256": "a01bab626912f8cb2f20fbbb0c27db0b32e753c9b0c98432c7c1d9723eaba9de",
+      "bytes": 134084,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_038.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_038.png",
+      "sha256": "7a294b11fb8fdc2e147f2768f2db586c71251eeeddf26bca50939601bd924bd0",
+      "bytes": 136570,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_039.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_039.png",
+      "sha256": "74c2aac892eb0ae37d908257b4b6a8158e71939303a0e9fa5e013ff408a2a3d0",
+      "bytes": 132933,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_040.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_040.png",
+      "sha256": "0e9f0dfa7a884c21bf3858e966b29b64feb4c266b8564233500e1965f3064768",
+      "bytes": 138059,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_041.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_041.png",
+      "sha256": "3e7b869500a6e4f0d22e9428f79006ad4983c5cf3c6e42ea80ef99be07d780ec",
+      "bytes": 121164,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_001.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_001.png",
+      "sha256": "1791a2cac8161a0cbe2e527ea28aa59e63756810c07cf0ab1fe89c523d9d967c",
+      "bytes": 136276,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_002.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_002.png",
+      "sha256": "0bcb3d3701c033535c2ad8748f72543fe7367eca445a4614e8b3efe43c7da5f5",
+      "bytes": 122279,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_003.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_003.png",
+      "sha256": "f0f3b20069861b5ba5f369afa0d359a5a6ea0c52b84b3c6f2461dc68e38e1ae9",
+      "bytes": 129384,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_004.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_004.png",
+      "sha256": "0382f0a8248486c2eea919d43b580a6161ce58f580bfe334fa2b8db864e394aa",
+      "bytes": 117575,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_005.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_005.png",
+      "sha256": "fa47599ca67a179881bb82a8d6bc6d9fa011334ba5e701eb35f4490b0b9f2284",
+      "bytes": 129295,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_006.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_006.png",
+      "sha256": "2a835e9b7fab8c36042595bc9479eb7c97cec5cb0f17c159e03ff13471d68ddb",
+      "bytes": 123466,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_007.png",
+      "sha256": "13406ccf70f49d7b20bdd306c561ce1e762922a4af04c2628966b4f108198066",
+      "bytes": 120992,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_SO_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_SO_SKILL_Passive_008.png",
+      "sha256": "f5f7077c3df6f2411a14407fd9ce9cdd32d5e4ada8c15ce7e02d4cfd870f628b",
+      "bytes": 140342,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_001.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_001.png",
+      "sha256": "42aa07585fa8ee950bf83ee303c446bfe52675a99b1b5bcda6586523f39d0e8a",
+      "bytes": 101650,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_004.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_004.png",
+      "sha256": "545aca5f12ea38792724e68a0b4d20ff2f13b3af067f50abcf33b4950d393bca",
+      "bytes": 129363,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_006.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_006.png",
+      "sha256": "0b8a13206701eccb8a88b6a594130cbb51e4ddef356799672729b339a753a090",
+      "bytes": 121365,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_007.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_007.png",
+      "sha256": "2e087009b1bcb9b7a706be83b9263dad73026ee5513e80be4a6ca4d25fd538cf",
+      "bytes": 112065,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_009.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_009.png",
+      "sha256": "59e09da94cda9121209e0e9b23c1272c62010e9cf4190f31489415ea01b98b8c",
+      "bytes": 132059,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_010.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_010.png",
+      "sha256": "764d66e4779ea53c8d2a8b7bf6840e303ba8c1062139d1c1b20ab5dceaff2514",
+      "bytes": 135517,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_011.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_011.png",
+      "sha256": "23b1e8ed678deb548736caba99cffd9d499c4118bced710ff2c8b7b43cba331e",
+      "bytes": 117612,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_012.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_012.png",
+      "sha256": "d125592cabb943b2a27ba834d11cdc382e08ec244175b4bbc1ce96d30ed5b3c2",
+      "bytes": 148466,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_013.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_013.png",
+      "sha256": "78b1785a4245844cc122d5761619cb92c0a905979877f0afaee44aa11a3e2ccd",
+      "bytes": 151226,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_015.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_015.png",
+      "sha256": "c56743d6062a22412754ec91ff673a64600d20ebc5599379be62f760aa889c3a",
+      "bytes": 116004,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_018.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_018.png",
+      "sha256": "a5d29ec752083b9583cfb386065af9335c6105d661d63a1bf9188f5d2cc0692e",
+      "bytes": 133027,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_021.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_021.png",
+      "sha256": "36b7a541888cc526cff82691f9a8029ff6ae85ec3d7056bd90a79f344c4b51d2",
+      "bytes": 151035,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_022.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_022.png",
+      "sha256": "8798cc47fa9327d05856972e148373b7699e6f434eb667c241620e319057a34f",
+      "bytes": 120294,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_024.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_024.png",
+      "sha256": "c1e93144b1f5fe1732489ae2f53ae69a86bd1f735ae0ef3fd85ce673dda0b884",
+      "bytes": 143859,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_025.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_025.png",
+      "sha256": "1eed0df5be5050c39b9452839d274d163da28ae30ac21648056c1f7304fa7ac6",
+      "bytes": 138185,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_028.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_028.png",
+      "sha256": "bd4b5ba29c2883d398010e627cb99412f974dd14f7c019ff93c0c63f651bc3df",
+      "bytes": 127113,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_029.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_029.png",
+      "sha256": "87fa7fe2b82ea2378369ebb6ecdcfc8adb3d011d8c41c783b29a706df05bab39",
+      "bytes": 123143,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_030.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_030.png",
+      "sha256": "b79a799de6426b9224fd9fd3beaf80d37d44016c5058c9cfc287470e7333a787",
+      "bytes": 116240,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_034.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_034.png",
+      "sha256": "1606b2d77214d9fa5dedf19afb85bf66810f6185843827eb3520598be5f5c7cd",
+      "bytes": 119464,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_035.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_035.png",
+      "sha256": "94633fc84654f0d3145d366b83a6a3eac19109c2ff16a2806c04291fb758de4f",
+      "bytes": 143680,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_041.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_041.png",
+      "sha256": "472c3917a779a24c0da208eb7c1b7fe4e4dd47f81803e1a3e597e3712d84f757",
+      "bytes": 158617,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_045.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_045.png",
+      "sha256": "6a5d6d37bf6ae06456f6ff0af509930ffecce5bf9397c51d50c20c211171536c",
+      "bytes": 114816,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_001.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_001.png",
+      "sha256": "73c1c4f93e308820533ff9467954a7e39ef23119d5565293fd201c4b6d2ffc29",
+      "bytes": 133083,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_002.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_002.png",
+      "sha256": "07475871c9856e3b9b20e9f0194e329952139c5d5434007efa279d5e6fd168da",
+      "bytes": 117661,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_003.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_003.png",
+      "sha256": "12b6043e601c265e5138c2aa3cc5238923766dbd72860359c6b3e19844a8ab65",
+      "bytes": 119285,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_004.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_004.png",
+      "sha256": "2fc70a41867b4c4d81d3cf705e7720cdfaed0745a13cd7405115b52752cc7868",
+      "bytes": 128200,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_005.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_005.png",
+      "sha256": "86c181f75a7f33b13c60f7760644e02c6e386e976224e46e9a1a6e0f83d36a18",
+      "bytes": 123359,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_007.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_007.png",
+      "sha256": "f856eb94373da859250c0e5f13ca206acb0fe880236163fbfa3cf700dd9b0dd2",
+      "bytes": 139288,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_008.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_008.png",
+      "sha256": "1e19dc3b32d8fe3093fe8b4efc1b398c5b5ca1762824f8653d89058accbe9287",
+      "bytes": 136555,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/imperio_aion/assets/skills/ICON_TE_SKILL_Passive_010.png",
+      "reference": "app/assets/skills/ICON_TE_SKILL_Passive_010.png",
+      "sha256": "a887867ca2426403a158bd13d129e92945677e5b3fe0412847d6ae448c32a429",
+      "bytes": 143902,
+      "attribution": "NCSOFT game imagery",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/updater/logo.png",
+      "reference": "updater/logo.png",
+      "sha256": "776079ca024ec068ebbea19825b708a4ba3034376664d73cb3a779c42112786e",
+      "bytes": 2186769,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    },
+    {
+      "path": "src/updater/imperioaion.ico",
+      "reference": "updater/imperioaion.ico",
+      "sha256": "4e713a1722ba40a379aa5bdbad00e80dd786c6dd8790352ed99765ee4589913c",
+      "bytes": 168573,
+      "attribution": "project visual kit; authorship/derivative rights not fully verified",
+      "license": "NOT covered by GPL-3.0-only; permission pending"
+    }
+  ]
+}

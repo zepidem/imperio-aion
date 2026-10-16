@@ -1,0 +1,6 @@
+Feche o aplicativo pelo X da HUD e feche o atualizador.
+No Windows, abra Configurações > Aplicativos > Aplicativos instalados ou Painel de Controle > Programas e Recursos. Selecione Império AION e Desinstalar. Autorize o Windows e confirme a remoção.
+O desinstalador remove somente a instalação dedicada em Program Files\ImperioAION. Não altera drivers de outros programas. Os arquivos do próprio desinstalador são removidos após reiniciar o Windows.
+As configurações, cache e exportações em %LOCALAPPDATA%\ImperioAION são preservados. O cache de download em %LOCALAPPDATA%\ImperioBDO-Atualizador também fica separado: pode ser removido manualmente depois de fechar o atualizador.
+A opção Iniciar com o Windows é voluntária e pode ser desativada no atualizador ou no Gerenciador de Tarefas > Aplicativos de inicialização. O desinstalador iniciado normalmente remove essa opção e os atalhos do usuário que o abriu. Atalhos de outras contas podem ser removidos por essas contas.
+Suporte: support@imperiobdo.com.
