@@ -1,14 +1,14 @@
 {
   "date": "2026-10-16",
-  "source_commit": "f9e80c4e4141d1fff258ae47340d02c868f7d751",
-  "workflow_url": "https://github.com/zepidem/imperio-aion/actions/runs/38970311552",
+  "source_commit": "4599f43e94a23682606eb3e8bdfdbd54e3f3e7e3",
+  "workflow_url": "https://github.com/zepidem/imperio-aion/actions/runs/38985845931",
   "hosted_build": "success",
   "hosted_checks": [
     "source audit",
-    "69 offline tests",
+    "76 offline tests",
     "native compilation",
     "complete Windows candidate",
-    "690-file archive verification",
+    "756-file archive verification",
     "artifact upload"
   ],
   "local_checks": [
@@ -20,15 +20,21 @@
     "isolated install",
     "modified installed binary rejection",
     "isolated uninstall",
-    "synthetic user data preserved"
+    "synthetic user data preserved",
+    "automatic update checks disabled initially",
+    "notices embedded in installer",
+    "4 site preparation and signed-release gate tests",
+    "4 site builder regressions"
   ],
   "local_artifacts": {
-    "setup_sha256": "454785ce0755b1d062ec925650d87543f9e7cfccab5cf440e95289b1ef6d1ab0",
-    "archive_sha256": "41386b3310aefc5966112b64d4cad97572e54142b0420209cf4bd9c9910a9f1a",
-    "files": 690
+    "setup_sha256": "51065727c1f76154cf2169604b8442a5228ec12a5ee579b869f714f2c91b35fe",
+    "archive_sha256": "c4e9f0407850044cc91a5d2b5dcc02364be0209b0274bc43709cbe74bfaaff5f",
+    "files": 756,
+    "outer_binaries": 81,
+    "nested_installer_binaries": 80
   },
   "product_metadata": {
-    "ProductName": "Império Aion",
+    "ProductName": "ImpÃ©rio Aion",
     "ProductVersion": "0.8.71"
   },
   "upstream_driver_authenticode": "Valid on local verification",
@@ -38,5 +44,7 @@
   "signpath_approved": false,
   "resource_permission": "pending",
   "production_manifest_signed": false,
-  "notes": "Hosted CI performs inventory checks without launching runtime as administrator. Full runtime QA was performed locally without elevation. Local and hosted hashes may differ; bit-for-bit reproducibility is not claimed."
+  "notes": "Hosted CI performs inventory checks without launching runtime as administrator. Full runtime QA was performed locally without elevation. Local and hosted hashes may differ; bit-for-bit reproducibility is not claimed.",
+  "privacy_controls": "default offline; manual check available; automatic checks require saved opt-in; local installation still authenticated",
+  "site_publication": "prepared separately; not deployed; new release metadata not authorized"
 }

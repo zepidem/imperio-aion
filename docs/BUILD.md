@@ -21,7 +21,7 @@ Runtime data includes inventoried images, pet/NPC/skill catalogs, protocol names
 
 requirements-windows.lock pins eleven runtime/build wheels by SHA-256 for this interpreter/platform. metadata/windows-wheels.json records filenames. Always install with hash checking; the builder's version check is an additional safeguard.
 
-The monitor uses PyInstaller one-directory mode and the setup uses one-file mode. The C# helper is compiled from source. Its new hash is pinned only in staging; original updater trust files are not silently overwritten. Package notices include installed dependency licenses, Python, Tcl/Tk and WinDivert. The binary inventory is an exact hash inventory, not a complete legal clearance or bit-for-bit reproducibility claim.
+The monitor uses PyInstaller one-directory mode and the setup uses one-file mode. The C# helper is compiled from source. Its new hash is pinned only in staging; original updater trust files are not silently overwritten. Package notices include installed dependency licenses, Python, Tcl/Tk, Microsoft runtime terms, OpenSSL, image libraries, Rust components and WinDivert. The setup also embeds the notices, available from its Licenças link. See NATIVE_LICENSES.md. The binary inventory is an exact hash inventory, not a complete legal clearance or bit-for-bit reproducibility claim.
 
 ## Outputs
 
@@ -32,7 +32,7 @@ The monitor uses PyInstaller one-directory mode and the setup uses one-file mode
 
 ## Verification scope
 
-The real frozen app renders its panel/HUD in hidden windows with fresh and saved synthetic state. It checks required images, 207 pets, 284 skills, NPCs, legal pages and DLL ABI/filter compilation. Capture and game probes are disabled. The setup renders without downloading.
+The real frozen app renders its panel/HUD in hidden windows with fresh and saved synthetic state. It checks required images, 207 pets, 284 skills, NPCs, legal pages and DLL ABI/filter compilation. Capture and game probes are disabled. The setup renders without downloading and verifies the initial opt-out plus bundled notices. Automatic update checks are disabled by default; local authentication remains required for offline launch.
 
 A separate verifier is compiled with a fresh in-memory QA key. It validates the exact candidate, rejects a wrong signature, installs into a marked temporary directory, detects a modified installed executable and removes that isolated installation while preserving synthetic user data. QA private keys are never exported and this verifier is not delivered. No driver is started, registry entry created or Program Files installation performed. Elevated installation/ACLs and actual game capture still require separate validation.
 
@@ -42,4 +42,4 @@ The imported updater_trust.py identifies its anchors as a test/pilot channel. Ne
 
 Authenticode changes file bytes. The future pipeline must sign the helper first, pin its final hash in the staged updater, build/sign the updater and monitor, then construct and authenticate the final ZIP. Only project-owned executables may be submitted to SignPath; preserve upstream signatures. Do not embed a signed helper with a pre-signing hash.
 
-tools/check_release.py intentionally reports pending until resource permissions, privacy controls, release authorization, public release evidence and SignPath setup are resolved. Compilation does not grant signing approval.
+tools/check_release.py intentionally reports pending until resource permissions, hosting/privacy review, release authorization, public release evidence and SignPath setup are resolved. Compilation does not grant signing approval.

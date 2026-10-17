@@ -2,22 +2,23 @@
   "state": "UNSIGNED_WINDOWS_CANDIDATE",
   "code_license": "GPL-3.0-only",
   "remaining": [
-    "production release keys, signed package metadata and protected installation validation",
+    "controlled release authorization, matching signed metadata and protected Windows installation acceptance",
     "resource rights or original replacements",
-    "final privacy and installer controls review",
+    "hosting configuration and log retention review",
     "SignPath MFA setup and signing roles confirmation",
-    "public release and reputation evidence",
+    "activate prepared website release and corresponding source download",
     "SignPath application and acceptance"
   ],
   "published": true,
-  "verified_source_commit": "f9e80c4e4141d1fff258ae47340d02c868f7d751",
-  "verification_run_url": "https://github.com/zepidem/imperio-aion/actions/runs/38970311552",
-  "hosted_verification": "success; complete unsigned Windows build, 69 tests and 690-file package verification",
+  "verified_source_commit": "4599f43e94a23682606eb3e8bdfdbd54e3f3e7e3",
+  "verification_run_url": "https://github.com/zepidem/imperio-aion/actions/runs/38985845931",
+  "hosted_verification": "success; complete unsigned Windows build, 76 tests and 756-file package verification",
   "signpath_approved": false,
   "bdo_included": false,
   "repository_url": "https://github.com/zepidem/imperio-aion",
   "resource_permission": "pending; images and catalogs restored for complete candidate",
   "build_pipeline": "tools/build_windows.py; locked Windows wheels; source, package and binary hash inventories",
   "community_url": "https://discord.gg/2cQSFwVst",
-  "local_validation": "hidden UI and isolated install/remove tests passed; see candidate-validation.json"
+  "local_validation": "frozen UI and isolated install/remove passed; default opt-out and bundled notices verified",
+  "native_license_review": "complete documented review of locked candidate components, nested installer and upstream SBOMs; resource permissions remain pending"
 }
