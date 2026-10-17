@@ -21,10 +21,13 @@ Status: 2026-10-16. Sources and inventoried visual resources are published at ht
 
 - [ ] Resolve each resource's rights. The owner reports sending an NCSOFT request; no reply or permission has been recorded. Permission for fan use may differ from permission for source/fork/installer redistribution and from SignPath eligibility.
 - [ ] Confirm tables/catalog sources or provide original licensed replacements.
-- [x] Prepare portable complete packaging, eleven locked wheels, runtime data, vendor source and binary hash inventories. Native/transitive license review remains open.
-- [ ] Complete the Windows build in a clean environment; verify GUI, missing-resource behavior, update, installation and removal.
-- [ ] Verify the privacy notice and controls for update traffic, diagnostics, capture and system changes against the actual installer.
-- [ ] Reconcile application/updater version metadata and build trust. Calculate signed artifact hashes only after signing.
+- [x] Prepare portable complete packaging, eleven locked wheels, runtime data, vendor source and binary hash inventories. Locked native/transitive dependency notices have been reviewed; resource rights remain open.
+- [x] Complete the Windows CI build and local frozen GUI checks, signed isolated upgrade/rollback and install/remove checks for 0.8.80 (see metadata/candidate-validation.json).
+- [ ] Accept protected Windows installation, UAC/ACLs and actual game capture.
+- [x] Verify source and frozen UI privacy controls, default-off automatic checks and bundled notices.
+- [ ] Confirm Cloudflare products/plan and external log exports. Render Hobby explorer retention is 7 days.
+- [x] Reconcile candidate 0.8.80 metadata and authorize its exact bytes with pilot release signatures and renewal.
+- [ ] Rebuild/recalculate final hashes if future Authenticode signing changes bytes.
 - [ ] Publish a release built from the public commit, with matching source, notices and clear download instructions.
 
 ## Application

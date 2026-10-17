@@ -1,6 +1,6 @@
-# Privacy policy — source preparation
+# Privacy policy â€” source preparation
 
-Updated 2026-10-16 for the Windows candidate. This policy describes the reviewed application and installer paths. It is not an audit of the production website or hosting configuration. The hosting review remains open.
+Updated 2026-10-16 for the Windows candidate. This policy describes the reviewed application and installer paths. It is not an audit of the production website or hosting configuration. Render explorer retention is confirmed; Cloudflare configuration and export retention remain open.
 
 Project contact: **support@imperiobdo.com**. Maintainer: **Jose Mardegam (Zepidem)**. The Portuguese in-app notices are in `src/imperio_aion/dados/legal-pt.json` and `src/updater/legal.json`.
 
@@ -19,6 +19,8 @@ The updater uses `https://imperiobdo.com/aion2/releases/v2/` over HTTPS. Automat
 Delivery servers receive IP address, request time, URL and User-Agent (`ImperioAion-Updater/0.4.2`). Reviewed transport requests do not attach combat sessions, local profiles or diagnostics. The UI discloses requests before the manual check, and the privacy notice is available before any automatic check is enabled. Opening external links deliberately makes requests to those services.
 
 Live delivery headers confirm Cloudflare in front of Render. The maintainer confirmed Render Hobby: service logs are available in its explorer for 7 days, per https://render.com/docs/logging. This is not a promise that all infrastructure data or exported copies are deleted after 7 days. The reviewed Aion download routes do not write an application access log. Shared site middleware can receive CSP violation reports; it logs the directive and blocked hostname, omitting document URL, query and identity.
+
+The shared CSP-report rate limiter keeps keyed IP digests in the private security database for a 60-second counting window. Expired limit records are deleted on the next limiter consumption; the reviewed code does not guarantee immediate physical deletion at expiry. This is separate from the dashboard log window.
 
 Cloudflare documents 31 days for Security Events across plans, and 31 days for Security Analytics on Free/Pro/Business (90 on Enterprise): https://developers.cloudflare.com/waf/analytics/security-events/. These are product-specific limits, not universal visitor-data retention. The account plan, other enabled logging products and external log exports were not available through the connected tools and remain unconfirmed. Provider policies: https://render.com/privacy and https://www.cloudflare.com/privacypolicy/.
 

@@ -4,7 +4,7 @@ Código-fonte do monitor Windows Império Aion e de seu instalador/atualizador, 
 
 Repositório: https://github.com/zepidem/imperio-aion. Página do aplicativo: https://imperiobdo.com/aion2.
 
-**Estado: build de candidato Windows completo; direitos e publicação pendentes.** O build inclui aplicativo, instalador/atualizador, catálogos, overlay e dependências. Os recursos de terceiros foram incluídos a pedido do responsável, enquanto se aguarda a NCSOFT; não recebem a GPL do código. O candidato ainda precisa de autorização de release. Não há aprovação nem assinatura SignPath. Consulte [os direitos dos recursos](docs/RESOURCE_RIGHTS.md) e [as instruções de build](docs/BUILD.md).
+**Estado: build de candidato Windows completo; direitos e publicação pendentes.** O build inclui aplicativo, instalador/atualizador, catálogos, overlay e dependências. Os recursos de terceiros foram incluídos a pedido do responsável, enquanto se aguarda a NCSOFT; não recebem a GPL do código. O candidato 0.8.80 tem metadados assinados pelo canal piloto e aguarda o teste de instalação protegida e publicação. Não há aprovação nem assinatura SignPath. Consulte [os direitos dos recursos](docs/RESOURCE_RIGHTS.md) e [as instruções de build](docs/BUILD.md).
 
 ## Licença
 
@@ -14,14 +14,14 @@ O código próprio é disponibilizado sob **GNU GPL versão 3, exclusivamente �
 
 | Pasta | Conteúdo |
 | --- | --- |
-| `src/imperio_aion` | Fontes do aplicativo 0.8.71, referência de build revisão 4 |
+| `src/imperio_aion` | Fontes do candidato 0.8.80, incorporando as correções da 0.8.79 |
 | `src/updater` | Atualizador 0.4.2 e instalador nativo `Installer.cs` |
 | `tests` | Testes offline com dados sintéticos e verificações da separação |
 | `licenses/third-party` | Textos de licença encontrados nas dependências examinadas |
 | `metadata` | Origem e hashes dos fontes, dependências, imagens incluídas e recursos ainda excluídos |
 | `docs` | Revisão de licenças, recursos e plano de publicação |
 
-A numeração identifica as referências importadas, não um novo lançamento. A versão 0.8.72 encontrada em desenvolvimento não foi usada para não confundir uma árvore em alteração com o build conferido.
+A base 0.8.79 foi incorporada após confirmação da versão usada pelo responsável. A 0.8.80 é o novo candidato; o download público ainda não foi substituído.
 
 ## Verificação
 
@@ -34,7 +34,7 @@ python -m venv .venv
 .venv\Scripts\python tools/run_tests.py
 ```
 
-`requirements-windows.lock` fixa por hash os wheels do build Windows com Python 3.14.7 x64. `requirements-observed.txt` preserva o inventário anterior. Os 69 testes offline não abrem a HUD, não iniciam captura, não instalam o driver, não modificam o registro e não usam o canal online. A verificação adicional do candidato renderiza janelas ocultas e testa instalação/remoção em pasta isolada. Os testes antigos baseados em capturas de jogadores não foram copiados.
+`requirements-windows.lock` fixa por hash os wheels do build Windows com Python 3.14.7 x64. `requirements-observed.txt` preserva o inventário anterior. Os 83 testes offline não abrem a HUD, não iniciam captura, não instalam o driver, não modificam o registro e não usam o canal online. A verificação adicional do candidato renderiza janelas ocultas e testa instalação/remoção em pasta isolada. Os testes antigos baseados em capturas de jogadores não foram copiados.
 
 ## Build e publicação
 
@@ -42,7 +42,7 @@ python -m venv .venv
 python tools/check_release.py
 ```
 
-O comando informa as pendências atuais e retorna código 2 enquanto o release não está autorizado. Não substitua o instalador do site apenas por ter compilado o candidato. [BUILD.md](docs/BUILD.md) descreve build, testes e a ordem das assinaturas.
+O comando informa as pendências atuais e retorna código 2 enquanto houver pendências de publicação. Não substitua o instalador do site apenas por ter compilado o candidato. [BUILD.md](docs/BUILD.md) descreve build, testes e a ordem das assinaturas.
 
 O site `https://imperiobdo.com/aion2` pode permanecer no repositório privado existente. O novo projeto será responsável pelos fontes e builds do Aion; a integração futura entregará os artefatos ao canal do site. Não foram copiados backend, dados, credenciais ou histórico Git do BDO. Consulte [SEPARATION.md](docs/SEPARATION.md).
 

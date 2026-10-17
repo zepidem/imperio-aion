@@ -1,24 +1,26 @@
 {
-  "state": "UNSIGNED_WINDOWS_CANDIDATE",
+  "state": "PILOT_SIGNED_METADATA_AWAITING_ACCEPTANCE",
   "code_license": "GPL-3.0-only",
   "remaining": [
-    "controlled release authorization, matching signed metadata and protected Windows installation acceptance",
+    "protected Windows installation and real game acceptance",
     "resource rights or original replacements",
-    "hosting configuration and log retention review",
+    "Cloudflare plan, logging products and external export retention confirmation",
     "SignPath MFA setup and signing roles confirmation",
-    "activate prepared website release and corresponding source download",
+    "activate prepared website release and corresponding source download after acceptance",
     "SignPath application and acceptance"
   ],
   "published": true,
-  "verified_source_commit": "4599f43e94a23682606eb3e8bdfdbd54e3f3e7e3",
-  "verification_run_url": "https://github.com/zepidem/imperio-aion/actions/runs/38985845931",
-  "hosted_verification": "success; complete unsigned Windows build, 76 tests and 756-file package verification",
+  "verified_source_commit": "997334190561aef58e71fd467f6d6c16e2b816dd",
+  "verification_run_url": "https://github.com/zepidem/imperio-aion/actions/runs/38988358779",
+  "hosted_verification": "success; complete unsigned Windows build, 83 tests and 758-file archive verification",
   "signpath_approved": false,
   "bdo_included": false,
   "repository_url": "https://github.com/zepidem/imperio-aion",
   "resource_permission": "pending; images and catalogs restored for complete candidate",
   "build_pipeline": "tools/build_windows.py; locked Windows wheels; source, package and binary hash inventories",
   "community_url": "https://discord.gg/2cQSFwVst",
-  "local_validation": "frozen UI and isolated install/remove passed; default opt-out and bundled notices verified",
-  "native_license_review": "complete documented review of locked candidate components, nested installer and upstream SBOMs; resource permissions remain pending"
+  "local_validation": "frozen UI, isolated install/remove and real signed 0.8.79 -> 0.8.80 upgrade/rollback passed; protected installation and game capture pending",
+  "native_license_review": "complete documented review of locked candidate components, nested installer and upstream SBOMs; resource permissions remain pending",
+  "pilot_metadata_signed": true,
+  "site_deployed": false
 }

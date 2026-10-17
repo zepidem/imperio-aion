@@ -1,14 +1,14 @@
 {
   "date": "2026-10-16",
-  "source_commit": "4599f43e94a23682606eb3e8bdfdbd54e3f3e7e3",
-  "workflow_url": "https://github.com/zepidem/imperio-aion/actions/runs/38985845931",
+  "source_commit": "997334190561aef58e71fd467f6d6c16e2b816dd",
+  "workflow_url": "https://github.com/zepidem/imperio-aion/actions/runs/38988358779",
   "hosted_build": "success",
   "hosted_checks": [
     "source audit",
-    "76 offline tests",
+    "83 offline tests",
     "native compilation",
     "complete Windows candidate",
-    "756-file archive verification",
+    "758-file archive verification",
     "artifact upload"
   ],
   "local_checks": [
@@ -24,18 +24,22 @@
     "automatic update checks disabled initially",
     "notices embedded in installer",
     "4 site preparation and signed-release gate tests",
-    "4 site builder regressions"
+    "4 site builder regressions",
+    "signed real 0.8.79 to 0.8.80 isolated upgrade, repetition and rollback",
+    "old release install rejected after newer authenticated receipt",
+    "7 signed staging artifacts verified; 10 old artifact records preserved",
+    "renewal check-only passed without root private key access"
   ],
   "local_artifacts": {
-    "setup_sha256": "51065727c1f76154cf2169604b8442a5228ec12a5ee579b869f714f2c91b35fe",
-    "archive_sha256": "c4e9f0407850044cc91a5d2b5dcc02364be0209b0274bc43709cbe74bfaaff5f",
-    "files": 756,
+    "setup_sha256": "db7f9de322b66f0169eedae502854cc35dfe3b6b9ac8eb48385c3a97d44c55d3",
+    "archive_sha256": "4ac82de38f67887a75d06ba2ef5f05fa2ec43ddb616b56ab3aa51be92426b5c5",
+    "files": 758,
     "outer_binaries": 81,
     "nested_installer_binaries": 80
   },
   "product_metadata": {
-    "ProductName": "ImpÃ©rio Aion",
-    "ProductVersion": "0.8.71"
+    "ProductName": "Império Aion",
+    "ProductVersion": "0.8.80"
   },
   "upstream_driver_authenticode": "Valid on local verification",
   "production_install_tested": false,
@@ -46,5 +50,13 @@
   "production_manifest_signed": false,
   "notes": "Hosted CI performs inventory checks without launching runtime as administrator. Full runtime QA was performed locally without elevation. Local and hosted hashes may differ; bit-for-bit reproducibility is not claimed.",
   "privacy_controls": "default offline; manual check available; automatic checks require saved opt-in; local installation still authenticated",
-  "site_publication": "prepared separately; not deployed; new release metadata not authorized"
+  "site_publication": "signed staging verified; not deployed",
+  "pilot_release_metadata_signed": true,
+  "pilot_metadata": {
+    "release_counter": 880,
+    "root_payload_sha256": "374fd5f1c3a003ab33d14d9dad9df8209e38ac793c6264505306d13e6397f594",
+    "freshness_expires": "2026-10-31T01:31:48Z",
+    "root_expires": "2027-10-17T01:26:48Z",
+    "authenticode": false
+  }
 }
