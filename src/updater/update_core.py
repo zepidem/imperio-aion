@@ -121,7 +121,7 @@ class _StandardTransport:
 
     def request(self, url, *, timeout):
         request = urllib.request.Request(url, headers={
-            "User-Agent": "ImperioBDO-Updater/0.1", "Accept-Encoding": "identity",
+            "User-Agent": "ImperioAion-Updater/0.4.2", "Accept-Encoding": "identity",
             "Cache-Control": "no-cache"}, method="GET")
         try:
             return self.opener.open(request, timeout=timeout)

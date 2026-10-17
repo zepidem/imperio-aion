@@ -1,7 +1,7 @@
 {
-  "responsible": "Zepidem",
+  "responsible": "Jose Mardegam (Zepidem)",
   "contact": "support@imperiobdo.com",
-  "version": "1.5",
+  "version": "1.6",
   "date": "16 de outubro de 2026",
   "privacy": {
     "title": "Privacidade",
@@ -9,11 +9,11 @@
     "sections": [
       [
         "Dados usados para mostrar o jogo",
-        "Com a captura iniciada por você, o monitor interpreta mensagens das conexões TCP elegíveis do AION 2. Isso pode incluir nome, identificadores e servidor do personagem; classe; integrantes do grupo; alvos e monstros; dano, vida observada, habilidades, efeitos e horários de combate; Energia Od; ganhos de Kinah e pontos de Abismo; Deveres, Ordens e entradas de atividades; coleção e progresso de mascotes. A leitura depende dos campos recebidos e reconhecidos: um dado pendente não é substituído por uma confirmação inventada. Se a captura começar durante o jogo, o DPS considera apenas os danos recebidos que possam ser vinculados ao personagem ou a integrantes confirmados do grupo. Mensagens de outros atores próximos podem chegar pela conexão do jogo e constar em amostras de diagnóstico, mas não integram o DPS do personagem ou do grupo. Sem vínculo confirmado, o dano permanece pendente."
+        "Ao detectar o jogo, o monitor pode preparar e iniciar a captura automaticamente, com a autorização necessária do Windows. Com a captura ativa, o monitor interpreta mensagens das conexões TCP elegíveis do AION 2. Isso pode incluir nome, identificadores e servidor do personagem; classe; integrantes do grupo; alvos e monstros; dano, vida observada, habilidades, efeitos e horários de combate; Energia Od; ganhos de Kinah e pontos de Abismo; Deveres, Ordens e entradas de atividades; coleção e progresso de mascotes. A leitura depende dos campos recebidos e reconhecidos: um dado pendente não é substituído por uma confirmação inventada. Se a captura começar durante o jogo, o DPS considera apenas os danos recebidos que possam ser vinculados ao personagem ou a integrantes confirmados do grupo. Mensagens de outros atores próximos podem chegar pela conexão do jogo e constar em amostras de diagnóstico, mas não integram o DPS do personagem ou do grupo. Sem vínculo confirmado, o dano permanece pendente."
       ],
       [
         "Informações técnicas e preferências",
-        "O aplicativo consulta processos e conexões do Windows para vincular a captura ao jogo, incluindo PID, nome do processo, interface, endereços IP e portas. Consulta também a posição e o foco da janela para posicionar a HUD. Salva preferências como personagem, interface, posição, tamanho, opacidade e combinações de atalhos. Os atalhos globais servem para executar as ações configuradas; o aplicativo não registra um histórico do texto digitado. Na instalação, você pode optar por iniciar o aplicativo com o Windows e criar atalho no menu Iniciar. A escolha de inicialização é registrada para a sua conta do Windows, sem ativar a captura automaticamente nem solicitar elevação na abertura do computador."
+        "O aplicativo consulta processos e conexões do Windows para vincular a captura ao jogo, incluindo PID, nome do processo, interface, endereços IP e portas. Consulta também a posição e o foco da janela para posicionar a HUD. Salva preferências como personagem, interface, posição, tamanho, opacidade e combinações de atalhos. Os atalhos globais servem para executar as ações configuradas; o aplicativo não registra um histórico do texto digitado. Na instalação, você pode optar por iniciar o aplicativo com o Windows e criar atalho no menu Iniciar. A escolha de inicialização é registrada para a sua conta do Windows, e abre a interface sem elevação. Ao detectar o jogo, a preparação da captura pode solicitar autorização do Windows e iniciar a leitura. Fechar a HUD encerra a captura."
       ],
       [
         "Processamento e arquivos locais",
@@ -21,7 +21,7 @@
       ],
       [
         "Site, download e atualizações",
-        "O instalador imperioaion.exe consulta por HTTPS o canal beta em imperiobdo.com/aion2/releases/v2 e baixa somente os metadados e o pacote de instalação. Essas requisições revelam ao servidor e à infraestrutura de hospedagem e entrega (Render e Cloudflare) informações técnicas como IP, data, caminho solicitado e identificador do atualizador ou navegador, necessárias à entrega e à segurança. Não incluem sessões de combate, mascotes, configurações ou diagnósticos locais. O instalador mantém no computador o estado das verificações e dos downloads. O site não exige login Discord para baixar o aplicativo e a demonstração usa dados ilustrativos. Não há rastreador analítico próprio nesta página. Os registros de infraestrutura seguem a configuração e a retenção desses prestadores; pedidos sobre dados tratados pelo projeto podem ser enviados a support@imperiobdo.com. O atalho oficial também verifica a disponibilidade de atualizações na abertura. A instalação de uma atualização é oferecida ao usuário, sem instalação silenciosa."
+        "O instalador consulta por HTTPS https://imperiobdo.com/aion2/releases/v2/ quando você clica em Verificar ou ativa a consulta automática. A consulta automática começa desativada e pode ser alterada no instalador. O download e a instalação exigem uma ação sua. O servidor e os prestadores de hospedagem e entrega recebem IP, horário, URL solicitada e identificador do atualizador; essas requisições não incluem sessões, perfis ou diagnósticos locais. O prazo de retenção dos registros da infraestrutura depende da configuração do serviço e ainda está em revisão pelo responsável. Dúvidas sobre dados tratados pelo projeto: support@imperiobdo.com. Abrir o site, links externos ou o Discord também cria conexões com os respectivos serviços."
       ],
       [
         "Sobreposição no OBS e Streamlabs",
@@ -49,11 +49,11 @@
       ],
       [
         "Consulta de atualização na abertura",
-        "O atalho do aplicativo abre primeiro o atualizador sem elevação. Ele consulta o canal de atualização antes de abrir a HUD. Se houver uma nova versão, você escolhe instalar ou abrir a versão já autenticada. Quando a consulta falha, a versão instalada continua disponível após sua conferência. O monitor não envia os dados de combate para essa consulta. A renovação dos metadados do canal ocorre na infraestrutura de distribuição; não precisa dos arquivos do personagem."
+        "O atalho abre primeiro o atualizador sem elevação. Ele verifica localmente a instalação; por padrão não consulta a internet. Uma versão instalada, íntegra, autenticada e compatível pode abrir offline. A opção “Consultar atualizações automaticamente ao abrir” é voluntária e fica salva localmente; desmarcá-la interrompe as próximas consultas automáticas. O botão Verificar inicia uma consulta manual. A instalação de atualizações é oferecida separadamente. Os dados de combate não são enviados nessas consultas."
       ],
       [
         "Preferências de instalação",
-        "Se você optar por iniciar com o Windows, o instalador registra essa preferência somente na sua conta e abre a HUD sem elevação. A captura pede autorização ao ser iniciada. A criação de um atalho no menu Iniciar também é opcional. Essas escolhas ficam salvas localmente no atualizador e são mantidas nas atualizações."
+        "Iniciar com o Windows e criar atalho no menu Iniciar são opções independentes, registradas para sua conta e mantidas nas atualizações. A HUD abre sem elevação; ao detectar o jogo, pode preparar a captura e solicitar autorização do Windows. Feche a HUD para encerrar o monitor e a captura. Desative a inicialização com o Windows se não quiser que o monitor abra ao entrar na conta."
       ]
     ]
   },
@@ -95,7 +95,7 @@
       ],
       [
         "Distribuição e atualizações",
-        "O instalador beta disponibilizado em imperiobdo.com/aion2 consulta um canal HTTPS fixo, verifica a assinatura e a integridade dos pacotes e impede versões abaixo do mínimo aceito. A instalação requer autorização do Windows; feche o monitor quando solicitado e utilize a mesma conta do Windows para preservar as preferências e os arquivos salvos. O monitor não faz atualização silenciosa em segundo plano. Pacotes novos podem ser recusados após o prazo de validade dos metadados; nesse caso, tente novamente quando o canal for renovado ou contate o suporte. Uma instalação já autenticada pode continuar a ser aberta offline, conforme sua integridade. O executável beta não possui certificado Authenticode de editor. Essas verificações reduzem riscos, mas não garantem ausência de falhas ou compatibilidade universal. O atalho oficial verifica novas versões ao abrir e solicita sua decisão para atualizar. O instalador oferece inicialização com o Windows e atalho no menu Iniciar. A desinstalação pelo Windows remove o programa e preserva preferências, cache e exportações locais."
+        "O instalador beta disponibilizado em imperiobdo.com/aion2 consulta um canal HTTPS fixo, verifica a assinatura e a integridade dos pacotes e impede versões abaixo do mínimo aceito. A instalação requer autorização do Windows; feche o monitor quando solicitado e utilize a mesma conta do Windows para preservar as preferências e os arquivos salvos. O monitor não faz atualização silenciosa em segundo plano. Pacotes novos podem ser recusados após o prazo de validade dos metadados; nesse caso, tente novamente quando o canal for renovado ou contate o suporte. Uma instalação já autenticada pode continuar a ser aberta offline, conforme sua integridade. O executável beta não possui certificado Authenticode de editor. Essas verificações reduzem riscos, mas não garantem ausência de falhas ou compatibilidade universal. O atalho oficial só consulta novas versões automaticamente se você ativar essa opção; a consulta manual continua disponível. A instalação depende da sua decisão. O instalador oferece inicialização com o Windows e atalho no menu Iniciar. A desinstalação pelo Windows remove o programa e preserva preferências, cache e exportações locais."
       ],
       [
         "Canal renovável e versão de teste",
@@ -108,5 +108,5 @@
     ]
   },
   "code_license": "GPL-3.0-only",
-  "source_preparation": "2026-10-16; recursos e catálogos restaurados para build completo; autorização de terceiros pendente; candidato sem assinatura Authenticode"
+  "source_preparation": "2026-10-16; consulta automática opcional, avisos nativos completos; direitos de recursos pendentes; candidato sem Authenticode"
 }

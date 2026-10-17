@@ -519,28 +519,28 @@
       "path": "src/updater/startup_flow.py",
       "reference": "updater-0.4.2/startup_flow.py",
       "source_sha256": "e85e4ecc1f939b3c8d64c91395c78ca81e8984d729f02c8c9f676c79e3baba4d",
-      "prepared_sha256": "4245f7ded0819b7552ca6616b8a5ce9466bdb6a95849246b806e3c7e142c7bd0",
+      "prepared_sha256": "5ce08a52ac29846907a44844a331f360f7766e37a5b0e410e6d25d8a5f6cc5f2",
       "license": "GPL-3.0-only"
     },
     {
       "path": "src/updater/update_core.py",
       "reference": "updater-0.4.2/update_core.py",
       "source_sha256": "8b3c51a9e0ba2e50df8a497b553740a7d489bb73fd7d1a4bb7a102fc19b0f594",
-      "prepared_sha256": "c04daba30bb9689465a0d4d288740013bca9f989b1fbae9de699215c4b8adc06",
+      "prepared_sha256": "d5e9b34ff092cb74d1cbdcfa265c63ae42525d2ca66575fb39541aea2383640d",
       "license": "GPL-3.0-only"
     },
     {
       "path": "src/updater/update_service.py",
       "reference": "updater-0.4.2/update_service.py",
       "source_sha256": "d40e4ccf7f081a51e34f0d54fb0c03e0f9e6e0ac16051cd16f736ac61dff25fb",
-      "prepared_sha256": "18418b805b993fd5923c1e6b07bc1116e574bb64d61ffe693dad256ea3cd4447",
+      "prepared_sha256": "3fa2615897063dec1979c6c71383ae09abadce88d56cbde38cea3ac1ca2a4d19",
       "license": "GPL-3.0-only"
     },
     {
       "path": "src/updater/updater_app.py",
       "reference": "updater-0.4.2/updater_app.py",
       "source_sha256": "b0b2bd117e325380507836c7d6f9334d11ab2f93cf66d5c33d46e11e6f745f45",
-      "prepared_sha256": "c715da0b62df01d5b1886c9820353eaee6fdea6bbed6c520faa247fe8ce9f2ba",
+      "prepared_sha256": "8a94d5f671ce3ab0cfce14a58b57ee8ca5e3ff47af7db061fc4c8182e8e2f4c7",
       "license": "GPL-3.0-only"
     },
     {
@@ -603,7 +603,7 @@
       "path": "tests/updater/test_update_service.py",
       "reference": "updater-0.4.2/test_update_service.py",
       "source_sha256": "1948ac30f8a35aa56614a3661638f0c88abe24f6eb7d006e42a068444df8bea5",
-      "prepared_sha256": "dcc0ee2f66d853ecde175691b331465c1a1bdad1f27d4f56ebc8efc1b8b5c103",
+      "prepared_sha256": "2c32c93cecee03978277e9c1f66651965f314da1a05f9a530dcf4e4f90387651",
       "license": "GPL-3.0-only"
     },
     {
@@ -624,7 +624,7 @@
       "path": "src/imperio_aion/dados/legal-pt.json",
       "reference": "app-0.8.71/legal",
       "source_sha256": "1d463be5d5cb45829d069a25bd82c82d795020b57394f5342bee132c9e731310",
-      "prepared_sha256": "eb4d64ffab1f255cf0acba029f566247ea9b35a67f9567fd3433c81cb20ecce2",
+      "prepared_sha256": "0b8b018a93c75369a6e6c6ec091a64bf7b2a40287789b930a60795926eb0e756",
       "license": "GPL-3.0-only",
       "change": "GPL precedence added; restricted redistribution wording removed; source-only state identified"
     },
@@ -632,7 +632,7 @@
       "path": "src/updater/legal.json",
       "reference": "updater-0.4.2/legal",
       "source_sha256": "9256a3783cdd525e4d99bbe5034c83257c4256c3bc39b2b555b689fa2c6e8633",
-      "prepared_sha256": "5746d75ee1143f30ed97f331c60374fc5139d26d3b5764ddc6608524fb229b80",
+      "prepared_sha256": "939ca83906b1d6308e74a80b06b66215befc88ec45133505f598abbc6e1fe78a",
       "license": "GPL-3.0-only",
       "change": "GPL precedence added; restricted redistribution wording removed; source-only state identified"
     },
@@ -704,6 +704,13 @@
       "reference": "app-0.8.71/assets/panel/nav-manifest.json",
       "source_sha256": "2d88438559e6fda5d5887fb8a0793f8599604f22a212c81073cb4dc97405e88d",
       "prepared_sha256": "9e932abf4166c311b238182a228623ce914664b56325a12e2fba5adf7564a8c7",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "src/updater/network_preferences.py",
+      "reference": "project/privacy-review-2026-10-16",
+      "source_sha256": "9afe02616c897afd4710b7b6e0710f46c2bfcc02aca04680d244a2ccca43b1b8",
+      "prepared_sha256": "9afe02616c897afd4710b7b6e0710f46c2bfcc02aca04680d244a2ccca43b1b8",
       "license": "GPL-3.0-only"
     }
   ],

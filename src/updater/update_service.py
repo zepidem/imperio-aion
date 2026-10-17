@@ -223,6 +223,13 @@ class UpdateService:
                 self._emit(phase="idle", message="Versão instalada conferida.")
         return self.snapshot()
 
+    def prepare_offline(self):
+        # This path only uses the result of local native verification.
+        # Never create a network manager or use a downloaded offer here.
+        if self._state['phase'] != 'corrupted':
+            self._emit(phase='offline_ready', message='Consulta automática desativada.', error=None)
+        return self.snapshot()
+
     def _ensure_manager(self):
         if self._manager is None:
             if self.local_feed is None:

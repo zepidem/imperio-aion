@@ -10,6 +10,7 @@ from pathlib import Path
 import argparse
 import ctypes
 import json
+import os
 import queue
 import sys
 import threading
@@ -199,6 +200,8 @@ class Updater:
         self.windows_startup=windows_startup
         from install_preferences import load
         choices=load(self.data)
+        import network_preferences
+        self.automatic_checks=tk.BooleanVar(root,value=network_preferences.load(self.data))
         self.install_choices={key:tk.BooleanVar(root,value=value) for key,value in choices.items()}
         self.check_finished=False;self.launch_requested=False;self.shortcuts_attempted=False
         self.events=queue.Queue(); self.busy=False; self.closed=False
@@ -221,7 +224,7 @@ class Updater:
         self.build_main()
         self.render(self.snapshot)
         self.poll_id=root.after(75,self.poll)
-        if autostart: self.check_id=root.after(30,self.check)
+        if autostart: self.check_id=root.after(30,self.startup)
     def label(self,parent,text=None,size=10,bold=False,color=TEXT,wrap=0,var=None,bg=BG):
         return tk.Label(parent,text=text,textvariable=var,bg=bg,fg=color,font=('Segoe UI',size,'bold' if bold else 'normal'),anchor='w',justify='left',wraplength=wrap,bd=0)
     def build_header(self):
@@ -245,6 +248,11 @@ class Updater:
         legal.bind('<Button-1>',lambda _:self.show_legal())
         legal.bind('<Return>',lambda _:self.show_legal())
         legal.bind('<space>',lambda _:self.show_legal())
+        licenses=self.label(footer,'Licenças',8,color=MUTED)
+        licenses.configure(cursor='hand2',takefocus=True);licenses.pack(side='left',padx=(18,0))
+        licenses.bind('<Button-1>',lambda _:self.show_licenses())
+        licenses.bind('<Return>',lambda _:self.show_licenses())
+        licenses.bind('<space>',lambda _:self.show_licenses())
         support=self.label(footer,'Precisa de ajuda?',8,color=MUTED)
         support.configure(cursor='hand2',takefocus=True);support.pack(side='right')
         support.bind('<Button-1>',lambda _:self.support())
@@ -255,6 +263,11 @@ class Updater:
         tk.Frame(self.root,bg=LINE,height=1).pack(side='bottom',fill='x')
     def build_technical(self):
         self.technical=tk.Frame(self.root,bg=BG,padx=34);self.technical.pack(side='bottom',fill='x')
+        self.network_check=tk.Checkbutton(self.technical,text='Consultar atualizações automaticamente ao abrir',
+            variable=self.automatic_checks,command=self.save_network_choice,bg=BG,fg=TEXT,selectcolor=SURFACE,
+            activebackground=BG,activeforeground=GOLD_LIGHT,font=('Segoe UI',9),anchor='w',bd=0)
+        self.network_check.pack(fill='x')
+        self.label(self.technical,'Consultas e downloads enviam IP e dados da requisição ao site. Privacidade e termos estão abaixo.',8,color=MUTED,wrap=680).pack(fill='x')
         self.details_button=Button(self.technical,'Detalhes da atualização',self.toggle_details,flat=True,icon='chevron')
         self.details_button.pack(fill='x',pady=(2,2))
         self.details_frame=tk.Frame(self.technical,bg=BG)
@@ -329,7 +342,7 @@ class Updater:
                 selectcolor=SURFACE,activebackground=BG,activeforeground=GOLD_LIGHT,disabledforeground=MUTED,
                 font=('Segoe UI',10),highlightcolor=GOLD,highlightbackground=BG,anchor='w',padx=0,bd=0)
             check.pack(anchor='w',fill='x');self.option_checks.append(check)
-        self.label(self.options,'A HUD abre sem pedir permissão. A captura solicita autorização quando você iniciar.',8,color=MUTED,wrap=650).pack(anchor='w',pady=(4,0))
+        self.label(self.options,'A HUD abre sem elevação. Ao detectar o jogo, a preparação da captura pode pedir autorização do Windows.',8,color=MUTED,wrap=650).pack(anchor='w',pady=(4,0))
         self.options_save=Button(self.options,'Salvar preferências',self.save_install_choices,width=180)
         self.main.bind('<Configure>',self.resize_main)
     def resize_main(self,_=None):
@@ -375,6 +388,21 @@ class Updater:
                 self.events.put(dict(type='state',**snapshot))
             finally:self.events.put({'type':'worker_done','failed':failed})
         self.worker=threading.Thread(target=worker,daemon=True);self.worker.start()
+    def save_network_choice(self):
+        import network_preferences
+        try:network_preferences.save(self.data,self.automatic_checks.get())
+        except (OSError,ValueError):
+            self.automatic_checks.set(network_preferences.load(self.data))
+            from tkinter import messagebox
+            messagebox.showerror('Preferência não salva','Não foi possível salvar a opção de consulta automática.',parent=self.root)
+    def startup(self):
+        from network_preferences import start_service
+        automatic=self.automatic_checks.get()
+        self.check_finished=False;self.launch_requested=False
+        def operation():
+            try:start_service(self.get_service(),automatic)
+            finally:self.check_finished=True
+        self.start(operation)
     def check(self):
         self.check_finished=False;self.launch_requested=False
         def operation():
@@ -495,6 +523,12 @@ class Updater:
         except (AttributeError,OSError,ValueError,RuntimeError) as error:
             # A shortcut failure must never misreport a confirmed installation.
             self.events.put(dict(type='notice',**service.snapshot(),shortcut_notice=str(error)))
+    def show_licenses(self):
+        from tkinter import messagebox
+        folder=RES/'licenses'
+        if not (folder/'PROJECT-GPL-3.0.txt').is_file():
+            messagebox.showerror('Licenças indisponíveis','Baixe novamente o instalador completo.',parent=self.root);return
+        os.startfile(str(folder))
     def show_legal(self):
         from tkinter import messagebox
         try:
@@ -608,9 +642,12 @@ def main():
     except (ValueError,OSError,tk.TclError) as error:return startup_failure(args,error)
     if args.check_ui:
         root.withdraw();ui=Updater(root,args.destination or HOME/'ui-check-unused');root.update_idletasks()
-        report=dict(status='PASS',buttons=len(ui.buttons),interface_version='0.4.2',primary_actions=1,details_collapsed=not ui.details_open,raw_json_visible=False,download_started=False,admin_requested=False,capture_started=False,window=[root.winfo_reqwidth(),root.winfo_reqheight()])
+        frozen=bool(getattr(sys,'frozen',False))
+        notices=all((RES/'licenses'/p).is_file() for p in ('PROJECT-GPL-3.0.txt','Python-LICENSE.txt','NATIVE_LICENSES.md','CREDITS.txt'))
+        passed=not ui.automatic_checks.get() and (not frozen or notices)
+        report=dict(status='PASS' if passed else 'FAIL',automatic_update_checks=ui.automatic_checks.get(),bundled_notices=notices,buttons=len(ui.buttons),interface_version='0.4.2',primary_actions=1,details_collapsed=not ui.details_open,raw_json_visible=False,download_started=False,admin_requested=False,capture_started=False,window=[root.winfo_reqwidth(),root.winfo_reqheight()])
         if args.result:args.result.write_text(json.dumps(report),encoding='utf8')
-        ui.close();return 0
+        ui.close();return 0 if passed else 2
     try:Updater(root,data,autostart=True,launch_mode=args.launch_mode or args.windows_startup or Path(sys.executable).name.lower()=='imperioaion-update.exe',local_channel=args.local_channel,windows_startup=args.windows_startup)
     except (ValueError,OSError,tk.TclError) as error:
         root.destroy();return startup_failure(args,error)

@@ -44,6 +44,19 @@ def version_file(target,filename,description):
     items=','.join('StringStruct('+repr(k)+','+repr(v)+')' for k,v in fields.items())
     numbers=tuple(map(int,VERSION.split('.')))+(0,)
     target.write_text(f"VSVersionInfo(ffi=FixedFileInfo(filevers={numbers!r},prodvers={numbers!r},mask=0x3f,flags=2,OS=0x40004,fileType=1,subtype=0,date=(0,0)),kids=[StringFileInfo([StringTable('041604B0',[{items}])]),VarFileInfo([VarStruct('Translation',[1046,1200])])])",encoding='utf8')
+def collect_notices(licenses):
+    shutil.copytree(ROOT/'licenses',licenses)
+    shutil.copy2(ROOT/'LICENSE',licenses/'PROJECT-GPL-3.0.txt')
+    shutil.copy2(Path(sys.base_prefix)/'LICENSE.txt',licenses/'Python-LICENSE.txt')
+    for dist in importlib.metadata.distributions():
+        for f in dist.files or []:
+            name=str(f).replace('\\','/')
+            if '.dist-info/licenses/' in name or '.dist-info/sboms/' in name:
+                src=Path(dist.locate_file(f));out=licenses/'python-packages'/name
+                out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,out)
+    shutil.copy2(ROOT/'docs/RESOURCE_RIGHTS.md',licenses/'RESOURCE_RIGHTS.md')
+    shutil.copy2(ROOT/'docs/NATIVE_LICENSES.md',licenses/'NATIVE_LICENSES.md')
+    (licenses/'CREDITS.txt').write_text('Império Aion — Jose Mardegam. Original code: GPL-3.0-only.\nPortions use the FreeType Project (https://freetype.org), copyright 1996-2026 its authors, under the FreeType License option.\nPython and its Windows runtime components retain their original notices, including Microsoft Distributable Code conditions in Python-LICENSE.txt.\nWinDivert uses the LGPL-3.0 option; complete source accompanies the library.\nGame artwork and data are not licensed under the project GPL; see RESOURCE_RIGHTS.md.\n',encoding='utf8')
 def freeze(stage,source,entry,name,data,onefile,icon):
     folder=stage/name;folder.mkdir();temp=folder/'temp';temp.mkdir()
     version=folder/'version.txt';version_file(version,name+'.exe','Império Aion · '+('instalar e atualizar' if onefile else 'monitor de combate'))
@@ -80,7 +93,8 @@ def main():
     shutil.copy2(helper,updater/'imperio-install.exe')
     # Pin this freshly built helper in STAGING only. Published runtime anchors stay unchanged.
     (updater/'helper_trust.py').write_text('HELPER_SHA256='+repr(sha(helper))+'\nHELPER_CONFIG_SHA256='+repr(sha(updater/'imperio-install.exe.config'))+'\n',encoding='utf8')
-    updater_data=[(str(updater/n),'.') for n in ('imperio-install.exe','imperio-install.exe.config','imperioaion.ico','logo.png','legal.json','UNINSTALL.txt')]
+    collect_notices(updater/'licenses')
+    updater_data=[(str(updater/n),'.') for n in ('imperio-install.exe','imperio-install.exe.config','imperioaion.ico','logo.png','legal.json','UNINSTALL.txt')]+[(str(updater/'licenses'),'licenses')]
     print('Building updater...',flush=True)
     launcher=freeze(stage,updater,updater/'updater_app.py','imperioaion-setup',updater_data,True,updater/'imperioaion.ico')
     shutil.copy2(launcher,target/'imperioaion-setup.exe')
@@ -89,19 +103,7 @@ def main():
     runtime=freeze(stage,app,app/'desktop_entry.py','imperioaion',data,False,app/'assets/panel/imperioaion.ico')
     package=target/'application';shutil.copytree(runtime,package)
     shutil.copy2(launcher,package/'imperioaion-update.exe')
-    licenses=package/'licenses';shutil.copytree(ROOT/'licenses',licenses)
-    shutil.copy2(ROOT/'LICENSE',licenses/'PROJECT-GPL-3.0.txt')
-    shutil.copy2(Path(sys.base_prefix)/'LICENSE.txt',licenses/'Python-LICENSE.txt')
-    for dist in importlib.metadata.distributions():
-        for f in dist.files or []:
-            if '.dist-info/licenses/' in str(f).replace('\\','/'):
-                src=Path(dist.locate_file(f));out=licenses/'python-packages'/str(f)
-                out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,out)
-    tcl=Path(sys.base_prefix)/'tcl'
-    if tcl.exists():
-        for p in tcl.rglob('license*'):
-            if p.is_file():out=licenses/'tcl-tk'/p.relative_to(tcl);out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
-    shutil.copy2(ROOT/'docs/RESOURCE_RIGHTS.md',licenses/'RESOURCE_RIGHTS.md')
+    licenses=package/'licenses';shutil.copytree(updater/'licenses',licenses)
     shutil.copy2(ROOT/'src/updater/UNINSTALL.txt',package/'UNINSTALL.txt')
     files=[dict(path=p.relative_to(package).as_posix(),size=p.stat().st_size,sha256=sha(p)) for p in sorted(package.rglob('*')) if p.is_file()]
     archive=target/('imperio-aion-'+VERSION+'-candidate.zip')
@@ -112,12 +114,17 @@ def main():
     inventory={'product':'Imperio.AION','version':VERSION,'archive':{'name':archive.name,'size':archive.stat().st_size,'sha256':sha(archive),'prefix':'release/'},'files':files}
     write_json(target/'package-inventory.json',inventory)
     binaries=[f for f in files if Path(f['path']).suffix.lower() in {'.exe','.dll','.pyd','.sys'}]
-    write_json(target/'binary-inventory.json',{'files':binaries,'scope':'exact hashes; component license notices accompany package; not a completed legal clearance'})
+    from PyInstaller.archive.readers import CArchiveReader
+    embedded=[];reader=CArchiveReader(str(target/'imperioaion-setup.exe'))
+    for name in sorted(reader.toc):
+        if Path(name).suffix.lower() in {'.exe','.dll','.pyd','.sys'}:
+            raw=reader.extract(name);embedded.append(dict(path=name,size=len(raw),sha256=hashlib.sha256(raw).hexdigest()))
+    write_json(target/'binary-inventory.json',{'files':binaries,'embedded_in_setup':embedded,'scope':'outer package and nested installer binaries; see NATIVE_LICENSES.md and upstream SBOMs for attribution'})
     write_json(target/'build-environment.json',{'python':sys.version,'packages':sorted([{'name':d.metadata['Name'],'version':d.version} for d in importlib.metadata.distributions()],key=lambda x:x['name'].lower())})
     if inputs()!=before:raise RuntimeError('Repository changed during build')
     revision=subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
     dirty=bool(subprocess.run(['git','status','--porcelain'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip())
     write_json(target/'build-proof.json',{'version':VERSION,'git_commit':revision,'git_dirty':dirty,'source_sha256':before,'helper':helper_report,'setup_sha256':sha(target/'imperioaion-setup.exe'),'archive_sha256':sha(archive),'authenticode':False,'production_manifest_signed':False,'installed':False,'capture_started':False,'private_keys_read':False})
-    (target/'LEIA-PRIMEIRO.txt').write_text('IMPÉRIO AION — CANDIDATO DE BUILD\n\nAplicativo e instalador compilados do repositório separado. Ainda sem Authenticode.\nO setup consulta o canal configurado no site; NÃO instala automaticamente este ZIP candidato.\nPara publicar este pacote, é necessário autorizar seus hashes com as chaves de release e publicar os metadados correspondentes. As chaves atuais são do piloto.\nNão substitua o download público nem execute como administrador para contornar validações.\nDireitos de imagens e dados ainda pendentes. SignPath não aprovou o projeto.\n',encoding='utf8')
+    (target/'LEIA-PRIMEIRO.txt').write_text('IMPÉRIO AION — CANDIDATO DE BUILD\n\nAplicativo e instalador compilados do repositório separado. Ainda sem Authenticode.\nO setup começa sem consulta automática. Verificar consulta o canal configurado no site; NÃO instala automaticamente este ZIP candidato.\nPara publicar este pacote, é necessário autorizar seus hashes com as chaves de release e publicar os metadados correspondentes. As chaves atuais são do piloto.\nNão substitua o download público nem execute como administrador para contornar validações.\nDireitos de imagens e dados ainda pendentes. SignPath não aprovou o projeto.\n',encoding='utf8')
     print(json.dumps({'output':str(target),'files':len(files),'archive_sha256':sha(archive)},ensure_ascii=False),flush=True)
 if __name__=='__main__':main()

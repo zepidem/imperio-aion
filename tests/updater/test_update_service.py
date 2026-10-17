@@ -85,6 +85,24 @@ class Bridge:
 
 
 class ServiceTests(unittest.TestCase):
+    def test_offline_startup_authenticates_without_creating_network_manager(self):
+        from network_preferences import start_service
+        self.bridge.counter=858
+        start_service(self.service,False)
+        self.assertEqual(self.service.snapshot()['phase'],'offline_ready')
+        self.assertTrue(self.service.snapshot()['can_launch'])
+        self.assertIsNone(self.service._manager)
+        self.assertEqual(self.transport.calls,[])
+
+    def test_offline_startup_keeps_corrupt_installation_blocked(self):
+        from network_preferences import start_service
+        self.bridge.status='corrupted'
+        start_service(self.service,False)
+        self.assertEqual(self.service.snapshot()['phase'],'corrupted')
+        self.assertFalse(self.service.snapshot()['can_launch'])
+        self.assertIsNone(self.service._manager)
+        self.assertEqual(self.transport.calls,[])
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="service-test-", dir=Path(__file__).parent)
         self.addCleanup(self.temp.cleanup)

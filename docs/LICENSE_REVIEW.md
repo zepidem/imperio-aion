@@ -1,23 +1,23 @@
 # Revisão de licenças — 16/10/2026
 
-Esta revisão cobre a preparação de fontes e os textos encontrados nas dependências do ambiente usado pelos builds. Não equivale a uma auditoria completa de todas as bibliotecas nativas presentes em um instalador futuro. Nenhum binário de dependência foi incluído nesta árvore.
+Esta revisão cobre fontes, dependências fixadas e os componentes nativos do candidato Windows. O mapeamento dos binários, das licenças embarcadas e das opções escolhidas está em `NATIVE_LICENSES.md`. O builder inclui avisos no instalador e no aplicativo, além da fonte do WinDivert. Os direitos das imagens/dados continuam pendentes; nenhum binário de dependência é armazenado nesta árvore de fontes.
 
 | Componente | Licença verificada | Resultado e obrigação |
 | --- | --- | --- |
 | Código próprio Aion e atualizador | GPL-3.0-only | Escolha autorizada pelo responsável; preservar licença e disponibilizar fonte correspondente ao distribuir binários |
-| Pillow 12.3.0 | MIT-CMU | Licença permissiva; preservar avisos. Bibliotecas de imagem embarcadas no wheel exigem inventário do artefato final |
-| cryptography 50.0.1 | Apache-2.0 OR BSD-3-Clause | Alternativas permissivas; preservar avisos. OpenSSL e componentes Rust do wheel ainda precisam compor a SBOM do binário |
-| cffi 2.1.1 | MIT-0 | Texto local preservado; inventariar também libffi se embarcada |
+| Pillow 12.3.0 | MIT-CMU | Licença permissiva; preservar avisos. Avisos completos das bibliotecas de imagem do wheel preservados; opção FTL do FreeType selecionada |
+| cryptography 50.0.1 | Apache-2.0 OR BSD-3-Clause | Alternativas permissivas; preservar avisos. OpenSSL 4.0.2 e SBOM upstream Rust incluídos; licenças das 32 crates externas recuperadas de arquivos verificados por hash |
+| cffi 2.1.1 | MIT-0 | Texto local preservado; avisos libffi preservados no runtime Python |
 | pycparser 3.11 (build atual; 3.0 no inventário inicial) | BSD-3-Clause | Avisos preservados |
 | PyInstaller 6.22.3 | GPL-2.0-or-later com exceção; alguns arquivos Apache-2.0 | A exceção permite distribuir o executável sob a licença do aplicativo; conferir os componentes efetivamente embarcados |
 | pyinstaller-hooks-contrib 2026.8 | Hooks comuns GPL-2.0-or-later; hooks de runtime Apache-2.0 | Distinção confirmada no texto local, preservado integralmente |
 | altgraph 0.17.5, pefile 2024.8.26, setuptools 84.0.0 | MIT | Avisos preservados, incluindo avisos vendorizados encontrados em setuptools |
 | packaging 26.3 | Apache-2.0 OR BSD-2-Clause | Alternativas permissivas; textos preservados |
 | pywin32-ctypes 0.2.3 | BSD-3-Clause | Avisos preservados |
-| CPython 3.14.7 | PSF e avisos de componentes | LICENSE.txt local preservado; inventariar Tcl/Tk e bibliotecas do runtime final separadamente |
+| CPython 3.14.7 | PSF e avisos de componentes | LICENSE.txt local preservado; Tcl/Tk, OpenSSL 3.5.7 e runtime Microsoft relacionados em NATIVE_LICENSES.md |
 | WinDivert 2.2.2 | LGPL versão 3, opção selecionada entre as alternativas upstream | Preservar licença, avisos e fonte correspondente; respeitar substituição/relinkagem aplicável. Não reassinar driver upstream como código próprio |
 
-As licenças principais identificadas admitem uso na composição GPLv3 descrita, desde que se cumpram seus termos. Isso não resolve os direitos dos recursos visuais ou dispensa a revisão dos artefatos nativos finais. `metadata/dependencies.json` registra versões, escopo e hashes dos textos copiados.
+As licenças principais identificadas admitem uso na composição GPLv3 descrita, desde que se cumpram seus termos. Isso não resolve os direitos dos recursos visuais ou equivale a autorização dos titulares ou a aprovação da SignPath. `metadata/dependencies.json` registra versões, escopo e hashes dos textos copiados.
 
 ## Revisão inicial dos recursos (antes da inclusão solicitada)
 
