@@ -477,7 +477,7 @@
       "path": "src/imperio_aion/desktop_entry.py",
       "reference": "build-0.8.71/desktop_entry.py",
       "source_sha256": "ae40881d57e2aff4f6c5b9ff78b74c318f8e165f91b32fedd2f70698b4f1d1f2",
-      "prepared_sha256": "656796d54ccc857bad66876ba9df38eb243be5ea594ea343dfad224d367a2976",
+      "prepared_sha256": "efbabbe9c23323e39793a483a79af4b9901e0b3540f7877aa6685f08dac34d8e",
       "license": "GPL-3.0-only"
     },
     {

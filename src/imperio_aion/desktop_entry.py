@@ -246,7 +246,7 @@ def runtime_check():
         if assets.errors:raise RuntimeError('Falha na carga de imagens: '+str(assets.errors))
     finally:root.destroy()
     legal=json.loads((ROOT/'dados/legal-pt.json').read_text(encoding='utf-8'))
-    if legal.get('responsible')!='Zepidem' or legal.get('contact')!='support@imperiobdo.com':
+    if legal.get('responsible')!='Jose Mardegam (Zepidem)' or legal.get('contact')!='support@imperiobdo.com':
         raise RuntimeError('O responsável ou contato das páginas legais está incorreto.')
     for key in ('privacy','terms'):
         if not legal.get(key,{}).get('sections'):
