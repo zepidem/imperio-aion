@@ -710,7 +710,7 @@
       "path": "src/updater/network_preferences.py",
       "reference": "project/privacy-review-2026-10-16",
       "source_sha256": "9afe02616c897afd4710b7b6e0710f46c2bfcc02aca04680d244a2ccca43b1b8",
-      "prepared_sha256": "9afe02616c897afd4710b7b6e0710f46c2bfcc02aca04680d244a2ccca43b1b8",
+      "prepared_sha256": "536209d44a8f239e303b8b19c6889de94fea60a0e7c8b05071d2b78fe7605a97",
       "license": "GPL-3.0-only"
     }
   ],

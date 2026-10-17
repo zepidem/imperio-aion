@@ -15,7 +15,11 @@ def load(data):
 
 def save(data,enabled):
     if type(enabled) is not bool:raise ValueError('Use a boolean preference.')
-    data=Path(data);_plain_ancestors(data);data.mkdir(parents=True,exist_ok=True)
+    data=Path(os.path.abspath(data))
+    ancestor=data
+    while not ancestor.exists():ancestor=ancestor.parent
+    _plain_ancestors(ancestor)
+    data.mkdir(parents=True,exist_ok=True);_plain_ancestors(data)
     p=data/'network-preferences.json'
     if p.exists():_plain_ancestors(p)
     temporary=None

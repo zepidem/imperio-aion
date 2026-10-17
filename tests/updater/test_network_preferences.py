@@ -14,6 +14,7 @@ class NetworkPreferenceTests(unittest.TestCase):
                 p.write_text(text);self.assertFalse(prefs.load(folder),text)
     def test_opt_in_and_opt_out_persist_without_installation(self):
         with tempfile.TemporaryDirectory() as folder:
+            folder=Path(folder)/'first-launch'/'preferences'
             prefs.save(folder,True);self.assertTrue(prefs.load(folder))
             prefs.save(folder,False);self.assertFalse(prefs.load(folder))
             self.assertEqual(len(list(Path(folder).iterdir())),1)
