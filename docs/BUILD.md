@@ -15,7 +15,7 @@ Choose a new output directory for every build. Its matching build/<output-name> 
 
 ## Build inputs
 
-The monitor source reference is 0.8.71; the updater source reference is 0.4.2. Newly built project PE files share ProductName **Império Aion** and ProductVersion **0.8.71**. This is a candidate, not a replacement for an existing release.
+The monitor source reference is 0.8.79, imported with provenance and released here as 0.8.80; the updater source reference is 0.4.2. Newly built project PE files share ProductName **Império Aion** and ProductVersion **0.8.80**. This is a candidate, not a replacement for an existing release.
 
 Runtime data includes inventoried images, pet/NPC/skill catalogs, protocol names and the local OBS overlay. See RESOURCE_RIGHTS.md: restoring these files does not clear their rights. WinDivert 2.2.2 comes from upstream, with fixed archive and extracted-binary hashes. Only its x64 DLL/driver, complete source ZIP and notices are bundled. Pass --vendor-cache for an existing hash-verified cache.
 
@@ -26,7 +26,7 @@ The monitor uses PyInstaller one-directory mode and the setup uses one-file mode
 ## Outputs
 
 - imperioaion-setup.exe: installer/updater using the existing configured HTTPS feed. It does **not** automatically install the candidate ZIP beside it.
-- application/ and imperio-aion-0.8.71-candidate.zip: complete runtime, updater, driver, notices and catalogs.
+- application/ and imperio-aion-0.8.80-candidate.zip: complete runtime, updater, driver, notices and catalogs.
 - package-inventory.json, binary-inventory.json, build-environment.json and build-proof.json: hashes, environment and source provenance. A release build must have git_dirty=false.
 - After QA: app-check.json, installer-ui-check.json and validation.json.
 

@@ -4,7 +4,7 @@ import hashlib,json,os,subprocess,sys,argparse
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-def compile_helper(target, xml, version='0.8.71'):
+def compile_helper(target, xml, version='0.8.80'):
     source=ROOT/'src/updater'
     if not isinstance(xml,str) or not xml.startswith('<RSAKeyValue>') or any(t in xml for t in ('<D>','<P>','<Q>')):
         raise ValueError('Expected public RSA parameters only.')

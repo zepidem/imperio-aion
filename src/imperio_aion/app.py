@@ -31,7 +31,7 @@ from game_startup import GameLifetime, game_processes
 from app_paths import export_directory
 
 ROOT=Path(__file__).resolve().parent
-VERSION='0.8.71'
+VERSION='0.8.80'
 C=dict(bg='#241B15',surface='#241B15',ink='#FFF5E8',muted='#D6BEA2',brown='#D5A65F',
        gold='#D5A65F',line='#513C29',green='#A6D7A8',soft='#493225',dark='#201812',panel='#30251D',light='#FFF5E8')
 
@@ -769,6 +769,8 @@ class App:
         self.source.set(source)
         self.identity.set((s['character']+' · identificado nesta conexão') if s['identified'] else
             (s['character']+' · aguardando confirmação do jogo' if s['character'] else 'Aguardando identificação automática do personagem'))
+        if s['identified'] and not s.get('named_identity_confirmed',s['identified']):
+            self.identity.set('Seu personagem identificado para o DPS · nome pendente')
         running=s['running'];self.start_button.configure(state='disabled' if running else 'normal')
         self.demo_button.configure(state='disabled' if running else 'normal')
         if running:self.start_button.pack_forget()
@@ -776,7 +778,7 @@ class App:
         self.entry.configure(state='disabled' if running else 'normal');self.nic.configure(state='disabled' if running else 'readonly')
         self.nic['values']=list(self.interfaces) or ['Automática · conexão do jogo']
         fights=combat_history(s);self.mapping={}
-        available=[e for e in fights if self.hud_scope.get()!='bosses' or self.catalog.is_boss(s,e) is True]
+        available=[e for e in fights if self.selector.includes(s,e,self.hud_scope.get())]
         for index,e in enumerate(available):
             name=self.catalog.target(s,e)
             self.mapping[name+f" · tentativa {e['attempt']} · luta {index+1}"]=e['key']
@@ -790,11 +792,11 @@ class App:
             self.hud_target.set(name)
             if 'members' in fight:
                 rows=fight['members']
-                own=next((r for r in rows if r['name']==self.character.get().strip()),None)
+                own=next((r for r in rows if r.get('self_identity') or r['name']==self.character.get().strip()),None)
                 shown=own or dict(damage=None,dps_average=None,dps_current=None,skills=[])
             else:
                 shown=fight
-                rows=[dict(name=s['character'],damage=fight['damage'],dps_average=fight['dps_average'],dps_current=fight['dps_current'],duration_us=fight['duration_us'],hp_percent=fight.get('hp_percent'),hp_percent_status=fight.get('hp_percent_status'),damage_share_percent=100.0 if fight['damage']>0 else 0.0,skills=fight.get('skills',[]))]
+                rows=[dict(name=(fight.get('character_name') or 'Você · nome pendente') if 'character_name' in fight else s['character'],actor=fight.get('actor'),identity_pending='character_name' in fight and not fight['character_name'],damage=fight['damage'],dps_average=fight['dps_average'],dps_current=fight['dps_current'],duration_us=fight['duration_us'],hp_percent=fight.get('hp_percent'),hp_percent_status=fight.get('hp_percent_status'),damage_share_percent=100.0 if fight['damage']>0 else 0.0,skills=fight.get('skills',[]))]
             self.damage.set(fmt(fight['damage']));self.dps.set(fmt(fight['dps_average'],2));self.duration.set(fmt(fight['duration_us']/1e6,2)+' s')
             self.phase.set(('Dados parciais · luta encerrada' if fight['end_us'] is not None else 'Dados parciais · luta em andamento') if fight['partial'] else 'Luta encerrada · '+str(fight['end_reason']) if fight['end_us'] is not None else 'Luta em andamento · pausas incluídas')
             self.end_button.configure(state='normal' if fight['end_us'] is None else 'disabled')
@@ -812,7 +814,7 @@ class App:
             and not bool(s.get('error') or s.get('warnings') or s.get('stale') or fight and fight.get('partial'))) for r in rows]
         self._update_group_table(self.group_table,rows)
         if self.hud_view:self.hud_view.update(s,fight,rows)
-        roster_known=bool(s['group_rosters'])
+        roster_known=bool(s['group_rosters'] or fight and fight.get('members'))
         hp=fight.get('max_hp') if fight else None
         note=('Grupo automático · '+str(len(rows))+' membros' if roster_known else 'Grupo automático pendente · somente seu personagem')
         note+=' · Vida máxima: '+(fmt(hp) if hp else 'pendente')
@@ -830,7 +832,9 @@ class App:
         self.group_summary.set(summary)
         members=[r['name'] for r in rows]
         self.panel.member_choice['values']=members
-        if self.skill_member.get() not in members:self.skill_member.set(self.character.get().strip() if self.character.get().strip() in members else members[0] if members else '')
+        if self.skill_member.get() not in members:
+            own=next((r['name'] for r in rows if r.get('self_identity')),None)
+            self.skill_member.set(own or (self.character.get().strip() if self.character.get().strip() in members else members[0] if members else ''))
         if fight and 'members' in fight:shown=next((r for r in rows if r['name']==self.skill_member.get()),None)
         key=(self.selected_key,fight['damage'] if fight else None,fight['records'] if fight else None,self.skill_member.get())
         if key!=self.last_table:

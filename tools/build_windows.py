@@ -8,7 +8,7 @@ import argparse,hashlib,importlib.metadata,json,os,shutil,subprocess,sys,urllib.
 from pathlib import Path
 from build_native import compile_helper
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='0.8.71'
+VERSION='0.8.80'
 VENDOR={
  'binary.zip':('https://github.com/basil00/WinDivert/releases/download/v2.2.2/WinDivert-2.2.2-A.zip','63cb41763bb4b20f600b6de04e991a9c2be73279e317d4d82f237b150c5f3f15'),
  'source.zip':('https://api.github.com/repos/basil00/WinDivert/zipball/v2.2.2','366f83f7243e3bb4972a25af2329c6cbd761bba215a00f9f38d9d45603d9d51d')}

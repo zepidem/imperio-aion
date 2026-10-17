@@ -1,7 +1,7 @@
 {
   "responsible": "Jose Mardegam (Zepidem)",
   "contact": "support@imperiobdo.com",
-  "version": "1.6",
+  "version": "1.7",
   "date": "16 de outubro de 2026",
   "privacy": {
     "title": "Privacidade",
@@ -21,7 +21,7 @@
       ],
       [
         "Site, download e atualizações",
-        "O instalador consulta por HTTPS https://imperiobdo.com/aion2/releases/v2/ quando você clica em Verificar ou ativa a consulta automática. A consulta automática começa desativada e pode ser alterada no instalador. O download e a instalação exigem uma ação sua. O servidor e os prestadores de hospedagem e entrega recebem IP, horário, URL solicitada e identificador do atualizador; essas requisições não incluem sessões, perfis ou diagnósticos locais. O prazo de retenção dos registros da infraestrutura depende da configuração do serviço e ainda está em revisão pelo responsável. Dúvidas sobre dados tratados pelo projeto: support@imperiobdo.com. Abrir o site, links externos ou o Discord também cria conexões com os respectivos serviços."
+        "O instalador consulta por HTTPS https://imperiobdo.com/aion2/releases/v2/ quando você clica em Verificar ou ativa a consulta automática. A consulta automática começa desativada e pode ser alterada no instalador. O download e a instalação exigem uma ação sua. O servidor e os prestadores de hospedagem e entrega recebem IP, horário, URL solicitada e identificador do atualizador; essas requisições não incluem sessões, perfis ou diagnósticos locais. O site usa Render e Cloudflare. No plano Hobby confirmado do Render, os logs ficam disponíveis no painel por 7 dias. Outros registros da infraestrutura e eventuais cópias exportadas podem seguir prazos diferentes. A configuração e a retenção das exportações da Cloudflare ainda estão sendo confirmadas pelo responsável. Não há envio de sessões do jogo para esses registros. Dúvidas sobre dados tratados pelo projeto: support@imperiobdo.com. Abrir o site, links externos ou o Discord também cria conexões com os respectivos serviços."
       ],
       [
         "Sobreposição no OBS e Streamlabs",

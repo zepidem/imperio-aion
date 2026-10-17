@@ -1,4 +1,3 @@
-# SPDX-FileCopyrightText: 2026 Zepidem
 # SPDX-License-Identifier: GPL-3.0-only
 """Desktop entry; --check builds the real panel/HUD with isolated local state.
 
@@ -183,6 +182,94 @@ def startup_case(state_root, saved=False):
         for page in ('summary','streaming','privacy','terms','diagnostic','capture','shortcuts'):
             application.show_page(page);root.update_idletasks()
         if application.streaming.httpd is not None:raise RuntimeError('Streaming iniciou sem ativação do usuário.')
+        # Exercise the shipped combat-only actor route, without a login,
+        # driver, game discovery, or a remembered character name.
+        from live_core import LiveReader
+        from self_combat_identity import LocalCombatIdentity
+        private_actor=LocalCombatIdentity();proof=None
+        for packet in (1,2,3):
+            proof=private_actor.observe(dict(flow='isolated',packet=packet,clock_us=packet*1000),
+                b'\x4a\x36\x81\x40'+bytes(9),'isolated')
+        assert proof and proof['actor']==8193
+        reader=LiveReader('NomeAntigo')
+        reader.pending_events['isolated']=[dict(id='self',flow='isolated',actor=8193,target=500,
+            clock_us=4000,candidate_amount=1234,raw_skill=13050340,skill_name='Teste'),
+            dict(id='other',flow='isolated',actor=900,target=500,clock_us=4000,
+            candidate_amount=999999,raw_skill=11020000,skill_name='Teste')]
+        assert reader.confirm_local_combat('isolated',proof)
+        own=reader.snapshot()
+        assert own['identified'] and not own['bindings'] and not own['named_identity_confirmed']
+        assert own['encounters'][0]['damage']==1234 and own['encounters'][0]['character_name'] is None
+        # The exact frozen group reader must reject false vacancy matches
+        # inside a named member, yet keep the complete five-member ranking.
+        import struct
+        from group_core import GroupBook,party_roster
+        names=['Player','AllyOne','AllyTwo','AllyFour','Healer']
+        roster=b'\x02\x97'+(9).to_bytes(4,'little')+b'\x03ABC\x05'+bytes(17)+b'\x05'
+        for slot,name in enumerate(names,1):
+            realm=1406 if slot==5 else 2405;raw=name.encode()
+            roster+=bytes([30,slot])+((realm<<48)|slot).to_bytes(8,'little')+bytes([len(raw)])+raw
+            roster+=struct.pack('<III',29,45,1581)+bytes(24)
+        assert [m['name'] for m in party_roster(roster)['members']]==names
+        group=GroupBook();group.observe(dict(flow='check-group',packet=1,clock_us=0),roster)
+        for slot,name in enumerate(names,1):
+            group.identify('check-group',dict(actor=slot,name=name,server=1406 if slot==5 else 2405))
+            group.add(dict(id=str(slot),flow='check-group',actor=slot,target=500,
+                clock_us=slot*1000,candidate_amount=slot*100,raw_skill=1,skill_name='Teste'))
+        group.add(dict(id='nearby',flow='check-group',actor=99,target=500,
+            clock_us=6000,candidate_amount=999999,raw_skill=1,skill_name='Teste'))
+        grouped=group.snapshot(10000)['group_encounters'][0]
+        assert grouped['damage']==1500 and len(grouped['members'])==5
+        # Cold mid-instance start: no old names, cache or player spawn headers.
+        from party_vitals_scope import PartyVitalsScope
+        def packed(value):
+            out=bytearray()
+            while value>=128:out.append((value&127)|128);value>>=7
+            out.append(value);return bytes(out)
+        cold=GroupBook()
+        own_proof=LocalCombatIdentity()
+        for packet in (1,2,3):
+            proof=own_proof.observe(dict(flow='cold',packet=packet,clock_us=packet*1000),
+                b'\x4a\x36'+packed(8193)+bytes(9),'cold')
+        cold.confirm_local_actor('cold',proof)
+        scope=PartyVitalsScope()
+        for actor in (9001,9002,9003,9004):
+            for packet in (4,5,6):
+                ctx=dict(flow='cold',packet=packet,clock_us=packet*1000)
+                body=b'\x1b\x92'+packed(actor)+packed(1000)+packed(1000)
+                body+=(100).to_bytes(4,'little')+(200).to_bytes(4,'little')+bytes(12)+(150000).to_bytes(4,'little')+b'\x01'
+                confirmed=scope.observe(ctx,body,'cold',cold.roster_epochs.get('cold',0))
+                if confirmed:cold.confirm_party_actor(ctx,confirmed)
+        for index,actor in enumerate((8193,9001,9002,9003,9004),1):
+            cold.add(dict(id=str(index),flow='cold',actor=actor,target=500,
+                clock_us=10000+index,candidate_amount=index*100,raw_skill=13050340,skill_name='Teste'))
+        cold.add(dict(id='outsider',flow='cold',actor=9999,target=500,
+            clock_us=11000,candidate_amount=999999,raw_skill=1,skill_name='Teste'))
+        anonymous=cold.snapshot(12000)['group_encounters'][0]
+        assert anonymous['damage']==1500 and len(anonymous['members'])==5
+        assert not cold.rosters and anonymous['membership_basis']=='owned-party-vitals'
+        cold.observe(dict(flow='cold',packet=99,clock_us=11500),b'\x00\x8d'+packed(500)+packed(2)+packed(1)+packed(0)+(1000).to_bytes(8,'little'))
+        from presentation import TargetSelector
+        cold_state=cold.snapshot(12000);cold_state['clock_us']=12000
+        assert TargetSelector(application.catalog).choose(cold_state,cold_state['group_encounters'],None,'bosses') is None
+        assert TargetSelector(application.catalog).choose(cold_state,cold_state['group_encounters'],None,'all')==anonymous['key']
+        import struct
+        cast_body=b'\x02\x38'+packed(500)+packed(0)+(1604650).to_bytes(4,'little')+b'\x01\x02'+packed(8193)+struct.pack('<ffff',0,1,2,3)+packed(10000)+packed(1)+packed(1000)
+        cold.observe(dict(flow='cold',packet=100,clock_us=11550),cast_body)
+        cold_state=cold.snapshot(12000);cold_state['clock_us']=12000
+        assert not cold_state['mob_health_history'] and not cold_state['npc_identity_history']
+        assert TargetSelector(application.catalog).choose(cold_state,cold_state['group_encounters'],None,'bosses')==anonymous['key']
+        assert application.catalog.target(cold_state,anonymous)=='Thamon'
+        assert application.catalog.npc_code(cold_state,anonymous) is None
+        npc_body=b'\x04\x8d'+packed(600)+(1604790).to_bytes(4,'little')+packed(500)+bytes(6)+packed(2300811)+bytes(4)+b'\x01\x02'
+        cold.observe(dict(flow='cold',packet=100,clock_us=11600),npc_body)
+        cold_state=cold.snapshot(12000);cold_state['clock_us']=12000
+        assert not cold_state['mob_health_history']
+        assert TargetSelector(application.catalog).choose(cold_state,cold_state['group_encounters'],None,'bosses')==anonymous['key']
+        assert application.catalog.target(cold_state,anonymous)=='Thamon'
+
+        assert {m['actor'] for m in anonymous['members']}=={8193,9001,9002,9003,9004}
+        assert all(m['identity_pending'] and m['damage']>0 for m in anonymous['members'])
         from native_identity import ICON,APP_ID
         if not ICON.is_file() or APP_ID!='Imperio.AION.Monitor':
             raise RuntimeError('A identidade visual do Windows está incompleta.')
@@ -192,7 +279,7 @@ def startup_case(state_root, saved=False):
             pages_rendered=['combat','pets','duty'],callback_errors=[],capture_started=False,
             global_hotkeys_registered=False,game_queried=False,pet_catalog_count=len(CATALOG.entries),
             npc_catalog_count=len(application.catalog.npcs),skill_catalog_count=284,
-            panel_pages_checked=sorted(required),combined_combat_history=True,prelogin_combat_access=True,preparation_cards=3,original_step_pngs=5,capture_source_readiness_ui=True,selection_step_highlight_and_check=True,
+            panel_pages_checked=sorted(required),combined_combat_history=True,prelogin_combat_access=True,midstream_self_stats_combat=True,five_member_party_ranking=True,cold_midstream_party_without_names=True,preparation_cards=3,original_step_pngs=5,capture_source_readiness_ui=True,selection_step_highlight_and_check=True,
             capture_backend='windivert',old_capture_preference_migrated=saved,
             window_icon_loaded=True,status='PASS')
     finally:
@@ -219,7 +306,7 @@ def runtime_check():
     import app
     from live_core import PROFILE
     target=Path(args.output).resolve();target.parent.mkdir(parents=True,exist_ok=True)
-    report=dict(product='Império AION',version='0.8.71',package_revision=2,kind='packaged-app-startup-check',
+    report=dict(product='Império AION',version='0.8.80',package_revision=1,kind='packaged-app-startup-check',
         python=sys.version.split()[0],pillow=PIL.__version__,capture_started=False,network_opened=False,
         external_python_required=False,tshark_required=False,npcap_required=False,exitlag_required=False,
         integrated_capture=probe(),assets_checked=0,
@@ -267,7 +354,7 @@ if __name__=='__main__':
         # No app imports, profile lookup or log writes under another account.
         if '--check' in sys.argv and '--output' in sys.argv:
             target=Path(sys.argv[sys.argv.index('--output')+1]).resolve()
-            target.write_text(json.dumps(dict(status='IDENTITY_REFUSED',version='0.8.71',error=str(identity_error),capture_started=False)),encoding='utf8')
+            target.write_text(json.dumps(dict(status='IDENTITY_REFUSED',version='0.8.80',error=str(identity_error),capture_started=False)),encoding='utf8')
         else:
             import ctypes
             box=ctypes.windll.user32.MessageBoxW
@@ -290,7 +377,7 @@ if __name__=='__main__':
             try:
                 output=Path(sys.argv[sys.argv.index('--output')+1]).resolve()
                 output.parent.mkdir(parents=True,exist_ok=True)
-                output.write_text(json.dumps(dict(version='0.8.71',status='FAIL',
+                output.write_text(json.dumps(dict(version='0.8.80',status='FAIL',
                     capture_started=False,error=failure),ensure_ascii=False,indent=2),encoding='utf-8')
             except Exception:pass
             raise SystemExit(1)

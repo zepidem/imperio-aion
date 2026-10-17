@@ -18,7 +18,9 @@ The updater uses `https://imperiobdo.com/aion2/releases/v2/` over HTTPS. Automat
 
 Delivery servers receive IP address, request time, URL and User-Agent (`ImperioAion-Updater/0.4.2`). Reviewed transport requests do not attach combat sessions, local profiles or diagnostics. The UI discloses requests before the manual check, and the privacy notice is available before any automatic check is enabled. Opening external links deliberately makes requests to those services.
 
-Earlier notices named Render and Cloudflare. Current hosting configuration and log retention still require the operator's confirmation before publication of the final website policy; this review does not invent a retention period. Provider policies: https://render.com/privacy and https://www.cloudflare.com/privacypolicy/.
+Live delivery headers confirm Cloudflare in front of Render. The maintainer confirmed Render Hobby: service logs are available in its explorer for 7 days, per https://render.com/docs/logging. This is not a promise that all infrastructure data or exported copies are deleted after 7 days. The reviewed Aion download routes do not write an application access log. Shared site middleware can receive CSP violation reports; it logs the directive and blocked hostname, omitting document URL, query and identity.
+
+Cloudflare documents 31 days for Security Events across plans, and 31 days for Security Analytics on Free/Pro/Business (90 on Enterprise): https://developers.cloudflare.com/waf/analytics/security-events/. These are product-specific limits, not universal visitor-data retention. The account plan, other enabled logging products and external log exports were not available through the connected tools and remain unconfirmed. Provider policies: https://render.com/privacy and https://www.cloudflare.com/privacypolicy/.
 
 ## Optional streaming overlay
 

@@ -25,6 +25,8 @@ from activity_entries import ActivityEntries
 from character_cache import CharacterCache,identity_key
 from class_appearance import display_classes
 from character_selection import CharacterSelection
+from self_combat_identity import LocalCombatIdentity,current_party_identity
+from party_vitals_scope import PartyVitalsScope
 from resource_refresh import ResourceRefresh
 from app_paths import diagnostics_directory
 from windows_tools import powershell_executable, powershell_environment
@@ -122,6 +124,7 @@ class Controller:
         self.cached_identity=None
         self.resource_refresh=ResourceRefresh()
         self.character_selection=CharacterSelection()
+        self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
         self.last_auto_fault_at=None;self.last_auto_fault_path=None
         self.tool = Path(tool or r'C:\Program Files\Wireshark\tshark.exe')
         self.native_factory=native_factory
@@ -172,6 +175,17 @@ class Controller:
                 self.pets.attach_live_channel(ctx['flow'],self.flow_processes[ctx['flow']])
         if self.mode=='live' and self.running:
             self.character_selection.observe(ctx,body,self._od_channel())
+            if self.character_selection.at_selection:
+                self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+            elif body[:2]==b'\x0b\x61' and ctx['flow']==self._od_channel():
+                from activity_entries import decode_initial_entries
+                try:decode_initial_entries(body)
+                except ValueError:pass
+                else:self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+            elif body[:2]==b'\x4a\x36':self._identify_midstream_combat(ctx,body)
+            elif body[:2]==b'\x1b\x92' and not self.error and self.metadata.get('capture_source_ready'):
+                proof=self.party_vitals_scope.observe(ctx,body,self._od_channel(),self.reader.group.roster_epochs.get(ctx['flow'],0))
+                if proof:self.reader.group.confirm_party_actor(ctx,proof)
             self._identify_character(ctx,body)
         self.pets.observe(ctx,body)
         if self.mode=='live' and self.running:
@@ -200,6 +214,26 @@ class Controller:
             if body[:2] in (b'\x00\x90',b'\x0d\x90',b'\x09\x90',b'\x14\x90',b'\x0e\x90',b'\x33\x36'):
                 self._remember_pet_facts()
 
+    def _identify_midstream_combat(self,ctx,body):
+        if self.error or not self.metadata.get('capture_source_ready'):return
+        proof=self.local_combat_identity.observe(ctx,body,self._od_channel())
+        if not proof:return
+        flow=ctx['flow']
+        known=self.reader.bindings.get(flow)
+        if known and known['actor']==proof['actor']:
+            self.reader.confirm_local_combat(flow,proof)
+            return
+        identity=current_party_identity(self.reader.group,flow,proof['actor'])
+        if not self.reader.confirm_local_combat(flow,proof,identity):return
+        if not identity:return
+        name=identity['name']
+        self.reader.character=name;self.reader.server=identity['server']
+        self.cached_identity=None
+        for reader in (self.pets,self.od_energy,self.resource_gains,self.activity_entries,self.order_accumulator):
+            reader.character=name
+        self.metadata['automatic_character']=dict(name=name,server=identity['server'],
+            actor=identity['actor'],flow=flow,basis=identity['basis'])
+
     def _identify_character(self,ctx,body):
         """Adopt only the self header on the uniquely owned incoming world flow.
 
@@ -220,7 +254,9 @@ class Controller:
             self.reader.conflict(ctx['flow']);return
         name=identity['name']
         if name!=self.reader.character:
-            if self.reader.meter.encounters:
+            anonymous=self.reader.local_combat_actors.get(ctx['flow'])
+            same_anonymous_actor=not old and anonymous and anonymous['actor']==identity['actor']
+            if self.reader.meter.encounters and not same_anonymous_actor:
                 # Keep completed combat under its original character name.
                 # Never re-label old damage when another character logs in.
                 self.archives.append(self._export_current())
@@ -299,6 +335,7 @@ class Controller:
             self.generation += 1
             self.reader = LiveReader(character, generation=str(self.generation))
             self.character_selection=CharacterSelection()
+            self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
             from pet_collection import PetWireCollection
             self.od_energy=OdEnergy(self.reader.character)
             self.resource_gains=ResourceGains(self.reader.character)
@@ -342,6 +379,7 @@ class Controller:
             self.generation += 1
             self.reader=LiveReader(character,generation=str(self.generation))
             self.character_selection=CharacterSelection()
+            self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
             from pet_collection import PetWireCollection
             self.od_energy=OdEnergy(self.reader.character)
             self.resource_gains=ResourceGains(self.reader.character)
@@ -519,7 +557,7 @@ class Controller:
         folder=diagnostics_directory();folder.mkdir(parents=True,exist_ok=True)
         stamp=datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S-%f')
         path=folder/('mascotes-falha-'+stamp+'.json');temporary=path.with_suffix('.tmp')
-        report.update(product='Império AION',monitor_version='0.8.70',utc=datetime.now(timezone.utc).isoformat(),
+        report.update(product='Império AION',monitor_version='0.8.80',utc=datetime.now(timezone.utc).isoformat(),
             capture_state=self._capture_diagnostic_state(),sampling='last-128-pet-messages-max-8192-bytes-each; not a full TCP recording')
         try:
             temporary.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -669,7 +707,7 @@ class Controller:
             folder=diagnostics_directory();folder.mkdir(parents=True,exist_ok=True)
             stamp=datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S-%f')
             path=folder/('captura-falha-'+stamp+'.json')
-            report=dict(product='Império AION',monitor_version='0.8.70',package_revision=1,
+            report=dict(product='Império AION',monitor_version='0.8.80',package_revision=1,
                 kind='capture-startup-failure',capture_state=self._capture_diagnostic_state(),
                 scope='connection metadata only; no packet payloads')
             path.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -1202,7 +1240,7 @@ class Controller:
         with self.lock:
             self.collection_diagnostic.stop()
             cache_state=self.snapshot()
-            return dict(product='Império AION',kind='collection-diagnostic',monitor_version='0.8.70',character=self.reader.character,
+            return dict(product='Império AION',kind='collection-diagnostic',monitor_version='0.8.80',character=self.reader.character,
                 resource_refresh=cache_state.get('resource_refresh'),
                 character_cache=cache_state.get('character_cache'),od_energy=cache_state.get('od_energy'),resource_gains=cache_state.get('resource_gains'),daily_duty=cache_state.get('daily_duty'),weekly_orders=cache_state.get('weekly_orders'),pet_collection=self.pets.snapshot(),recent_pet_messages=list(self.pets.recent_messages),
                 activity_entries=cache_state.get('activity_entries'),
@@ -1222,7 +1260,7 @@ class Controller:
     def export(self):
         with self.lock:
             current=self._export_current()
-            current.update(schema_version=1,product='Império AION',version='0.8.70-beta',
+            current.update(schema_version=1,product='Império AION',version='0.8.80-beta',
                            mode=self.mode,status=self.status,error=self.error,logs=list(self.logs),
                            previous_connections=list(self.archives),lossless_handover_validated=False)
             return current

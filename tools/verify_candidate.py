@@ -49,7 +49,7 @@ def main():
     helper,_=compile_helper(qa/'native-test-only',xml)
     inventory=json.loads((OUT/'package-inventory.json').read_text(encoding='utf8'))
     now=datetime.now(timezone.utc);stamp=lambda d:d.strftime('%Y-%m-%dT%H:%M:%SZ')
-    payload=dict(inventory,schema=1,channel='pilot',release_counter=871,not_before=stamp(now-timedelta(minutes=5)),expires=stamp(now+timedelta(days=1)))
+    payload=dict(inventory,schema=1,channel='pilot',release_counter=880,not_before=stamp(now-timedelta(minutes=5)),expires=stamp(now+timedelta(days=1)))
     raw=json.dumps(payload,separators=(',',':'),ensure_ascii=True).encode()
     manifest=qa/'candidate.install';manifest.write_text(json.dumps({'payload':b64(raw),'signature':b64(signing.sign(raw,padding.PKCS1v15(),hashes.SHA256()))}),encoding='utf8')
     archive=OUT/inventory['archive']['name']

@@ -14,3 +14,6 @@ Reference for skill artwork: https://assets.playnccdn.com/static-aion2-gamedata/
 Reference for pet portraits: https://aion2.gaming.tools/pt-br/pets.
 Official fan-kit announcement: https://about.ncsoft.com/jp/news/article/AION2_update_260818.
 These links document attribution and context, not a confirmed redistribution license.
+
+
+The 0.8.80 preparation also includes the 0.8.79 factual NPC/skill ownership index and updated class associations from Aion2.dev, with the upstream source hashes and notices retained in dados/. These additions do not resolve the pending NCSOFT/data permissions. No personal packet captures or diagnostic sessions were imported.

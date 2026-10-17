@@ -426,6 +426,7 @@ class LiveReader:
         self.directions = {}
         self.evidence = {}
         self.bindings = {}
+        self.local_combat_actors = {}
         self.pending_events = {}
         self.meter = Meter()
         self.rejected = 0
@@ -441,10 +442,15 @@ class LiveReader:
         """Keep TCP framing and identities while discarding combat attempts."""
         from copy import deepcopy
         old=self.group;fresh=GroupBook()
-        for name in ('names','classes','rosters','lifetimes'):
+        for name in ('names','classes','rosters','lifetimes','roster_epochs','party_actor_proofs','local_actors','local_actor_epochs','scope_only_epochs','party_scope_blocked','npc_identity_history','npc_skill_identity_history','npc_role_floors','npc_flow_floors'):
             setattr(fresh,name,deepcopy(getattr(old,name)))
         for flow,roster in fresh.rosters.items():
-            fresh.timeline.append(dict(kind='roster',flow=flow,clock_us=now,roster=deepcopy(roster)))
+            fresh.timeline.append(dict(kind='roster',flow=flow,clock_us=now,roster=deepcopy(roster),
+                scope_epoch=fresh.roster_epochs.get(flow)))
+        for flow,epoch in fresh.scope_only_epochs:
+            if flow not in fresh.rosters and epoch==fresh.roster_epochs.get(flow,0) and flow not in fresh.party_scope_blocked:
+                fresh.timeline.append(dict(kind='roster',flow=flow,clock_us=now,roster=dict(key=None,members=[]),
+                    scope_epoch=epoch,scope_only=True))
         latest={}
         for h in old.current_health:latest[(h['flow'],h['target'])]=h
         latest_damage={};latest_uncertain={}
@@ -548,8 +554,9 @@ class LiveReader:
             self.meter.interrupt(flow,ctx['clock_us'])
             self.meter.invalid_flows.discard(flow)
             self.bindings.pop(flow,None);self.evidence.pop(flow,None);self.pending_events.pop(flow,None)
-            self.group.rosters.pop(flow,None)
-            self.group.timeline.append(dict(kind='roster',**ctx,roster=dict(key=None,members=[])))
+            self.local_combat_actors.pop(flow,None)
+            self.group.clear_roster(ctx,block_scope=False);self.group.local_actors.pop(flow,None)
+            self.group.invalidate_npc_identity(flow,ctx['clock_us'])
             self.group.interrupted.pop(flow,None)
             if not self.meter.invalid_flows:
                 self.warnings=[w for w in self.warnings if w!='Identidade ambígua; atribuição removida nesta conexão.']
@@ -614,7 +621,7 @@ class LiveReader:
             e = dict(e, **ctx, skill_name=skill_label(e['raw_skill'], PROFILE), screen_confirmed=False,
                      id=f"{flow}/{ctx['message_index']}/{e['body_offset']}")
             self.group.add(e)
-            binding = self.bindings.get(flow)
+            binding = self.bindings.get(flow) or self.local_combat_actors.get(flow)
             if binding: self.attribute(e, binding)
             else:
                 waiting = self.pending_events.setdefault(flow, [])
@@ -623,11 +630,38 @@ class LiveReader:
                 waiting.append(e)
 
     def attribute(self, event, binding):
-        if event['actor'] == binding['actor'] and event['actor'] != event['target']:
+        if (event['actor'] == binding['actor'] and event['actor'] != event['target']
+                and event['clock_us']>=binding.get('first_us',0)):
             self.meter.add(event)
+
+    def confirm_local_combat(self,flow,proof,identity=None):
+        """Combat-only proof never supplies initial resource or login balances."""
+        if flow in self.meter.invalid_flows:return False
+        previous=self.bindings.get(flow) or self.local_combat_actors.get(flow)
+        if previous and previous['actor']!=proof['actor']:return False
+        named=self.bindings.get(flow)
+        if named and identity and (named['character'],named['server'])!=(identity['name'],identity['server']):return False
+        self.local_combat_actors.setdefault(flow,dict(proof))
+        self.group.confirm_local_actor(flow,proof)
+        if identity and flow not in self.bindings:
+            evidence=self.evidence.setdefault(flow,[])
+            if len(evidence)>=2000:return False
+            proposed=evidence+[identity]
+            binding=resolve_identity(proposed,identity['name'],identity['server'])
+            if binding is None:return False
+            evidence.append(identity)
+            binding.update(basis=identity['basis'],first_us=proof['first_us'])
+            self.bindings[flow]=binding
+            self.group.identify(flow,identity)
+        binding=self.bindings.get(flow) or self.local_combat_actors[flow]
+        for event in self.pending_events.pop(flow,[]):self.attribute(event,binding)
+        return True
 
     def conflict(self, flow):
         self.bindings.pop(flow, None); self.pending_events.pop(flow, None)
+        self.local_combat_actors.pop(flow,None)
+        self.group.local_actors.pop(flow,None)
+        self.group.local_actor_epochs.pop((flow,self.group.roster_epochs.get(flow,0)),None)
         self.meter.invalidate(flow); self.warn('Identidade ambígua; atribuição removida nesta conexão.')
 
     def finish(self):
@@ -643,7 +677,9 @@ class LiveReader:
         # Never advance inferred time through a stale capture or ended encounter.
         now = self.clock_us + max(0, int(extra_us))
         result = dict(character=self.character, clock_us=now, packets=self.packets,
-                    identified=bool(self.bindings), bindings=list(self.bindings.values()),
+                    identified=bool(self.bindings or self.local_combat_actors), bindings=list(self.bindings.values()),
+                    named_identity_confirmed=bool(self.bindings),
+                    local_combat_actors=[dict(value,flow=flow) for flow,value in self.local_combat_actors.items()],
                     recognized=any(d.accepted for d in self.directions.values()),
                     rejected=self.rejected, warnings=list(self.warnings),
                     damage_diagnostics=list(self.damage_diagnostics),
@@ -654,10 +690,14 @@ class LiveReader:
                     events=[dict(event,encounter_key=fight.key) for fight in self.meter.encounters for event in fight.events],
                     experimental=True, dps_screen_validated=False)
         result.update(self.group.snapshot(now))
-        for fight in result['encounters']:
+        for fight,recorded in zip(result['encounters'],self.meter.encounters):
             end=fight['end_us'] if fight['end_us'] is not None else now
             hp=self.group.hp_reference(fight['key'],fight['flow'],fight['target'],fight['start_us'],end)
-            actor=self.bindings.get(fight['flow'],{}).get('actor')
+            binding=self.bindings.get(fight['flow'],{})
+            actors={event['actor'] for event in recorded.events}
+            actor=next(iter(actors)) if len(actors)==1 else None
+            fight['actor']=actor
+            fight['character_name']=binding.get('character') if binding.get('actor')==actor else None
             contribution=self.group.hp_contribution(fight['key'],fight['flow'],fight['target'],fight['start_us'],end,actor,fight['end_us'] is not None)
             fight.update(**hp,**contribution)
         return result

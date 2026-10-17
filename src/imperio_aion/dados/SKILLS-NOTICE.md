@@ -13,3 +13,11 @@ habilidade/ícone não identificado, sem atribuir a arte de outra habilidade.
 Não há afiliação com a NCSOFT.
 
 Ícone da Pedra Divina: Ganância de Rathman: https://aion2hub.com/database/items/533850018 (item 533850018; efeito 30000241). Arte do jogo pertence aos respectivos titulares.
+
+A associação de 314 habilidades às oito classes usa o campo className do índice
+público https://aion2.dev/data/full-search.json, build 25344886, gerado em
+2026-09-24T22:17:53.369Z. A fonte associa classes por SkillAcquireData,
+independentemente da imagem da habilidade. SHA-256 e origem constam em
+skills-pt.json/class_source. São fatos do catálogo, sem código de terceiros.
+Habilidades desconhecidas, de uso comum ou sem classe não identificam uma classe.
+A tabela é uma referência estática de cliente e requer revisão a cada atualização.
