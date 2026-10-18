@@ -52,24 +52,31 @@ def decode_initial_od(body):
 
 
 def decode_od(body):
-    if len(body)<5 or body[:2]!=b'\x0c\x61' or body[2] not in (0,1) or body[3:5]!=b'\x0c\x01':
+    if len(body)<8 or body[:2]!=b'\x0c\x61' or body[2] not in (0,1):
         raise ValueError('Formato de Od ainda não reconhecido')
-    at=5
-    values=[]
-    for _ in range(3):
+    kind=body[3];key=int.from_bytes(body[4:8],'little')
+    if key!=0x03938701 or kind not in (0,4,8,12):
+        raise ValueError('Atributo de Od fora do perfil')
+    # The same typed attribute used by login omits zero-valued balances.
+    # 0c61/00/08/01879303/8201/03 is a captured 0(+130) update.
+    # Always read the whole 32-bit key before its optional normal/extra values.
+    at=8;values=[]
+    for bit in (4,8):
+        if not kind&bit:continue
         start=at;value,at=varint(body,at)
         if at-start>3 or value>999999:raise ValueError('Campo de Od fora do perfil')
         values.append(value)
-    reference,current,bonus=values
+    current=values[0] if kind&4 else 0
+    bonus=values[-1] if kind&8 else 0
     if body[2]==0:
         if len(body)!=at+1 or body[at]!=3:
             raise ValueError('Gasto de Od fora do perfil observado')
-        return dict(current=current,bonus=bonus,delta=None,reference=reference,update_kind='spend')
+        return dict(current=current,bonus=bonus,delta=None,attribute_key=key,update_kind='spend')
     if len(body)!=at+5 or body[at]!=1:
         raise ValueError('Reposição de Od fora do perfil observado')
     delta=int.from_bytes(body[at+1:],'little')
     if not 0<delta<=999999:raise ValueError('Variação de Od fora do perfil')
-    return dict(current=current,bonus=bonus,delta=delta,reference=reference,update_kind='replenishment')
+    return dict(current=current,bonus=bonus,delta=delta,attribute_key=key,update_kind='replenishment')
 
 
 

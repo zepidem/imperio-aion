@@ -174,7 +174,13 @@ def startup_case(state_root, saved=False):
             activity_entries={key:fresh() for key in ('daily_dungeon','shugo_party','nightmare','ascension_rite')},
             pet_collection=dict(wire_decoder_validated=True,character_scope=dict(name='Example',server=2405)))
         hud.update(state,None,[])
-        assert application.onboarding_complete and not hud.welcome_shown
+        assert application.onboarding_complete and hud.welcome_shown
+        assert hud.welcome_step_keys==['capture_step_check']*3
+        assert all(card_fill(i)=='#24432F' for i in range(3))
+        # Advance only the presentation clock; no sleep or capture restart.
+        hud.welcome_confirmation_at-=1
+        hud.sync_welcome(state)
+        assert not hud.welcome_shown
         state['capture_generation']+=1;state['login_session']={}
         hud.update(state,None,[])
         # Viewing history does not mark a login or start an actual capture.
@@ -306,7 +312,7 @@ def runtime_check():
     import app
     from live_core import PROFILE
     target=Path(args.output).resolve();target.parent.mkdir(parents=True,exist_ok=True)
-    report=dict(product='Império AION',version='0.8.80',package_revision=1,kind='packaged-app-startup-check',
+    report=dict(product='Império AION',version='0.8.91',package_revision=1,kind='packaged-app-startup-check',
         python=sys.version.split()[0],pillow=PIL.__version__,capture_started=False,network_opened=False,
         external_python_required=False,tshark_required=False,npcap_required=False,exitlag_required=False,
         integrated_capture=probe(),assets_checked=0,
@@ -354,7 +360,7 @@ if __name__=='__main__':
         # No app imports, profile lookup or log writes under another account.
         if '--check' in sys.argv and '--output' in sys.argv:
             target=Path(sys.argv[sys.argv.index('--output')+1]).resolve()
-            target.write_text(json.dumps(dict(status='IDENTITY_REFUSED',version='0.8.80',error=str(identity_error),capture_started=False)),encoding='utf8')
+            target.write_text(json.dumps(dict(status='IDENTITY_REFUSED',version='0.8.91',error=str(identity_error),capture_started=False)),encoding='utf8')
         else:
             import ctypes
             box=ctypes.windll.user32.MessageBoxW
@@ -377,7 +383,7 @@ if __name__=='__main__':
             try:
                 output=Path(sys.argv[sys.argv.index('--output')+1]).resolve()
                 output.parent.mkdir(parents=True,exist_ok=True)
-                output.write_text(json.dumps(dict(version='0.8.80',status='FAIL',
+                output.write_text(json.dumps(dict(version='0.8.91',status='FAIL',
                     capture_started=False,error=failure),ensure_ascii=False,indent=2),encoding='utf-8')
             except Exception:pass
             raise SystemExit(1)

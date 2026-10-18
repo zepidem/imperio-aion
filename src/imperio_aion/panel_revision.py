@@ -13,6 +13,7 @@ from boss_picker import BossPicker
 from streaming_view import StreamingView
 from character_information import character_information
 from presentation import class_key,CLASSES
+from display_identity import LOCAL_PLAYER_LABEL,player_label
 ROOT=Path(__file__).resolve().parent
 BG='#241B15';SURFACE='#30251D';RAIL='#201812';TEXT='#FFF5E8';MUTED='#D6BEA2';GOLD='#D5A65F';LINE='#513C29'
 
@@ -51,7 +52,7 @@ class CombatPanel:
         a=self.app;a.panel_assets=RasterAssets(self.root)
         header=tk.Frame(self.root,bg=BG,padx=20,pady=5);header.pack(fill='x')
         a.panel_avatar=self.art.get('logo',(110,72));tk.Label(header,image=a.panel_avatar,bg=BG,borderwidth=0).pack(side='left',padx=(0,22))
-        self.character=tk.StringVar(value=a.character.get());self.label(header,var=self.character,bold=True,size=10).pack(side='left')
+        self.character=tk.StringVar(value=LOCAL_PLAYER_LABEL);self.label(header,var=self.character,bold=True,size=10).pack(side='left')
         self.class_icon=tk.Label(header,bg=BG,borderwidth=0);self.class_icon.pack(side='left',padx=9)
         self.button(header,'Voltar à HUD',a.hide_panel,width=145,primary=True,image=self.art.get('return',23)).pack(side='right')
         a.visibility_button=self.button(header,'Ocultar HUD',a.toggle_hud_visibility,width=140,image=self.art.get('eye-open',24));a.visibility_button.pack(side='right',padx=8)
@@ -97,7 +98,7 @@ class CombatPanel:
         self.capture_state.configure(text='Preparando captura' if preparing(snapshot) else 'Captura ativa' if running else 'Captura inativa',selected=running)
         self.adjust.configure(selected=a.hud_adjustment.get())
         guild=snapshot.get('login_session',{}).get('guild')
-        self.character.set((f'<{guild}> ' if isinstance(guild,str) and guild else '')+a.character.get())
+        self.character.set((f'<{guild}> ' if isinstance(guild,str) and guild else '')+LOCAL_PLAYER_LABEL)
         cls=class_key(snapshot.get('character_cache',{}).get('class_id'));self.class_photo=a.panel_assets.get(cls,25)
         self.class_icon.configure(image=self.class_photo or '')
         a.visibility_button.configure(text='Mostrar HUD' if a.hud_hidden else 'Ocultar HUD',image=self.art.get('eye-closed' if a.hud_hidden else 'eye-open',24))
@@ -130,7 +131,8 @@ class CombatPanel:
         title=tk.Frame(right,bg=BG,height=30);title.pack(fill='x',pady=(0,5));title.pack_propagate(False)
         self.label(title,text='Habilidades',size=11,bold=True).pack(side='left')
         self.member_icon=tk.Label(title,bg=BG);self.member_icon.pack(side='left',padx=(8,2))
-        a.skill_member=tk.StringVar(value=a.character.get());self.label(title,var=a.skill_member,size=8,fg=GOLD).pack(side='left')
+        a.skill_member=tk.StringVar(value=a.character.get());self.skill_member_label=tk.StringVar(value=LOCAL_PLAYER_LABEL)
+        self.label(title,var=self.skill_member_label,size=8,fg=GOLD).pack(side='left')
         self.member_choice={};a.skill_query=tk.StringVar();a.skill_rows=[];a.skill_total=0;a.skill_reverse=True
         RoundedField(title,a.skill_query,width=140,height=28).pack(side='right');a.skill_query.trace_add('write',lambda *_:a.render_skills())
         a.skill_status=tk.StringVar();a.skill_detail=tk.StringVar();self.skills_footer=tk.StringVar(value='Nenhuma habilidade recebida')
@@ -147,13 +149,17 @@ class CombatPanel:
         a=self.app;key=a.group_table.identify_row(event.y) if event and getattr(event,'num',None)==1 else next(iter(a.group_table.selection()),None)
         if key and a.group_table.exists(key):
             focus=None if self.group_chart.selected==key else key
-            a.group_table.selection_set(key);a.skill_member.set(a.group_table.item(key,'values')[0]);a.last_table=None
+            member=getattr(a,'group_member_rows',{}).get(key)
+            if member is None:return
+            a.group_table.selection_set(key);a.skill_member.set(member['name']);a.last_table=None
             if a.snapshot:a.tick()
             self.group_chart.selected=focus;self.group_chart.draw()
     def player_curve_selected(self,key):
         a=self.app
         if key and a.group_table.exists(key):
-            a.group_table.selection_set(key);a.skill_member.set(a.group_table.item(key,'values')[0]);a.last_table=None
+            member=getattr(a,'group_member_rows',{}).get(key)
+            if member is None:return
+            a.group_table.selection_set(key);a.skill_member.set(member['name']);a.last_table=None
             if a.snapshot:a.tick()
     def select_skill_curve(self,event=None):
         a=self.app;key=a.skills.identify_row(event.y) if event and getattr(event,'num',None)==1 else next(iter(a.skills.selection()),None)
@@ -162,7 +168,8 @@ class CombatPanel:
         a=self.app;body=a.pages['capture'];self.label(body,text='Captura',size=20,bold=True).pack(anchor='w',pady=(0,18))
         config=tk.Frame(body,bg=BG);config.pack(fill='x');config.columnconfigure(1,weight=1)
         for col,label in ((0,'Personagem · automático'),(1,'Interface de captura')):self.label(config,text=label,size=9,fg=MUTED).grid(row=0,column=col,sticky='w',pady=(0,8))
-        a.entry=RoundedField(config,a.character,width=230,height=36);a.entry.grid(row=1,column=0,padx=(0,18))
+        self.character_label=tk.StringVar(value=LOCAL_PLAYER_LABEL)
+        a.entry=RoundedField(config,self.character_label,width=230,height=36);a.entry.grid(row=1,column=0,padx=(0,18));a.entry.configure(state='readonly')
         a.nic=RoundedField(config,a.interface,choice=True,height=36);a.nic.grid(row=1,column=1,sticky='ew')
         controls=tk.Frame(body,bg=BG);controls.pack(fill='x',pady=16)
         a.start_button=self.button(controls,'Iniciar captura',a.start,primary=True);a.start_button.pack(side='left')
@@ -174,7 +181,7 @@ class CombatPanel:
         a.end_button=self.button(controls,'Encerrar luta',a.end,width=120);a.end_button.pack(side='left',padx=6)
         for var in (a.source,a.result):self.label(body,var=var,size=9,fg=MUTED).pack(anchor='w',pady=(0,7))
         self.label(body,text='Captura incluída no aplicativo · conexão direta ou acelerador opcional · requer administrador.',size=9,fg=MUTED).pack(anchor='w',pady=(4,8))
-        self.label(body,text='O nome é preenchido quando o jogo confirma seu personagem. Você pode iniciar a captura com o campo vazio.',size=9,fg=MUTED).pack(anchor='w',pady=(0,8))
+        self.label(body,text='Seu personagem aparece como Você. A identificação é automática; não é necessário preencher o nome.',size=9,fg=MUTED).pack(anchor='w',pady=(0,8))
         self.label(body,text='Dados do personagem',size=12,bold=True).pack(anchor='w',pady=(22,9))
         self.character_table=self.table(body,('field','value','state'),(30,47,23),height=400,rowheight=27)
         for key,label in (('field','Informação'),('value','Valor'),('state','Status')):self.character_table.heading(key,text=label,anchor='w')
@@ -228,6 +235,7 @@ class CombatPanel:
         self.group_description.set('Participação no dano registrado no alvo.')
         self.member_count.set(f'{len(rows)} personagens');self.refresh_scopes();self.follow.configure(selected=a.auto_target.get())
         member=next((r for r in rows if r['name']==a.skill_member.get()),None)
+        self.skill_member_label.set(player_label(member) if member else LOCAL_PLAYER_LABEL)
         if member:
             self.member_photo=a.panel_assets.get(member.get('class_key','unknown'),21);self.member_icon.configure(image=self.member_photo or '')
             key=row_key(member);a.group_table.selection_set(key)

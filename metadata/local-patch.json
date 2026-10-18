@@ -1,0 +1,8 @@
+{
+  "version": "0.8.91",
+  "base_version": "0.8.90",
+  "base_commit": "71686e6849c528b83aeda9249e9b5c5ce2403b66",
+  "source": "local unpublished candidate, based on the delivered 0.8.90 local patch",
+  "scope": "Keep explicit indeterminate loading feedback animated independently of the Windows decorative client-area animation setting. Preserve Sincronizando, Você, per-actor damage and selection. No Windows setting, capture, group or DPS arithmetic changes.",
+  "published": false
+}

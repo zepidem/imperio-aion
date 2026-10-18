@@ -27,6 +27,7 @@ from class_appearance import display_classes
 from character_selection import CharacterSelection
 from self_combat_identity import LocalCombatIdentity,current_party_identity
 from party_vitals_scope import PartyVitalsScope
+from combat_names import CombatNames,explicit_local_identity
 from resource_refresh import ResourceRefresh
 from app_paths import diagnostics_directory
 from windows_tools import powershell_executable, powershell_environment
@@ -125,6 +126,7 @@ class Controller:
         self.resource_refresh=ResourceRefresh()
         self.character_selection=CharacterSelection()
         self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+        self.combat_names=CombatNames()
         self.last_auto_fault_at=None;self.last_auto_fault_path=None
         self.tool = Path(tool or r'C:\Program Files\Wireshark\tshark.exe')
         self.native_factory=native_factory
@@ -177,16 +179,21 @@ class Controller:
             self.character_selection.observe(ctx,body,self._od_channel())
             if self.character_selection.at_selection:
                 self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+                self.combat_names=CombatNames()
             elif body[:2]==b'\x0b\x61' and ctx['flow']==self._od_channel():
                 from activity_entries import decode_initial_entries
                 try:decode_initial_entries(body)
                 except ValueError:pass
-                else:self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+                else:
+                    self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+                    self.combat_names=CombatNames()
             elif body[:2]==b'\x4a\x36':self._identify_midstream_combat(ctx,body)
             elif body[:2]==b'\x1b\x92' and not self.error and self.metadata.get('capture_source_ready'):
                 proof=self.party_vitals_scope.observe(ctx,body,self._od_channel(),self.reader.group.roster_epochs.get(ctx['flow'],0))
                 if proof:self.reader.group.confirm_party_actor(ctx,proof)
             self._identify_character(ctx,body)
+            if not self.character_selection.at_selection and not self.error and self.metadata.get('capture_source_ready'):
+                self.combat_names.observe(ctx,body,self._od_channel(),self.reader.group)
         self.pets.observe(ctx,body)
         if self.mode=='live' and self.running:
             channel=self._od_channel()
@@ -271,6 +278,36 @@ class Controller:
         self.metadata['automatic_character']=dict(name=name,server=identity['server'],
             actor=identity['actor'],flow=ctx['flow'],basis='owned-self-header-3336')
 
+    def _refresh_known_party_name(self):
+        """Apply a completed party-name proof without waiting for another stat.
+
+        Only the independently confirmed local actor and an unambiguous current
+        roster are used. No cached name, class, list order or HP matching.
+        """
+        if (self.mode!='live' or not self.running or self.error
+                or self.character_selection.at_selection or not self.metadata.get('capture_source_ready')):return
+        flow=self._od_channel()
+        if not flow or flow in self.reader.meter.invalid_flows:return
+        accepted=self.combat_names.apply(self.reader.group,flow,self.reader.clock_us)
+        for entry in accepted:
+            if entry['self_identity']:
+                self.reader.local_display_names[flow]=dict(entry)
+        if flow in self.reader.bindings:return
+        proof=self.reader.local_combat_actors.get(flow)
+        current=self.reader.group.local_actor_epochs.get((flow,self.reader.group.roster_epochs.get(flow,0)))
+        if not proof or not current or proof['actor']!=current['actor']:return
+        display=self.reader.local_display_names.get(flow)
+        identity=((explicit_local_identity(self.reader.group,flow,proof)
+                   if display and display['actor']==proof['actor'] and display['epoch']==self.reader.group.roster_epochs.get(flow,0) else None)
+                  or current_party_identity(self.reader.group,flow,proof['actor']))
+        if not identity or not self.reader.confirm_local_combat(flow,proof,identity):return
+        name=identity['name'];self.reader.character=name;self.reader.server=identity['server']
+        self.cached_identity=None
+        for reader in (self.pets,self.od_energy,self.resource_gains,self.activity_entries,self.order_accumulator):
+            reader.character=name
+        self.metadata['automatic_character']=dict(name=name,server=identity['server'],
+            actor=identity['actor'],flow=flow,basis=identity['basis'])
+
     def _od_channel(self):
         candidates=[flow for flow,direction in self.reader.directions.items()
             if flow in self.incoming_flows and type(self.flow_processes.get(flow)) is int
@@ -336,6 +373,7 @@ class Controller:
             self.reader = LiveReader(character, generation=str(self.generation))
             self.character_selection=CharacterSelection()
             self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+            self.combat_names=CombatNames()
             from pet_collection import PetWireCollection
             self.od_energy=OdEnergy(self.reader.character)
             self.resource_gains=ResourceGains(self.reader.character)
@@ -357,6 +395,13 @@ class Controller:
     def start(self, character, interface='auto'):
         enforce_elevated_installation(refresh=True)
         self._prepare(character, 'live')
+        from initial_diagnostic import consume_request
+        from app_paths import data_directory
+        if consume_request(data_directory()):
+            # Explicit one-use local test request. Arm before the worker can
+            # receive a first packet; ordinary launches do not record traffic.
+            self.collection_diagnostic.start()
+            self.metadata['initial_diagnostic_requested']=True
         interface='windivert' if interface=='auto' else interface
         target=self._live_native if interface in ('native','windivert') else self._live_npcap if interface=='npcap' else self._live
         self.worker=threading.Thread(target=target, args=(interface,),daemon=True)
@@ -380,6 +425,7 @@ class Controller:
             self.reader=LiveReader(character,generation=str(self.generation))
             self.character_selection=CharacterSelection()
             self.local_combat_identity=LocalCombatIdentity();self.party_vitals_scope=PartyVitalsScope()
+            self.combat_names=CombatNames()
             from pet_collection import PetWireCollection
             self.od_energy=OdEnergy(self.reader.character)
             self.resource_gains=ResourceGains(self.reader.character)
@@ -557,7 +603,7 @@ class Controller:
         folder=diagnostics_directory();folder.mkdir(parents=True,exist_ok=True)
         stamp=datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S-%f')
         path=folder/('mascotes-falha-'+stamp+'.json');temporary=path.with_suffix('.tmp')
-        report.update(product='Império AION',monitor_version='0.8.80',utc=datetime.now(timezone.utc).isoformat(),
+        report.update(product='Império AION',monitor_version='0.8.91',utc=datetime.now(timezone.utc).isoformat(),
             capture_state=self._capture_diagnostic_state(),sampling='last-128-pet-messages-max-8192-bytes-each; not a full TCP recording')
         try:
             temporary.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -707,7 +753,7 @@ class Controller:
             folder=diagnostics_directory();folder.mkdir(parents=True,exist_ok=True)
             stamp=datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S-%f')
             path=folder/('captura-falha-'+stamp+'.json')
-            report=dict(product='Império AION',monitor_version='0.8.80',package_revision=1,
+            report=dict(product='Império AION',monitor_version='0.8.91',package_revision=1,
                 kind='capture-startup-failure',capture_state=self._capture_diagnostic_state(),
                 scope='connection metadata only; no packet payloads')
             path.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -977,6 +1023,7 @@ class Controller:
 
     def snapshot(self):
         with self.lock:
+            self._refresh_known_party_name()
             age=time.monotonic()-self.last_packet if self.last_packet is not None else None
             projected=self.reader.clock_us + (int(age*1e6) if self.mode=='live' and self.running and age is not None and age<3 else 0)
             self.display_clock_us=max(self.display_clock_us,projected)
@@ -985,6 +1032,8 @@ class Controller:
             result.update(status=self.status,error=self.error,mode=self.mode,running=self.running,
                           capture_ready=bool(self.running and not self.error and self.metadata.get('capture_source_ready',True)),
                           stale=stale,metadata=dict(self.metadata),archive_count=len(self.archives),capture_generation=self.generation)
+            result['combat_name_discoveries']=[dict(e) for e in self.combat_names.events]
+            result['combat_name_state']=self.combat_names.diagnostic()
             result['character_selection']=self.character_selection.snapshot(
                 self._od_channel(),self.mode=='live' and result['capture_ready'])
             result['pet_collection']=self.pets.snapshot()
@@ -1208,6 +1257,8 @@ class Controller:
         with self.lock:
             now=time.monotonic()
             return dict(status=self.status,error=self.error,running=self.running,mode=self.mode,
+                combat_name_discoveries=[dict(e) for e in self.combat_names.events],
+                combat_name_state=self.combat_names.diagnostic(),
                 capture_generation=self.generation,reader_generation=self.reader.generation,
                 metadata=dict(self.metadata),logs=list(self.logs),available_interfaces=[dict(r) for r in self.available_interfaces],
                 resource_login_trace=list(self.resource_gains.login_trace),
@@ -1240,7 +1291,12 @@ class Controller:
         with self.lock:
             self.collection_diagnostic.stop()
             cache_state=self.snapshot()
-            return dict(product='Império AION',kind='collection-diagnostic',monitor_version='0.8.80',character=self.reader.character,
+            from capture_readiness import initial_loading_status
+            return dict(product='Império AION',kind='collection-diagnostic',monitor_version='0.8.91',character=self.reader.character,
+                mode=cache_state.get('mode'),running=cache_state.get('running'),
+                capture_ready=cache_state.get('capture_ready'),error=cache_state.get('error'),
+                login_session=cache_state.get('login_session'),
+                initial_loading=initial_loading_status(cache_state),
                 resource_refresh=cache_state.get('resource_refresh'),
                 character_cache=cache_state.get('character_cache'),od_energy=cache_state.get('od_energy'),resource_gains=cache_state.get('resource_gains'),daily_duty=cache_state.get('daily_duty'),weekly_orders=cache_state.get('weekly_orders'),pet_collection=self.pets.snapshot(),recent_pet_messages=list(self.pets.recent_messages),
                 activity_entries=cache_state.get('activity_entries'),
@@ -1260,7 +1316,7 @@ class Controller:
     def export(self):
         with self.lock:
             current=self._export_current()
-            current.update(schema_version=1,product='Império AION',version='0.8.80-beta',
+            current.update(schema_version=1,product='Império AION',version='0.8.91-beta',
                            mode=self.mode,status=self.status,error=self.error,logs=list(self.logs),
                            previous_connections=list(self.archives),lossless_handover_validated=False)
             return current

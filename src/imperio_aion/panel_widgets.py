@@ -6,6 +6,7 @@ import tkinter.font as tkfont
 from tkinter import ttk
 from PIL import ImageTk
 from hud_controls import surface_raster,background_rgb,rounded_rect
+from ui_loading import loading_photo,loading_motion_enabled
 BG='#241B15';SURFACE='#30251D';TEXT='#FFF5E8';MUTED='#D6BEA2';GOLD='#D5A65F';LINE='#67492F'
 
 class GoldScrollbar(tk.Canvas):
@@ -56,12 +57,15 @@ class RoundedField(tk.Frame):
 
 class RoundedTable(tk.Canvas):
     """Treeview-compatible public subset, drawn without square platform borders."""
+    supports_name_loading=True
     def __init__(self,parent,columns=(),show='headings',height=250,ratios=None,rowheight=24):
         super().__init__(parent,bg=BG,highlightthickness=0,height=height,takefocus=True)
         self.columns=tuple(columns);self.show_tree='tree' in show;self.order=[];self.rows={};self.tags={};self.selected=[]
         self.headings={};self.column_options={};self.ratios=ratios;self.rowheight=rowheight;self.top=0;self.headerheight=28;self.scrollcommand=None;self.pending=None
+        self.loading_items=[];self.loading_frames={};self.loading_frame=0;self.loading_timer=None;self.loading_motion=loading_motion_enabled()
         self.face=tkfont.Font(self,family='Segoe UI',size=8);self.bold=tkfont.Font(self,family='Segoe UI',size=8,weight='bold');self.photo=None
         self.bind('<Configure>',lambda _:self.redraw());self.bind('<Button-1>',self.press)
+        self.bind('<Map>',lambda _:self.redraw(),add='+');self.bind('<Unmap>',lambda _:self.cancel_loading(),add='+')
         self.bind('<MouseWheel>',lambda e:self.yview('scroll',-1 if e.delta>0 else 1,'units'))
         for key,delta in (('<Up>',-1),('<Down>',1)):self.bind(key,lambda e,d=delta:self.arrow(d))
     def configure(self,cnf=None,**kwargs):
@@ -145,6 +149,7 @@ class RoundedTable(tk.Canvas):
     def draw(self):
         self.pending=None
         if not self.winfo_exists():return
+        self.loading_items=[]
         # delete() is the table's row API; clear only Canvas items here.
         tk.Canvas.delete(self,'all');w=max(2,self.winfo_width());h=max(2,self.winfo_height());cap=self.capacity()
         self.top=min(self.top,max(0,len(self.order)-cap));layout=self.layout_columns()
@@ -164,5 +169,31 @@ class RoundedTable(tk.Canvas):
                 right=self.column_options.get(column,{}).get('anchor')=='e';padding=7
                 if image:
                     self.create_image(x+6,y+self.rowheight/2,image=image,anchor='w');padding=40 if text else 32
-                self.create_text(x+width-7 if right else x+padding,y+self.rowheight/2,text=self.fit_text(text,width-padding-7),font=self.face,fill=color if tree or column=='name' else TEXT,anchor='e' if right else 'w')
+                syncing=column=='name' and row.get('sync_pending') is True
+                label=self.fit_text(text,width-padding-7-(18 if syncing else 0))
+                self.create_text(x+width-7 if right else x+padding,y+self.rowheight/2,text=label,font=self.face,fill=color if tree or column=='name' else TEXT,anchor='e' if right else 'w')
+                if syncing:
+                    self.loading_items.append(self.create_image(x+padding+self.face.measure(label)+9,y+self.rowheight/2,image=loading_photo(self,self.loading_frame,self.loading_frames),tags='name_loading'))
         if self.scrollcommand:self.scrollcommand(*self.yview())
+        self.schedule_loading()
+
+    def cancel_loading(self):
+        if self.loading_timer is not None:
+            self.after_cancel(self.loading_timer);self.loading_timer=None
+
+    def schedule_loading(self):
+        if not self.loading_items or not self.winfo_ismapped() or not self.loading_motion:self.cancel_loading()
+        elif self.loading_timer is None:self.loading_timer=self.after(180,self.animate_loading)
+
+    def animate_loading(self):
+        self.loading_timer=None
+        if self.loading_items and self.winfo_ismapped() and self.loading_motion:
+            self.loading_frame=(self.loading_frame+1)%12
+            photo=loading_photo(self,self.loading_frame,self.loading_frames)
+            for item in self.loading_items:self.itemconfigure(item,image=photo)
+        self.schedule_loading()
+
+    def destroy(self):
+        self.cancel_loading()
+        if self.pending is not None:self.after_cancel(self.pending);self.pending=None
+        super().destroy()

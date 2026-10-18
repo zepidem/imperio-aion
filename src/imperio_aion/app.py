@@ -29,9 +29,10 @@ from presentation import Catalog, TargetSelector, alpha_for, resize_box, combat_
 from hud_assets import RasterAssets
 from game_startup import GameLifetime, game_processes
 from app_paths import export_directory
+from display_identity import LOCAL_PLAYER_LABEL, player_label, local_player_rows, name_pending
 
 ROOT=Path(__file__).resolve().parent
-VERSION='0.8.80'
+VERSION='0.8.91'
 C=dict(bg='#241B15',surface='#241B15',ink='#FFF5E8',muted='#D6BEA2',brown='#D5A65F',
        gold='#D5A65F',line='#513C29',green='#A6D7A8',soft='#493225',dark='#201812',panel='#30251D',light='#FFF5E8')
 
@@ -248,8 +249,8 @@ class App:
                 and (snapshot.get('login_session',{}).get('entry_confirmed')
                      or snapshot.get('login_session',{}).get('confirmed'))):
             self.login_ready=True
-        from capture_readiness import initial_readings
-        if self.login_ready and all(initial_readings(snapshot).values()):
+        from capture_readiness import initial_loading_complete
+        if self.login_ready and initial_loading_complete(snapshot):
             self.onboarding_complete=True
         # Once a login is confirmed, quiet traffic or a map transition must not
         # force another startup relog. This flag is never saved across launches.
@@ -309,6 +310,9 @@ class App:
 
     def _update_group_table(self,table,rows):
         if table is None or not table.winfo_exists():return
+        if table is self.group_table:
+            from combat_charts import row_key
+            self.group_member_rows={row_key(row):row for row in rows}
         current=[]
         for row in sorted(rows,key=lambda r:-(r.get('damage') or 0)):
             from combat_charts import row_key
@@ -316,12 +320,13 @@ class App:
             current.append(key)
             share=row.get('damage_share_percent')
             percent=fmt(share,1)+'%' if share is not None else '—'
-            values=(row['name'],fmt(row['damage']),fmt(row['dps_average'],1),fmt(row['duration_us']/1e6,1)+' s',percent)
+            values=(player_label(row),fmt(row['damage']),fmt(row['dps_average'],1),fmt(row['duration_us']/1e6,1)+' s',percent)
             tags=('own',) if row['name']==self.character.get().strip() else ()
             from presentation import CLASSES
             cls=row.get('class_key','unknown');table.tag_configure(cls,foreground=CLASSES.get(cls,CLASSES['unknown'])[1]);tags=(cls,)
             icon=self.panel_assets.get(cls,24)
             options=dict(values=values,tags=tags,image=icon if icon is not None else '')
+            if getattr(table,'supports_name_loading',False):options['sync_pending']=name_pending(row)
             if table.exists(key):table.item(key,**options);table.move(key,'',len(current)-1)
             else:table.insert('',len(current)-1,iid=key,**options)
         for key in table.get_children():
@@ -767,15 +772,13 @@ class App:
         self.update_collection_recording(s)
         source='AMOSTRA GRAVADA · '+s['status'] if s['mode']=='sample' else s['status']
         self.source.set(source)
-        self.identity.set((s['character']+' · identificado nesta conexão') if s['identified'] else
-            (s['character']+' · aguardando confirmação do jogo' if s['character'] else 'Aguardando identificação automática do personagem'))
-        if s['identified'] and not s.get('named_identity_confirmed',s['identified']):
-            self.identity.set('Seu personagem identificado para o DPS · nome pendente')
+        self.identity.set(LOCAL_PLAYER_LABEL+' · identificado nesta conexão' if s['identified'] else
+            'Aguardando identificação automática do seu personagem')
         running=s['running'];self.start_button.configure(state='disabled' if running else 'normal')
         self.demo_button.configure(state='disabled' if running else 'normal')
         if running:self.start_button.pack_forget()
         elif not self.start_button.winfo_manager():self.start_button.pack(side='left',padx=(0,8))
-        self.entry.configure(state='disabled' if running else 'normal');self.nic.configure(state='disabled' if running else 'readonly')
+        self.entry.configure(state='readonly');self.nic.configure(state='disabled' if running else 'readonly')
         self.nic['values']=list(self.interfaces) or ['Automática · conexão do jogo']
         fights=combat_history(s);self.mapping={}
         available=[e for e in fights if self.selector.includes(s,e,self.hud_scope.get())]
@@ -796,7 +799,7 @@ class App:
                 shown=own or dict(damage=None,dps_average=None,dps_current=None,skills=[])
             else:
                 shown=fight
-                rows=[dict(name=(fight.get('character_name') or 'Você · nome pendente') if 'character_name' in fight else s['character'],actor=fight.get('actor'),identity_pending='character_name' in fight and not fight['character_name'],damage=fight['damage'],dps_average=fight['dps_average'],dps_current=fight['dps_current'],duration_us=fight['duration_us'],hp_percent=fight.get('hp_percent'),hp_percent_status=fight.get('hp_percent_status'),damage_share_percent=100.0 if fight['damage']>0 else 0.0,skills=fight.get('skills',[]))]
+                rows=[dict(name=(fight.get('character_name') or 'Você · nome pendente') if 'character_name' in fight else s['character'],self_identity=True,actor=fight.get('actor'),identity_pending='character_name' in fight and not fight['character_name'],damage=fight['damage'],dps_average=fight['dps_average'],dps_current=fight['dps_current'],duration_us=fight['duration_us'],hp_percent=fight.get('hp_percent'),hp_percent_status=fight.get('hp_percent_status'),damage_share_percent=100.0 if fight['damage']>0 else 0.0,skills=fight.get('skills',[]))]
             self.damage.set(fmt(fight['damage']));self.dps.set(fmt(fight['dps_average'],2));self.duration.set(fmt(fight['duration_us']/1e6,2)+' s')
             self.phase.set(('Dados parciais · luta encerrada' if fight['end_us'] is not None else 'Dados parciais · luta em andamento') if fight['partial'] else 'Luta encerrada · '+str(fight['end_reason']) if fight['end_us'] is not None else 'Luta em andamento · pausas incluídas')
             self.end_button.configure(state='normal' if fight['end_us'] is None else 'disabled')
@@ -809,10 +812,21 @@ class App:
             self.damage.set('—');self.dps.set('—');self.duration.set('—');self.target.set(waiting)
             self.hud_target.set(waiting)
             self.phase.set('Identificação pendente' if not s['identified'] else 'Aguardando combate');self.end_button.configure(state='disabled')
+        # Display aliases never replace real names used by class/skill joins.
+        flow=fight.get('flow') if fight else s['group_rosters'][-1]['flow'] if s['group_rosters'] else None
+        binding=self.controller.reader.bindings.get(flow) or self.controller.reader.local_combat_actors.get(flow) or {}
+        ended_before_proof=bool(fight and fight.get('end_us') is not None and fight['end_us']<binding.get('first_us',0))
+        rows=local_player_rows(rows,None if ended_before_proof else binding.get('actor'))
         rows=[dict(r,class_key=self.catalog.player_class(s,fight,r)) for r in rows]
         rows=[dict(r,hp_reading_complete=r.get('hp_percent_status')=='observed' and r.get('hp_percent') is not None
             and not bool(s.get('error') or s.get('warnings') or s.get('stale') or fight and fight.get('partial'))) for r in rows]
+        from combat_charts import row_key
+        selected=self.group_table.selection()
+        previous_key=selected[0] if selected and getattr(self,'group_table_scope',None)==self.selected_key else None
+        previous_member=next((r for r in rows if row_key(r)==previous_key),None)
+        if previous_member is not None:self.skill_member.set(previous_member['name'])
         self._update_group_table(self.group_table,rows)
+        self.group_table_scope=self.selected_key
         if self.hud_view:self.hud_view.update(s,fight,rows)
         roster_known=bool(s['group_rosters'] or fight and fight.get('members'))
         hp=fight.get('max_hp') if fight else None

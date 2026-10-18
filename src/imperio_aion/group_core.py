@@ -327,18 +327,22 @@ class GroupBook:
         the anonymous set instead of selecting nearby actors to fill slots.
         """
         own=self.local_actor_epochs.get((flow,epoch))
-        if len(roster)<2 or own is None:return [dict(m) for m in roster]
-        mapped=[(m,self.actor_for(flow,m)) for m in roster]
+        if own is None:return [dict(m) for m in roster]
+        mapped=[(dict(m),self.actor_for(flow,m)) for m in roster]
+        for member,actor in mapped:
+            if own and actor is not None and actor==own['actor']:
+                member['self_identity']=True
+        if len(roster)<2:return [m for m,_ in mapped]
         known={actor for _,actor in mapped if actor is not None}
         peers={actor:p for (f,e,actor),p in self.party_actor_proofs.items() if f==flow and e==epoch
             and not self.living_npc(flow,actor,p['confirmed_us'])}
-        if not peers:return [dict(m) for m in roster]
+        if not peers:return [m for m,_ in mapped]
         unknown={a:p for a,p in peers.items() if a not in known}
         if own['actor'] not in known:unknown[own['actor']]=own
         count=sum(a is None for _,a in mapped)
-        if len(unknown)>count:return [dict(m) for m in roster]
-        if not unknown:return [dict(m) for m in roster]
-        members=[dict(m) for m,a in mapped if a is not None]
+        if len(unknown)>count:return [m for m,_ in mapped]
+        if not unknown:return [m for m,_ in mapped]
+        members=[m for m,a in mapped if a is not None]
         for number,(actor,proof) in enumerate(sorted(unknown.items()),1):
             local=actor==own['actor']
             members.append(dict(name='Você · nome pendente' if local else f'Integrante {number} · nome pendente',

@@ -427,6 +427,7 @@ class LiveReader:
         self.evidence = {}
         self.bindings = {}
         self.local_combat_actors = {}
+        self.local_display_names = {}
         self.pending_events = {}
         self.meter = Meter()
         self.rejected = 0
@@ -555,6 +556,7 @@ class LiveReader:
             self.meter.invalid_flows.discard(flow)
             self.bindings.pop(flow,None);self.evidence.pop(flow,None);self.pending_events.pop(flow,None)
             self.local_combat_actors.pop(flow,None)
+            self.local_display_names.pop(flow,None)
             self.group.clear_roster(ctx,block_scope=False);self.group.local_actors.pop(flow,None)
             self.group.invalidate_npc_identity(flow,ctx['clock_us'])
             self.group.interrupted.pop(flow,None)
@@ -660,6 +662,7 @@ class LiveReader:
     def conflict(self, flow):
         self.bindings.pop(flow, None); self.pending_events.pop(flow, None)
         self.local_combat_actors.pop(flow,None)
+        self.local_display_names.pop(flow,None)
         self.group.local_actors.pop(flow,None)
         self.group.local_actor_epochs.pop((flow,self.group.roster_epochs.get(flow,0)),None)
         self.meter.invalidate(flow); self.warn('Identidade ambígua; atribuição removida nesta conexão.')
@@ -698,6 +701,17 @@ class LiveReader:
             actor=next(iter(actors)) if len(actors)==1 else None
             fight['actor']=actor
             fight['character_name']=binding.get('character') if binding.get('actor')==actor else None
+            # A combat-only explicit name can label the proven self actor even
+            # without a realm. It never supplies a login/resource identity.
+            display=self.local_display_names.get(fight['flow'])
+            own=self.group.local_actor_epochs.get((fight['flow'],self.group.roster_epochs.get(fight['flow'],0)))
+            values=self.group.names.get((fight['flow'],actor),set())
+            if (not fight['character_name'] and display and own and own['actor']==actor
+                    and display['actor']==actor and display['epoch']==self.group.roster_epochs.get(fight['flow'],0)
+                    and own['first_us']<=fight['start_us']
+                    and {n for n,s in values}=={display['name']}
+                    and len({s for n,s in values if s is not None})<=1):
+                fight['character_name']=display['name']
             contribution=self.group.hp_contribution(fight['key'],fight['flow'],fight['target'],fight['start_us'],end,actor,fight['end_us'] is not None)
             fight.update(**hp,**contribution)
         return result

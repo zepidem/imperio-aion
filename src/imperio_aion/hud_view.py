@@ -16,6 +16,9 @@ from hud_controls import SoftButton, IconButton, LogoIcon, ScopeSwitch, CaptureT
 from hud_border import border_raster
 from capture_readiness import source_ready,preparing,onboarding_progress,initial_readings
 from PIL import Image, ImageTk, ImageDraw, ImageFilter
+from display_identity import player_label,name_pending
+from combat_charts import row_key
+from ui_loading import loading_photo,loading_motion_enabled
 
 BG = '#241B15'
 SURFACE = '#30251D'
@@ -195,6 +198,7 @@ class CompactHUD:
         self.resize_edges=[]
         self.build_edges()
         self.welcome_dismissed=False;self.welcome_shown=False;self.welcome_size=None;self.covered_focus={}
+        self.welcome_confirmation_key=None;self.welcome_confirmation_at=None
         self.welcome_original=Image.open(Path(__file__).resolve().parent/'assets/kit/mascote-pensativa.png').convert('RGBA')
         self.welcome=tk.Canvas(window,bg=BG,highlightthickness=0)
         self.welcome.bind('<Configure>',self.draw_welcome)
@@ -238,8 +242,23 @@ class CompactHUD:
         self.sync_welcome(self.status_snapshot)
 
     def sync_welcome(self,snapshot):
+        # Every entry point (tick, resize, shortcuts and page changes) must paint
+        # the same snapshot whose login milestones are being evaluated.
+        self.status_snapshot=snapshot
         login_ready=self.app.update_login_access(snapshot)
-        self.welcome_dismissed=self.app.onboarding_complete or (self.app.onboarding_skipped and self.app.hud_page.get()=='combat')
+        steps=onboarding_progress(snapshot,login_ready)
+        confirmation_key=(snapshot.get('capture_generation',0),snapshot.get('character'))
+        skipped=self.app.onboarding_skipped and self.app.hud_page.get()=='combat'
+        confirming=bool(snapshot.get('mode')=='live' and source_ready(snapshot)
+            and all(steps[0]) and not skipped and not self.app.hud_collapsed)
+        if confirmation_key!=self.welcome_confirmation_key or not confirming:
+            self.welcome_confirmation_key=confirmation_key;self.welcome_confirmation_at=None
+        # A fast login can deliver all baselines within one tick. Let its final
+        # green checks paint before removing the cover. This is presentation
+        # only: capture, data loading and combat keep updating on the usual tick.
+        hold_confirmation=bool(confirming and self.welcome_shown and
+            (self.welcome_confirmation_at is None or time.monotonic()-self.welcome_confirmation_at<.9))
+        self.welcome_dismissed=(self.app.onboarding_complete and not hold_confirmation) or skipped
         show=not self.welcome_dismissed and not self.app.hud_collapsed
         if show!=self.welcome_shown:
             self.welcome_shown=show
@@ -260,10 +279,12 @@ class CompactHUD:
                 self.covered_focus.clear()
         running=bool(snapshot.get('running'))
         state=('error' if snapshot.get('error') else 'preparing' if preparing(snapshot) else 'waiting' if running else 'idle')
-        progress=(onboarding_progress(snapshot,login_ready),tuple(initial_readings(snapshot).values()))
+        progress=(steps,tuple(initial_readings(snapshot).values()))
         if getattr(self,'welcome_state',None)!=state or getattr(self,'welcome_progress',None)!=progress:
             self.welcome_state=state;self.welcome_progress=progress;self.welcome_size=None
         if show and self.welcome_size is None:self.draw_welcome()
+        if show and confirming and self.welcome_confirmation_at is None:
+            self.welcome_confirmation_at=time.monotonic()
 
     def draw_welcome(self,event=None):
         w,h=max(1,self.welcome.winfo_width()),max(1,self.welcome.winfo_height())
@@ -479,7 +500,7 @@ class CompactHUD:
             if not self.pet_table.winfo_manager():self.pet_table.pack(fill='both',expand=True)
             self.pet_table.set_state(self.status_snapshot.get('pet_collection',{}))
             cached_identity=self.status_snapshot.get('character_cache',{}).get('selected') or {}
-            self.target.configure(text='Mascotes · '+cached_identity['name'] if self.status_snapshot.get('pet_collection',{}).get('cache_display') and cached_identity.get('name') else 'Mascotes')
+            self.target.configure(text='Mascotes · Você' if self.status_snapshot.get('pet_collection',{}).get('cache_display') and cached_identity.get('name') else 'Mascotes')
             if self.app.hud_adjustment.get():self.member_count.pack_forget()
             else:self.member_count.pack(side='right')
             self.refresh_pet_summary()
@@ -670,7 +691,7 @@ class CompactHUD:
         if not self.interactive or self.menu_open or not self.table.exists(row):return
         values=self.table.item(row,'values')
         text=f'{values[0]}\nDano {values[1]} · DPS médio {values[2]}\nTempo {values[3]} · Participação no dano {values[4]}'
-        member=next((r for r in self.table.rows if str(r.get('dbid') or r['name'])==row),{})
+        member=next((r for r in self.table.rows if row_key(r)==row),{})
         text+='\n'+CLASSES.get(member.get('class_key'),CLASSES['unknown'])[0]
         if member.get('hp_reading_complete',member.get('hp_percent_status')=='observed') is not True:
             text+='\nHP incompleto · veja o diagnóstico para a leitura de vida.'
@@ -688,8 +709,10 @@ class MemberCanvas(tk.Canvas):
         self.scrollbar.bind('<ButtonPress-1>',self.begin_scroll)
         self.scrollbar.bind('<B1-Motion>',self.drag_scroll)
         self.scrollbar.bind('<ButtonRelease-1>',lambda event:setattr(self,'scroll_drag',None))
-        self.loading_items=[];self.loading_frames={};self.loading_frame=0
-        self.loading_timer=self.after(180,self.animate_loading)
+        self.loading_items=[];self.loading_frames={};self.loading_frame=0;self.loading_timer=None
+        self.loading_motion=loading_motion_enabled()
+        self.bind('<Map>',lambda event:self.draw(),add='+')
+        self.bind('<Unmap>',lambda event:self.cancel_loading(),add='+')
         self.bind('<Configure>',lambda event:self.draw())
         self.bind('<MouseWheel>',lambda event:self.scroll_rows(-1 if event.delta>0 else 1))
         self.scrollbar.bind('<MouseWheel>',lambda event:self.scroll_rows(-1 if event.delta>0 else 1))
@@ -697,6 +720,8 @@ class MemberCanvas(tk.Canvas):
         self.bind('<Home>',lambda event:self.scroll_rows(-len(self.rows)))
         self.bind('<End>',lambda event:self.scroll_rows(len(self.rows)))
         self.name_font=tkfont.Font(root=parent,family='Segoe UI',size=9)
+        self.pending_font=tkfont.Font(root=parent,family='Segoe UI',size=8)
+        self.value_font=tkfont.Font(root=parent,family='Segoe UI',size=9)
 
     def set_rows(self,rows):
         self.rows=rows;self.offset=min(self.offset,max(0,len(rows)-self.visible_capacity()))
@@ -720,10 +745,11 @@ class MemberCanvas(tk.Canvas):
         position=max(0,min(1,(event.y-self.scroll_drag)/travel))
         self.offset=round(position*max(0,len(self.rows)-self.visible_capacity()));self.draw()
 
-    def clipped(self,text,width):
-        if self.name_font.measure(text)<=width:return text
-        while text and self.name_font.measure(text+'…')>width:text=text[:-1]
-        return text+'…'
+    def clipped(self,text,width,font=None):
+        font=font or self.name_font
+        if font.measure(text)<=width:return text
+        while text and font.measure(text+'…')>width:text=text[:-1]
+        return text+'…' if text else ''
 
     def draw(self):
         from app import fmt
@@ -746,21 +772,28 @@ class MemberCanvas(tk.Canvas):
             self.create_text(x,11,text=label,anchor='w' if label=='Personagem' else 'e',fill=SECONDARY,font=('Segoe UI',8))
         peak=max((r.get('damage') or 0 for r in self.rows),default=0)
         for i,row in enumerate(self.rows[self.offset:self.offset+self.visible_capacity()]):
-            y=self.heading_height+i*self.row_height;own=row['name']==self.hud.app.character.get().strip()
-            key=str(row.get('dbid') or row['name'])
+            y=self.heading_height+i*self.row_height;own=row.get('self_identity') is True
+            key=row_key(row)
             share=row.get('damage_share_percent')
             percent=compact_percent(share)
             complete=share is not None
-            values=(row['name'],fmt(row['damage']),fmt(row['dps_average'],1),fmt(row['duration_us']/1e6,1)+' s',percent)
+            values=(player_label(row),fmt(row['damage']),fmt(row['dps_average'],1),fmt(row['duration_us']/1e6,1)+' s',percent)
             self.values[key]=values
             cls=row.get('class_key','unknown');colour=CLASSES.get(cls,CLASSES['unknown'])[1]
             if own:rounded_rect(self,0,y,w,self.row_height-1,7,fill='#30251D',outline='')
             emblem=self.hud.assets.get(cls,22)
             if emblem:self.create_image(6,y+2,image=emblem,anchor='nw')
             else:draw_icon(self,'unknown',9,y+5,19,colour)
-            name=row['name']+(' · você' if own and w>=410 else '')
-            self.create_text(38,y+14,text=self.clipped(name,max(38,w*.34-40)),anchor='w',fill=TEXT,font=('Segoe UI',9,'bold' if own else 'normal'))
             display=(compact_number(row['damage']),compact_number(row['dps_average']),compact_duration(row['duration_us']),compact_percent(share))
+            name=player_label(row);pending=name_pending(row)
+            # Reserve the actual damage text first; the spinner never covers
+            # a number, even in a narrowed or scrolled HUD.
+            name_width=max(0,xs[1]-self.value_font.measure(display[0])-46)
+            font=self.pending_font if pending else self.name_font
+            label=self.clipped(name,max(0,name_width-(18 if pending else 0)),font)
+            self.create_text(38,y+14,text=label,anchor='w',fill=TEXT,font=font if pending else ('Segoe UI',9,'bold' if own else 'normal'))
+            if pending:
+                self.loading_items.append(self.create_image(38+font.measure(label)+9,y+14,image=self.loading_image(),tags='name_loading'))
             for column,(x,value) in enumerate(zip(xs[1:],display)):
                 if x==xs[-1] and not complete:
                     self.loading_items.append(self.create_image(x-6,y+14,image=self.loading_image(),tags='hp_loading'))
@@ -770,24 +803,29 @@ class MemberCanvas(tk.Canvas):
             self.create_line(8,by,w-7,by,fill='#3A2D23',width=3,capstyle='round')
             if peak and row.get('damage'):
                 self.create_line(8,by,8+(w-15)*row['damage']/peak,by,fill=colour,width=3,capstyle='round')
+        self.schedule_loading()
 
     def loading_image(self):
-        frame=self.loading_frame
-        if frame not in self.loading_frames:
-            raster=Image.new('RGBA',(56,56));draw=ImageDraw.Draw(raster)
-            draw.ellipse((8,8,48,48),outline='#6A5036',width=5)
-            draw.arc((8,8,48,48),start=frame*30,end=frame*30+110,fill=GOLD,width=6)
-            self.loading_frames[frame]=ImageTk.PhotoImage(raster.resize((14,14),Image.Resampling.LANCZOS),master=self)
-        return self.loading_frames[frame]
+        return loading_photo(self,self.loading_frame,self.loading_frames)
+
+    def cancel_loading(self):
+        if self.loading_timer is not None:
+            self.after_cancel(self.loading_timer);self.loading_timer=None
+
+    def schedule_loading(self):
+        if not self.loading_items or not self.winfo_ismapped() or not self.loading_motion:
+            self.cancel_loading()
+        elif self.loading_timer is None:self.loading_timer=self.after(180,self.animate_loading)
 
     def animate_loading(self):
-        if self.loading_items and self.winfo_ismapped():
+        self.loading_timer=None
+        if self.loading_items and self.winfo_ismapped() and self.loading_motion:
             self.loading_frame=(self.loading_frame+1)%12
             for item in self.loading_items:self.itemconfigure(item,image=self.loading_image())
-        self.loading_timer=self.after(180,self.animate_loading)
+        self.schedule_loading()
 
     def destroy(self):
-        if self.loading_timer:self.after_cancel(self.loading_timer)
+        self.cancel_loading()
         super().destroy()
 
     def get_children(self):return tuple(self.values)

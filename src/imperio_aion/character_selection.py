@@ -11,9 +11,20 @@ retained, and recognizing this screen never grants character resource access.
 
 def selection_profile(body):
     if not isinstance(body,bytes):return None
-    profiles={b'\x26\x36\0\0\x02':(3713,774,3319,'sa-2636-avatar-list'),
-              b'\x15\x36\0\0\x20':(3787,790,3335,'sa-1536-initial-avatar-list')}
-    profile=profiles.get(body[:5])
+    # In the captured initial-list responses, bytes 4:8 vary. The old constant
+    # (0x20) incorrectly rejected the later response (0x78). Do not use any
+    # byte of that variable field as a signature. Its meaning is not assumed.
+    if body[:4]==b'\x15\x36\0\0':
+        if len(body)<=790:return None
+        # Two complete single-avatar layouts are captured. The shorter one has
+        # 227 fewer middle bytes; name/class/level and the final realm trailer
+        # keep their relative positions. Unknown layouts still remain pending.
+        base=len(body)-body[790]
+        if base not in (3787,3560):return None
+        profile=(base,790,base-452,'sa-1536-initial-avatar-list')
+    elif body[:5]==b'\x26\x36\0\0\x02':
+        profile=(3713,774,3319,'sa-2636-avatar-list')
+    else:profile=None
     if profile is None:return None
     base,name_size_at,realm_at,key=profile
     if not base+1<=len(body)<=base+36:return None

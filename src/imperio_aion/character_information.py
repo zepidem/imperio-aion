@@ -7,6 +7,7 @@ from resource_gains import gain_presentation
 from presentation import class_key,CLASSES
 from functools import lru_cache
 from skill_catalog import SkillCatalog
+from display_identity import LOCAL_PLAYER_LABEL
 
 @lru_cache(maxsize=1)
 def _effect_names():
@@ -25,7 +26,7 @@ def character_information(snapshot,character):
     confirmed=bool(snapshot.get('login_session',{}).get('confirmed'))
     cls=class_key(cache.get('class_id'));server=identity.get('server')
     guild=snapshot.get('login_session',{}).get('guild')
-    rows=[('Personagem',character or 'Não informado','Confirmado' if confirmed else 'Informado pelo usuário'),
+    rows=[('Personagem',LOCAL_PLAYER_LABEL,'Confirmado' if confirmed else 'Pendente'),
         ('Guilda',guild if isinstance(guild,str) and guild else 'Ainda não interpretada na captura','Confirmado' if guild and confirmed else 'Pendente'),
         ('Classe',CLASSES[cls][0],('Confirmado' if confirmed else 'Última leitura') if cls!='unknown' else 'Pendente'),
         ('Servidor',str(server) if server is not None else 'Não recebido',('Confirmado' if confirmed else 'Última leitura') if server is not None else 'Pendente'),

@@ -6,6 +6,7 @@ import math
 import tkinter as tk
 from tkinter import ttk
 from presentation import CLASSES
+from display_identity import player_label
 
 BG='#241B15';TEXT='#FFF5E8';MUTED='#D6BEA2';GOLD='#D5A65F'
 
@@ -14,7 +15,12 @@ def skill_colors(items):
     top=(241,132,120);low=(141,204,154);count=max(1,len(ordered)-1)
     return {str(s['code']):'#'+''.join(f'{round(a+(b-a)*i/count):02x}' for a,b in zip(top,low)) for i,s in enumerate(ordered)}
 
-def row_key(row):return str(row.get('observation_key') or row.get('dbid') or row.get('name'))
+def row_key(row):
+    # Actor is already attributed by the collector. A display-name arrival must
+    # not create a new UI row or move the selected player's skill breakdown.
+    actor=row.get('actor')
+    if type(actor) is int and actor>0:return 'actor/'+str(actor)
+    return str(row.get('observation_key') or row.get('dbid') or row.get('name'))
 
 def chart_series(snapshot,fight,rows,character,catalog):
     if not fight:return [],[],False
@@ -37,7 +43,7 @@ def chart_series(snapshot,fight,rows,character,catalog):
         hits.sort();known=row.get('damage')
         incomplete=known is not None and abs(sum(v for _,v in hits)-known)>.001
         partial|=incomplete
-        players.append(dict(key=row_key(row),name=row['name'],color=CLASSES.get(row.get('class_key'),CLASSES['unknown'])[1],hits=hits,duration=seconds,partial=incomplete))
+        players.append(dict(key=row_key(row),name=player_label(row),color=CLASSES.get(row.get('class_key'),CLASSES['unknown'])[1],hits=hits,duration=seconds,partial=incomplete))
         for item in row.get('skills',[]):
             code=str(item['code']);values=sorted(by_skill[code])
             skills.append(dict(key=row_key(row)+'/'+code,member=row_key(row),code=code,name=catalog.name(code,item.get('name','')),hits=values,duration=seconds,damage=item.get('damage',0),partial=abs(sum(v for _,v in values)-item.get('damage',0))>.001))

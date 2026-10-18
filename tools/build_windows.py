@@ -8,7 +8,7 @@ import argparse,hashlib,importlib.metadata,json,os,shutil,subprocess,sys,urllib.
 from pathlib import Path
 from build_native import compile_helper
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='0.8.80'
+VERSION='0.8.91'
 VENDOR={
  'binary.zip':('https://github.com/basil00/WinDivert/releases/download/v2.2.2/WinDivert-2.2.2-A.zip','63cb41763bb4b20f600b6de04e991a9c2be73279e317d4d82f237b150c5f3f15'),
  'source.zip':('https://api.github.com/repos/basil00/WinDivert/zipball/v2.2.2','366f83f7243e3bb4972a25af2329c6cbd761bba215a00f9f38d9d45603d9d51d')}
@@ -122,8 +122,8 @@ def main():
     write_json(target/'binary-inventory.json',{'files':binaries,'embedded_in_setup':embedded,'scope':'outer package and nested installer binaries; see NATIVE_LICENSES.md and upstream SBOMs for attribution'})
     write_json(target/'build-environment.json',{'python':sys.version,'packages':sorted([{'name':d.metadata['Name'],'version':d.version} for d in importlib.metadata.distributions()],key=lambda x:x['name'].lower())})
     if inputs()!=before:raise RuntimeError('Repository changed during build')
-    revision=subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
-    dirty=bool(subprocess.run(['git','status','--porcelain'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip())
+    patch=json.loads((ROOT/'metadata/local-patch.json').read_text(encoding='utf8'))
+    revision=patch['base_commit'];dirty=True  # Local patch, not a hosted or clean commit.
     write_json(target/'build-proof.json',{'version':VERSION,'git_commit':revision,'git_dirty':dirty,'source_sha256':before,'helper':helper_report,'setup_sha256':sha(target/'imperioaion-setup.exe'),'archive_sha256':sha(archive),'authenticode':False,'production_manifest_signed':False,'installed':False,'capture_started':False,'private_keys_read':False})
     (target/'LEIA-PRIMEIRO.txt').write_text('IMPÉRIO AION — CANDIDATO DE BUILD\n\nAplicativo e instalador compilados do repositório separado. Ainda sem Authenticode.\nO setup começa sem consulta automática. Verificar consulta o canal configurado no site; NÃO instala automaticamente este ZIP candidato.\nPara publicar este pacote, é necessário autorizar seus hashes com as chaves de release e publicar os metadados correspondentes. As chaves atuais são do piloto.\nNão substitua o download público nem execute como administrador para contornar validações.\nDireitos de imagens e dados ainda pendentes. SignPath não aprovou o projeto.\n',encoding='utf8')
     print(json.dumps({'output':str(target),'files':len(files),'archive_sha256':sha(archive)},ensure_ascii=False),flush=True)

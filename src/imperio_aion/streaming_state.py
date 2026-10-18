@@ -9,6 +9,7 @@ from activity_view import activity_rows
 from hud_view import pet_progress
 from od_energy import energy_parts
 from resource_gains import gain_presentation
+from display_identity import LOCAL_PLAYER_LABEL,player_label
 
 ROOT = Path(__file__).resolve().parent
 
@@ -35,7 +36,7 @@ def projection(app, snapshot, fight, rows, names=True, resources=False):
     output_rows = []
     for i, row in enumerate(rows):
         cls = row.get('class_key', 'unknown')
-        output_rows.append(dict(key=player_keys[row_key(row)], name=row['name'] if names else 'Jogador ' + str(i + 1),
+        output_rows.append(dict(key=player_keys[row_key(row)], name=player_label(row) if names else 'Jogador ' + str(i + 1),
             icon=asset(cls), className=CLASSES.get(cls, CLASSES['unknown'])[0],
             color=CLASSES.get(cls, CLASSES['unknown'])[1], damage=row.get('damage'),
             dps=row.get('dps_average'), seconds=(row.get('duration_us') or 0) / 1e6,
@@ -92,7 +93,7 @@ def projection(app, snapshot, fight, rows, names=True, resources=False):
         partial=partial or bool(fight and fight.get('partial')), groupCurves=curves(players, 'group'), skillCurves=curves(skills, 'skills'))
     view = app.hud_page.get()
     hud = dict(kind='hud', view=view, ready=app.combat_ready(snapshot) if view=='combat' else bool(app.login_ready), target=target, logo=asset('mascot'),
-        character=app.character.get().strip() if names and app.login_ready else '', rows=output_rows,
+        character=LOCAL_PLAYER_LABEL if names and app.login_ready else '', rows=output_rows,
         waitingTitle=waiting_title if view=='combat' else 'Dados do personagem pendentes',
         waitingNote=waiting_note if view=='combat' else 'Relogue quando puder, com a captura ativa. O DPS já pode ser usado.',
         total=panel['total'], dps=panel['dps'], seconds=panel['seconds'], partial=panel['partial'], resources=[])
