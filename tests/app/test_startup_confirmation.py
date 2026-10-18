@@ -4,7 +4,10 @@ import copy,os,tempfile,tkinter as tk,unittest
 from pathlib import Path
 from unittest.mock import patch
 from PIL import ImageTk
-from app import App
+# Source-only UI fixtures may import on elevated CI runners. Keep the real
+# guard function intact and restore the elevation check immediately after import.
+with patch('installation_guard.WindowsInspector.elevated', return_value=False):
+    from app import App
 from collector import Controller
 from test_initial_loading import confirmed_login
 
